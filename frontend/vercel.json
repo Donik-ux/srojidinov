@@ -1,0 +1,39 @@
+{
+  "redirects": [
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "www.topextexnikum.uz" }], "destination": "https://topextexnikum.uz/$1", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "topex-texnikumi.vercel.app" }], "destination": "https://topextexnikum.uz/$1", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/googlec56ebc67e6c6816c.html", "destination": "/googlec56ebc67e6c6816c.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

@@ -1,0 +1,234 @@
+- generic [ref=f3e2]:
+  - generic [ref=f3e145]:
+    - complementary [ref=f3e146]:
+      - link "T TOPEX Admin Panel" [ref=f3e148] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e149]: T
+        - generic [ref=f3e150]:
+          - paragraph [ref=f3e151]: TOPEX
+          - paragraph [ref=f3e152]: Admin Panel
+      - navigation [ref=f3e153]:
+        - generic [ref=f3e154]:
+          - generic [ref=f3e155]: Bosh sahifa
+          - link "Dashboard" [ref=f3e156] [cursor=pointer]:
+            - /url: /admin
+            - img [ref=f3e157]
+            - generic [ref=f3e162]: Dashboard
+        - generic [ref=f3e163]:
+          - generic [ref=f3e164]: Ma'lumotlar
+          - link "Foydalanuvchilar" [ref=f3e165] [cursor=pointer]:
+            - /url: /admin/users
+            - img [ref=f3e166]
+            - generic [ref=f3e171]: Foydalanuvchilar
+          - link "Arizalar 1" [ref=f3e172] [cursor=pointer]:
+            - /url: /admin/applications
+            - img [ref=f3e173]
+            - generic [ref=f3e176]: Arizalar
+            - generic [ref=f3e177]: "1"
+        - generic [ref=f3e178]:
+          - generic [ref=f3e179]: Kontent
+          - link "Kurslar" [ref=f3e180] [cursor=pointer]:
+            - /url: /admin/courses
+            - img [ref=f3e181]
+            - generic [ref=f3e183]: Kurslar
+          - link "Blog / Maqolalar" [ref=f3e184] [cursor=pointer]:
+            - /url: /admin/blog
+            - img [ref=f3e185]
+            - generic [ref=f3e188]: Blog / Maqolalar
+          - link "Galereya" [ref=f3e189] [cursor=pointer]:
+            - /url: /admin/gallery
+            - img [ref=f3e190]
+            - generic [ref=f3e194]: Galereya
+          - link "Sharhlar" [ref=f3e195] [cursor=pointer]:
+            - /url: /admin/testimonials
+            - img [ref=f3e196]
+            - generic [ref=f3e198]: Sharhlar
+          - link "Savol-Javob" [ref=f3e199] [cursor=pointer]:
+            - /url: /admin/faq
+            - img [ref=f3e200]
+            - generic [ref=f3e203]: Savol-Javob
+          - link "Grantlar" [ref=f3e204] [cursor=pointer]:
+            - /url: /admin/scholarships
+            - img [ref=f3e205]
+            - generic [ref=f3e208]: Grantlar
+          - link "Bosh sahifa videolari" [ref=f3e209] [cursor=pointer]:
+            - /url: /admin/home-videos
+            - img [ref=f3e210]
+            - generic [ref=f3e212]: Bosh sahifa videolari
+          - link "Video galereya" [ref=f3e213] [cursor=pointer]:
+            - /url: /admin/videos
+            - img [ref=f3e214]
+            - generic [ref=f3e216]: Video galereya
+          - link "O'qituvchilar" [ref=f3e217] [cursor=pointer]:
+            - /url: /admin/teachers
+            - img [ref=f3e218]
+            - generic [ref=f3e223]: O'qituvchilar
+          - link "Vakansiyalar" [ref=f3e224] [cursor=pointer]:
+            - /url: /admin/vacancies
+            - img [ref=f3e225]
+            - generic [ref=f3e228]: Vakansiyalar
+          - link "Yo'nalishlar" [ref=f3e229] [cursor=pointer]:
+            - /url: /admin/directions
+            - img [ref=f3e230]
+            - generic [ref=f3e232]: Yo'nalishlar
+        - generic [ref=f3e233]:
+          - generic [ref=f3e234]: Sozlamalar
+          - link "Sayt Muhariri" [ref=f3e235] [cursor=pointer]:
+            - /url: /admin/site-editor
+            - img [ref=f3e236]
+            - generic [ref=f3e239]: Sayt Muhariri
+          - link "Sayt sozlamalari" [ref=f3e240] [cursor=pointer]:
+            - /url: /admin/settings
+            - img [ref=f3e241]
+            - generic [ref=f3e244]: Sayt sozlamalari
+          - link "Profil va kirish" [ref=f3e245] [cursor=pointer]:
+            - /url: /profile
+            - img [ref=f3e246]
+            - generic [ref=f3e258]: Profil va kirish
+      - generic [ref=f3e259]:
+        - generic [ref=f3e260]:
+          - generic [ref=f3e261]: S
+          - paragraph [ref=f3e263]: Super Admin
+        - button "Chiqish" [ref=f3e264] [cursor=pointer]:
+          - img [ref=f3e265]
+          - text: Chiqish
+    - generic [ref=f3e268]:
+      - banner [ref=f3e269]:
+        - generic [ref=f3e270]:
+          - generic [ref=f3e271]:
+            - text: M07 8, Wed
+            - generic [ref=f3e272]: 23:50
+          - button "🇺🇿 UZ" [ref=f3e274] [cursor=pointer]:
+            - generic [ref=f3e275]: 🇺🇿
+            - generic [ref=f3e276]: UZ
+            - img [ref=f3e277]
+          - link "Saytni ko'rish" [ref=f3e279] [cursor=pointer]:
+            - /url: /
+            - img [ref=f3e280]
+            - text: Saytni ko'rish
+      - main [ref=f3e284]:
+        - generic [ref=f3e285]:
+          - generic [ref=f3e286]:
+            - generic [ref=f3e287]:
+              - heading "Blog / Maqolalar" [level=1] [ref=f3e288]
+              - paragraph [ref=f3e289]: 4/4 ta maqola
+              - generic [ref=f3e290]:
+                - generic [ref=f3e291]: 4 chop etilgan
+                - generic [ref=f3e292]: 0 qoralama
+            - button "Yaratish" [ref=f3e293] [cursor=pointer]:
+              - img [ref=f3e294]
+              - text: Yaratish
+          - generic [ref=f3e295]:
+            - generic [ref=f3e296]:
+              - img [ref=f3e297]
+              - textbox "Maqola nomi yoki kategoriya..." [ref=f3e300]
+            - generic [ref=f3e301]:
+              - button "Barchasi" [ref=f3e302] [cursor=pointer]
+              - button "Yangiliklar" [ref=f3e303] [cursor=pointer]
+              - button "E'lonlar" [ref=f3e304] [cursor=pointer]
+              - button "Maqolalar" [ref=f3e305] [cursor=pointer]
+              - button "Tadbirlar" [ref=f3e306] [cursor=pointer]
+          - table [ref=f3e7]:
+            - rowgroup [ref=f3e8]:
+              - row "Rasm Sarlavha Kategoriya Holat Ko'rishlar Amal" [ref=f3e9]:
+                - columnheader "Rasm" [ref=f3e10]
+                - columnheader "Sarlavha" [ref=f3e11]
+                - columnheader "Kategoriya" [ref=f3e12]
+                - columnheader "Holat" [ref=f3e13]
+                - columnheader "Ko'rishlar" [ref=f3e14]
+                - columnheader "Amal" [ref=f3e15]
+            - rowgroup [ref=f3e16]:
+              - row "N/A TEST — Yangi o'quv yiliga qabul boshlandi Super Admin — chop etilgan 0" [ref=f3e17]:
+                - cell "N/A" [ref=f3e18]:
+                  - generic [ref=f3e20]: N/A
+                - cell "TEST — Yangi o'quv yiliga qabul boshlandi Super Admin" [ref=f3e21]:
+                  - paragraph [ref=f3e22]: TEST — Yangi o'quv yiliga qabul boshlandi
+                  - paragraph [ref=f3e23]: Super Admin
+                - cell "—" [ref=f3e24]
+                - cell "chop etilgan" [ref=f3e25]:
+                  - generic [ref=f3e26]: chop etilgan
+                - cell "0" [ref=f3e27]
+                - cell [ref=f3e28]:
+                  - generic [ref=f3e29]:
+                    - button "Yashirish" [ref=f3e30] [cursor=pointer]:
+                      - img [ref=f3e31]
+                    - link "Saytda ko'rish" [ref=f3e36] [cursor=pointer]:
+                      - /url: /blog/test-yangi-oquv-yiliga-qabul-boshlandi
+                      - img [ref=f3e37]
+                    - button [ref=f3e41] [cursor=pointer]:
+                      - img [ref=f3e42]
+                    - button [active] [ref=f3e45] [cursor=pointer]:
+                      - img [ref=f3e46]
+              - row "N/A TOPEX Texnikumida O'qish Qanday Afzalliklari Bor? Super Admin Yangiliklar chop etilgan 0" [ref=f3e49]:
+                - cell "N/A" [ref=f3e50]:
+                  - generic [ref=f3e52]: N/A
+                - cell "TOPEX Texnikumida O'qish Qanday Afzalliklari Bor? Super Admin" [ref=f3e53]:
+                  - paragraph [ref=f3e54]: TOPEX Texnikumida O'qish Qanday Afzalliklari Bor?
+                  - paragraph [ref=f3e55]: Super Admin
+                - cell "Yangiliklar" [ref=f3e56]
+                - cell "chop etilgan" [ref=f3e57]:
+                  - generic [ref=f3e58]: chop etilgan
+                - cell "0" [ref=f3e59]
+                - cell [ref=f3e60]:
+                  - generic [ref=f3e61]:
+                    - button "Yashirish" [ref=f3e62] [cursor=pointer]:
+                      - img [ref=f3e63]
+                    - link "Saytda ko'rish" [ref=f3e68] [cursor=pointer]:
+                      - /url: /blog/topex-texnikumida-oqish-qanday-afzalliklari-bor
+                      - img [ref=f3e69]
+                    - button [ref=f3e73] [cursor=pointer]:
+                      - img [ref=f3e74]
+                    - button [ref=f3e77] [cursor=pointer]:
+                      - img [ref=f3e78]
+              - 'row "N/A Grant va Stipendiyalar: Kimlar Olishi Mumkin? Super Admin Granlar chop etilgan 0" [ref=f3e81]':
+                - cell "N/A" [ref=f3e82]:
+                  - generic [ref=f3e84]: N/A
+                - 'cell "Grant va Stipendiyalar: Kimlar Olishi Mumkin? Super Admin" [ref=f3e85]':
+                  - paragraph [ref=f3e86]: "Grant va Stipendiyalar: Kimlar Olishi Mumkin?"
+                  - paragraph [ref=f3e87]: Super Admin
+                - cell "Granlar" [ref=f3e88]
+                - cell "chop etilgan" [ref=f3e89]:
+                  - generic [ref=f3e90]: chop etilgan
+                - cell "0" [ref=f3e91]
+                - cell [ref=f3e92]:
+                  - generic [ref=f3e93]:
+                    - button "Yashirish" [ref=f3e94] [cursor=pointer]:
+                      - img [ref=f3e95]
+                    - link "Saytda ko'rish" [ref=f3e100] [cursor=pointer]:
+                      - /url: /blog/grant-va-stipendiyalar-kimlar-olishi-mumkin
+                      - img [ref=f3e101]
+                    - button [ref=f3e105] [cursor=pointer]:
+                      - img [ref=f3e106]
+                    - button [ref=f3e109] [cursor=pointer]:
+                      - img [ref=f3e110]
+              - row "N/A Bitiruvchilarimiz Qanday Natijalar Qo'lga Kiritdi? Super Admin Muvaffaqiyatlar chop etilgan 0" [ref=f3e113]:
+                - cell "N/A" [ref=f3e114]:
+                  - generic [ref=f3e116]: N/A
+                - cell "Bitiruvchilarimiz Qanday Natijalar Qo'lga Kiritdi? Super Admin" [ref=f3e117]:
+                  - paragraph [ref=f3e118]: Bitiruvchilarimiz Qanday Natijalar Qo'lga Kiritdi?
+                  - paragraph [ref=f3e119]: Super Admin
+                - cell "Muvaffaqiyatlar" [ref=f3e120]
+                - cell "chop etilgan" [ref=f3e121]:
+                  - generic [ref=f3e122]: chop etilgan
+                - cell "0" [ref=f3e123]
+                - cell [ref=f3e124]:
+                  - generic [ref=f3e125]:
+                    - button "Yashirish" [ref=f3e126] [cursor=pointer]:
+                      - img [ref=f3e127]
+                    - link "Saytda ko'rish" [ref=f3e132] [cursor=pointer]:
+                      - /url: /blog/bitiruvchilarimiz-qanday-natijalar-qolga-kiritdi
+                      - img [ref=f3e133]
+                    - button [ref=f3e137] [cursor=pointer]:
+                      - img [ref=f3e138]
+                    - button [ref=f3e141] [cursor=pointer]:
+                      - img [ref=f3e142]
+        - generic [ref=f3e310]:
+          - generic [ref=f3e311]:
+            - img [ref=f3e313]
+            - generic [ref=f3e316]:
+              - heading "Maqolani o'chirishni tasdiqlang" [level=3] [ref=f3e317]
+              - paragraph [ref=f3e318]: Bu amalni bekor qilib bo'lmaydi. Maqola butunlay o'chiriladi.
+          - generic [ref=f3e319]:
+            - button "Bekor" [ref=f3e320] [cursor=pointer]
+            - button "Ha, o'chirish" [ref=f3e321] [cursor=pointer]
+  - region "Notifications Alt+T"

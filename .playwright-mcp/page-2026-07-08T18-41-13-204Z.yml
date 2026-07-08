@@ -1,0 +1,55 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img [ref=e8]
+      - generic [ref=e21]:
+        - link "Bosh sahifa" [ref=e22] [cursor=pointer]:
+          - /url: /
+          - img [ref=e23]
+          - text: Bosh sahifa
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]: Topex Texnikumi
+            - heading "Bilimga qaytish vaqti keldi!" [level=1] [ref=e28]
+            - paragraph [ref=e29]: Kelajak kasbingiz bizning texnikumdan boshlangan. Davom eting va o'qishingizdagi yutuqlarni kuzating.
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - paragraph [ref=e32]: 600+
+              - paragraph [ref=e33]: O'quvchi
+            - generic [ref=e34]:
+              - paragraph [ref=e35]: 50+
+              - paragraph [ref=e36]: O'qituvchi
+            - generic [ref=e37]:
+              - paragraph [ref=e38]: 3+
+              - paragraph [ref=e39]: Filial
+        - paragraph [ref=e40]: © 2026 Topex Texnikumi
+    - generic [ref=e42]:
+      - generic [ref=e43]: Kirish
+      - heading "Akkauntingizga kiring" [level=2] [ref=e44]
+      - paragraph [ref=e45]:
+        - text: Hisobingiz yo'qmi?
+        - link "Ro'yxatdan o'ting" [ref=e46] [cursor=pointer]:
+          - /url: /register
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - button "Telefon raqam" [ref=e49] [cursor=pointer]
+          - button "Login" [ref=e50] [cursor=pointer]
+        - generic [ref=e51]:
+          - generic [ref=e52]: Telefon raqam
+          - generic [ref=e53]:
+            - generic: "+998"
+            - textbox "88 131 65 67" [ref=e54]
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]: Parol
+            - link "Unutdingizmi?" [ref=e58] [cursor=pointer]:
+              - /url: /login
+          - generic [ref=e59]:
+            - img [ref=e60]
+            - textbox "••••••••" [ref=e63]
+            - button [ref=e64] [cursor=pointer]:
+              - img [ref=e65]
+        - button "Kirish" [ref=e68] [cursor=pointer]:
+          - text: Kirish
+          - img [ref=e69]
+  - region "Notifications Alt+T"

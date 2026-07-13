@@ -7,6 +7,7 @@ import { Menu, X, User, LogOut, Shield, Phone, MapPin, Mail, ChevronDown } from 
 import { logout, selectUser, selectIsAuthenticated } from '../features/auth/authSlice';
 import LanguageSwitcher from '../components/common/LanguageSwitcher';
 import api from '../services/api';
+import { fbTrackCustom } from '../utils/metaPixel';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -27,7 +28,8 @@ const Navbar = () => {
        : (u.startsWith('http') || u.startsWith('/assets')) ? u
        : `${import.meta.env.VITE_API_URL || ''}${u}`;
   const logoSrc    = resolveImg(siteSettings?.logo);
-  const navPhone   = siteSettings?.phone   || '+998 78 777 44 77';
+  const navPhone   = '+998 55 588 44 77';
+  const navPhone2  = '+998 78 777 44 77';
   const navAddress = t('contact.addressValue') || siteSettings?.address;
   const navEmail   = siteSettings?.email   || 'info@topex.uz';
 
@@ -56,10 +58,10 @@ const Navbar = () => {
             {/* Logo — brendli ko'k rang (CSS mask orqali, shakl saqlanadi) */}
             <Link to="/" className="flex items-center gap-3 group flex-shrink-0" aria-label="Topex">
               <span
-                className="block h-12 lg:h-14"
+                className="block h-14 lg:h-16"
                 style={{
-                  width: '13.5rem',
-                  maxWidth: '52vw',
+                  width: '16rem',
+                  maxWidth: '55vw',
                   backgroundColor: '#1d3a8a',
                   WebkitMaskImage: `url(${logoSrc})`,
                   maskImage: `url(${logoSrc})`,
@@ -86,7 +88,7 @@ const Navbar = () => {
                 </div>
               </button>
               <div className="w-px h-12 bg-gray-200" />
-              <ContactItem icon={<Phone size={18} className="text-orange" />} title={t('contact.phone')} lines={[navPhone]} href={`tel:${navPhone.replace(/\s/g,'')}`} />
+              <ContactItem icon={<Phone size={18} className="text-orange" />} title={t('contact.phone')} lines={[navPhone, navPhone2]} href={`tel:${navPhone.replace(/\s/g,'')}`} onClick={() => fbTrackCustom('ContactClick', { channel: 'phone' })} />
               <div className="w-px h-12 bg-gray-200" />
               <ContactItem icon={<Mail size={18} className="text-orange" />} title={t('contact.email')} lines={[navEmail]} href={`mailto:${navEmail}`} />
             </div>
@@ -206,8 +208,11 @@ const Navbar = () => {
                 </NavLink>
               ))}
               <div className="border-t border-gray-100 pt-3 mt-3 space-y-2">
-                <a href={`tel:${navPhone.replace(/\s/g,'')}`} className="flex items-center gap-2 px-4 py-2 text-gray-600 text-sm">
+                <a href={`tel:${navPhone.replace(/\s/g,'')}`} onClick={() => fbTrackCustom('ContactClick', { channel: 'phone' })} className="flex items-center gap-2 px-4 py-2 text-gray-600 text-sm">
                   <Phone size={14} className="text-orange" /> {navPhone}
+                </a>
+                <a href={`tel:${navPhone2.replace(/\s/g,'')}`} onClick={() => fbTrackCustom('ContactClick', { channel: 'phone' })} className="flex items-center gap-2 px-4 py-2 text-gray-600 text-sm">
+                  <Phone size={14} className="text-orange" /> {navPhone2}
                 </a>
                 <a href={`mailto:${navEmail}`} className="flex items-center gap-2 px-4 py-2 text-gray-600 text-sm">
                   <Mail size={14} className="text-orange" /> {navEmail}
@@ -255,7 +260,7 @@ const Navbar = () => {
   );
 };
 
-const ContactItem = ({ icon, title, lines, href }) => {
+const ContactItem = ({ icon, title, lines, href, onClick }) => {
   const Content = (
     <>
       <div className="w-10 h-10 rounded-full bg-orange-faint flex items-center justify-center flex-shrink-0">
@@ -270,7 +275,7 @@ const ContactItem = ({ icon, title, lines, href }) => {
     </>
   );
   return href ? (
-    <a href={href} className="flex items-center gap-3 hover:opacity-80 transition-opacity">{Content}</a>
+    <a href={href} onClick={onClick} className="flex items-center gap-3 hover:opacity-80 transition-opacity">{Content}</a>
   ) : (
     <div className="flex items-center gap-3">{Content}</div>
   );

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Phone, Mail, MapPin, X, ZoomIn } from 'lucide-react';
 import api from '../services/api';
+import { fbTrackCustom } from '../utils/metaPixel';
 
 const API_URL = import.meta.env.VITE_API_URL || '';
 
@@ -80,7 +81,8 @@ const Footer = () => {
        : (u.startsWith('http') || u.startsWith('/assets')) ? u
        : `${API_URL}${u}`;
   const logoSrc   = resolveImg(settings?.logo);
-  const phone     = settings?.phone     || '+998 78 777 44 77';
+  const phone     = '+998 55 588 44 77';
+  const phone2    = '+998 78 777 44 77';
   const email     = settings?.email     || 'info@topex.uz';
   const address1  = t('contact.addressValue') || settings?.address;
   const address2  = t('contact.addressValue2') || settings?.address2;
@@ -216,6 +218,7 @@ const Footer = () => {
                     aria-label={label}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={() => fbTrackCustom('ContactClick', { channel: label.toLowerCase() })}
                     className="w-10 h-10 bg-white/10 hover:bg-orange rounded-lg flex items-center
                                justify-center text-white transition-all duration-200 hover:-translate-y-0.5">
                     <Icon size={20} />
@@ -248,19 +251,26 @@ const Footer = () => {
               </div>
             </div>
 
-            <FooterCol title={settings?.footerColAboutTitle      || t('footer.colAbout')}      links={COL1} />
-            <FooterCol title={settings?.footerColApplicantsTitle || t('footer.colApplicants')} links={COL2} />
-            <FooterCol title={settings?.footerColStudentsTitle   || t('footer.colStudents')}   links={COL3} />
+            <FooterCol title={t('footer.colAbout')}      links={COL1} />
+            <FooterCol title={t('footer.colApplicants')} links={COL2} />
+            <FooterCol title={t('footer.colStudents')}   links={COL3} />
 
             {/* Column 4: Aloqalar */}
             <div>
-              <h4 className="text-white font-bold text-[18px] mb-6">{settings?.footerColContactsTitle || t('footer.colContacts')}</h4>
+              <h4 className="text-white font-bold text-[18px] mb-6">{t('footer.colContacts')}</h4>
               <ul className="space-y-5">
                 <li>
                   <a href={`tel:${phone.replace(/\s/g,'')}`}
+                     onClick={() => fbTrackCustom('ContactClick', { channel: 'phone' })}
                      className="flex items-start gap-3 text-white/85 hover:text-orange transition-colors">
                     <Phone size={16} className="text-orange mt-0.5 flex-shrink-0" />
                     <span className="text-[14px]">{phone}</span>
+                  </a>
+                  <a href={`tel:${phone2.replace(/\s/g,'')}`}
+                     onClick={() => fbTrackCustom('ContactClick', { channel: 'phone' })}
+                     className="flex items-start gap-3 text-white/85 hover:text-orange transition-colors mt-1.5">
+                    <Phone size={16} className="text-orange mt-0.5 flex-shrink-0" />
+                    <span className="text-[14px]">{phone2}</span>
                   </a>
                 </li>
                 <li>
@@ -287,10 +297,10 @@ const Footer = () => {
           {/* ── Copyright ── */}
           <div className="mt-8 pt-6 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-white/60 text-[13px]">
-              {settings?.footerCopyText || t('footer.copyright')} {year}
+              {t('footer.copyright')} {year}
             </p>
             <a href="#" onClick={(e) => e.preventDefault()} className="text-white/60 hover:text-orange text-[13px] underline-offset-2 hover:underline transition-colors">
-              {settings?.footerOfertaText || t('footer.oferta')}
+              {t('footer.oferta')}
             </a>
           </div>
         </div>

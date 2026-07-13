@@ -7,6 +7,7 @@ import { MapPin, Phone, Mail, Clock, ChevronRight, Home } from 'lucide-react';
 import api from '../services/api';
 import PhoneInput from '../components/ui/PhoneInput';
 import { toast } from 'react-toastify';
+import { fbTrack, fbTrackCustom } from '../utils/metaPixel';
 
 const API_URL = import.meta.env.VITE_API_URL || '';
 
@@ -28,8 +29,8 @@ const ContactPage = () => {
     api.get('/settings').then(r => { if (r.data.data) setSettings(r.data.data); }).catch(() => {});
   }, []);
 
-  const phone   = settings?.phone   || '+998 78 777 44 77';
-  const phone2  = settings?.phone2  || '';
+  const phone   = '+998 55 588 44 77';
+  const phone2  = '+998 78 777 44 77';
   const email   = settings?.email   || 'info@topex.uz';
   const address = t('contact.addressValue') || settings?.address;
   const hours   = settings?.workingHours || t('contactPage.workingHours');
@@ -77,7 +78,7 @@ const ContactPage = () => {
 
   const cards = [
     { Icon: MapPin, title: t('contactPage.cardAddress'), lines: [address], href: '#map-section', onClick: scrollToMap },
-    { Icon: Phone,  title: t('contactPage.cardPhone'),  lines: [phone, phone2].filter(Boolean), href: `tel:${phone.replace(/\s/g, '')}` },
+    { Icon: Phone,  title: t('contactPage.cardPhone'),  lines: [phone, phone2].filter(Boolean), href: `tel:${phone.replace(/\s/g, '')}`, onClick: () => fbTrackCustom('ContactClick', { channel: 'phone' }) },
     { Icon: Mail,   title: t('contactPage.cardEmail'),   lines: [email], href: `mailto:${email}` },
     { Icon: Clock,  title: t('contactPage.cardHours'), lines: [hours], href: '#map-section', onClick: scrollToMap },
   ];
@@ -97,6 +98,7 @@ const ContactPage = () => {
     try {
       setSubmitting(true);
       await api.post('/applications', { fullName, phone: ph, grade });
+      fbTrack('Lead', { content_name: 'contact_form', grade });
       toast.success(t('formToast.success', { name: fullName }));
       setForm({ name: '', phone: '', grade: '9' });
     } catch (err) {
@@ -144,11 +146,9 @@ const ContactPage = () => {
             <motion.h1 {...up(0)} className="text-4xl md:text-6xl font-black text-white leading-[1.1] mb-5 drop-shadow-lg">
             {t('contactPage.heroTitle')}
           </motion.h1>
-          {settings?.contactHeroSubtitle && (
-            <motion.p {...up(0.05)} className="text-white/65 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
-              {settings.contactHeroSubtitle}
-            </motion.p>
-          )}
+          <motion.p {...up(0.05)} className="text-white/65 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
+            {t('contactPage.heroSubtitle')}
+          </motion.p>
           <motion.div {...up(0.1)} className="flex items-center justify-center gap-2 text-white/70 text-sm font-medium">
             <Link to="/" className="inline-flex items-center gap-1 hover:text-orange transition-colors">
               <Home size={14} /> {t('loginPage.backHome')}

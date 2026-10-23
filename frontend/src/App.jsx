@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import { fetchMe, setCredentials, markInitialized } from './features/auth/authSlice';
 import { warmupBackend } from './services/api';
@@ -28,11 +29,12 @@ const PLACEHOLDER =
 
 const App = () => {
   const dispatch = useDispatch();
+  const { pathname } = useLocation();
+  const requiresBackend = pathname === '/admin' || pathname.startsWith('/admin/') || pathname === '/profile' || pathname === '/login' || pathname === '/register';
 
-  // Backendni darhol "uyg'otamiz" — ariza/login so'rovlari tez ishlashi uchun
   useEffect(() => {
-    warmupBackend();
-  }, []);
+    if (requiresBackend) warmupBackend();
+  }, [requiresBackend]);
 
   useEffect(() => {
     document.addEventListener('error', (e) => {
@@ -44,6 +46,11 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+    if (!requiresBackend) {
+      dispatch(markInitialized());
+      return;
+    }
+
     let saved = null;
     try {
       saved = localStorage.getItem('accessToken');
@@ -71,7 +78,7 @@ const App = () => {
     } else {
       dispatch(markInitialized());
     }
-  }, [dispatch]);
+  }, [dispatch, requiresBackend]);
 
   return <AppRouter />;
 };

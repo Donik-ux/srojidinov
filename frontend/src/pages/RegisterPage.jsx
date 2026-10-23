@@ -61,7 +61,7 @@ const RegisterPage = () => {
   return (
     <>
       <SeoHelmet
-        title={`${t('auth.signUp')} — Topex Texnikumi`}
+        title={`${t('auth.signUp')} — S.H. Sirojiddinov akademik litseyi`}
         noindex
       />
 
@@ -69,7 +69,7 @@ const RegisterPage = () => {
         {/* ════ LEFT — visual ════ */}
         <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-brand-deep">
           <div className="absolute inset-0 bg-cover bg-center opacity-25"
-               style={{ backgroundImage: "url('/assets/images/DSC01036.webp')" }} />
+               style={{ backgroundImage: "url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85')" }} />
           <div className="absolute inset-0 bg-gradient-to-br from-brand-deep/95 via-brand/85 to-brand-deep/95" />
 
           <div className="absolute inset-0 opacity-[0.06]"
@@ -122,7 +122,7 @@ const RegisterPage = () => {
               </motion.div>
             </div>
 
-            <p className="text-white/40 text-xs">© {new Date().getFullYear()} Topex Texnikumi</p>
+            <p className="text-white/40 text-xs">© {new Date().getFullYear()} S.H. Sirojiddinov akademik litseyi</p>
           </div>
         </div>
 

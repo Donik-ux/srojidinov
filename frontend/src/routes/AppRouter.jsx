@@ -1,26 +1,13 @@
 import { lazy, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import AdminLayout from '../layouts/AdminLayout';
 import ProtectedRoute from './ProtectedRoute';
 import Spinner from '../components/ui/Spinner';
 
-const HomePage = lazy(() => import('../pages/HomePage'));
+const HomePage = lazy(() => import('../pages/LyceumHomePage'));
 const LoginPage = lazy(() => import('../pages/LoginPage'));
 const RegisterPage = lazy(() => import('../pages/RegisterPage'));
-const CoursesPage = lazy(() => import('../pages/CoursesPage'));
-const CourseDetailPage = lazy(() => import('../pages/CourseDetailPage'));
-const GalleryPage = lazy(() => import('../pages/GalleryPage'));
-const VideosPage = lazy(() => import('../pages/VideosPage'));
-const ContactPage   = lazy(() => import('../pages/ContactPage'));
-const VakansiyaPage = lazy(() => import('../pages/VakansiyaPage'));
-const ImtihonNatijalariPage = lazy(() => import('../pages/ImtihonNatijalariPage'));
-const LitsenziyaPage = lazy(() => import('../pages/LitsenziyaPage'));
-const NarxPage = lazy(() => import('../pages/NarxPage'));
-const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
-import BlogPage from '../pages/BlogPage';
-import ArticleDetailPage from '../pages/ArticleDetailPage';
-const ProfilePage = lazy(() => import('../pages/ProfilePage'));
 const AdminDashboard    = lazy(() => import('../pages/admin/AdminDashboard'));
 const AdminUsers        = lazy(() => import('../pages/admin/AdminUsers'));
 const AdminCourses      = lazy(() => import('../pages/admin/AdminCourses'));
@@ -53,22 +40,7 @@ const AppRouter = () => (
 
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/courses" element={<CoursesPage />} />
-        <Route path="/courses/:slug" element={<CourseDetailPage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="/videos" element={<VideosPage />} />
-        <Route path="/aloqalar"    element={<ContactPage />} />
-        <Route path="/vakansiyalar" element={<VakansiyaPage />} />
-        <Route path="/imtihon-natijalari" element={<ImtihonNatijalariPage />} />
-        <Route path="/litsenziya" element={<LitsenziyaPage />} />
-        <Route path="/narx" element={<NarxPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:slug" element={<ArticleDetailPage />} />
-        <Route
-          path="/profile"
-          element={<ProtectedRoute><ProfilePage /></ProtectedRoute>}
-        />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
 
       <Route

@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /courses/
-Allow: /blog/
-Allow: /gallery/
 Allow: /assets/
 
 Disallow: /admin
@@ -21,5 +18,3 @@ Allow: /assets/
 
 User-agent: GPTBot
 Disallow: /
-
-Sitemap: https://topextexnikum.uz/sitemap.xml

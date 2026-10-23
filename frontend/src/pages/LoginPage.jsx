@@ -56,7 +56,7 @@ const LoginPage = () => {
   return (
     <>
       <SeoHelmet
-        title={`${t('auth.signIn')} — Topex Texnikumi`}
+        title={`${t('auth.signIn')} — S.H. Sirojiddinov akademik litseyi`}
         noindex
       />
 
@@ -64,7 +64,7 @@ const LoginPage = () => {
         {/* ════ LEFT — visual ════ */}
         <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-brand-deep">
           <div className="absolute inset-0 bg-cover bg-center opacity-30"
-               style={{ backgroundImage: "url('/assets/images/DSC00827.webp')" }} />
+               style={{ backgroundImage: "url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85')" }} />
           <div className="absolute inset-0 bg-gradient-to-br from-brand-deep/95 via-brand/85 to-brand-deep/95" />
 
           {/* Decorative pattern */}
@@ -102,24 +102,12 @@ const LoginPage = () => {
                 </p>
               </motion.div>
 
-              <div className="mt-12 grid grid-cols-3 gap-4 max-w-md">
-                {[
-                  { num: '600+', lbl: t('loginPage.statStudents') },
-                  { num: '50+',  lbl: t('loginPage.statTeachers') },
-                  { num: '3+',   lbl: t('loginPage.statBranches') },
-                ].map((s, i) => (
-                  <motion.div key={s.lbl}
-                    initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 + i * 0.1, duration: 0.5 }}
-                    className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl p-4">
-                    <p className="text-orange font-black text-2xl">{s.num}</p>
-                    <p className="text-white/70 text-xs mt-1">{s.lbl}</p>
-                  </motion.div>
-                ))}
-              </div>
+              <p className="mt-10 max-w-md border-l-2 border-orange pl-4 text-sm leading-6 text-white/75">
+                O‘zbekiston Milliy universiteti qoshidagi tabiiy va aniq fanlarga ixtisoslashtirilgan akademik litsey.
+              </p>
             </div>
 
-            <p className="text-white/40 text-xs">© {new Date().getFullYear()} Topex Texnikumi</p>
+            <p className="text-white/40 text-xs">© {new Date().getFullYear()} S.H. Sirojiddinov akademik litseyi</p>
           </div>
         </div>
 

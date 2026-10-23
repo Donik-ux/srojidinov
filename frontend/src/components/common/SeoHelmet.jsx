@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
-const SITE_NAME = 'TOPEX Texnikumi';
-const DEFAULT_OG_IMAGE = 'https://topextexnikum.uz/assets/images/hero/hero-2.webp';
+const SITE_NAME = 'S.H. Sirojiddinov akademik litseyi';
+const DEFAULT_OG_IMAGE = 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=85';
 const OG_IMAGE_W = 1200;
 const OG_IMAGE_H = 630;
 
@@ -39,9 +39,7 @@ const SeoHelmet = ({
       {description && <meta name="twitter:description" content={description} />}
       <meta name="twitter:image" content={img} />
 
-      <link rel="alternate" hreflang="uz" href={canonical || 'https://topextexnikum.uz/'} />
-      <link rel="alternate" hreflang="ru" href={`${canonical ? canonical.replace('https://topextexnikum.uz', 'https://topextexnikum.uz/ru') : 'https://topextexnikum.uz/ru'}`} />
-      <link rel="alternate" hreflang="x-default" href={canonical || 'https://topextexnikum.uz/'} />
+      {canonical && <link rel="alternate" hreflang="uz" href={canonical} />}
 
       {children}
     </Helmet>

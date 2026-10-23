@@ -4,15 +4,31 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import SeoHelmet from '../components/common/SeoHelmet';
-import { Eye, EyeOff, ArrowRight, Check, User, Lock, ArrowLeft } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  BookOpen,
+  Check,
+  Eye,
+  EyeOff,
+  Lock,
+  Phone,
+  User,
+} from 'lucide-react';
 import { toast } from 'react-toastify';
 import { register, selectAuth, clearError } from '../features/auth/authSlice';
 import PhoneInput from '../components/ui/PhoneInput';
 
 // Parol talabi: kamida 4 ta belgi
 const passwordChecks = (pw, t) => [
-  { label: t('registerPage.passwordCheck.minChars'),  valid: pw.length >= 4 },
+  { label: t('registerPage.passwordCheck.minChars'), valid: pw.length >= 4 },
 ];
+
+const CAMPUS_IMAGE = 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85';
+
+const inputClass =
+  'w-full bg-white border border-[#d7cbb7] rounded-none pr-4 py-3.5 text-[#19354d] text-[15px] ' +
+  'placeholder:text-[#9aa3a8] focus:outline-none focus:border-[#9d7335] focus:ring-2 focus:ring-[#9d7335]/15 transition-all';
 
 const RegisterPage = () => {
   const { t } = useTranslation();
@@ -65,56 +81,68 @@ const RegisterPage = () => {
         noindex
       />
 
-      <div className="min-h-screen flex bg-white">
+      <div className="flex min-h-screen bg-[#f7f5ef]">
         {/* ════ LEFT — visual ════ */}
-        <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-brand-deep">
-          <div className="absolute inset-0 bg-cover bg-center opacity-25"
-               style={{ backgroundImage: "url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85')" }} />
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-deep/95 via-brand/85 to-brand-deep/95" />
+        <div className="relative hidden overflow-hidden bg-[#142f45] lg:flex lg:w-1/2">
+          <img
+            src={CAMPUS_IMAGE}
+            alt="Litsey kampusi"
+            className="absolute inset-0 h-full w-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(140deg,rgba(13,34,52,.96)_0%,rgba(23,52,75,.88)_55%,rgba(13,34,52,.96)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(13,34,52,.75),transparent_55%)]" />
+          <div
+            className="absolute inset-0 opacity-[0.05]"
+            style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #e5c98f 1px, transparent 0)', backgroundSize: '26px 26px' }}
+          />
 
-          <div className="absolute inset-0 opacity-[0.06]"
-               style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '24px 24px' }} />
-
-          <svg className="absolute inset-0 w-full h-full opacity-[0.08]" viewBox="0 0 800 800" preserveAspectRatio="none" fill="none">
-            {[...Array(12)].map((_, i) => (
-              <path key={i}
-                d={`M -100 ${80 + i * 50} Q 300 ${10 + i * 50}, 600 ${100 + i * 50} T 1200 ${60 + i * 50}`}
-                stroke="white" strokeWidth="1.2" fill="none" />
-            ))}
-          </svg>
-
-          <div className="relative z-10 flex flex-col justify-between p-16 text-white">
-            <Link to="/" className="inline-flex items-center gap-2 text-white/70 hover:text-orange text-sm font-medium w-fit">
-              <ArrowLeft size={16} /> {t('registerPage.backHome')}
-            </Link>
-
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-                <span className="inline-block text-orange font-bold text-[13px] uppercase tracking-[0.18em] mb-5">
-                  {t('registerPage.heroBadge')}
+          <div className="relative z-10 flex flex-col justify-between p-12 text-white xl:p-16">
+            <div className="flex items-center justify-between gap-4">
+              <Link to="/" className="flex items-center gap-3" aria-label="Litsey bosh sahifasi">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#d5ad68]/70 text-[#e2c37f]">
+                  <BookOpen size={21} strokeWidth={1.7} />
                 </span>
-                <h1 className="text-white text-[44px] lg:text-[56px] font-black leading-[1.05] mb-6 uppercase">
+                <span className="min-w-0">
+                  <span className="block text-[10px] font-semibold uppercase leading-4 text-white/60">O‘zbekiston Milliy universiteti qoshida</span>
+                  <span className="mt-0.5 block font-['Source_Serif_4'] text-base font-semibold leading-tight">S.H. Sirojiddinov akademik litseyi</span>
+                </span>
+              </Link>
+            </div>
+
+            <div className="max-w-xl">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="mb-5 flex items-center gap-3 text-xs font-bold uppercase text-white/70">
+                  <span className="h-px w-9 bg-[#d5ad68]" />
+                  {t('registerPage.heroBadge')}
+                </div>
+                <h1 className="whitespace-pre-line font-['Source_Serif_4'] text-[42px] font-semibold leading-[1.08] text-white xl:text-[52px]">
                   {t('registerPage.heroTitle')}
                 </h1>
-                <p className="text-white/75 text-base leading-relaxed max-w-md mb-8">
+                <p className="mt-6 max-w-md text-[15px] leading-7 text-white/75">
                   {t('registerPage.heroParagraph')}
                 </p>
 
-                <ul className="space-y-3 max-w-md">
+                <ul className="mt-8 space-y-3">
                   {[
                     t('registerPage.feature1'),
                     t('registerPage.feature2'),
                     t('registerPage.feature3'),
                     t('registerPage.feature4'),
                   ].map((txt, i) => (
-                    <motion.li key={i}
-                      initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}
+                    <motion.li
+                      key={i}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 + i * 0.08, duration: 0.4 }}
-                      className="flex items-center gap-3 text-white/85 text-[15px]">
-                      <div className="w-6 h-6 rounded-full bg-orange flex items-center justify-center flex-shrink-0">
-                        <Check size={14} className="text-white" strokeWidth={3} />
-                      </div>
+                      className="flex items-center gap-3 text-[14px] text-white/85"
+                    >
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#d5ad68]/50 bg-[#d5ad68]/15">
+                        <Check size={13} className="text-[#e5c98f]" strokeWidth={3} />
+                      </span>
                       {txt}
                     </motion.li>
                   ))}
@@ -122,128 +150,144 @@ const RegisterPage = () => {
               </motion.div>
             </div>
 
-            <p className="text-white/40 text-xs">© {new Date().getFullYear()} S.H. Sirojiddinov akademik litseyi</p>
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/15 pt-5 text-xs text-white/45">
+              <span>© {new Date().getFullYear()} S.H. Sirojiddinov akademik litseyi</span>
+              <a href="tel:+998712784358" className="inline-flex items-center gap-2 text-white/60 transition hover:text-[#e5c98f]">
+                <Phone size={13} /> +998 71 278 43 58
+              </a>
+            </div>
           </div>
         </div>
 
         {/* ════ RIGHT — form ════ */}
-        <div className="flex-1 lg:w-1/2 flex items-center justify-center p-6 lg:p-12 bg-white overflow-y-auto">
+        <div className="flex flex-1 items-center justify-center px-5 py-10 sm:px-8 lg:w-1/2 lg:px-12">
           <motion.div
-            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
-            className="w-full max-w-md py-8">
-
-            <div className="lg:hidden mb-8">
-              <Link to="/" className="inline-flex items-center gap-2 text-gray-500 hover:text-brand text-sm font-medium">
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="w-full max-w-md border border-[#e5e9ea] bg-white p-6 shadow-sm sm:p-9"
+          >
+            <div className="mb-7 lg:hidden">
+              <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#53616a] transition hover:text-[#9d7335]">
                 <ArrowLeft size={16} /> {t('registerPage.backHome')}
               </Link>
             </div>
 
-            <span className="inline-block text-orange font-bold text-[13px] uppercase tracking-[0.18em] mb-4">
-              {t('registerPage.sectionLabel')}
-            </span>
-            <h2 className="text-[34px] md:text-[42px] font-black text-brand leading-[1.1] mb-3">
+            <div className="mb-3 flex items-center gap-3">
+              <span className="h-px w-8 bg-[#9d7335]" />
+              <span className="text-xs font-bold uppercase text-[#9d7335]">{t('registerPage.sectionLabel')}</span>
+            </div>
+            <h2 className="whitespace-pre-line font-['Source_Serif_4'] text-[32px] font-semibold leading-[1.12] text-[#19354d] sm:text-[38px]">
               {t('registerPage.formTitle')}
             </h2>
-            <p className="text-gray-500 mb-8">{t('registerPage.hasAccount')}{' '}
-              <Link to="/login" className="text-orange font-bold hover:underline">{t('registerPage.signIn')}</Link>
+            <p className="mt-3 text-sm text-[#5b666d]">
+              {t('registerPage.hasAccount')}{' '}
+              <Link to="/login" className="font-bold text-[#9d7335] hover:underline">{t('registerPage.signIn')}</Link>
             </p>
 
             {error && (
-              <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-xl px-4 py-3 mb-5">
+              <div className="mt-5 border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
                 {error}
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="mt-7 space-y-5">
               <div>
-                <label className="block text-brand font-semibold text-[14px] mb-2">{t('registerPage.nameLabel')}</label>
+                <label className="mb-2 block text-[13px] font-bold uppercase tracking-wide text-[#19354d]">
+                  {t('registerPage.nameLabel')}
+                </label>
                 <div className="relative">
-                  <User size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <User size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9d7335]" />
                   <input
                     type="text"
                     placeholder={t('registerPage.namePlaceholder')}
                     value={form.name}
                     onChange={e => setForm(p => ({ ...p, name: e.target.value }))}
                     required
-                    className="w-full bg-white border-2 border-gray-200 rounded-xl pl-12 pr-4 py-3.5
-                               text-brand text-[15px] placeholder:text-gray-400
-                               focus:outline-none focus:border-orange transition-all"
+                    className={`${inputClass} pl-12`}
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-brand font-semibold text-[14px] mb-2">
+                <label className="mb-2 block text-[13px] font-bold uppercase tracking-wide text-[#19354d]">
                   {t('registerPage.phoneLabel')}
                 </label>
                 <PhoneInput
                   value={form.phone}
                   onChange={(v) => setForm(p => ({ ...p, phone: v }))}
                   required
-                  className="w-full bg-white border-2 border-gray-200 rounded-xl pr-4 py-3.5
-                             text-brand text-[15px] placeholder:text-gray-400
-                             focus:outline-none focus:border-orange transition-all"
+                  prefixClassName="text-[#19354d]"
+                  className={inputClass}
                 />
               </div>
 
               <div>
-                <label className="block text-brand font-semibold text-[14px] mb-2">{t('registerPage.passwordLabel')}</label>
+                <label className="mb-2 block text-[13px] font-bold uppercase tracking-wide text-[#19354d]">
+                  {t('registerPage.passwordLabel')}
+                </label>
                 <div className="relative">
-                  <Lock size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <Lock size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9d7335]" />
                   <input
                     type={showPass ? 'text' : 'password'}
                     placeholder={t('registerPage.passwordPlaceholder')}
                     value={form.password}
                     onChange={e => setForm(p => ({ ...p, password: e.target.value }))}
                     required
-                    className="w-full bg-white border-2 border-gray-200 rounded-xl pl-12 pr-12 py-3.5
-                               text-brand text-[15px] placeholder:text-gray-400
-                               focus:outline-none focus:border-orange transition-all"
+                    className={`${inputClass} pl-12 pr-12`}
                   />
                   <button
                     type="button"
                     onClick={() => setShowPass(p => !p)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-orange transition-colors">
+                    aria-label={showPass ? 'Parolni yashirish' : 'Parolni ko‘rsatish'}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-[#9aa3a8] transition-colors hover:text-[#9d7335]"
+                  >
                     {showPass ? <EyeOff size={18} /> : <Eye size={18} />}
                   </button>
                 </div>
 
                 {form.password && (
-                  <div className="mt-3 flex gap-2 flex-wrap">
+                  <div className="mt-3 flex flex-wrap gap-2">
                     {pwChecks.map(c => (
-                      <span key={c.label}
-                            className={`inline-flex items-center gap-1 text-[11px] font-semibold px-2.5 py-1 rounded-full transition-colors
-                                       ${c.valid ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
-                        {c.valid && <Check size={12} strokeWidth={3} />} {c.label}
+                      <span
+                        key={c.label}
+                        className={`inline-flex items-center gap-1 px-2.5 py-1 text-[11px] font-semibold transition-colors ${
+                          c.valid
+                            ? 'bg-[#eee6d8] text-[#19354d]'
+                            : 'bg-[#f2f2f2] text-[#8a949a]'
+                        }`}
+                      >
+                        {c.valid && <Check size={12} strokeWidth={3} className="text-[#9d7335]" />} {c.label}
                       </span>
                     ))}
                   </div>
                 )}
               </div>
 
-              <label className="flex items-start gap-3 cursor-pointer pt-1">
+              <label className="flex cursor-pointer items-start gap-3 pt-1">
                 <input
                   type="checkbox"
                   checked={agreed}
                   onChange={e => setAgreed(e.target.checked)}
-                  className="mt-1 w-4 h-4 rounded border-2 border-gray-300 text-orange focus:ring-orange focus:ring-2"
+                  className="mt-0.5 h-4 w-4 rounded-none border-[#c9bda8] text-[#9d7335] focus:ring-[#9d7335] focus:ring-2"
                 />
-                <span className="text-gray-500 text-[13px] leading-relaxed">
-                  {t('registerPage.agreement.prefix')} <a href="/oferta" className="text-orange font-semibold hover:underline">{t('registerPage.agreement.terms')}</a> {t('registerPage.agreement.and')}{' '}
-                  <a href="/privacy" className="text-orange font-semibold hover:underline">{t('registerPage.agreement.privacy')}</a>{t('registerPage.agreement.suffix')}
+                <span className="text-[13px] leading-relaxed text-[#5b666d]">
+                  {t('registerPage.agreement.prefix')}{' '}
+                  <a href="/oferta" className="font-semibold text-[#9d7335] hover:underline">{t('registerPage.agreement.terms')}</a>{' '}
+                  {t('registerPage.agreement.and')}{' '}
+                  <a href="/privacy" className="font-semibold text-[#9d7335] hover:underline">{t('registerPage.agreement.privacy')}</a>
+                  {t('registerPage.agreement.suffix')}
                 </span>
               </label>
 
               <button
                 type="submit"
                 disabled={loading || !agreed || !pwStrong}
-                className="w-full inline-flex items-center justify-center gap-2 bg-orange-grad
-                           hover:brightness-110 text-white font-bold py-4 rounded-xl shadow-lg shadow-orange/30
-                           hover:-translate-y-0.5 transition-all duration-200 text-[15px]
-                           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0">
+                className="inline-flex w-full items-center justify-center gap-3 bg-[#d5ad68] px-6 py-4 text-sm font-bold text-[#172c3d] transition-all duration-200 hover:bg-[#e3c486] disabled:cursor-not-allowed disabled:opacity-50"
+              >
                 {loading ? (
                   <>
-                    <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    <span className="h-4 w-4 animate-spin rounded-full border-2 border-[#172c3d]/30 border-t-[#172c3d]" />
                     {t('registerPage.submitting')}
                   </>
                 ) : (
@@ -251,6 +295,13 @@ const RegisterPage = () => {
                 )}
               </button>
             </form>
+
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-2 border-t border-[#e5e9ea] pt-5 text-xs text-[#7b858a]">
+              <span>Yordam kerakmi?</span>
+              <a href="tel:+998712784358" className="inline-flex items-center gap-1.5 font-semibold text-[#19354d] transition hover:text-[#9d7335]">
+                <Phone size={13} /> +998 71 278 43 58
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

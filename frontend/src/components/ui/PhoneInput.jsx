@@ -9,7 +9,7 @@ const formatLocal = (digits) =>
     .filter(Boolean)
     .join(' ');
 
-const PhoneInput = ({ value, onChange, className = '', placeholder = '88 131 65 67', ...rest }) => {
+const PhoneInput = ({ value, onChange, className = '', prefixClassName = 'text-brand', placeholder = '88 131 65 67', ...rest }) => {
   // value ichidan lokal qismini ajratamiz (+998 dan keyingi raqamlar)
   const localDigits = (value || '').replace(/^\+?998\s*/, '').replace(/\D/g, '').slice(0, 9);
 
@@ -20,7 +20,7 @@ const PhoneInput = ({ value, onChange, className = '', placeholder = '88 131 65 
 
   return (
     <div className="relative">
-      <span className="absolute left-4 top-1/2 -translate-y-1/2 text-brand font-semibold text-[15px] pointer-events-none select-none">
+      <span className={`absolute left-4 top-1/2 -translate-y-1/2 font-semibold text-[15px] pointer-events-none select-none ${prefixClassName}`}>
         +998
       </span>
       <input

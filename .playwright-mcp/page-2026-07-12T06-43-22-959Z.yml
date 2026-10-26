@@ -1,0 +1,348 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - banner [ref=e8]:
+      - generic [ref=e11]:
+        - link "Topex" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e14]:
+          - button "Manzili Sirg'ali-3, Yangi Sirg'ali yo'li ko'chasi, 49-uy" [ref=e15] [cursor=pointer]:
+            - generic [ref=e20]:
+              - generic [ref=e21]: Manzili
+              - generic [ref=e22]: Sirg'ali-3, Yangi Sirg'ali yo'li ko'chasi, 49-uy
+          - link "Murojaat +998 55 588 44 77 +998 78 777 44 77" [ref=e24] [cursor=pointer]:
+            - /url: tel:+998555884477
+            - generic [ref=e28]:
+              - generic [ref=e29]: Murojaat
+              - generic [ref=e30]: +998 55 588 44 77
+              - generic [ref=e31]: +998 78 777 44 77
+          - link "E-mail info@topex.uz" [ref=e33] [cursor=pointer]:
+            - /url: mailto:info@topex.uz
+            - generic [ref=e38]:
+              - generic [ref=e39]: E-mail
+              - generic [ref=e40]: info@topex.uz
+      - navigation [ref=e41]:
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - link "Biz haqimizda" [ref=e45] [cursor=pointer]:
+              - /url: /
+            - link "Yo'nalishlar" [ref=e49] [cursor=pointer]:
+              - /url: /courses
+            - link "Yangiliklar" [ref=e52] [cursor=pointer]:
+              - /url: /blog
+            - link "Videolar" [ref=e55] [cursor=pointer]:
+              - /url: /videos
+            - link "Aloqalar" [ref=e58] [cursor=pointer]:
+              - /url: /aloqalar
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - button "🇺🇿 UZ" [active] [ref=e63] [cursor=pointer]:
+                - generic [ref=e64]: 🇺🇿
+                - generic [ref=e65]: UZ
+              - generic [ref=e549]:
+                - button "🇺🇿 UZ" [ref=e550] [cursor=pointer]:
+                  - generic [ref=e551]: 🇺🇿
+                  - text: UZ
+                - button "🇷🇺 RU" [ref=e552] [cursor=pointer]:
+                  - generic [ref=e553]: 🇷🇺
+                  - text: RU
+                - button "🇬🇧 EN" [ref=e554] [cursor=pointer]:
+                  - generic [ref=e555]: 🇬🇧
+                  - text: EN
+            - link "Ro'yxatdan o'tish" [ref=e68] [cursor=pointer]:
+              - /url: /register
+            - link "Kirish" [ref=e69] [cursor=pointer]:
+              - /url: /login
+    - main [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e73]:
+          - generic:
+            - generic:
+              - generic:
+                - img "Topex Texnikumi o'quvchilari - Toshkentdagi zamonaviy xususiy texnikum"
+          - generic [ref=e525]:
+            - generic [ref=e556]:
+              - heading "REPETITORSIZ VA SIFATLI TA'LIM" [level=1] [ref=e557]:
+                - generic [ref=e558]: REPETITORSIZ
+                - generic [ref=e559]: VA SIFATLI
+                - generic [ref=e560]: TA'LIM
+              - paragraph [ref=e561]: 10-11 sinflar uchun professional yo'nalishlar bo'yicha maxsus dasturlar va xalqaro standartlar.
+              - button "Ariza topshirish" [ref=e563] [cursor=pointer]
+              - paragraph [ref=e570]: 9-sinfni tamomlaganlar va 11 yillik ta'limi tugallanmay qolganlar uchun!
+            - img "Topex Texnikumi o'quvchilari - Toshkentdagi zamonaviy xususiy texnikum" [ref=e571]
+        - generic [ref=e97]:
+          - button "Keyingi 1" [ref=e98] [cursor=pointer]
+          - button "Keyingi 2" [ref=e102] [cursor=pointer]
+          - button "Keyingi 3" [ref=e105] [cursor=pointer]
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - paragraph [ref=e119]: 600+
+          - paragraph [ref=e120]: O'quvchi
+        - generic [ref=e121]:
+          - paragraph [ref=e125]: 3+
+          - paragraph [ref=e126]: Filial
+        - generic [ref=e127]:
+          - paragraph [ref=e131]: 50+
+          - paragraph [ref=e132]: Mutaxassis
+      - generic [ref=e135]:
+        - generic [ref=e137]:
+          - img "Topex Texnikumi" [ref=e139]
+          - img "Topex Texnikumi" [ref=e141]
+          - img "Topex Texnikumi" [ref=e143]
+        - generic [ref=e144]:
+          - generic [ref=e145]: Nima uchun biz
+          - heading "Texnikum haqida" [level=2] [ref=e146]
+          - paragraph [ref=e147]: Topex Texnikumi — Sifatli ta'lim, real natija!
+          - paragraph [ref=e148]: Topex texnikumi — Toshkent shahrining Chilonzor tumanida 2022-yildan beri faoliyat ko'rsatayotgan zamonaviy xususiy texnikum. Biz 600 dan ortiq o'quvchiga 10-11 sinflar uchun yuqori sifatli ta'lim, professional yo'nalishlar va olimpiadaga tayyorgarlik bo'yicha xizmatlar ko'rsatib kelmoqdamiz. Tajribali pedagoglar, zamonaviy sinflar va individual yondashuv har bir o'quvchining salohiyatini ochishga yordam beradi.
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - generic [ref=e152]: "600"
+                - generic [ref=e153]: +
+              - generic [ref=e154]: O'quvchi
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - generic [ref=e157]: "50"
+                - generic [ref=e158]: +
+              - generic [ref=e159]: O'qituvchi
+          - button "Batafsil" [ref=e160] [cursor=pointer]
+      - generic [ref=e162]:
+        - generic [ref=e163]:
+          - img "Topex Texnikumi filiali 1" [ref=e164]
+          - img "Topex Texnikumi filiali 2" [ref=e165]
+          - img "Topex Texnikumi filiali 3" [ref=e166]
+          - img "Topex Texnikumi filiali 4" [ref=e167]
+        - generic [ref=e169]:
+          - generic [ref=e170]: Topex Texnikumida
+          - heading "Yo'nalishlar" [level=2] [ref=e171]
+          - list [ref=e175]:
+            - listitem [ref=e176] [cursor=pointer]:
+              - generic [ref=e180]: Laborant analitik
+            - listitem [ref=e181] [cursor=pointer]:
+              - generic [ref=e186]: Dorivor o'simliklar laboranti
+            - listitem [ref=e187] [cursor=pointer]:
+              - generic [ref=e192]: Marketing va agrobiznes
+            - listitem [ref=e193] [cursor=pointer]:
+              - generic [ref=e198]: Dasturlash
+            - listitem [ref=e199] [cursor=pointer]:
+              - generic [ref=e207]: Kompyuter grafikasi va dizayn
+            - listitem [ref=e208] [cursor=pointer]:
+              - generic [ref=e213]: Bank ishi
+            - listitem [ref=e214] [cursor=pointer]:
+              - generic [ref=e219]: Mehmonxona boshqaruvi
+            - listitem [ref=e220] [cursor=pointer]:
+              - generic [ref=e224]: Raqamli axborotlar analitigi
+          - generic [ref=e225]:
+            - generic [ref=e226]: 20% CHEGIRMA
+            - generic [ref=e228]:
+              - generic [ref=e229]:
+                - generic [ref=e230]: 25 000 000 so'm
+                - generic [ref=e231]: 20 000 000 so'm
+                - generic [ref=e232]: yillik to'lov
+              - generic [ref=e234]:
+                - generic [ref=e235]: 2 000 000 so'm
+                - generic [ref=e236]: oylik to'lov
+            - generic [ref=e237]: 20% chegirma 10-iyulgacha amal qiladi!
+      - generic [ref=e240]:
+        - generic [ref=e241]:
+          - generic [ref=e242]: Bizning mutaxassislar
+          - heading "Bizning jamoa bilan tanishing" [level=2] [ref=e243]
+          - paragraph [ref=e244]: Topex Texnikumida 50 dan ortiq professional o'qituvchi va amaliyotchi mutaxassis faoliyat yuritmoqda. Ularning aksariyati o'z sohasida tajribali bo'lib, IT, marketing, bank, grafika va boshqa zamonaviy yo'nalishlarda mutaxassis darajasidagi bilim beradi. Bizning ustozlarimiz nafaqat nazariy ma'lumot, balki real ish tajribasi va karyera maslahatlarini ham o'rgatadi.
+          - link "Barcha ustozlar" [ref=e246] [cursor=pointer]:
+            - /url: /courses
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - button "Oldingi" [ref=e249] [cursor=pointer]
+            - button "Keyingi" [ref=e252] [cursor=pointer]
+          - generic [ref=e256]:
+            - generic [ref=e294]:
+              - generic [ref=e295] [cursor=pointer]:
+                - img "AYTBAYEVA SARBINAZ" [ref=e296]
+                - generic [ref=e297]:
+                  - paragraph [ref=e298]: AYTBAYEVA SARBINAZ
+                  - paragraph [ref=e299]: Biologiya fani o'qituvchisi (rus)
+              - generic [ref=e300] [cursor=pointer]:
+                - img "SULTONALIYEV SHOXRUH" [ref=e301]
+                - generic [ref=e302]:
+                  - paragraph [ref=e303]: SULTONALIYEV SHOXRUH
+                  - paragraph [ref=e304]: Biologiya fani o'qituvchisi (uzb)
+            - generic [ref=e306]:
+              - generic [ref=e307] [cursor=pointer]:
+                - img "VALIYEV JAMSHIDBEK" [ref=e308]
+                - generic [ref=e309]:
+                  - paragraph [ref=e310]: VALIYEV JAMSHIDBEK
+                  - paragraph [ref=e311]: Ingliz tili o'qituvchisi
+              - generic [ref=e312] [cursor=pointer]:
+                - img "BEKOVA OYSARA" [ref=e313]
+                - generic [ref=e314]:
+                  - paragraph [ref=e315]: BEKOVA OYSARA
+                  - paragraph [ref=e316]: Topex Texnikumi bosh direktori
+            - generic [ref=e318]:
+              - generic [ref=e319] [cursor=pointer]:
+                - img "ESHONQULOVA MUNISA" [ref=e320]
+                - generic [ref=e321]:
+                  - paragraph [ref=e322]: ESHONQULOVA MUNISA
+                  - paragraph [ref=e323]: Topex Texnikumi administratori
+              - generic [ref=e324] [cursor=pointer]:
+                - img "ABDUJALILOV BUNYODBEK" [ref=e325]
+                - generic [ref=e326]:
+                  - paragraph [ref=e327]: ABDUJALILOV BUNYODBEK
+                  - paragraph [ref=e328]: Moliya bo'yicha direktor o'rinbosari
+            - generic [ref=e331] [cursor=pointer]:
+              - img "KARIMOV ISLOM" [ref=e332]
+              - generic [ref=e333]:
+                - paragraph [ref=e334]: KARIMOV ISLOM
+                - paragraph [ref=e335]: Topex Texnikumi administratori
+            - generic [ref=e258]:
+              - generic [ref=e259] [cursor=pointer]:
+                - img "ABDURASULOV KOZIMJON" [ref=e260]
+                - generic [ref=e261]:
+                  - paragraph [ref=e262]: ABDURASULOV KOZIMJON
+                  - paragraph [ref=e263]: Kimyo fani o'qituvchisi
+              - generic [ref=e264] [cursor=pointer]:
+                - img "SHARIPOVA MA'MURA" [ref=e265]
+                - generic [ref=e266]:
+                  - paragraph [ref=e267]: SHARIPOVA MA'MURA
+                  - paragraph [ref=e268]: Ona tili va adabiyoti o'qituvchisi
+            - generic [ref=e270]:
+              - generic [ref=e271] [cursor=pointer]:
+                - img "SHOVQIYEVA LAYLO" [ref=e272]
+                - generic [ref=e273]:
+                  - paragraph [ref=e274]: SHOVQIYEVA LAYLO
+                  - paragraph [ref=e275]: Ingliz tili o'qituvchisi
+              - generic [ref=e276] [cursor=pointer]:
+                - img "DONIYOROVA SHAHNOZA" [ref=e277]
+                - generic [ref=e278]:
+                  - paragraph [ref=e279]: DONIYOROVA SHAHNOZA
+                  - paragraph [ref=e280]: Ingliz tili o'qituvchisi
+            - generic [ref=e282]:
+              - generic [ref=e283] [cursor=pointer]:
+                - img "IBRAGIMOVA KAMILA" [ref=e284]
+                - generic [ref=e285]:
+                  - paragraph [ref=e286]: IBRAGIMOVA KAMILA
+                  - paragraph [ref=e287]: Matematika fani o'qituvchisi
+              - generic [ref=e288] [cursor=pointer]:
+                - img "MUKIMBOEV FIRDAVS" [ref=e289]
+                - generic [ref=e290]:
+                  - paragraph [ref=e291]: MUKIMBOEV FIRDAVS
+                  - paragraph [ref=e292]: Matematika fani o'qituvchisi
+      - generic [ref=e339]:
+        - generic [ref=e340]: Hujjat
+        - heading "Davlat namunasidagi diplom" [level=2] [ref=e341]
+        - paragraph [ref=e342]: Topex bitiruvchilari davlat namunasidagi diplom oladilar — bu hujjat raqamli texnologiyalar, dasturlash va boshqa sohalardagi amaliy ko'nikmalarni tasdiqlaydi. Ushbu diplom sizga yetakchi IT-kompaniyalar va yuqori texnologik tarmoqlarda ish topish hamda mehnat bozorida raqobatbardosh ustunlik uchun eshik ochadi. Topex dasturi har qanday dastlabki tayyorgarlikdagi ishtirokchilar uchun mos. Yangi boshlovchilar nol darajadan yangi kasbni egallashlari mumkin, amaliyotchi mutaxassislar esa raqamli texnologiyalar sohasida malakalarini oshirib, yo'nalishini o'zgartira oladilar.
+        - generic [ref=e343]:
+          - generic [ref=e344]:
+            - heading "Davlat tan olishi" [level=3] [ref=e349]
+            - paragraph [ref=e350]: Rasmiy hujjat
+          - generic [ref=e351]:
+            - heading "Kasbiy ko'nikmalar" [level=3] [ref=e356]
+            - paragraph [ref=e357]: Amaliy tasdiqlash
+      - generic [ref=e361]:
+        - generic [ref=e362]: Joriy video roliklar
+        - heading "Talabalarimiz ijodidan" [level=2] [ref=e363]
+      - generic [ref=e408]:
+        - generic [ref=e409]:
+          - generic [ref=e410]: Savolingiz bormi?
+          - heading "Ma'lumotlaringizni to'ldiring" [level=2] [ref=e411]
+          - paragraph [ref=e412]: Telefon raqamingizni qoldiring va biz sizni barcha qiziqtirgan savollaringizga javob beramiz!
+          - generic [ref=e413]:
+            - generic [ref=e414]:
+              - generic [ref=e415]: Ismingiz
+              - textbox "To'liq ismingizni qoldiring" [ref=e416]
+            - generic [ref=e417]:
+              - generic [ref=e418]: Telefon raqamingiz
+              - generic [ref=e419]:
+                - generic: "+998"
+                - textbox "88 131 65 67" [ref=e420]
+            - generic [ref=e421]:
+              - generic [ref=e422]: Yo'nalish
+              - combobox [ref=e424] [cursor=pointer]:
+                - option "Yo'nalishni tanlang"
+                - option "9-sinfdan keyin (2 yil)" [selected]
+                - option "11-sinfdan keyin (3 yil)"
+            - generic [ref=e425] [cursor=pointer]:
+              - checkbox "Shaxsiy ma'lumotlarim qayta ishlanishiga va Topex Texnikumi maxfiylik shartlariga roziman." [ref=e426]
+              - generic [ref=e427]:
+                - text: Shaxsiy ma'lumotlarim qayta ishlanishiga va
+                - link "Topex Texnikumi" [ref=e428]:
+                  - /url: /
+                - text: maxfiylik shartlariga roziman.
+            - button "Ariza topshirish" [ref=e430] [cursor=pointer]
+        - img "Topex talabasi" [ref=e434]
+    - contentinfo [ref=e435]:
+      - generic [ref=e436]:
+        - generic [ref=e437]:
+          - generic [ref=e438]:
+            - link [ref=e439] [cursor=pointer]:
+              - /url: /
+              - img "Topex" [ref=e440]
+            - generic [ref=e441]:
+              - link "Telegram" [ref=e442] [cursor=pointer]:
+                - /url: https://t.me/topex_uz
+              - link "Instagram" [ref=e445] [cursor=pointer]:
+                - /url: https://www.instagram.com/topex.uz/
+              - link "YouTube" [ref=e450] [cursor=pointer]:
+                - /url: https://www.youtube.com/@topex.uz
+              - link "Facebook" [ref=e453] [cursor=pointer]:
+                - /url: https://www.facebook.com/topex.uz
+            - generic [ref=e456]:
+              - button [ref=e457] [cursor=pointer]:
+                - img "Texnikum litsenziyasi № 420567" [ref=e458]
+              - button [ref=e463] [cursor=pointer]:
+                - img "Yo'nalishlar" [ref=e464]
+          - generic [ref=e469]:
+            - heading "Texnikum haqida" [level=4] [ref=e470]
+            - list [ref=e471]:
+              - listitem [ref=e472]:
+                - link "Biz haqimizda" [ref=e473] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e474]:
+                - link "Yangiliklar" [ref=e475] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e476]:
+                - link "Yo'nalishlar" [ref=e477] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=e478]:
+                - link "Vakansiyalar" [ref=e479] [cursor=pointer]:
+                  - /url: /vakansiyalar
+              - listitem [ref=e480]:
+                - link "\"Topex\" jamoasi" [ref=e481] [cursor=pointer]:
+                  - /url: /gallery
+              - listitem [ref=e482]:
+                - link "Yangiliklar" [ref=e483] [cursor=pointer]:
+                  - /url: /blog
+          - generic [ref=e484]:
+            - heading "Abituriyentlar uchun" [level=4] [ref=e485]
+            - list [ref=e486]:
+              - listitem [ref=e487]:
+                - link "Yo'nalishlar" [ref=e488] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=e489]:
+                - link "Kirish imtihon natijasi" [ref=e490] [cursor=pointer]:
+                  - /url: /imtihon-natijalari
+          - generic [ref=e491]:
+            - heading "Talabalar uchun" [level=4] [ref=e492]
+            - list [ref=e493]:
+              - listitem [ref=e494]:
+                - link "Shartnoma olish" [ref=e495] [cursor=pointer]:
+                  - /url: /profile
+              - listitem [ref=e496]:
+                - link "\"Topex\" jamoasi" [ref=e497] [cursor=pointer]:
+                  - /url: /gallery
+          - generic [ref=e498]:
+            - heading "Aloqalar" [level=4] [ref=e499]
+            - list [ref=e500]:
+              - listitem [ref=e501]:
+                - link "+998 55 588 44 77" [ref=e502] [cursor=pointer]:
+                  - /url: tel:+998555884477
+                - link "+998 78 777 44 77" [ref=e506] [cursor=pointer]:
+                  - /url: tel:+998787774477
+              - listitem [ref=e510]:
+                - link "info@topex.uz" [ref=e511] [cursor=pointer]:
+                  - /url: mailto:info@topex.uz
+              - listitem [ref=e516]:
+                - generic [ref=e520]: Sirg'ali-3, Yangi Sirg'ali yo'li ko'chasi, 49-uy
+        - generic [ref=e521]:
+          - paragraph [ref=e522]: © Topex Texnikumi · Barcha huquqlar himoyalangan · 2026
+          - link "Ommaviy oferta" [ref=e523] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications Alt+T"

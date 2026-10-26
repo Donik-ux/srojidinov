@@ -1,0 +1,38 @@
+[     799ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://topex-texnikumi.onrender.com/api/settings:0
+[    1541ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3001/node_modules/.vite/deps/chunk-YZVM2MHU.js?v=8f9741ce:21550
+[    1636ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://localhost:3001/node_modules/.vite/deps/react-router-dom.js?v=8f9741ce:4426
+[    1636ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://localhost:3001/node_modules/.vite/deps/react-router-dom.js?v=8f9741ce:4426
+[    3955ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/health:0
+[    4351ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    4363ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/courses?limit=6:0
+[    4363ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/faq:0
+[    4364ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/testimonials:0
+[    4596ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    6667ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/home-videos:0
+[    6667ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/courses?limit=6:0
+[    6679ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    6922ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/faq:0
+[    6922ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/testimonials:0
+[    8990ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    8990ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/home-videos:0
+[   11303ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[   11562ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[   28676ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3001/node_modules/.vite/deps/chunk-YZVM2MHU.js?v=8f9741ce:21550
+[   28727ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://localhost:3001/node_modules/.vite/deps/react-router-dom.js?v=8f9741ce:4426
+[   28728ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://localhost:3001/node_modules/.vite/deps/react-router-dom.js?v=8f9741ce:4426
+[   28870ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://topex-texnikumi.onrender.com/api/settings:0
+[   31065ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/health:0
+[   31200ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/courses?limit=6:0
+[   31200ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[   31200ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/faq:0
+[   31207ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/testimonials:0
+[   31435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[   33505ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/home-videos:0
+[   33506ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/courses?limit=6:0
+[   33520ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[   33748ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/faq:0
+[   33749ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/testimonials:0
+[   35823ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[   35837ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/home-videos:0
+[   35838ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[   38140ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0

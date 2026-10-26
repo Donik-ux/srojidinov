@@ -1,0 +1,384 @@
+- generic [ref=f58e2]:
+  - generic [ref=f58e3]:
+    - banner [ref=f58e4]:
+      - generic [ref=f58e7]:
+        - link "Topex" [ref=f58e8] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f58e10]:
+          - button "Адрес Сиргали-3, улица Янги Сиргали йули, 49" [ref=f58e11] [cursor=pointer]:
+            - img [ref=f58e13]
+            - generic [ref=f58e16]:
+              - generic [ref=f58e17]: Адрес
+              - generic [ref=f58e18]: Сиргали-3, улица Янги Сиргали йули, 49
+          - link "Контакт +998 78 777 44 77" [ref=f58e20] [cursor=pointer]:
+            - /url: tel:+998787774477
+            - img [ref=f58e22]
+            - generic [ref=f58e24]:
+              - generic [ref=f58e25]: Контакт
+              - generic [ref=f58e26]: +998 78 777 44 77
+          - link "E-mail topexinfo@topexqabul.uz" [ref=f58e28] [cursor=pointer]:
+            - /url: mailto:topexinfo@topexqabul.uz
+            - img [ref=f58e30]
+            - generic [ref=f58e33]:
+              - generic [ref=f58e34]: E-mail
+              - generic [ref=f58e35]: topexinfo@topexqabul.uz
+      - navigation [ref=f58e36]:
+        - generic [ref=f58e38]:
+          - generic [ref=f58e39]:
+            - link "О нас" [ref=f58e40] [cursor=pointer]:
+              - /url: /
+              - text: О нас
+              - img [ref=f58e41]
+            - link "Направления" [ref=f58e44] [cursor=pointer]:
+              - /url: /courses
+              - text: Направления
+              - img [ref=f58e45]
+            - link "Новости" [ref=f58e47] [cursor=pointer]:
+              - /url: /blog
+              - text: Новости
+              - img [ref=f58e48]
+            - link "Видео" [ref=f58e50] [cursor=pointer]:
+              - /url: /videos
+              - text: Видео
+              - img [ref=f58e51]
+            - link "Контакты" [ref=f58e53] [cursor=pointer]:
+              - /url: /aloqalar
+              - text: Контакты
+              - img [ref=f58e54]
+          - generic [ref=f58e56]:
+            - button "🇷🇺 RU" [ref=f58e58] [cursor=pointer]:
+              - generic [ref=f58e59]: 🇷🇺
+              - generic [ref=f58e60]: RU
+              - img [ref=f58e61]
+            - link "Регистрация" [ref=f58e63] [cursor=pointer]:
+              - /url: /register
+            - link "Войти" [ref=f58e64] [cursor=pointer]:
+              - /url: /login
+    - main [ref=f58e65]:
+      - generic [ref=f58e66]:
+        - generic [ref=f58e70]:
+          - generic [ref=f58e75]:
+            - heading "БУДУЩЕЕ ПРОФЕССИЮ ОСВОЙ СЕГОДНЯ!" [level=1] [ref=f58e76]:
+              - generic [ref=f58e77]: БУДУЩЕЕ
+              - generic [ref=f58e78]: ПРОФЕССИЮ
+              - generic [ref=f58e79]: ОСВОЙ СЕГОДНЯ!
+            - paragraph [ref=f58e80]: Современные направления, практический опыт и стипендия до 2 000 000 сумов в месяц в Topex Texnikume.
+            - button "Подать заявку" [ref=f58e82] [cursor=pointer]:
+              - text: Подать заявку
+              - img [ref=f58e83]
+            - generic [ref=f58e85]:
+              - img [ref=f58e86]
+              - paragraph [ref=f58e89]: Для выпускников 9 класса и тех, кто не завершил 11-летнее образование!
+          - img "Topex Texnikumi o'quvchilari - Toshkentdagi zamonaviy xususiy texnikum" [ref=f58e91]
+        - generic [ref=f58e92]:
+          - button "Вперед 1" [ref=f58e93] [cursor=pointer]
+          - button "Вперед 2" [ref=f58e97] [cursor=pointer]
+          - button "Вперед 3" [ref=f58e100] [cursor=pointer]
+      - generic [ref=f58e107]:
+        - generic [ref=f58e108]:
+          - img [ref=f58e109]
+          - paragraph [ref=f58e114]: 1600+
+          - paragraph [ref=f58e115]: Учеников
+        - generic [ref=f58e116]:
+          - img [ref=f58e117]
+          - paragraph [ref=f58e120]: 3+
+          - paragraph [ref=f58e121]: Филиалов
+        - generic [ref=f58e122]:
+          - img [ref=f58e123]
+          - paragraph [ref=f58e126]: 50+
+          - paragraph [ref=f58e127]: Специалистов
+      - generic [ref=f58e130]:
+        - generic [ref=f58e132]:
+          - img "Topex Texnikumi" [ref=f58e134]
+          - img "Topex Texnikumi" [ref=f58e136]
+          - img "Topex Texnikumi" [ref=f58e138]
+        - generic [ref=f58e139]:
+          - generic [ref=f58e140]: Почему мы
+          - heading "О техникуме" [level=2] [ref=f58e141]
+          - paragraph [ref=f58e142]: Topex Texnikumi — Качественное образование, реальный результат!
+          - paragraph [ref=f58e143]: Topex техникум — современный частный техникум, работающий в Чиланзарском районе Ташкента с 2022 года. Мы предоставляем качественное образование, профессиональные направления и подготовку к олимпиадам для более 600 учащихся 10-11 классов. Опытные педагоги, современные классы и индивидуальный подход помогают раскрыть потенциал каждого ученика.
+          - generic [ref=f58e144]:
+            - generic [ref=f58e145]:
+              - generic [ref=f58e146]:
+                - generic [ref=f58e147]: "600"
+                - generic [ref=f58e148]: +
+              - generic [ref=f58e149]: Учеников
+            - generic [ref=f58e150]:
+              - generic [ref=f58e151]:
+                - generic [ref=f58e152]: "50"
+                - generic [ref=f58e153]: +
+              - generic [ref=f58e154]: Учителей
+          - button "Подробнее" [ref=f58e155] [cursor=pointer]
+      - generic [ref=f58e157]:
+        - generic [ref=f58e158]:
+          - img "Topex Texnikumi filiali 1" [ref=f58e159]
+          - img "Topex Texnikumi filiali 2" [ref=f58e160]
+          - img "Topex Texnikumi filiali 3" [ref=f58e161]
+          - img "Topex Texnikumi filiali 4" [ref=f58e162]
+        - generic [ref=f58e164]:
+          - generic [ref=f58e165]: В Topex Texnikume
+          - heading "Направления" [level=2] [ref=f58e166]
+          - list [ref=f58e170]:
+            - listitem [ref=f58e171] [cursor=pointer]:
+              - img [ref=f58e173]
+              - generic [ref=f58e175]: Лаборант-аналитик
+            - listitem [ref=f58e176] [cursor=pointer]:
+              - img [ref=f58e178]
+              - generic [ref=f58e181]: Лаборант лекарственных растений
+            - listitem [ref=f58e182] [cursor=pointer]:
+              - img [ref=f58e184]
+              - generic [ref=f58e187]: Маркетинг и агробизнес
+            - listitem [ref=f58e188] [cursor=pointer]:
+              - img [ref=f58e190]
+              - generic [ref=f58e193]: Программирование
+            - listitem [ref=f58e194] [cursor=pointer]:
+              - img [ref=f58e196]
+              - generic [ref=f58e202]: Компьютерная графика и дизайн
+            - listitem [ref=f58e203] [cursor=pointer]:
+              - img [ref=f58e205]
+              - generic [ref=f58e208]: Банковское дело
+            - listitem [ref=f58e209] [cursor=pointer]:
+              - img [ref=f58e211]
+              - generic [ref=f58e214]: Управление отелем
+            - listitem [ref=f58e215] [cursor=pointer]:
+              - img [ref=f58e217]
+              - generic [ref=f58e219]: Аналитик цифровых данных
+          - generic [ref=f58e220]:
+            - generic [ref=f58e222]: СКИДКА 20%
+            - generic [ref=f58e223]:
+              - generic [ref=f58e224]:
+                - generic [ref=f58e225]: 25 000 000 сум
+                - generic [ref=f58e226]: 20 000 000 сум
+                - generic [ref=f58e227]: оплата за год
+              - generic [ref=f58e229]:
+                - generic [ref=f58e230]: 2 000 000 сум
+                - generic [ref=f58e231]: оплата в месяц
+            - generic [ref=f58e232]: Скидка 20% действует до 10 июля!
+      - generic [ref=f58e235]:
+        - generic [ref=f58e236]:
+          - generic [ref=f58e237]: Наши специалисты
+          - heading "Познакомьтесь с нашей командой" [level=2] [ref=f58e238]
+          - paragraph [ref=f58e239]: "В Topex Texnikume работают более 50 профессиональных преподавателей и практикующих специалистов. Большинство из них имеют многолетний опыт в своей сфере: IT, маркетинг, банковское дело, графика и другие современные направления. Наши преподаватели дают не только теоретические знания, но и реальный рабочий опыт и карьерные советы."
+          - link "Все учителя" [ref=f58e241] [cursor=pointer]:
+            - /url: /courses
+        - generic [ref=f58e242]:
+          - generic [ref=f58e243]:
+            - button "Oldingi" [ref=f58e244] [cursor=pointer]:
+              - img [ref=f58e245]
+            - button "Keyingi" [ref=f58e247] [cursor=pointer]:
+              - img [ref=f58e248]
+          - generic [ref=f58e251]:
+            - generic [ref=f58e253]:
+              - generic [ref=f58e254] [cursor=pointer]:
+                - img "ABDURASULOV KOZIMJON" [ref=f58e255]
+                - generic [ref=f58e256]:
+                  - paragraph [ref=f58e257]: ABDURASULOV KOZIMJON
+                  - paragraph [ref=f58e258]: Учитель химии
+              - generic [ref=f58e259] [cursor=pointer]:
+                - img "SHARIPOVA MA'MURA" [ref=f58e260]
+                - generic [ref=f58e261]:
+                  - paragraph [ref=f58e262]: SHARIPOVA MA'MURA
+                  - paragraph [ref=f58e263]: Учитель родного языка и литературы
+            - generic [ref=f58e265]:
+              - generic [ref=f58e266] [cursor=pointer]:
+                - img "SHOVQIYEVA LAYLO" [ref=f58e267]
+                - generic [ref=f58e268]:
+                  - paragraph [ref=f58e269]: SHOVQIYEVA LAYLO
+                  - paragraph [ref=f58e270]: Учитель английского языка
+              - generic [ref=f58e271] [cursor=pointer]:
+                - img "DONIYOROVA SHAHNOZA" [ref=f58e272]
+                - generic [ref=f58e273]:
+                  - paragraph [ref=f58e274]: DONIYOROVA SHAHNOZA
+                  - paragraph [ref=f58e275]: Учитель английского языка
+            - generic [ref=f58e277]:
+              - generic [ref=f58e278] [cursor=pointer]:
+                - img "IBRAGIMOVA KAMILA" [ref=f58e279]
+                - generic [ref=f58e280]:
+                  - paragraph [ref=f58e281]: IBRAGIMOVA KAMILA
+                  - paragraph [ref=f58e282]: Учитель математики
+              - generic [ref=f58e283] [cursor=pointer]:
+                - img "MUKIMBOEV FIRDAVS" [ref=f58e284]
+                - generic [ref=f58e285]:
+                  - paragraph [ref=f58e286]: MUKIMBOEV FIRDAVS
+                  - paragraph [ref=f58e287]: Учитель математики
+            - generic [ref=f58e289]:
+              - generic [ref=f58e290] [cursor=pointer]:
+                - img "AYTBAYEVA SARBINAZ" [ref=f58e291]
+                - generic [ref=f58e292]:
+                  - paragraph [ref=f58e293]: AYTBAYEVA SARBINAZ
+                  - paragraph [ref=f58e294]: Учитель биологии (рус)
+              - generic [ref=f58e295] [cursor=pointer]:
+                - img "SULTONALIYEV SHOXRUH" [ref=f58e296]
+                - generic [ref=f58e297]:
+                  - paragraph [ref=f58e298]: SULTONALIYEV SHOXRUH
+                  - paragraph [ref=f58e299]: Учитель биологии (узб)
+            - generic [ref=f58e301]:
+              - generic [ref=f58e302] [cursor=pointer]:
+                - img "VALIYEV JAMSHIDBEK" [ref=f58e303]
+                - generic [ref=f58e304]:
+                  - paragraph [ref=f58e305]: VALIYEV JAMSHIDBEK
+                  - paragraph [ref=f58e306]: Учитель английского языка
+              - generic [ref=f58e307] [cursor=pointer]:
+                - img "BEKOVA OYSARA" [ref=f58e308]
+                - generic [ref=f58e309]:
+                  - paragraph [ref=f58e310]: BEKOVA OYSARA
+                  - paragraph [ref=f58e311]: Генеральный директор Topex Texnikum
+            - generic [ref=f58e313]:
+              - generic [ref=f58e314] [cursor=pointer]:
+                - img "ESHONQULOVA MUNISA" [ref=f58e315]
+                - generic [ref=f58e316]:
+                  - paragraph [ref=f58e317]: ESHONQULOVA MUNISA
+                  - paragraph [ref=f58e318]: Администратор Topex Texnikum
+              - generic [ref=f58e319] [cursor=pointer]:
+                - img "ABDUJALILOV BUNYODBEK" [ref=f58e320]
+                - generic [ref=f58e321]:
+                  - paragraph [ref=f58e322]: ABDUJALILOV BUNYODBEK
+                  - paragraph [ref=f58e323]: Зам. директора по финансам
+            - generic [ref=f58e326] [cursor=pointer]:
+              - img "KARIMOV ISLOM" [ref=f58e327]
+              - generic [ref=f58e328]:
+                - paragraph [ref=f58e329]: KARIMOV ISLOM
+                - paragraph [ref=f58e330]: Администратор Topex Texnikum
+      - generic [ref=f58e334]:
+        - generic [ref=f58e335]: Документ
+        - heading "Диплом государственного образца" [level=2] [ref=f58e336]
+        - paragraph [ref=f58e337]: Выпускники Topex получают диплом государственного образца — этот документ подтверждает практические навыки в цифровых технологиях, программировании и других направлениях. Диплом открывает двери для трудоустройства в ведущих IT-компаниях и высокотехнологичных отраслях, обеспечивая конкурентное преимущество на рынке труда. Программа Topex подходит участникам с любым уровнем начальной подготовки. Новички могут освоить профессию с нуля, а практикующие специалисты — повысить квалификацию в области цифровых технологий и сменить направление.
+        - generic [ref=f58e338]:
+          - generic [ref=f58e339]:
+            - img [ref=f58e341]
+            - heading "Государственное признание" [level=3] [ref=f58e344]
+            - paragraph [ref=f58e345]: Официальный документ
+          - generic [ref=f58e346]:
+            - img [ref=f58e348]
+            - heading "Профессиональные навыки" [level=3] [ref=f58e351]
+            - paragraph [ref=f58e352]: Практическое подтверждение
+      - generic [ref=f58e354]:
+        - generic [ref=f58e356]:
+          - generic [ref=f58e357]: Текущие видео
+          - heading "Творчество наших студентов" [level=2] [ref=f58e358]
+        - generic [ref=f58e360]:
+          - img [ref=f58e367] [cursor=pointer]
+          - img [ref=f58e375] [cursor=pointer]
+          - img [ref=f58e383] [cursor=pointer]
+          - img [ref=f58e391] [cursor=pointer]
+          - img [ref=f58e399] [cursor=pointer]
+      - generic [ref=f58e403]:
+        - generic [ref=f58e404]:
+          - generic [ref=f58e405]: Есть вопрос?
+          - heading "Заполните свои данные" [level=2] [ref=f58e406]
+          - paragraph [ref=f58e407]: Оставьте свой номер телефона, и мы ответим на все ваши вопросы!
+          - generic [ref=f58e408]:
+            - generic [ref=f58e409]:
+              - generic [ref=f58e410]: Ваше имя
+              - textbox "Укажите полное имя" [ref=f58e411]
+            - generic [ref=f58e412]:
+              - generic [ref=f58e413]: Номер телефона
+              - generic [ref=f58e414]:
+                - generic: "+998"
+                - textbox "88 131 65 67" [ref=f58e415]
+            - generic [ref=f58e416]:
+              - generic [ref=f58e417]: Направление
+              - combobox [ref=f58e419] [cursor=pointer]:
+                - option "Выберите направление"
+                - option "После 9 класса (2 года)" [selected]
+                - option "После 11 класса (3 года)"
+            - generic [ref=f58e420] [cursor=pointer]:
+              - checkbox "Я согласен на обработку моих персональных данных и с Topex Texnikumi — условиями конфиденциальности." [ref=f58e421]
+              - generic [ref=f58e422]:
+                - text: Я согласен на обработку моих персональных данных и с
+                - link "Topex Texnikumi" [ref=f58e423]:
+                  - /url: /
+                - text: — условиями конфиденциальности.
+            - button "Подать заявку" [ref=f58e425] [cursor=pointer]
+        - img "Topex talabasi" [ref=f58e429]
+    - contentinfo [ref=f58e430]:
+      - img
+      - generic [ref=f58e431]:
+        - generic [ref=f58e432]:
+          - generic [ref=f58e433]:
+            - link "Topex" [ref=f58e434] [cursor=pointer]:
+              - /url: /
+              - img "Topex" [ref=f58e435]
+            - generic [ref=f58e436]:
+              - link "Telegram" [ref=f58e437] [cursor=pointer]:
+                - /url: "@topextexnikum"
+                - img [ref=f58e438]
+              - link "Instagram" [ref=f58e440] [cursor=pointer]:
+                - /url: https://www.instagram.com/topextexnikum?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
+                - img [ref=f58e441]
+              - link "YouTube" [ref=f58e445] [cursor=pointer]:
+                - /url: https://www.youtube.com/@topextexnikum
+                - img [ref=f58e446]
+              - link "Facebook" [ref=f58e448] [cursor=pointer]:
+                - /url: https://www.facebook.com/topextexnikum
+                - img [ref=f58e449]
+            - generic [ref=f58e451]:
+              - button "Лицензия техникума № 420567" [ref=f58e452] [cursor=pointer]:
+                - img "Лицензия техникума № 420567" [ref=f58e453]
+                - img [ref=f58e455]
+              - button "Направления" [ref=f58e458] [cursor=pointer]:
+                - img "Направления" [ref=f58e459]
+                - img [ref=f58e461]
+          - generic [ref=f58e464]:
+            - heading "О техникуме" [level=4] [ref=f58e465]
+            - list [ref=f58e466]:
+              - listitem [ref=f58e467]:
+                - link "О нас" [ref=f58e468] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=f58e469]:
+                - link "Новости" [ref=f58e470] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=f58e471]:
+                - link "Направления" [ref=f58e472] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=f58e473]:
+                - link "Вакансии" [ref=f58e474] [cursor=pointer]:
+                  - /url: /vakansiyalar
+              - listitem [ref=f58e475]:
+                - link "Команда \"Topex\"" [ref=f58e476] [cursor=pointer]:
+                  - /url: /gallery
+              - listitem [ref=f58e477]:
+                - link "Новости" [ref=f58e478] [cursor=pointer]:
+                  - /url: /blog
+          - generic [ref=f58e479]:
+            - heading "Абитуриентам" [level=4] [ref=f58e480]
+            - list [ref=f58e481]:
+              - listitem [ref=f58e482]:
+                - link "Направления" [ref=f58e483] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=f58e484]:
+                - link "Результат вступительного экзамена" [ref=f58e485] [cursor=pointer]:
+                  - /url: /imtihon-natijalari
+          - generic [ref=f58e486]:
+            - heading "Студентам" [level=4] [ref=f58e487]
+            - list [ref=f58e488]:
+              - listitem [ref=f58e489]:
+                - link "Получить договор" [ref=f58e490] [cursor=pointer]:
+                  - /url: /profile
+              - listitem [ref=f58e491]:
+                - link "Команда \"Topex\"" [ref=f58e492] [cursor=pointer]:
+                  - /url: /gallery
+              - listitem [ref=f58e493]:
+                - link "Website developer" [ref=f58e494] [cursor=pointer]:
+                  - /url: https://www.instagram.com/d.a_08.27?igsh=MXh2ZGhjdzY2OWJkZg==
+          - generic [ref=f58e495]:
+            - heading "Контакты" [level=4] [ref=f58e496]
+            - list [ref=f58e497]:
+              - listitem [ref=f58e498]:
+                - link "+998 78 777 44 77" [ref=f58e499] [cursor=pointer]:
+                  - /url: tel:+998787774477
+                  - img [ref=f58e500]
+                  - generic [ref=f58e502]: +998 78 777 44 77
+              - listitem [ref=f58e503]:
+                - link "topexinfo@topexqabul.uz" [ref=f58e504] [cursor=pointer]:
+                  - /url: mailto:topexinfo@topexqabul.uz
+                  - img [ref=f58e505]
+                  - generic [ref=f58e508]: topexinfo@topexqabul.uz
+              - listitem [ref=f58e509]:
+                - img [ref=f58e510]
+                - generic [ref=f58e513]: Сиргали-3, улица Янги Сиргали йули, 49
+        - generic [ref=f58e514]:
+          - paragraph [ref=f58e515]: ©Copyright 2026
+          - link "Публичная оферта" [ref=f58e516] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications Alt+T"

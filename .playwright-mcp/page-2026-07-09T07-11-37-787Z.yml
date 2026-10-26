@@ -1,0 +1,259 @@
+- generic [ref=f31e2]:
+  - banner [ref=f31e4]:
+    - generic [ref=f31e5]:
+      - generic [ref=f31e6]:
+        - button "Главное меню" [ref=f31e7] [cursor=pointer]:
+          - img [ref=f31e8]
+        - link "Google Search Console" [ref=f31e12] [cursor=pointer]:
+          - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+          - img [ref=f31e13]
+      - generic [ref=f31e14]:
+        - search [ref=f31e16]:
+          - generic [ref=f31e22]:
+            - textbox [disabled] [ref=f31e23]: Проверка всех URL на ресурсе https://topextexnikum.uz/
+            - combobox "Проверка всех URL на ресурсе https://topextexnikum.uz/" [expanded] [active] [ref=f31e24]
+          - button "Поиск" [ref=f31e25] [cursor=pointer]:
+            - img [ref=f31e26]
+        - generic [ref=f31e29]:
+          - generic [ref=f31e31]:
+            - button "Справка" [ref=f31e33] [cursor=pointer]:
+              - generic [ref=f31e36]: 
+            - button "Пользовательские настройки" [ref=f31e38] [cursor=pointer]:
+              - img [ref=f31e41]
+          - 'button "Непрочитанных сообщений: 2" [ref=f31e45] [cursor=pointer]':
+            - generic [ref=f31e47]:
+              - generic [ref=f31e48]: 
+              - generic [ref=f31e50]: "2"
+      - generic [ref=f31e52]:
+        - button "Приложения Google" [ref=f31e56] [cursor=pointer]:
+          - img [ref=f31e57]
+        - 'button "Аккаунт Google: Otabek Gayratov (gayraotabek4@gmail.com)" [ref=f31e62] [cursor=pointer]':
+          - img [ref=f31e64]
+  - dialog "navigational drawer" [ref=f31e68]:
+    - navigation "Основной" [ref=f31e71]:
+      - button "Ресурс" [ref=f31e75] [cursor=pointer]:
+        - img "значок сайта" [ref=f31e77]
+        - combobox "https://topextexnikum.uz/" [ref=f31e85]
+        - generic [ref=f31e86]: 
+      - generic [ref=f31e87]:
+        - generic [ref=f31e88]:
+          - generic [ref=f31e89]:
+            - link "Обзор" [ref=f31e91] [cursor=pointer]:
+              - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e93]: home
+              - generic [ref=f31e95]: Обзор
+            - link "Статистика" [ref=f31e98] [cursor=pointer]:
+              - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e100]: lightbulb_2
+              - generic [ref=f31e102]: Статистика
+            - link "Эффективность" [ref=f31e105] [cursor=pointer]:
+              - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e107]: trending_up
+              - generic [ref=f31e109]: Эффективность
+            - button "Проверка URL" [ref=f31e112] [cursor=pointer]:
+              - generic [ref=f31e114]: search
+              - generic [ref=f31e116]: Проверка URL
+          - generic [ref=f31e120]:
+            - generic [ref=f31e122]:
+              - generic [ref=f31e125]: Индексирование
+              - button "Раздел \"Индексирование\" в отчете" [expanded] [ref=f31e127] [cursor=pointer]:
+                - generic [ref=f31e129]: keyboard_arrow_up
+            - generic [ref=f31e133]:
+              - link "Страницы" [ref=f31e135] [cursor=pointer]:
+                - /url: ./search-console/index?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e137]: file_copy
+                - generic [ref=f31e139]: Страницы
+              - link "Файлы Sitemap" [ref=f31e142] [cursor=pointer]:
+                - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e144]: account_tree
+                - generic [ref=f31e146]: Файлы Sitemap
+              - link "Удаления" [ref=f31e149] [cursor=pointer]:
+                - /url: ./search-console/removals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e151]: visibility_off
+                - generic [ref=f31e153]: Удаления
+          - generic [ref=f31e157]:
+            - generic [ref=f31e159]:
+              - generic [ref=f31e162]: Качество
+              - button "Раздел \"Качество\" в отчете" [expanded] [ref=f31e164] [cursor=pointer]:
+                - generic [ref=f31e166]: keyboard_arrow_up
+            - generic [ref=f31e170]:
+              - link "Core Web Vitals" [ref=f31e172] [cursor=pointer]:
+                - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e174]: speed
+                - generic [ref=f31e176]: Core Web Vitals
+              - link "HTTPS" [ref=f31e179] [cursor=pointer]:
+                - /url: ./search-console/https?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e181]: lock
+                - generic [ref=f31e183]: HTTPS
+          - generic [ref=f31e187]:
+            - generic [ref=f31e189]:
+              - generic [ref=f31e192]: Улучшения
+              - button "Раздел \"Улучшения\" в отчете" [expanded] [ref=f31e194] [cursor=pointer]:
+                - generic [ref=f31e196]: keyboard_arrow_up
+            - link "Структурированные данные, не поддающиеся анализу" [ref=f31e202] [cursor=pointer]:
+              - /url: ./search-console/r/unknown-type?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e204]: layers
+              - generic [ref=f31e206]: Структурированные данные, не поддающиеся анализу
+          - generic [ref=f31e212]:
+            - generic [ref=f31e215]: Проблемы безопасности и меры, принятые вручную
+            - button "Раздел \"Проблемы безопасности и меры, принятые вручную\" в отчете" [ref=f31e217] [cursor=pointer]:
+              - generic [ref=f31e219]: keyboard_arrow_down
+          - generic [ref=f31e220]:
+            - link "Отчет о ссылках" [ref=f31e222] [cursor=pointer]:
+              - /url: ./search-console/links?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e224]: link_2
+              - generic [ref=f31e226]: Ссылки
+            - link "Достижения" [ref=f31e229] [cursor=pointer]:
+              - /url: ./search-console/achievements?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e231]: trophy
+              - generic [ref=f31e233]: Достижения
+            - link "Настройки" [ref=f31e236] [cursor=pointer]:
+              - /url: ./search-console/settings?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e238]: settings
+              - generic [ref=f31e240]: Настройки
+        - generic [ref=f31e242]:
+          - generic [ref=f31e244]:
+            - button "Отправить отзыв" [ref=f31e246] [cursor=pointer]:
+              - generic [ref=f31e248]: feedback
+              - generic [ref=f31e250]: Отправить отзыв
+            - button "Общие сведения о Search Console" [ref=f31e253] [cursor=pointer]:
+              - generic [ref=f31e255]: info
+              - generic [ref=f31e257]: Общие сведения о Search Console
+          - generic [ref=f31e261]:
+            - link "Конфиденциальность" [ref=f31e262] [cursor=pointer]:
+              - /url: https://myaccount.google.com/privacypolicy?hl=ru
+            - link "Условия использования" [ref=f31e263] [cursor=pointer]:
+              - /url: https://myaccount.google.com/termsofservice?hl=ru
+  - generic [ref=f31e264]:
+    - generic [ref=f31e265]:
+      - navigation "Строки навигации" [ref=f31e270]:
+        - heading "Обзор" [level=1] [ref=f31e273]
+      - main [ref=f31e277]:
+        - generic [ref=f31e278]:
+          - generic [ref=f31e283]:
+            - generic [ref=f31e284]:
+              - generic [ref=f31e285]: lightbulb_outline
+              - generic [ref=f31e286]: Узнайте, насколько ваш сайт эффективен в Поиске
+            - generic [ref=f31e289]:
+              - generic [ref=f31e291]: chevron_right
+              - generic [ref=f31e292]: Узнать
+              - link "Узнать" [ref=f31e293] [cursor=pointer]:
+                - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+          - generic [ref=f31e295]:
+            - generic [ref=f31e296]:
+              - generic [ref=f31e297]: Эффективность
+              - generic [ref=f31e300]:
+                - generic [ref=f31e302]: chevron_right
+                - generic [ref=f31e303]: Полный отчет
+                - link "Полный отчет" [ref=f31e304] [cursor=pointer]:
+                  - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+            - generic [ref=f31e307]:
+              - generic [ref=f31e312]: Всего 0 кликов в веб-поиске
+              - img [ref=f31e316]:
+                - generic [ref=f31e317]:
+                  - generic [ref=f31e320]: 07.07.2026
+                  - generic [ref=f31e321]:
+                    - generic [ref=f31e323]: "3"
+                    - generic [ref=f31e325]: "2"
+                    - generic [ref=f31e327]: "1"
+                    - generic [ref=f31e329]: "0"
+          - generic [ref=f31e333]:
+            - generic [ref=f31e334]:
+              - generic [ref=f31e335]: Индексирование
+              - generic [ref=f31e338]:
+                - generic [ref=f31e340]: chevron_right
+                - generic [ref=f31e341]: Полный отчет
+                - link "Полный отчет" [ref=f31e342] [cursor=pointer]:
+                  - /url: ./search-console/index?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+            - generic [ref=f31e345]:
+              - generic [ref=f31e346]: 
+              - generic [ref=f31e347]: Данные обрабатываются, повторите попытку приблизительно через день.
+          - generic [ref=f31e349]:
+            - generic [ref=f31e351]: Качество
+            - table [ref=f31e355]:
+              - rowgroup [ref=f31e356]:
+                - row "Тип Хорошо Нужно исправить низкое качество страницы Тенденция" [ref=f31e357]:
+                  - columnheader "Тип" [ref=f31e358]
+                  - columnheader [ref=f31e359]
+                  - columnheader "Хорошо" [ref=f31e360]
+                  - columnheader "Нужно исправить" [ref=f31e361]
+                  - columnheader "низкое качество страницы" [ref=f31e362]
+                  - columnheader "Тенденция" [ref=f31e363]
+                  - columnheader [ref=f31e364]
+              - rowgroup [ref=f31e365]:
+                - row "Core Web Vitals Мобильный ПК Нет данных Нет данных Нет данных Нет данных Нет данных Нет данных" [ref=f31e366]:
+                  - cell "Core Web Vitals" [ref=f31e367]:
+                    - generic [ref=f31e369]: Core Web Vitals
+                  - cell "Мобильный ПК" [ref=f31e370]:
+                    - generic [ref=f31e372]:
+                      - generic [ref=f31e373]: Мобильный
+                      - generic [ref=f31e374]: ПК
+                  - cell "Нет данных Нет данных" [ref=f31e375]:
+                    - generic [ref=f31e376]:
+                      - generic [ref=f31e377]: Нет данных
+                      - generic [ref=f31e378]: Нет данных
+                  - cell "Нет данных Нет данных" [ref=f31e379]:
+                    - generic [ref=f31e380]:
+                      - generic [ref=f31e381]: Нет данных
+                      - generic [ref=f31e382]: Нет данных
+                  - cell "Нет данных Нет данных" [ref=f31e383]:
+                    - generic [ref=f31e384]:
+                      - generic [ref=f31e385]: Нет данных
+                      - generic [ref=f31e386]: Нет данных
+                  - cell [ref=f31e387]
+                - row "HTTPS Не HTTPS" [ref=f31e388]:
+                  - columnheader [ref=f31e389]
+                  - columnheader [ref=f31e390]
+                  - columnheader "HTTPS" [ref=f31e391]
+                  - columnheader [ref=f31e392]
+                  - columnheader "Не HTTPS" [ref=f31e393]
+                  - columnheader [ref=f31e394]
+                  - columnheader [ref=f31e395]
+                - row "HTTPS 1 0 Открыть отчет" [ref=f31e396]:
+                  - cell "HTTPS" [ref=f31e397]:
+                    - generic [ref=f31e399]: HTTPS
+                  - cell [ref=f31e400]
+                  - cell "1" [ref=f31e401]:
+                    - generic [ref=f31e403]: "1"
+                  - cell [ref=f31e404]
+                  - cell "0" [ref=f31e405]:
+                    - generic [ref=f31e407]: "0"
+                  - cell [ref=f31e408]:
+                    - img [ref=f31e411]
+                  - cell "Открыть отчет" [ref=f31e412]:
+                    - button "Открыть отчет" [ref=f31e415] [cursor=pointer]:
+                      - generic [ref=f31e416]: chevron_right
+          - generic [ref=f31e418]:
+            - generic [ref=f31e420]: Улучшения
+            - table [ref=f31e424]:
+              - rowgroup [ref=f31e425]:
+                - row "Тип Страница без ошибок Недопустимое значение Тенденция" [ref=f31e426]:
+                  - columnheader "Тип" [ref=f31e427]
+                  - columnheader "Страница без ошибок" [ref=f31e428]
+                  - columnheader "Недопустимое значение" [ref=f31e429]
+                  - columnheader "Тенденция" [ref=f31e430]
+                  - columnheader [ref=f31e431]
+              - rowgroup [ref=f31e432]:
+                - row "Структурированные данные, не поддающиеся анализу 1 Открыть отчет" [ref=f31e433]:
+                  - cell "Структурированные данные, не поддающиеся анализу" [ref=f31e434]:
+                    - generic [ref=f31e436]: Структурированные данные, не поддающиеся анализу
+                  - cell [ref=f31e437]
+                  - cell "1" [ref=f31e438]:
+                    - generic [ref=f31e440]: "1"
+                  - cell [ref=f31e441]:
+                    - img [ref=f31e444]
+                  - cell "Открыть отчет" [ref=f31e445]:
+                    - button "Открыть отчет" [ref=f31e448] [cursor=pointer]:
+                      - generic [ref=f31e449]: chevron_right
+    - generic [ref=f31e451]:
+      - generic [ref=f31e452]:
+        - generic [ref=f31e453]: 
+        - generic [ref=f31e454]: Обзор
+      - generic [ref=f31e455]: Изучите информацию об эффективности вашего ресурса в Google, его индексировании и о том, насколько успешны были внесенные вами улучшения. Чтобы получить более подробные сведения, откройте отчет.
+      - generic [ref=f31e456]:
+        - generic [ref=f31e459]:
+          - generic [ref=f31e461]: Подробнее
+          - generic "Подробнее" [ref=f31e462]
+        - generic [ref=f31e465]:
+          - generic [ref=f31e467]: Закрыть
+          - generic "Закрыть" [ref=f31e468]

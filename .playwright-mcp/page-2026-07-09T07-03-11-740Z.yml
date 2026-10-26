@@ -1,0 +1,198 @@
+- generic [ref=f10e2]:
+  - banner [ref=f10e4]:
+    - generic [ref=f10e5]:
+      - generic [ref=f10e6]:
+        - button "Главное меню" [ref=f10e7] [cursor=pointer]:
+          - img [ref=f10e8]
+        - link "Google Search Console" [ref=f10e12] [cursor=pointer]:
+          - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+          - img [ref=f10e13]
+      - generic [ref=f10e14]:
+        - search [ref=f10e16]:
+          - generic [ref=f10e22]:
+            - textbox [disabled] [ref=f10e23]: Проверка всех URL на ресурсе https://topextexnikum.uz/
+            - combobox "Проверка всех URL на ресурсе https://topextexnikum.uz/" [ref=f10e24]
+          - button "Поиск" [ref=f10e25] [cursor=pointer]:
+            - img [ref=f10e26]
+        - generic [ref=f10e29]:
+          - generic [ref=f10e31]:
+            - button "Справка" [ref=f10e33] [cursor=pointer]:
+              - generic [ref=f10e36]: 
+            - button "Пользовательские настройки" [ref=f10e38] [cursor=pointer]:
+              - img [ref=f10e41]
+          - button "Сообщения" [ref=f10e45] [cursor=pointer]:
+            - generic [ref=f10e48]: 
+      - generic [ref=f10e50]:
+        - button "Приложения Google" [ref=f10e54] [cursor=pointer]:
+          - img [ref=f10e55]
+        - 'button "Аккаунт Google: Otabek Gayratov (gayraotabek4@gmail.com)" [ref=f10e60] [cursor=pointer]':
+          - img [ref=f10e62]
+  - dialog "navigational drawer" [ref=f10e66]:
+    - navigation "Основной" [ref=f10e69]:
+      - button "Ресурс" [ref=f10e73] [cursor=pointer]:
+        - img "значок сайта" [ref=f10e75]
+        - combobox "https://topextexnikum.uz/" [ref=f10e83]
+        - generic [ref=f10e84]: 
+      - generic [ref=f10e85]:
+        - generic [ref=f10e86]:
+          - generic [ref=f10e87]:
+            - link "Обзор" [ref=f10e89] [cursor=pointer]:
+              - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f10e91]: home
+              - generic [ref=f10e93]: Обзор
+            - link "Статистика" [ref=f10e96] [cursor=pointer]:
+              - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f10e98]: lightbulb_2
+              - generic [ref=f10e100]: Статистика
+            - link "Эффективность" [ref=f10e103] [cursor=pointer]:
+              - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f10e105]: trending_up
+              - generic [ref=f10e107]: Эффективность
+            - button "Проверка URL" [ref=f10e110] [cursor=pointer]:
+              - generic [ref=f10e112]: search
+              - generic [ref=f10e114]: Проверка URL
+          - generic [ref=f10e118]:
+            - generic [ref=f10e120]:
+              - generic [ref=f10e123]: Индексирование
+              - button "Раздел \"Индексирование\" в отчете" [expanded] [ref=f10e125] [cursor=pointer]:
+                - generic [ref=f10e127]: keyboard_arrow_up
+            - generic [ref=f10e131]:
+              - link "Страницы" [ref=f10e133] [cursor=pointer]:
+                - /url: ./search-console/index?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f10e135]: file_copy
+                - generic [ref=f10e137]: Страницы
+              - link "Файлы Sitemap" [ref=f10e140] [cursor=pointer]:
+                - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f10e142]: account_tree
+                - generic [ref=f10e144]: Файлы Sitemap
+              - link "Удаления" [ref=f10e147] [cursor=pointer]:
+                - /url: ./search-console/removals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f10e149]: visibility_off
+                - generic [ref=f10e151]: Удаления
+          - generic [ref=f10e155]:
+            - generic [ref=f10e157]:
+              - generic [ref=f10e160]: Качество
+              - button "Раздел \"Качество\" в отчете" [expanded] [ref=f10e162] [cursor=pointer]:
+                - generic [ref=f10e164]: keyboard_arrow_up
+            - generic [ref=f10e168]:
+              - link "Core Web Vitals" [ref=f10e170] [cursor=pointer]:
+                - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f10e172]: speed
+                - generic [ref=f10e174]: Core Web Vitals
+              - link "HTTPS" [ref=f10e177] [cursor=pointer]:
+                - /url: ./search-console/https?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f10e179]: lock
+                - generic [ref=f10e181]: HTTPS
+          - generic [ref=f10e185]:
+            - generic [ref=f10e187]:
+              - generic [ref=f10e190]: Улучшения
+              - button "Раздел \"Улучшения\" в отчете" [expanded] [ref=f10e192] [cursor=pointer]:
+                - generic [ref=f10e194]: keyboard_arrow_up
+            - link "Структурированные данные, не поддающиеся анализу" [ref=f10e200] [cursor=pointer]:
+              - /url: ./search-console/r/unknown-type?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f10e202]: layers
+              - generic [ref=f10e204]: Структурированные данные, не поддающиеся анализу
+          - generic [ref=f10e210]:
+            - generic [ref=f10e213]: Проблемы безопасности и меры, принятые вручную
+            - button "Раздел \"Проблемы безопасности и меры, принятые вручную\" в отчете" [ref=f10e215] [cursor=pointer]:
+              - generic [ref=f10e217]: keyboard_arrow_down
+          - generic [ref=f10e218]:
+            - link "Отчет о ссылках" [ref=f10e220] [cursor=pointer]:
+              - /url: ./search-console/links?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f10e222]: link_2
+              - generic [ref=f10e224]: Ссылки
+            - link "Достижения" [ref=f10e227] [cursor=pointer]:
+              - /url: ./search-console/achievements?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f10e229]: trophy
+              - generic [ref=f10e231]: Достижения
+            - link "Настройки" [ref=f10e234] [cursor=pointer]:
+              - /url: ./search-console/settings?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f10e236]: settings
+              - generic [ref=f10e238]: Настройки
+        - generic [ref=f10e240]:
+          - generic [ref=f10e242]:
+            - button "Отправить отзыв" [ref=f10e244] [cursor=pointer]:
+              - generic [ref=f10e246]: feedback
+              - generic [ref=f10e248]: Отправить отзыв
+            - button "Общие сведения о Search Console" [ref=f10e251] [cursor=pointer]:
+              - generic [ref=f10e253]: info
+              - generic [ref=f10e255]: Общие сведения о Search Console
+          - generic [ref=f10e259]:
+            - link "Конфиденциальность" [ref=f10e260] [cursor=pointer]:
+              - /url: https://myaccount.google.com/privacypolicy?hl=ru
+            - link "Условия использования" [ref=f10e261] [cursor=pointer]:
+              - /url: https://myaccount.google.com/termsofservice?hl=ru
+  - generic [ref=f10e263]:
+    - navigation "Строки навигации" [ref=f10e268]:
+      - heading "Файлы Sitemap" [level=1] [ref=f10e271]
+    - main [ref=f10e275]:
+      - generic [ref=f10e278]:
+        - generic [ref=f10e279]: Добавьте файл Sitemap
+        - generic [ref=f10e280]:
+          - generic [ref=f10e281]:
+            - generic [ref=f10e282]: https://topextexnikum.uz/
+            - generic [ref=f10e287]:
+              - textbox "URL файла Sitemap" [active] [ref=f10e288]
+              - generic: URL файла Sitemap
+          - button "Отправить" [disabled] [ref=f10e291]:
+            - generic [ref=f10e294]: Отправить
+      - generic [ref=f10e298]:
+        - generic [ref=f10e299]:
+          - heading "Файлы Sitemap на проверке" [level=1] [ref=f10e300]:
+            - generic [ref=f10e301]: Файлы Sitemap на проверке
+          - button "Фильтрация по строкам таблицы" [ref=f10e304] [cursor=pointer]:
+            - generic [ref=f10e307]: 
+        - table [ref=f10e309]:
+          - rowgroup [ref=f10e310]:
+            - row "Sitemap Тип Отправлено Дата последней обработки Статус Количество выявленных страниц Количество выявленных видео" [ref=f10e311]:
+              - columnheader "Sitemap" [ref=f10e312]:
+                - text: Sitemap
+                - img [ref=f10e314] [cursor=pointer]
+              - columnheader "Тип" [ref=f10e316]:
+                - text: Тип
+                - img [ref=f10e318] [cursor=pointer]
+              - columnheader "Отправлено" [ref=f10e320]:
+                - text: Отправлено
+                - img [ref=f10e322] [cursor=pointer]
+              - columnheader "Дата последней обработки" [ref=f10e324]:
+                - text: Дата последней обработки
+                - img [ref=f10e326] [cursor=pointer]
+              - columnheader "Статус" [ref=f10e328]:
+                - text: Статус
+                - img [ref=f10e330] [cursor=pointer]
+              - columnheader "Количество выявленных страниц" [ref=f10e332]:
+                - img [ref=f10e334] [cursor=pointer]
+                - text: Количество выявленных страниц
+              - columnheader "Количество выявленных видео" [ref=f10e336]:
+                - img [ref=f10e338] [cursor=pointer]
+                - text: Количество выявленных видео
+              - columnheader [ref=f10e340]
+          - rowgroup [ref=f10e341]:
+            - row "/sitemap.xml Sitemap 8 июл. 2026 г. 9 июл. 2026 г. Успешно 10 0" [ref=f10e342] [cursor=pointer]:
+              - cell "/sitemap.xml" [ref=f10e343]
+              - cell "Sitemap" [ref=f10e344]
+              - cell "8 июл. 2026 г." [ref=f10e345]
+              - cell "9 июл. 2026 г." [ref=f10e346]
+              - cell "Успешно" [ref=f10e347]:
+                - generic [ref=f10e348]: Успешно
+              - cell "10" [ref=f10e349]
+              - cell "0" [ref=f10e350]
+              - cell [ref=f10e351]:
+                - button [ref=f10e353]:
+                  - generic [ref=f10e356]: 
+        - generic [ref=f10e359]:
+          - generic [ref=f10e361]:
+            - generic [ref=f10e362]: "Строк на странице:"
+            - listbox "Количество строк на страницу" [ref=f10e363] [cursor=pointer]:
+              - option "5"
+              - option "10" [selected] [ref=f10e364]
+              - option "25"
+              - option "50"
+              - option "100"
+              - option "250"
+              - option "500"
+          - generic [ref=f10e365]:
+            - generic [ref=f10e366]: 1–1 из 1
+            - generic [ref=f10e367]:
+              - generic [ref=f10e369]: 
+              - generic [ref=f10e371]: 

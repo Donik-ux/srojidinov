@@ -1,0 +1,187 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e7]:
+    - banner [ref=f1e8]:
+      - generic [ref=f1e11]:
+        - link "Topex" [ref=f1e12] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f1e14]:
+          - button "Адрес Сиргали-3, улица Янги Сиргали йули, 49" [ref=f1e15] [cursor=pointer]:
+            - generic [ref=f1e20]:
+              - generic [ref=f1e21]: Адрес
+              - generic [ref=f1e22]: Сиргали-3, улица Янги Сиргали йули, 49
+          - link "Контакт +998 55 588 44 77 +998 78 777 44 77" [ref=f1e24] [cursor=pointer]:
+            - /url: tel:+998555884477
+            - generic [ref=f1e28]:
+              - generic [ref=f1e29]: Контакт
+              - generic [ref=f1e30]: +998 55 588 44 77
+              - generic [ref=f1e31]: +998 78 777 44 77
+          - link "E-mail info@topex.uz" [ref=f1e33] [cursor=pointer]:
+            - /url: mailto:info@topex.uz
+            - generic [ref=f1e38]:
+              - generic [ref=f1e39]: E-mail
+              - generic [ref=f1e40]: info@topex.uz
+      - navigation [ref=f1e41]:
+        - generic [ref=f1e43]:
+          - generic [ref=f1e44]:
+            - link "О нас" [ref=f1e45] [cursor=pointer]:
+              - /url: /
+            - link "Направления" [ref=f1e48] [cursor=pointer]:
+              - /url: /courses
+            - link "Новости" [ref=f1e51] [cursor=pointer]:
+              - /url: /blog
+            - link "Видео" [ref=f1e54] [cursor=pointer]:
+              - /url: /videos
+            - link "Контакты" [ref=f1e57] [cursor=pointer]:
+              - /url: /aloqalar
+          - generic [ref=f1e61]:
+            - button "🇷🇺 RU" [ref=f1e63] [cursor=pointer]:
+              - generic [ref=f1e64]: 🇷🇺
+              - generic [ref=f1e65]: RU
+            - link "Регистрация" [ref=f1e68] [cursor=pointer]:
+              - /url: /register
+            - link "Войти" [ref=f1e69] [cursor=pointer]:
+              - /url: /login
+    - main [ref=f1e70]:
+      - generic [ref=f1e74]:
+        - heading "Контакты" [level=1] [ref=f1e75]
+        - paragraph [ref=f1e76]: Свяжитесь с нами любым удобным способом — ответим на все вопросы о поступлении и обучении.
+        - generic [ref=f1e77]:
+          - link "Главная" [ref=f1e78] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f1e84]: Контакты
+      - generic [ref=f1e87]:
+        - link [ref=f1e88] [cursor=pointer]:
+          - /url: "#map-section"
+          - heading "Наш адрес" [level=3] [ref=f1e93]
+          - paragraph [ref=f1e94]: Сиргали-3, улица Янги Сиргали йули, 49
+        - link [active] [ref=f1e95] [cursor=pointer]:
+          - /url: tel:+998555884477
+          - heading "Номер телефона" [level=3] [ref=f1e99]
+          - paragraph [ref=f1e100]: +998 55 588 44 77
+          - paragraph [ref=f1e101]: +998 78 777 44 77
+        - link [ref=f1e102] [cursor=pointer]:
+          - /url: mailto:info@topex.uz
+          - heading "E-mail" [level=3] [ref=f1e107]
+          - paragraph [ref=f1e108]: info@topex.uz
+        - link [ref=f1e109] [cursor=pointer]:
+          - /url: "#map-section"
+          - heading "Режим работы" [level=3] [ref=f1e114]
+          - paragraph [ref=f1e115]: "Пн-Сб: 8:00 - 18:00"
+      - generic [ref=f1e118]:
+        - generic [ref=f1e119]:
+          - generic [ref=f1e120]: Есть вопрос?
+          - heading "Заполните свои данные" [level=2] [ref=f1e121]
+          - paragraph [ref=f1e122]: Оставьте свой номер телефона, и мы ответим на все ваши вопросы!
+          - generic [ref=f1e123]:
+            - generic [ref=f1e124]:
+              - generic [ref=f1e125]: Ваше имя
+              - textbox "Укажите полное имя" [ref=f1e126]
+            - generic [ref=f1e127]:
+              - generic [ref=f1e128]: Номер телефона
+              - generic [ref=f1e129]:
+                - generic: "+998"
+                - textbox "88 131 65 67" [ref=f1e130]
+            - generic [ref=f1e131]:
+              - generic [ref=f1e132]: Направление
+              - combobox [ref=f1e134] [cursor=pointer]:
+                - option "Выберите направление"
+                - option "После 9 класса (2 года)" [selected]
+                - option "После 11 класса (3 года)"
+            - generic [ref=f1e135] [cursor=pointer]:
+              - checkbox "Я согласен на обработку моих персональных данных и с Topex Texnikumi — условиями конфиденциальности." [ref=f1e136]
+              - generic [ref=f1e137]:
+                - text: Я согласен на обработку моих персональных данных и с
+                - link "Topex Texnikumi" [ref=f1e138]:
+                  - /url: /
+                - text: — условиями конфиденциальности.
+            - button "Подать заявку" [ref=f1e140] [cursor=pointer]
+        - img "Topex talabasi" [ref=f1e144]
+      - generic [ref=f1e146]:
+        - heading "МЫ НА КАРТЕ!" [level=2] [ref=f1e147]
+        - generic [ref=f1e148]:
+          - button "Sergeli" [ref=f1e149] [cursor=pointer]
+          - button "Yunusobod" [ref=f1e150] [cursor=pointer]
+          - button "Chilonzor" [ref=f1e151] [cursor=pointer]
+        - generic [ref=f1e152]:
+          - iframe [ref=f1e154]:
+            
+          - link "Смотреть филиал Sergeli в Google Maps →" [ref=f1e159] [cursor=pointer]:
+            - /url: https://www.google.com/maps?q=41.211476,69.230987
+    - contentinfo [ref=f1e160]:
+      - generic [ref=f1e161]:
+        - generic [ref=f1e162]:
+          - generic [ref=f1e163]:
+            - link [ref=f1e164] [cursor=pointer]:
+              - /url: /
+              - img "Topex" [ref=f1e165]
+            - generic [ref=f1e166]:
+              - link "Telegram" [ref=f1e167] [cursor=pointer]:
+                - /url: https://t.me/topex_uz
+              - link "Instagram" [ref=f1e170] [cursor=pointer]:
+                - /url: https://www.instagram.com/topex.uz/
+              - link "YouTube" [ref=f1e175] [cursor=pointer]:
+                - /url: https://www.youtube.com/@topex.uz
+              - link "Facebook" [ref=f1e178] [cursor=pointer]:
+                - /url: https://www.facebook.com/topex.uz
+            - generic [ref=f1e181]:
+              - button [ref=f1e182] [cursor=pointer]:
+                - img "Лицензия техникума № 420567" [ref=f1e183]
+              - button [ref=f1e188] [cursor=pointer]:
+                - img "Направления" [ref=f1e189]
+          - generic [ref=f1e194]:
+            - heading "О техникуме" [level=4] [ref=f1e195]
+            - list [ref=f1e196]:
+              - listitem [ref=f1e197]:
+                - link "О нас" [ref=f1e198] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=f1e199]:
+                - link "Новости" [ref=f1e200] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=f1e201]:
+                - link "Вакансии" [ref=f1e202] [cursor=pointer]:
+                  - /url: /vakansiyalar
+              - listitem [ref=f1e203]:
+                - link "Команда \"Topex\"" [ref=f1e204] [cursor=pointer]:
+                  - /url: /gallery
+          - generic [ref=f1e205]:
+            - heading "Абитуриентам" [level=4] [ref=f1e206]
+            - list [ref=f1e207]:
+              - listitem [ref=f1e208]:
+                - link "Направления" [ref=f1e209] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=f1e210]:
+                - link "Вакансии" [ref=f1e211] [cursor=pointer]:
+                  - /url: /vakansiyalar
+              - listitem [ref=f1e212]:
+                - link "Результат вступительного экзамена" [ref=f1e213] [cursor=pointer]:
+                  - /url: /imtihon-natijalari
+              - listitem [ref=f1e214]:
+                - link "Цены" [ref=f1e215] [cursor=pointer]:
+                  - /url: /narx
+          - generic [ref=f1e216]:
+            - heading "Студентам" [level=4] [ref=f1e217]
+            - list [ref=f1e218]:
+              - listitem [ref=f1e219]:
+                - link "Получить договор" [ref=f1e220] [cursor=pointer]:
+                  - /url: /profile
+              - listitem [ref=f1e221]:
+                - link "Команда \"Topex\"" [ref=f1e222] [cursor=pointer]:
+                  - /url: /gallery
+          - generic [ref=f1e223]:
+            - heading "Контакты" [level=4] [ref=f1e224]
+            - list [ref=f1e225]:
+              - listitem [ref=f1e226]:
+                - link "+998 55 588 44 77" [ref=f1e227] [cursor=pointer]:
+                  - /url: tel:+998555884477
+                - link "+998 78 777 44 77" [ref=f1e231] [cursor=pointer]:
+                  - /url: tel:+998787774477
+              - listitem [ref=f1e235]:
+                - link "info@topex.uz" [ref=f1e236] [cursor=pointer]:
+                  - /url: mailto:info@topex.uz
+              - listitem [ref=f1e241]:
+                - generic [ref=f1e245]: Сиргали-3, улица Янги Сиргали йули, 49
+        - generic [ref=f1e246]:
+          - paragraph [ref=f1e247]: ©Copyright 2026
+          - link "Публичная оферта" [ref=f1e248] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications Alt+T"

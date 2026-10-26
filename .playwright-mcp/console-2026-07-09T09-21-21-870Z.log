@@ -1,0 +1,3 @@
+[    1452ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://topex-texnikumi.onrender.com/api/settings:0
+[    9436ms] [WARNING] The resource https://topextexnikum.uz/assets/images/hero/hero-3.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://topextexnikum.uz/aloqalar:0
+[    9436ms] [WARNING] The resource https://topextexnikum.uz/assets/images/hero/hero-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://topextexnikum.uz/aloqalar:0

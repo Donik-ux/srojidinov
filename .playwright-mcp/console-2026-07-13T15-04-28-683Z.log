@@ -1,0 +1,42 @@
+[     779ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://topex-texnikumi.onrender.com/api/settings:0
+[    1598ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3001/node_modules/.vite/deps/chunk-YZVM2MHU.js?v=8f9741ce:21550
+[    1668ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://localhost:3001/node_modules/.vite/deps/react-router-dom.js?v=8f9741ce:4426
+[    1668ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://localhost:3001/node_modules/.vite/deps/react-router-dom.js?v=8f9741ce:4426
+[    1751ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/health' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    1751ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/health:0
+[    2080ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/settings' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2080ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/settings:0
+[    2080ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/testimonials' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2080ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/testimonials:0
+[    2081ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/courses?limit=6' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2109ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/courses?limit=6:0
+[    2109ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/faq' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2109ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/faq:0
+[    2109ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/settings' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2109ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/settings:0
+[    2147ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/home-videos' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2147ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/home-videos:0
+[    2147ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/settings' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2148ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/settings:0
+[    2148ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/settings' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2148ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/settings:0
+[    2148ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/courses?limit=6' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2150ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/courses?limit=6:0
+[    2150ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/faq' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2151ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/faq:0
+[    2157ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/testimonials' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2157ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/testimonials:0
+[    2157ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/settings' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2157ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/settings:0
+[    2159ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/home-videos' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2159ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/home-videos:0
+[    2160ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/settings' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[    2160ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/settings:0
+[   12417ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/settings' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/courses:0
+[   12417ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/settings:0
+[   12417ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/courses?page=1&limit=12&category=&level=&search=' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/courses:0
+[   12423ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/courses?page=1&limit=12&category=&level=&search=:0
+[   12424ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/settings' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/courses:0
+[   12424ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/settings:0
+[   12425ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:10000/api/courses?page=1&limit=12&category=&level=&search=' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/courses:0
+[   12425ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:10000/api/courses?page=1&limit=12&category=&level=&search=:0

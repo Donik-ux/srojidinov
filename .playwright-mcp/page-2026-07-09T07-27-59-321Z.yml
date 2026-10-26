@@ -1,0 +1,142 @@
+- generic "Google Карты" [ref=f39e2]:
+  - generic [ref=f39e3]:
+    - application "Основной экран" [ref=f39e8]
+    - search [ref=f39e13]:
+      - generic [ref=f39e14]:
+        - combobox [ref=f39e16]: Topex
+        - button "Поиск" [ref=f39e18] [cursor=pointer]:
+          - generic [ref=f39e19]: 
+        - button "Закрыть" [ref=f39e21] [cursor=pointer]:
+          - generic [ref=f39e22]: 
+    - generic [ref=f39e23]:
+      - generic [ref=f39e24]:
+        - list [ref=f39e26]:
+          - listitem [ref=f39e27]:
+            - button "Меню" [ref=f39e28] [cursor=pointer]:
+              - generic [ref=f39e30]: 
+          - listitem [ref=f39e31]:
+            - button "Сохранено" [ref=f39e32] [cursor=pointer]:
+              - generic [ref=f39e34]: 
+              - generic [ref=f39e36]: Сохранено
+          - listitem [ref=f39e37]:
+            - button "Недавние" [disabled] [ref=f39e38]:
+              - generic [ref=f39e40]: 
+              - generic [ref=f39e42]: Недавние
+          - listitem [ref=f39e44]:
+            - button "Скачать приложение" [ref=f39e45] [cursor=pointer]:
+              - generic [ref=f39e47]: 
+              - generic [ref=f39e49]: Скачать приложение
+        - main "Topex" [ref=f39e54]:
+          - generic [ref=f39e55]:
+            - generic [ref=f39e56]:
+              - 'button "Фото: Topex" [active] [ref=f39e58] [cursor=pointer]':
+                - img [ref=f39e59]
+              - button "Посмотреть фото" [ref=f39e60] [cursor=pointer]:
+                - generic [ref=f39e61]: 
+                - generic [ref=f39e62]: Посмотреть фото
+            - generic [ref=f39e65]:
+              - heading "Topex" [level=1] [ref=f39e67]: Topex
+              - button "Образовательный центр" [ref=f39e73]
+            - region "Действия для места \"Topex\"" [ref=f39e76]:
+              - button "Проложить маршрут" [ref=f39e78] [cursor=pointer]:
+                - generic [ref=f39e80]: 
+                - generic [ref=f39e81]: Проложить маршрут
+              - button "Сохранить" [ref=f39e83] [cursor=pointer]:
+                - generic [ref=f39e85]: 
+                - generic [ref=f39e86]: Сохранить
+              - button "Искать поблизости" [ref=f39e88] [cursor=pointer]:
+                - generic [ref=f39e90]: 
+                - generic [ref=f39e91]: Искать поблизости
+              - button "Отправить на телефон" [ref=f39e93] [cursor=pointer]:
+                - generic [ref=f39e95]: 
+                - generic [ref=f39e96]: Отправить на телефон
+              - button "Поделиться" [ref=f39e98] [cursor=pointer]:
+                - generic [ref=f39e100]: 
+                - generic [ref=f39e101]: Поделиться
+            - region "Информация о месте \"Topex\"" [ref=f39e104]:
+              - generic [ref=f39e105]:
+                - 'button "Адрес: Sergiliy, 180130, Тоshkent, Toshkent, Узбекистан" [ref=f39e106] [cursor=pointer]':
+                  - generic [ref=f39e107]:
+                    - generic [ref=f39e109]: 
+                    - generic [ref=f39e111]: Sergiliy, 180130, Тоshkent, Toshkent, Узбекистан
+                - button "Скопировать адрес" [ref=f39e114] [cursor=pointer]:
+                  - generic [ref=f39e116]: 
+              - button "Часы работы Закрыто · Откроется в 00:00 (ср) Показать часы работы за неделю" [ref=f39e118] [cursor=pointer]:
+                - img "Часы работы" [ref=f39e119]: 
+                - generic [ref=f39e121]:
+                  - generic [ref=f39e123]: Закрыто · Откроется в 00:00 (ср)
+                  - img "Показать часы работы за неделю" [ref=f39e124]: 
+              - generic [ref=f39e125]:
+                - 'link "Сайт: topex.com" [ref=f39e126] [cursor=pointer]':
+                  - /url: https://topex.com/
+                  - generic [ref=f39e127]:
+                    - generic [ref=f39e129]: 
+                    - generic [ref=f39e131]: topex.com
+                - generic [ref=f39e132]:
+                  - link "Перейти на сайт" [ref=f39e134] [cursor=pointer]:
+                    - /url: https://topex.com/
+                    - generic [ref=f39e136]: 
+                  - button "Скопировать ссылку на сайт" [ref=f39e138] [cursor=pointer]:
+                    - generic [ref=f39e140]: 
+              - generic [ref=f39e141]:
+                - 'button "Телефон: +998 94 740 31 21" [ref=f39e142] [cursor=pointer]':
+                  - generic [ref=f39e143]:
+                    - generic [ref=f39e145]: 
+                    - generic [ref=f39e147]: +998 94 740 31 21
+                - generic [ref=f39e148]:
+                  - button "Скопировать номер" [ref=f39e150] [cursor=pointer]:
+                    - generic [ref=f39e152]: 
+                  - link "Позвонить по этому номеру" [ref=f39e154] [cursor=pointer]:
+                    - /url: tel:+998947403121
+                    - generic [ref=f39e156]: 
+              - generic [ref=f39e157]:
+                - 'button "Код Plus Code: 76XQ+79 Ташкент, Узбекистан" [ref=f39e158] [cursor=pointer]':
+                  - generic [ref=f39e159]:
+                    - generic [ref=f39e161]: 
+                    - generic [ref=f39e163]: 76XQ+79 Ташкент, Узбекистан
+                - generic [ref=f39e164]:
+                  - button "Копировать код Plus Code" [ref=f39e166] [cursor=pointer]:
+                    - generic [ref=f39e168]: 
+                  - button "Подробнее о +кодах" [ref=f39e170] [cursor=pointer]:
+                    - generic [ref=f39e172]: 
+              - button "Ваша история Карт" [ref=f39e174] [cursor=pointer]:
+                - generic [ref=f39e175]:
+                  - generic [ref=f39e177]: 
+                  - generic [ref=f39e179]: Ваша история Карт
+            - button "Добавить ярлык" [ref=f39e181]:
+              - generic [ref=f39e182]:
+                - generic [ref=f39e183]: 
+                - generic [ref=f39e184]: Добавить ярлык
+            - button "Предложить правку" [ref=f39e188] [cursor=pointer]:
+              - generic [ref=f39e189]:
+                - generic [ref=f39e190]: 
+                - generic [ref=f39e191]: Предложить правку
+            - generic [ref=f39e194]:
+              - heading "Фото и видео" [level=2] [ref=f39e196]
+              - region "Topex на фото" [ref=f39e197]:
+                - generic [ref=f39e200]:
+                  - generic [ref=f39e201] [cursor=pointer]:
+                    - button "Все" [ref=f39e202]
+                    - generic:
+                      - generic: Все
+                  - generic [ref=f39e203] [cursor=pointer]:
+                    - button "От владельца" [ref=f39e204]
+                    - generic:
+                      - generic: От владельца
+            - button "Добавить фото и видео" [ref=f39e209] [cursor=pointer]:
+              - generic [ref=f39e210]:
+                - generic [ref=f39e211]: 
+                - generic [ref=f39e212]: Добавить фото и видео
+            - button "Оставить отзыв" [ref=f39e218] [cursor=pointer]:
+              - generic [ref=f39e219]:
+                - generic [ref=f39e220]: 
+                - generic [ref=f39e221]: Оставить отзыв
+            - heading "Результаты поиска в Интернете" [level=2] [ref=f39e225]
+            - region [ref=f39e228]
+            - link "Об этих данных" [ref=f39e267] [cursor=pointer]:
+              - /url: https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=ru
+              - generic [ref=f39e269]: Об этих данных
+      - generic [ref=f39e270]:
+        - button "Скрыть боковую панель" [ref=f39e271] [cursor=pointer]:
+          - generic [ref=f39e272]: 
+        - generic [ref=f39e273]: Скрыть боковую панель

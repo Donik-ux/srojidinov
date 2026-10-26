@@ -1,0 +1,243 @@
+- generic [ref=f31e2]:
+  - banner [ref=f31e4]:
+    - generic [ref=f31e5]:
+      - generic [ref=f31e6]:
+        - button [ref=f31e674] [cursor=pointer]:
+          - img [ref=f31e8]
+        - link [ref=f31e675] [cursor=pointer]:
+          - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+          - img [ref=f31e13]
+      - generic [ref=f31e14]:
+        - search [ref=f31e16]:
+          - generic [ref=f31e22]:
+            - textbox [disabled] [ref=f31e23]: Проверка всех URL на ресурсе https://topextexnikum.uz/
+            - combobox [ref=f31e676]
+          - button [ref=f31e677] [cursor=pointer]:
+            - img [ref=f31e26]
+        - generic [ref=f31e29]:
+          - generic [ref=f31e31]:
+            - button [ref=f31e678] [cursor=pointer]:
+              - generic [ref=f31e36]: 
+            - button [ref=f31e679] [cursor=pointer]:
+              - img [ref=f31e41]
+          - button [ref=f31e680] [cursor=pointer]:
+            - generic [ref=f31e47]:
+              - generic [ref=f31e48]: 
+              - generic [ref=f31e475]: "2"
+      - generic [ref=f31e52]:
+        - button [ref=f31e681] [cursor=pointer]:
+          - img [ref=f31e57]
+        - button [ref=f31e682] [cursor=pointer]:
+          - img [ref=f31e64]
+  - dialog [ref=f31e683]:
+    - navigation [ref=f31e684]:
+      - button [ref=f31e685] [cursor=pointer]:
+        - img [ref=f31e686]
+        - combobox [ref=f31e687]: https://topextexnikum.uz/
+        - generic [ref=f31e86]: 
+      - generic [ref=f31e87]:
+        - generic [ref=f31e88]:
+          - generic [ref=f31e89]:
+            - link [ref=f31e688] [cursor=pointer]:
+              - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e93]: home
+              - generic [ref=f31e95]: Обзор
+            - link [ref=f31e689] [cursor=pointer]:
+              - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e100]: lightbulb_2
+              - generic [ref=f31e102]: Статистика
+            - link [ref=f31e690] [cursor=pointer]:
+              - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e107]: trending_up
+              - generic [ref=f31e109]: Эффективность
+            - button [ref=f31e691] [cursor=pointer]:
+              - generic [ref=f31e114]: search
+              - generic [ref=f31e116]: Проверка URL
+          - generic [ref=f31e120]:
+            - generic [ref=f31e122]:
+              - generic [ref=f31e125]: Индексирование
+              - button [expanded] [ref=f31e692] [cursor=pointer]:
+                - generic [ref=f31e129]: keyboard_arrow_up
+            - generic [ref=f31e133]:
+              - link [ref=f31e693] [cursor=pointer]:
+                - /url: ./search-console/index?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e137]: file_copy
+                - generic [ref=f31e139]: Страницы
+              - link [ref=f31e694] [cursor=pointer]:
+                - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e144]: account_tree
+                - generic [ref=f31e146]: Файлы Sitemap
+              - link [ref=f31e695] [cursor=pointer]:
+                - /url: ./search-console/removals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e151]: visibility_off
+                - generic [ref=f31e153]: Удаления
+          - generic [ref=f31e157]:
+            - generic [ref=f31e159]:
+              - generic [ref=f31e162]: Качество
+              - button [expanded] [ref=f31e696] [cursor=pointer]:
+                - generic [ref=f31e166]: keyboard_arrow_up
+            - generic [ref=f31e170]:
+              - link [ref=f31e697] [cursor=pointer]:
+                - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e174]: speed
+                - generic [ref=f31e176]: Core Web Vitals
+              - link [ref=f31e698] [cursor=pointer]:
+                - /url: ./search-console/https?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e181]: lock
+                - generic [ref=f31e183]: HTTPS
+          - generic [ref=f31e187]:
+            - generic [ref=f31e189]:
+              - generic [ref=f31e192]: Улучшения
+              - button [expanded] [ref=f31e699] [cursor=pointer]:
+                - generic [ref=f31e196]: keyboard_arrow_up
+            - link [ref=f31e700] [cursor=pointer]:
+              - /url: ./search-console/r/unknown-type?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e204]: layers
+              - generic [ref=f31e206]: Структурированные данные, не поддающиеся анализу
+          - generic [ref=f31e212]:
+            - generic [ref=f31e215]: Проблемы безопасности и меры, принятые вручную
+            - button [ref=f31e701] [cursor=pointer]:
+              - generic [ref=f31e219]: keyboard_arrow_down
+          - generic [ref=f31e220]:
+            - link [ref=f31e702] [cursor=pointer]:
+              - /url: ./search-console/links?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e224]: link_2
+              - generic [ref=f31e226]: Ссылки
+            - link [ref=f31e703] [cursor=pointer]:
+              - /url: ./search-console/achievements?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e231]: trophy
+              - generic [ref=f31e233]: Достижения
+            - link [ref=f31e704] [cursor=pointer]:
+              - /url: ./search-console/settings?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f31e238]: settings
+              - generic [ref=f31e240]: Настройки
+        - generic [ref=f31e242]:
+          - generic [ref=f31e244]:
+            - button [ref=f31e705] [cursor=pointer]:
+              - generic [ref=f31e248]: feedback
+              - generic [ref=f31e250]: Отправить отзыв
+            - button [ref=f31e706] [cursor=pointer]:
+              - generic [ref=f31e255]: info
+              - generic [ref=f31e257]: Общие сведения о Search Console
+          - generic [ref=f31e261]:
+            - link [ref=f31e707] [cursor=pointer]:
+              - /url: https://myaccount.google.com/privacypolicy?hl=ru
+              - text: Конфиденциальность
+            - link [ref=f31e708] [cursor=pointer]:
+              - /url: https://myaccount.google.com/termsofservice?hl=ru
+              - text: Условия использования
+  - generic [ref=f31e477]:
+    - generic [ref=f31e485]: https://topextexnikum.uz/
+    - generic [ref=f31e491]:
+      - generic [ref=f31e493]:
+        - navigation [ref=f31e709]:
+          - heading [level=1] [ref=f31e710]: Проверка URL
+        - button [ref=f31e711] [cursor=pointer]:
+          - generic [ref=f31e506]: Проверить страницу на сайте
+      - main [ref=f31e508]:
+        - generic [ref=f31e509]:
+          - generic [ref=f31e511]:
+            - generic [ref=f31e512]:
+              - generic [ref=f31e513]: warning
+              - generic [ref=f31e514]:
+                - generic [ref=f31e515]: URL есть в индексе Google, но есть проблемы
+                - generic [ref=f31e516]:
+                  - text: При отсутствии запросов на удаление и мер, принятых вручную, страница может появляться в результатах поиска Google, однако для нее доступны не все улучшения.
+                  - link [ref=f31e712] [cursor=pointer]:
+                    - /url: https://support.google.com/webmasters/answer/9012289#url_on_google_issues
+                    - text: Подробнее
+            - generic [ref=f31e520]:
+              - button [ref=f31e713] [cursor=pointer]:
+                - generic [ref=f31e529]: Изучить просканированную страницу
+              - generic [ref=f31e530]:
+                - generic [ref=f31e531]: Страница изменена?
+                - button [ref=f31e714] [cursor=pointer]:
+                  - generic [ref=f31e540]: Запросить индексирование
+          - generic [ref=f31e542]:
+            - generic [ref=f31e545]:
+              - button [expanded] [ref=f31e715] [cursor=pointer]:
+                - generic [ref=f31e547]:
+                  - generic [ref=f31e549]:
+                    - generic [ref=f31e551]: check_circle
+                    - generic [ref=f31e552]:
+                      - generic [ref=f31e553]: Индексирование страниц
+                      - generic [ref=f31e554]: Эта страница проиндексирована
+                  - generic [ref=f31e602]: 
+              - generic [ref=f31e606]:
+                - generic [ref=f31e607]:
+                  - generic [ref=f31e608]:
+                    - generic [ref=f31e609]: Как обнаружено
+                    - generic [ref=f31e610]:
+                      - generic [ref=f31e611]: Файлы Sitemap
+                      - generic [ref=f31e614]: https://topextexnikum.uz/sitemap.xml
+                    - generic [ref=f31e615]:
+                      - generic [ref=f31e616]: Ссылающаяся страница
+                      - generic [ref=f31e618]: Не найдено
+                  - generic [ref=f31e619]:
+                    - generic [ref=f31e620]: Сканирование
+                    - generic [ref=f31e621]:
+                      - generic [ref=f31e622]: Последнее сканирование
+                      - generic [ref=f31e624]: 8 июл. 2026 г., 03:52:40
+                    - generic [ref=f31e625]:
+                      - generic [ref=f31e626]: Робот, выполнивший сканирование
+                      - generic [ref=f31e628]: Робот Googlebot для смартфонов
+                    - generic [ref=f31e629]:
+                      - generic [ref=f31e630]: Сканирование разрешено?
+                      - generic [ref=f31e632]: Да
+                    - generic [ref=f31e633]:
+                      - generic [ref=f31e634]: Получение страницы
+                      - generic [ref=f31e636]: Успешно
+                    - generic [ref=f31e637]:
+                      - generic [ref=f31e638]: Индексирование разрешено?
+                      - generic [ref=f31e640]: Да
+                  - generic [ref=f31e641]:
+                    - generic [ref=f31e642]: Индексирование
+                    - generic [ref=f31e643]:
+                      - generic [ref=f31e644]: Каноническая страница, выбранная пользователем
+                      - generic [ref=f31e647]: https://topextexnikum.uz/
+                    - generic [ref=f31e648]:
+                      - generic [ref=f31e650]:
+                        - generic [ref=f31e651]: Каноническая страница, выбранная Google
+                        - button [ref=f31e716] [cursor=pointer]:
+                          - generic [ref=f31e655]: 
+                      - generic [ref=f31e657]: Проверенный URL
+                - generic [ref=f31e658]:
+                  - link [ref=f31e717] [cursor=pointer]:
+                    - /url: https://support.google.com/webmasters/answer/7440203#submitted_and_indexed
+                    - generic [ref=f31e666]: Подробнее...
+                  - link [ref=f31e718] [cursor=pointer]:
+                    - /url: ./search-console/index/drilldown?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F&item_key=CAMYASAB
+                    - generic [ref=f31e673]: Открыть отчет
+            - link [disabled] [ref=f31e719] [cursor=pointer]:
+              - /url: ./search-console/inspect/video-index?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F&id=8uDFSxntlF-7HPtR6FfB_Q
+              - generic [ref=f31e563]:
+                - generic [ref=f31e565]: info
+                - generic [ref=f31e566]:
+                  - generic [ref=f31e567]: Индексирование страниц с видео
+                  - generic [ref=f31e568]: Видео не проиндексированы
+                - generic [ref=f31e570]: 
+          - generic [ref=f31e571]: Улучшения и удобство для пользователей
+          - generic [ref=f31e573]:
+            - link [ref=f31e720] [cursor=pointer]:
+              - /url: ./search-console/inspect/https?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F&id=8uDFSxntlF-7HPtR6FfB_Q
+              - generic [ref=f31e579]:
+                - generic [ref=f31e581]: check_circle
+                - generic [ref=f31e582]:
+                  - generic [ref=f31e583]: HTTPS
+                  - generic [ref=f31e584]: Страница передается через HTTPS
+                - generic [ref=f31e586]: 
+            - link [ref=f31e721] [cursor=pointer]:
+              - /url: ./search-console/inspect/r/unknown-type?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F&id=8uDFSxntlF-7HPtR6FfB_Q
+              - generic [ref=f31e592]:
+                - generic [ref=f31e594]: error
+                - generic [ref=f31e595]:
+                  - generic [ref=f31e596]: Структурированные данные, не поддающиеся анализу
+                  - generic [ref=f31e597]: В структурированных данных обнаружены ошибки синтаксиса.
+                - generic [ref=f31e599]: 
+  - dialog "Проверяется возможность индексации URL" [ref=f31e723]:
+    - generic [ref=f31e725]:
+      - generic [ref=f31e726]: Проверяется возможность индексации URL
+      - progressbar "Проверяется возможность индексации URL" [ref=f31e728]
+      - generic [ref=f31e731]: Это может занять одну-две минуты.
+      - button "Отмена" [active] [ref=f31e733] [cursor=pointer]:
+        - generic [ref=f31e735]: Отмена

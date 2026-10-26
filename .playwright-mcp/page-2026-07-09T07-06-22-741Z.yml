@@ -1,0 +1,235 @@
+- generic [active] [ref=f20e1]:
+  - generic [ref=f20e2]:
+    - banner [ref=f20e4]:
+      - generic [ref=f20e5]:
+        - generic [ref=f20e6]:
+          - button "Главное меню" [ref=f20e7] [cursor=pointer]:
+            - img [ref=f20e8]
+          - link "Google Search Console" [ref=f20e12] [cursor=pointer]:
+            - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+            - img [ref=f20e13]
+        - generic [ref=f20e14]:
+          - search [ref=f20e16]:
+            - generic [ref=f20e22]:
+              - textbox [disabled] [ref=f20e23]: Проверка всех URL на ресурсе https://topextexnikum.uz/
+              - combobox "Проверка всех URL на ресурсе https://topextexnikum.uz/" [ref=f20e24]
+            - button "Поиск" [ref=f20e25] [cursor=pointer]:
+              - img [ref=f20e26]
+          - generic [ref=f20e29]:
+            - generic [ref=f20e31]:
+              - button "Справка" [ref=f20e33] [cursor=pointer]:
+                - generic [ref=f20e36]: 
+              - button "Пользовательские настройки" [ref=f20e38] [cursor=pointer]:
+                - img [ref=f20e41]
+            - 'button "Непрочитанных сообщений: 2" [ref=f20e45] [cursor=pointer]':
+              - generic [ref=f20e47]:
+                - generic [ref=f20e48]: 
+                - generic [ref=f20e471]: "2"
+        - generic [ref=f20e52]:
+          - button "Приложения Google" [ref=f20e56] [cursor=pointer]:
+            - img [ref=f20e57]
+          - 'button "Аккаунт Google: Otabek Gayratov (gayraotabek4@gmail.com)" [ref=f20e62] [cursor=pointer]':
+            - img [ref=f20e64]
+    - dialog "navigational drawer" [ref=f20e68]:
+      - navigation "Основной" [ref=f20e71]:
+        - button "Ресурс" [ref=f20e75] [cursor=pointer]:
+          - img "значок сайта" [ref=f20e77]
+          - combobox "https://topextexnikum.uz/" [ref=f20e85]
+          - generic [ref=f20e86]: 
+        - generic [ref=f20e87]:
+          - generic [ref=f20e88]:
+            - generic [ref=f20e89]:
+              - link "Обзор" [ref=f20e91] [cursor=pointer]:
+                - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f20e93]: home
+                - generic [ref=f20e95]: Обзор
+              - link "Статистика" [ref=f20e98] [cursor=pointer]:
+                - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f20e100]: lightbulb_2
+                - generic [ref=f20e102]: Статистика
+              - link "Эффективность" [ref=f20e105] [cursor=pointer]:
+                - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f20e107]: trending_up
+                - generic [ref=f20e109]: Эффективность
+              - button "Проверка URL" [ref=f20e112] [cursor=pointer]:
+                - generic [ref=f20e114]: search
+                - generic [ref=f20e116]: Проверка URL
+            - generic [ref=f20e120]:
+              - generic [ref=f20e122]:
+                - generic [ref=f20e125]: Индексирование
+                - button "Раздел \"Индексирование\" в отчете" [expanded] [ref=f20e127] [cursor=pointer]:
+                  - generic [ref=f20e129]: keyboard_arrow_up
+              - generic [ref=f20e133]:
+                - link "Страницы" [ref=f20e135] [cursor=pointer]:
+                  - /url: ./search-console/index?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f20e137]: file_copy
+                  - generic [ref=f20e139]: Страницы
+                - link "Файлы Sitemap" [ref=f20e142] [cursor=pointer]:
+                  - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f20e144]: account_tree
+                  - generic [ref=f20e146]: Файлы Sitemap
+                - link "Удаления" [ref=f20e149] [cursor=pointer]:
+                  - /url: ./search-console/removals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f20e151]: visibility_off
+                  - generic [ref=f20e153]: Удаления
+            - generic [ref=f20e157]:
+              - generic [ref=f20e159]:
+                - generic [ref=f20e162]: Качество
+                - button "Раздел \"Качество\" в отчете" [expanded] [ref=f20e164] [cursor=pointer]:
+                  - generic [ref=f20e166]: keyboard_arrow_up
+              - generic [ref=f20e170]:
+                - link "Core Web Vitals" [ref=f20e172] [cursor=pointer]:
+                  - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f20e174]: speed
+                  - generic [ref=f20e176]: Core Web Vitals
+                - link "HTTPS" [ref=f20e179] [cursor=pointer]:
+                  - /url: ./search-console/https?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f20e181]: lock
+                  - generic [ref=f20e183]: HTTPS
+            - generic [ref=f20e187]:
+              - generic [ref=f20e189]:
+                - generic [ref=f20e192]: Улучшения
+                - button "Раздел \"Улучшения\" в отчете" [expanded] [ref=f20e194] [cursor=pointer]:
+                  - generic [ref=f20e196]: keyboard_arrow_up
+              - link "Структурированные данные, не поддающиеся анализу" [ref=f20e202] [cursor=pointer]:
+                - /url: ./search-console/r/unknown-type?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f20e204]: layers
+                - generic [ref=f20e206]: Структурированные данные, не поддающиеся анализу
+            - generic [ref=f20e212]:
+              - generic [ref=f20e215]: Проблемы безопасности и меры, принятые вручную
+              - button "Раздел \"Проблемы безопасности и меры, принятые вручную\" в отчете" [ref=f20e217] [cursor=pointer]:
+                - generic [ref=f20e219]: keyboard_arrow_down
+            - generic [ref=f20e220]:
+              - link "Отчет о ссылках" [ref=f20e222] [cursor=pointer]:
+                - /url: ./search-console/links?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f20e224]: link_2
+                - generic [ref=f20e226]: Ссылки
+              - link "Достижения" [ref=f20e229] [cursor=pointer]:
+                - /url: ./search-console/achievements?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f20e231]: trophy
+                - generic [ref=f20e233]: Достижения
+              - link "Настройки" [ref=f20e236] [cursor=pointer]:
+                - /url: ./search-console/settings?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f20e238]: settings
+                - generic [ref=f20e240]: Настройки
+          - generic [ref=f20e242]:
+            - generic [ref=f20e244]:
+              - button "Отправить отзыв" [ref=f20e246] [cursor=pointer]:
+                - generic [ref=f20e248]: feedback
+                - generic [ref=f20e250]: Отправить отзыв
+              - button "Общие сведения о Search Console" [ref=f20e253] [cursor=pointer]:
+                - generic [ref=f20e255]: info
+                - generic [ref=f20e257]: Общие сведения о Search Console
+            - generic [ref=f20e261]:
+              - link "Конфиденциальность" [ref=f20e262] [cursor=pointer]:
+                - /url: https://myaccount.google.com/privacypolicy?hl=ru
+              - link "Условия использования" [ref=f20e263] [cursor=pointer]:
+                - /url: https://myaccount.google.com/termsofservice?hl=ru
+    - generic [ref=f20e472]:
+      - generic [ref=f20e476]:
+        - generic [ref=f20e479]:
+          - navigation "Строки навигации" [ref=f20e481]:
+            - heading "Структурированные данные, не поддающиеся анализу" [level=1] [ref=f20e484]
+          - button "ЭКСПОРТИРОВАТЬ" [ref=f20e487] [cursor=pointer]:
+            - generic [ref=f20e490]:
+              - generic [ref=f20e491]: 
+              - generic [ref=f20e492]: ЭКСПОРТИРОВАТЬ
+        - generic [ref=f20e493]:
+          - generic [ref=f20e498]: "Последнее обновление: 08.07.2026"
+          - main [ref=f20e500]:
+            - generic [ref=f20e501]:
+              - generic [ref=f20e504]:
+                - generic [ref=f20e507] [cursor=pointer]:
+                  - button "Недопустимое значение 1 1 критичная проблема" [ref=f20e508]:
+                    - generic [ref=f20e512]:
+                      - generic "Недопустимое значение" [ref=f20e513]:
+                        - generic [ref=f20e514]: 
+                        - generic [ref=f20e515]: Недопустимое значение
+                      - generic "1" [ref=f20e516]
+                      - generic [ref=f20e517]: 1 критичная проблема
+                  - button "null" [ref=f20e520]:
+                    - generic [ref=f20e521]: 
+                - generic [ref=f20e522]:
+                  - generic [ref=f20e524]: Страницы
+                  - img [ref=f20e527]:
+                    - generic [ref=f20e528]:
+                      - generic [ref=f20e529]:
+                        - generic [ref=f20e531]: 10.04.2026
+                        - generic [ref=f20e533]: 21.04.2026
+                        - generic [ref=f20e535]: 02.05.2026
+                        - generic [ref=f20e537]: 13.05.2026
+                        - generic [ref=f20e539]: 25.05.2026
+                        - generic [ref=f20e541]: 06.06.2026
+                        - generic [ref=f20e543]: 17.06.2026
+                        - generic [ref=f20e545]: 28.06.2026
+                      - generic [ref=f20e546]:
+                        - generic [ref=f20e548]: "3"
+                        - generic [ref=f20e550]: "2"
+                        - generic [ref=f20e552]: "1"
+                        - generic [ref=f20e554]: "0"
+                      - button [ref=f20e566] [cursor=pointer]:
+                        - generic [ref=f20e569]: "1"
+              - generic [ref=f20e572]:
+                - generic [ref=f20e574]:
+                  - generic [ref=f20e577]:
+                    - generic [ref=f20e578]: error
+                    - generic [ref=f20e579]:
+                      - generic [ref=f20e580]: Почему эти элементы недействительны
+                      - generic [ref=f20e581]: Недействительные элементы не могут использоваться для создания расширенных результатов поиска Google.
+                  - button "Фильтрация по строкам таблицы" [ref=f20e586] [cursor=pointer]:
+                    - generic [ref=f20e589]: 
+                - table [ref=f20e592]:
+                  - rowgroup [ref=f20e593]:
+                    - row "Проблема Проверка Тенденция Страницы" [ref=f20e594]:
+                      - columnheader "Проблема" [ref=f20e595]:
+                        - generic [ref=f20e597]: Проблема
+                        - img [ref=f20e599] [cursor=pointer]
+                      - columnheader "Проверка" [ref=f20e601]:
+                        - generic [ref=f20e603]: Проверка
+                        - img [ref=f20e605] [cursor=pointer]
+                      - columnheader "Тенденция" [ref=f20e607]:
+                        - generic [ref=f20e609]: Тенденция
+                      - columnheader "Страницы" [ref=f20e610]:
+                        - img [ref=f20e612] [cursor=pointer]
+                        - generic [ref=f20e615]: Страницы
+                  - rowgroup [ref=f20e616]:
+                    - row "Недопустимый тип значения Не начато 1" [ref=f20e617] [cursor=pointer]:
+                      - cell "Недопустимый тип значения" [ref=f20e618]:
+                        - generic [ref=f20e620]: Недопустимый тип значения
+                      - cell "Не начато" [ref=f20e621]:
+                        - generic [ref=f20e624]:
+                          - generic [ref=f20e625]: 
+                          - text: Не начато
+                      - cell [ref=f20e626]:
+                        - img [ref=f20e629]
+                      - cell "1" [ref=f20e630]:
+                        - generic [ref=f20e632]: "1"
+                - generic [ref=f20e635]:
+                  - generic [ref=f20e637]:
+                    - generic [ref=f20e638]: "Строк на странице:"
+                    - listbox "Количество строк на страницу" [ref=f20e639] [cursor=pointer]:
+                      - option "5"
+                      - option "10" [selected] [ref=f20e640]
+                      - option "25"
+                      - option "50"
+                      - option "100"
+                      - option "250"
+                      - option "500"
+                  - generic [ref=f20e641]:
+                    - generic [ref=f20e642]: 1–1 из 1
+                    - generic [ref=f20e643]:
+                      - generic [ref=f20e645]: 
+                      - generic [ref=f20e647]: 
+      - generic [ref=f20e649]:
+        - generic [ref=f20e650]:
+          - img [ref=f20e652]
+          - generic [ref=f20e661]: Структурированные данные, не поддающиеся анализу
+        - generic [ref=f20e662]: В синтаксисе этих структурированных данных обнаружены грубые ошибки. Google не удалось распознать и проанализировать эти элементы.
+        - generic [ref=f20e663]:
+          - generic [ref=f20e666]:
+            - generic [ref=f20e668]: Подробнее
+            - generic "Подробнее" [ref=f20e669]
+          - generic [ref=f20e672]:
+            - generic [ref=f20e674]: Закрыть
+            - generic "Закрыть" [ref=f20e675]
+  - generic [ref=f20e676]: Структурированные данные, не поддающиеся анализу

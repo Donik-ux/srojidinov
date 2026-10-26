@@ -1,0 +1,431 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Перейти к основному контенту" [ref=e2] [cursor=pointer]
+      - link "Справка по использованию специальных возможностей" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ru-UZ
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - link "Главная страница Google" [ref=e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQPAgI
+          - img [ref=e14]
+        - generic [ref=e16]:
+          - generic [ref=e17]:
+            - combobox "Найти" [ref=e20]: topex texnikum topex texnikum
+            - generic [ref=e21]:
+              - button "Очистить" [ref=e23] [cursor=pointer]:
+                - img [ref=e25]
+              - generic [ref=e28]:
+                - button "Экранная клавиатура" [ref=e29] [cursor=pointer]:
+                  - img [ref=e31]
+                - button "Голосовой поиск" [ref=e33] [cursor=pointer]:
+                  - img [ref=e34]
+                - button "Поиск по картинке" [ref=e36] [cursor=pointer]:
+                  - img [ref=e37]
+          - button "Поиск" [ref=e39] [cursor=pointer]:
+            - img [ref=e42]
+    - generic [ref=e44]:
+      - button "Отправить" [ref=e45] [cursor=pointer]:
+        - img [ref=e49]
+      - generic [ref=e51]:
+        - button "Приложения Google" [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - 'button "Аккаунт Google: Otabek Gayratov (gayraotabek4@gmail.com)" [ref=e58] [cursor=pointer]':
+          - img [ref=e59]
+  - generic [ref=e61]:
+    - navigation [ref=e67]:
+      - generic [ref=e73]:
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "Режим ИИ" [ref=e78] [cursor=pointer]:
+              - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&udm=50&fbs=ABfTbFXwfYg-AsVmc75aAkBispm6zcB9lzFL8JEdHN8k2M36uTW02J34nObb19StsJfQR6VER2FkmRvUuNUumQYBsdXbk33THb6ty_W3S2MuZyly8j_QTzZKCbF3-sLg6scT74WKFKxsMIzqlcKrFGLwxM6e1LlumjEMS1fKPMBbMTcqMavE6_lsRZubwjI4ZermYPi7dA954s37eAjVCCqZ4NJO86honC8akeO-yJEBvI3DOcAz9fI&aep=1&ntc=1&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ2J8OegQIDhAD
+              - generic [ref=e81]: Режим ИИ
+          - listitem [ref=e82]:
+            - link "Все" [disabled] [ref=e83]:
+              - generic [ref=e85]: Все
+          - listitem [ref=e86]:
+            - link "Картинки" [ref=e87] [cursor=pointer]:
+              - /url: /search?sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&udm=2&fbs=ABfTbFXwfYg-AsVmc75aAkBispm6zcB9lzFL8JEdHN8k2M36uTW02J34nObb19StsJfQR6VER2FkmRvUuNUumQYBsdXbk33THb6ty_W3S2MuZyly8j_QTzZKCbF3-sLg6scT74WKFKxsMIzqlcKrFGLwxM6e1LlumjEMS1fKPMBbMTcqMavE6_lsRZubwjI4ZermYPi7dA954s37eAjVCCqZ4NJO86honC8akeO-yJEBvI3DOcAz9fI&q=topex+texnikum&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQtKgLegQIEhAB
+              - generic [ref=e89]: Картинки
+          - listitem [ref=e90]:
+            - link "Видео" [ref=e91] [cursor=pointer]:
+              - /url: /search?sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&udm=7&fbs=ABfTbFXwfYg-AsVmc75aAkBispm6zcB9lzFL8JEdHN8k2M36uTW02J34nObb19StsJfQR6VER2FkmRvUuNUumQYBsdXbk33THb6ty_W3S2MuZyly8j_QTzZKCbF3-sLg6scT74WKFKxsMIzqlcKrFGLwxM6e1LlumjEMS1fKPMBbMTcqMavE6_lsRZubwjI4ZermYPi7dA954s37eAjVCCqZ4NJO86honC8akeO-yJEBvI3DOcAz9fI&q=topex+texnikum&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQtKgLegQIExAB
+              - generic [ref=e93]: Видео
+          - listitem [ref=e94]:
+            - link "Новости" [ref=e95] [cursor=pointer]:
+              - /url: /search?sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&q=topex+texnikum&tbm=nws&source=lnms&fbs=ABfTbFXwfYg-AsVmc75aAkBispm6zcB9lzFL8JEdHN8k2M36uTW02J34nObb19StsJfQR6VER2FkmRvUuNUumQYBsdXbk33THb6ty_W3S2MuZyly8j_QTzZKCbF3-sLg6scT74WKFKxsMIzqlcKrFGLwxM6e1LlumjEMS1fKPMBbMTcqMavE6_lsRZubwjI4ZermYPi7dA954s37eAjVCCqZ4NJO86honC8akeO-yJEBvI3DOcAz9fI&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ0pQJegQIFBAB
+              - generic [ref=e97]: Новости
+          - listitem [ref=e98]:
+            - link "Короткие видео" [ref=e99] [cursor=pointer]:
+              - /url: /search?sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&udm=39&fbs=ABfTbFXwfYg-AsVmc75aAkBispm6zcB9lzFL8JEdHN8k2M36uTW02J34nObb19StsJfQR6VER2FkmRvUuNUumQYBsdXbk33THb6ty_W3S2MuZyly8j_QTzZKCbF3-sLg6scT74WKFKxsMIzqlcKrFGLwxM6e1LlumjEMS1fKPMBbMTcqMavE6_lsRZubwjI4ZermYPi7dA954s37eAjVCCqZ4NJO86honC8akeO-yJEBvI3DOcAz9fI&q=topex+texnikum&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQs6gLegQIFxAB
+              - generic [ref=e101]: Короткие видео
+          - listitem [ref=e102]:
+            - link "Книги" [ref=e103] [cursor=pointer]:
+              - /url: /search?sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&q=topex+texnikum&udm=36&source=lnms&fbs=ABfTbFXwfYg-AsVmc75aAkBispm6zcB9lzFL8JEdHN8k2M36uTW02J34nObb19StsJfQR6VER2FkmRvUuNUumQYBsdXbk33THb6ty_W3S2MuZyly8j_QTzZKCbF3-sLg6scT74WKFKxsMIzqlcKrFGLwxM6e1LlumjEMS1fKPMBbMTcqMavE6_lsRZubwjI4ZermYPi7dA954s37eAjVCCqZ4NJO86honC8akeO-yJEBvI3DOcAz9fI&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ0pQJegQIFRAB
+              - generic [ref=e105]: Книги
+          - listitem [ref=e106]:
+            - button "Ещё фильтры" [ref=e107] [cursor=pointer]:
+              - generic "Ещё фильтры" [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: Ещё
+                  - img [ref=e112]
+        - button "Инструменты" [ref=e115] [cursor=pointer]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: Инструменты
+            - img [ref=e120]
+    - heading "Результаты поиска" [level=1] [ref=e122]
+    - main [ref=e128]:
+      - generic [ref=e132]:
+        - generic [ref=e135]:
+          - heading "Internetdagi natijalar" [level=2] [ref=e136]
+          - generic [ref=e137]:
+            - generic [ref=e140]:
+              - link "Topex Texnikumi – Sifatli Ta'lim, 10–11 Sinflar topextexnikum.uz https://topextexnikum.uz" [ref=e142] [cursor=pointer]:
+                - /url: https://topextexnikum.uz/
+                - heading "Topex Texnikumi – Sifatli Ta'lim, 10–11 Sinflar" [level=3] [ref=e143]
+                - generic [ref=e149]:
+                  - generic [ref=e151]: topextexnikum.uz
+                  - generic [ref=e153]: https://topextexnikum.uz
+              - generic [ref=e154]:
+                - generic [ref=e155]: ·
+                - link "Перевести эту страницу" [ref=e156] [cursor=pointer]:
+                  - /url: https://topextexnikum.uz/
+              - button "Об этом результате" [ref=e159] [cursor=pointer]:
+                - img [ref=e162]
+            - generic [ref=e166]:
+              - emphasis [ref=e167]: Topex
+              - text: texnikumi — Toshkent shahrining Chilonzor tumanida 2022-yildan beri faoliyat ko'rsatayotgan zamonaviy xususiy
+              - emphasis [ref=e168]: texnikum
+              - text: . Biz 600 dan ortiq o'quvchiga 10-11 ...
+        - generic [ref=e172]:
+          - generic [ref=e175]:
+            - link "TOPEX Texnikumi – Toshkent shahridagi zamonaviy xususiy ... Vercel https://topex-texnikumi.vercel.app Часто посещаемые" [ref=e177] [cursor=pointer]:
+              - /url: https://topex-texnikumi.vercel.app/
+              - heading "TOPEX Texnikumi – Toshkent shahridagi zamonaviy xususiy ..." [level=3] [ref=e178]
+              - generic [ref=e179]:
+                - generic [ref=e184]:
+                  - generic [ref=e186]: Vercel
+                  - generic [ref=e188]: https://topex-texnikumi.vercel.app
+                - generic [ref=e189]:
+                  - generic:
+                    - generic: Часто посещаемые
+            - generic [ref=e190]:
+              - generic [ref=e191]: ·
+              - link "Перевести эту страницу" [ref=e192] [cursor=pointer]:
+                - /url: https://topex-texnikumi.vercel.app/
+            - button "Об этом результате" [ref=e195] [cursor=pointer]:
+              - img [ref=e198]
+          - generic [ref=e202]:
+            - text: TOPEX Texnikumi –
+            - emphasis [ref=e203]: Toshkent, Chilonzor tumanidagi zamonaviy xususiy texnikum
+            - text: . 10–11 sinflar uchun sifatli ta'lim, tajribali o'qituvchilar, ...
+        - generic [ref=e207]:
+          - generic [ref=e210]:
+            - 'link "Topex Texnikum (@topextexnikum) · Uzbekistan Instagram · topextexnikum Подписчиков: более 6,4 тыс." [ref=e212] [cursor=pointer]':
+              - /url: https://www.instagram.com/topextexnikum/
+              - heading "Topex Texnikum (@topextexnikum) · Uzbekistan" [level=3] [ref=e213]
+              - generic [ref=e219]:
+                - generic [ref=e221]: Instagram · topextexnikum
+                - generic [ref=e223]: "Подписчиков: более 6,4 тыс."
+            - button "Об этом результате" [ref=e226] [cursor=pointer]:
+              - img [ref=e229]
+          - generic [ref=e233]:
+            - text: В “
+            - emphasis [ref=e234]: TOPEX TEXNIKUM
+            - text: "” вы получите базовые знания по маркетингу и агробизнесу от опытных специалистов. По квалификации Маркетинговый агент: — организация ..."
+        - generic [ref=e238]:
+          - generic [ref=e241]:
+            - 'link "\"TOPEX TEXNIKUM\" - Toshkentda: kontaktlar, manzil, yo'' ... Goldenpages.uz https://www.goldenpages.uz › ..." [ref=e243] [cursor=pointer]':
+              - /url: https://www.goldenpages.uz/uz/company/?Id=114878
+              - 'heading "\"TOPEX TEXNIKUM\" - Toshkentda: kontaktlar, manzil, yo'' ..." [level=3] [ref=e244]'
+              - generic [ref=e250]:
+                - generic [ref=e252]: Goldenpages.uz
+                - generic [ref=e254]: https://www.goldenpages.uz › ...
+            - generic [ref=e255]:
+              - generic [ref=e256]: ·
+              - link "Перевести эту страницу" [ref=e257] [cursor=pointer]:
+                - /url: https://www.goldenpages.uz/uz/company/?Id=114878
+            - button "Об этом результате" [ref=e260] [cursor=pointer]:
+              - img [ref=e263]
+          - generic [ref=e266]: "Mo'ljallar: SERGELI TUMANI MIB,; 7-SONLI MAKTAB. Telefon raqami. +998 (90) 054-XX-XX. Telefon ..."
+        - generic [ref=e270]:
+          - heading "Картинки" [level=2] [ref=e274]
+          - generic [ref=e278]:
+            - generic [ref=e282] [cursor=pointer]:
+              - link "Топекс Техникум, техникум, Ташкент, Сергелийский район ... Яндекс" [ref=e283]:
+                - /url: https://yandex.ru/maps/org/topeks_tekhnikum/186955127424/
+              - button "Топекс Техникум, техникум, Ташкент, Сергелийский район ..." [ref=e285]:
+                - img "Топекс Техникум, техникум, Ташкент, Сергелийский район ..." [ref=e287]
+              - generic [ref=e289]:
+                - generic [ref=e291]: Топекс Техникум, техникум, Ташкент, Сергелийский район ...
+                - generic [ref=e292]:
+                  - generic [ref=e299]: Яндекс
+                  - button "Об этом результате" [ref=e302]:
+                    - img [ref=e305]
+            - generic [ref=e310] [cursor=pointer]:
+              - link "Topex school, частная школа, Ташкент, Чиланзарский район ... Яндекс" [ref=e311]:
+                - /url: https://yandex.ru/maps/org/topex_school/112411428278/
+              - button "Topex school, частная школа, Ташкент, Чиланзарский район ..." [ref=e313]:
+                - img "Topex school, частная школа, Ташкент, Чиланзарский район ..." [ref=e315]
+              - generic [ref=e317]:
+                - generic [ref=e319]: Topex school, частная школа, Ташкент, Чиланзарский район ...
+                - generic [ref=e320]:
+                  - generic [ref=e327]: Яндекс
+                  - button "Об этом результате" [ref=e330]:
+                    - img [ref=e333]
+            - generic [ref=e338] [cursor=pointer]:
+              - link "Topex Texnikum (@topextexnikum) · Uzbekistan · Instagram ... Instagram" [ref=e339]:
+                - /url: https://www.instagram.com/topextexnikum/
+              - button "Topex Texnikum (@topextexnikum) · Uzbekistan · Instagram ..." [ref=e341]:
+                - img "Topex Texnikum (@topextexnikum) · Uzbekistan · Instagram ..." [ref=e343]
+              - generic [ref=e345]:
+                - generic [ref=e347]: Topex Texnikum (@topextexnikum) · Uzbekistan · Instagram ...
+                - generic [ref=e348]:
+                  - generic [ref=e355]: Instagram
+                  - button "Об этом результате" [ref=e358]:
+                    - img [ref=e361]
+          - button "Другие изображения" [ref=e364] [cursor=pointer]:
+            - separator [ref=e365]
+            - generic [ref=e366]:
+              - generic [ref=e367]: Другие изображения
+              - img [ref=e369]
+        - generic [ref=e374]:
+          - generic [ref=e376]:
+            - heading "Видео" [level=2] [ref=e377]
+            - button "Об этом результате" [ref=e378] [cursor=pointer]:
+              - img [ref=e381]
+          - generic [ref=e384]:
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - link "Topex Texnikum | Bir yil ichida yangi bilim va imkoniyatlar sari ... Instagram Topex Texnikum 28 февр. 2026 г." [ref=e392] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DVSiDYQiCu3/
+                  - heading "Topex Texnikum | Bir yil ichida yangi bilim va imkoniyatlar sari ... Instagram Topex Texnikum 28 февр. 2026 г." [level=3] [ref=e393]:
+                    - generic [ref=e396]: Topex Texnikum | Bir yil ichida yangi bilim va imkoniyatlar sari ...
+                    - generic [ref=e398]:
+                      - generic [ref=e399]:
+                        - text: Instagram
+                        - generic [ref=e400]: · Topex Texnikum
+                      - generic [ref=e401]: 28 февр. 2026 г.
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - text: Instagram
+                          - generic: · Topex Texnikum
+                    - button "Об этом результате" [ref=e402] [cursor=pointer]:
+                      - img [ref=e405]
+              - link "Видео \"Topex Texnikum | Bir yil ichida yangi bilim va imkoniyatlar sari ...\" пользователя Topex Texnikum, Instagram. Воспроизвести на платформе \"Instagram\". 1:29" [ref=e407] [cursor=pointer]:
+                - /url: https://www.instagram.com/reel/DVSiDYQiCu3/
+                - generic [ref=e408]:
+                  - img [ref=e411]
+                  - generic [ref=e415]: 1:29
+            - generic [ref=e420]:
+              - generic [ref=e421]:
+                - link "Topex Texnikum | “TOPEX TEXNIKUM”idan DIPLOM olish ... Instagram Topex Texnikum 26 апр. 2025 г." [ref=e423] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DI51scFusyB/
+                  - heading "Topex Texnikum | “TOPEX TEXNIKUM”idan DIPLOM olish ... Instagram Topex Texnikum 26 апр. 2025 г." [level=3] [ref=e424]:
+                    - generic [ref=e427]: Topex Texnikum | “TOPEX TEXNIKUM”idan DIPLOM olish ...
+                    - generic [ref=e429]:
+                      - generic [ref=e430]:
+                        - text: Instagram
+                        - generic [ref=e431]: · Topex Texnikum
+                      - generic [ref=e432]: 26 апр. 2025 г.
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - text: Instagram
+                          - generic: · Topex Texnikum
+                    - button "Об этом результате" [ref=e433] [cursor=pointer]:
+                      - img [ref=e436]
+              - link "Видео \"Topex Texnikum | “TOPEX TEXNIKUM”idan DIPLOM olish ...\" пользователя Topex Texnikum, Instagram. Воспроизвести на платформе \"Instagram\". 0:33" [ref=e438] [cursor=pointer]:
+                - /url: https://www.instagram.com/reel/DI51scFusyB/
+                - generic [ref=e439]:
+                  - img [ref=e442]
+                  - generic [ref=e446]: 0:33
+            - generic [ref=e451]:
+              - generic [ref=e452]:
+                - link "Topex Texnikum | Darslar boshlandi, imtiyozli qabul esa ... Instagram Topex Texnikum 9 сент. 2025 г." [ref=e454] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DOYck9uiG9_/
+                  - heading "Topex Texnikum | Darslar boshlandi, imtiyozli qabul esa ... Instagram Topex Texnikum 9 сент. 2025 г." [level=3] [ref=e455]:
+                    - generic [ref=e458]: Topex Texnikum | Darslar boshlandi, imtiyozli qabul esa ...
+                    - generic [ref=e460]:
+                      - generic [ref=e461]:
+                        - text: Instagram
+                        - generic [ref=e462]: · Topex Texnikum
+                      - generic [ref=e463]: 9 сент. 2025 г.
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - text: Instagram
+                          - generic: · Topex Texnikum
+                    - button "Об этом результате" [ref=e464] [cursor=pointer]:
+                      - img [ref=e467]
+              - link "Видео \"Topex Texnikum | Darslar boshlandi, imtiyozli qabul esa ...\" пользователя Topex Texnikum, Instagram. Воспроизвести на платформе \"Instagram\". 0:16" [ref=e469] [cursor=pointer]:
+                - /url: https://www.instagram.com/reel/DOYck9uiG9_/
+                - generic [ref=e470]:
+                  - img [ref=e473]
+                  - generic [ref=e477]: 0:16
+          - link "Посмотреть все видео" [ref=e480] [cursor=pointer]:
+            - /url: /search?sca_esv=779657e3697e1ae3&udm=7&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&q=topex+texnikum&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8ccDKAJ6BAg2EAQ
+            - separator [ref=e481]
+            - generic [ref=e482]:
+              - generic [ref=e483]: Ещё
+              - img [ref=e485]
+        - generic [ref=e489]:
+          - heading "Internetdagi natijalar" [level=2] [ref=e490]
+          - generic [ref=e491]:
+            - generic [ref=e494]:
+              - link "Topex Texnikum yandex.uz https://yandex.uz › org › to..." [ref=e496] [cursor=pointer]:
+                - /url: https://yandex.uz/maps/org/topex_texnikum/186955127424/
+                - heading "Topex Texnikum" [level=3] [ref=e497]
+                - generic [ref=e503]:
+                  - generic [ref=e505]: yandex.uz
+                  - generic [ref=e507]: https://yandex.uz › org › to...
+              - generic [ref=e508]:
+                - generic [ref=e509]: ·
+                - link "Перевести эту страницу" [ref=e510] [cursor=pointer]:
+                  - /url: https://yandex.uz/maps/org/topex_texnikum/186955127424/
+              - button "Об этом результате" [ref=e513] [cursor=pointer]:
+                - img [ref=e516]
+            - generic [ref=e520]:
+              - text: Texnikum
+              - emphasis [ref=e521]: Topex Texnikum
+              - text: manzili Toshkent, Sergeli tumani, Sergeli-III dahasi, 49, metro “Turon”, ☎️ +998 78 777 4477. Oʻqish uchun 1 отзыв, ...
+            - 'img "Оценка: 4,2 из 5, (3) отзыва пользователей" [ref=e526]':
+              - text: 4,2
+              - img [ref=e527]
+              - text: (3)
+        - generic [ref=e533]:
+          - generic [ref=e536]:
+            - link "Topex Texnikum, texnikum, Toshkent, Yunusobod tumani ... yandex.uz https://yandex.uz › org › to..." [ref=e538] [cursor=pointer]:
+              - /url: https://yandex.uz/maps/org/topex_texnikum/81873528704/
+              - heading "Topex Texnikum, texnikum, Toshkent, Yunusobod tumani ..." [level=3] [ref=e539]
+              - generic [ref=e545]:
+                - generic [ref=e547]: yandex.uz
+                - generic [ref=e549]: https://yandex.uz › org › to...
+            - generic [ref=e550]:
+              - generic [ref=e551]: ·
+              - link "Перевести эту страницу" [ref=e552] [cursor=pointer]:
+                - /url: https://yandex.uz/maps/org/topex_texnikum/81873528704/
+            - button "Об этом результате" [ref=e555] [cursor=pointer]:
+              - img [ref=e558]
+          - generic [ref=e562]:
+            - text: Texnikum Topex Texnikum manzili
+            - emphasis [ref=e563]: Toshkent, Yunusobod tumani, Bogʻishamol koʻchasi, 276
+            - text: ", ☎️ +998 78 777 4477 koʻring. 6 rasmlarni koʻrish, panoramalar, ..."
+        - generic [ref=e567]:
+          - generic [ref=e570]:
+            - 'link "Topex Texnikum (@topextexnikum) Facebook · Topex Texnikum Подписчиков: более 50" [ref=e572] [cursor=pointer]':
+              - /url: https://www.facebook.com/topextexnikum/
+              - heading "Topex Texnikum (@topextexnikum)" [level=3] [ref=e573]
+              - generic [ref=e575]:
+                - img [ref=e580]
+                - generic [ref=e582]:
+                  - generic [ref=e584]: Facebook · Topex Texnikum
+                  - generic [ref=e586]: "Подписчиков: более 50"
+            - button "Об этом результате" [ref=e589] [cursor=pointer]:
+              - img [ref=e592]
+          - generic [ref=e596]:
+            - emphasis [ref=e597]: Topex Texnikumida siz yolg'iz emassiz
+            - text: "! Biz sizga to'g'ri kasb tanlashda yordam beramiz va 8 ta zamonaviy yo'nalish bilan yaqindan tanishtiramiz. Shunday qilib ..."
+        - generic [ref=e601]:
+          - generic [ref=e604]:
+            - link "Topex Texnikum - Yandex Maps yandex.uz https://yandex.uz › org › to..." [ref=e606] [cursor=pointer]:
+              - /url: https://yandex.uz/maps/org/topex_texnikum/66938272062/
+              - heading "Topex Texnikum - Yandex Maps" [level=3] [ref=e607]
+              - generic [ref=e613]:
+                - generic [ref=e615]: yandex.uz
+                - generic [ref=e617]: https://yandex.uz › org › to...
+            - generic [ref=e618]:
+              - generic [ref=e619]: ·
+              - link "Перевести эту страницу" [ref=e620] [cursor=pointer]:
+                - /url: https://yandex.uz/maps/org/topex_texnikum/66938272062/
+            - button "Об этом результате" [ref=e623] [cursor=pointer]:
+              - img [ref=e626]
+          - generic [ref=e630]:
+            - text: Texnikum
+            - emphasis [ref=e631]: Topex Texnikum
+            - text: manzili Toshkent, Chilonzor tumani, Chilonzor dahasi, 6-mavze, 59, metro “Mirzo Ulugʻbek”, ☎️ +998 78 777 4477 koʻring.
+      - generic [ref=e633]:
+        - generic [ref=e638]:
+          - heading "Другие также ищут" [level=2] [ref=e640]
+          - generic [ref=e642]:
+            - link "TOPEX SCHOOL" [ref=e647] [cursor=pointer]:
+              - /url: /search?sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&q=TOPEX+SCHOOL&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ1QJ6BAgtEAE
+              - generic [ref=e648]:
+                - generic [ref=e652]: TOPEX SCHOOL
+                - img [ref=e656]
+            - link "Ташкентский техникум информационных технологий" [ref=e662] [cursor=pointer]:
+              - /url: /search?sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&q=%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9+%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D1%83%D0%BC+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9&sa=X&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ1QJ6BAguEAE
+              - generic [ref=e663]:
+                - generic [ref=e667]: Ташкентский техникум информационных технологий
+                - img [ref=e671]
+        - navigation [ref=e673]:
+          - heading "Навигация по страницам" [level=1] [ref=e674]
+          - text: "1"
+          - link "Page 2" [ref=e677] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=10&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAE
+            - text: "2"
+          - link "Page 3" [ref=e679] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=20&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAG
+            - text: "3"
+          - link "Page 4" [ref=e681] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=30&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAI
+            - text: "4"
+          - link "Page 5" [ref=e683] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=40&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAK
+            - text: "5"
+          - link "Page 6" [ref=e685] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=50&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAM
+            - text: "6"
+          - link "Page 7" [ref=e687] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=60&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAO
+            - text: "7"
+          - link "Page 8" [ref=e689] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=70&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAQ
+            - text: "8"
+          - link "Page 9" [ref=e691] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=80&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAS
+            - text: "9"
+          - link "Page 10" [ref=e693] [cursor=pointer]:
+            - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=90&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8tMDegQIKRAU
+            - text: "10"
+          - heading "Следующая" [level=2] [ref=e695]:
+            - link "Следующая" [ref=e696] [cursor=pointer]:
+              - /url: /search?q=topex+texnikum&sca_esv=779657e3697e1ae3&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485&ei=8EZPas2bHZqP7NYPo7WoyA8&start=10&sa=N&sstk=AU9db-AKK9NBASQu9KKpZ0M7HB1HmGOF6Ik4zWWRK0wSHhr92IIhKvAl3d2Ff4Zu30wRDO6B_l0dyQvdMRraRo9DyA2UHU7J3BmGRA&ved=2ahUKEwjN08vhgsWVAxWaB9sEHaMaCvkQ8NMDegQIKRAW
+              - generic [ref=e698]: Следующая
+      - navigation
+    - contentinfo [ref=e699]:
+      - heading "Ссылки в нижнем колонтитуле" [level=1] [ref=e700]
+      - generic [ref=e704]:
+        - generic [ref=e707]:
+          - generic [ref=e708]: Результаты персонализированы
+          - generic [ref=e709]: "-"
+          - link "Попробовать без персонализации" [ref=e711] [cursor=pointer]:
+            - /url: https://www.google.com/search?q=topex+texnikum&peek_pws=0&sxsrf=APpeQnvNqUUJf7Yq_-zpzmhhd_FL3PBeeA:1783580400485
+            - generic [ref=e712]: Попробовать без персонализации
+        - generic [ref=e714]:
+          - text: Узбекистан
+          - generic [ref=e716]:
+            - button "Ташкент - Определено по IP-адресу" [ref=e718] [cursor=pointer]:
+              - generic [ref=e719]: Ташкент
+              - generic [ref=e721]:
+                - text: "-"
+                - generic [ref=e722]: Определено по IP-адресу
+            - text: "-"
+            - button "Обновить" [ref=e724] [cursor=pointer]: Обновить
+        - generic [ref=e727]:
+          - link "Справка" [ref=e728] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=ru-UZ&fg=1
+          - link "Отправить отзыв" [ref=e729] [cursor=pointer]:
+            - /url: "#"
+          - link "Конфиденциальность" [ref=e730] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=ru-UZ&fg=1
+          - link "Условия" [ref=e731] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=ru-UZ&fg=1

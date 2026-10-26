@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_WhD9kRLcsg4B7C4VTI5zvKckEtwi",
+  "orgId": "team_52heFYzQdr1ZzV1cpe8NajML",
+  "projectName": "topex-texnikumi",
+  "settings": {
+    "createdAt": 1778776900700,
+    "framework": "vite",
+    "devCommand": null,
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "rootDirectory": "frontend",
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}

@@ -1,0 +1,69 @@
+- generic [active] [ref=f24e1]:
+  - generic [ref=f24e2]:
+    - banner [ref=f24e4]:
+      - generic [ref=f24e5]:
+        - heading "Проверка расширенных результатов" [level=1] [ref=f24e8]
+        - button [ref=f24e12] [cursor=pointer]:
+          - generic [ref=f24e15]: 
+        - generic [ref=f24e17]:
+          - button "Приложения Google" [ref=f24e21] [cursor=pointer]:
+            - img [ref=f24e22]
+          - 'button "Аккаунт Google: Otabek Gayratov (gayraotabek4@gmail.com)" [ref=f24e27] [cursor=pointer]':
+            - img [ref=f24e29]
+    - generic [ref=f24e33]:
+      - generic [ref=f24e34]:
+        - generic [ref=f24e35]: Поддерживает ли страница расширенные результаты?
+        - generic [ref=f24e37]:
+          - tablist [ref=f24e38]:
+            - tab "URL" [selected] [ref=f24e39] [cursor=pointer]:
+              - generic [ref=f24e40]:
+                - generic [ref=f24e41]: 
+                - text: URL
+            - tab "код" [ref=f24e43] [cursor=pointer]:
+              - generic [ref=f24e44]:
+                - generic [ref=f24e45]: 
+                - text: код
+          - tabpanel [ref=f24e48]:
+            - generic [ref=f24e49]:
+              - generic [ref=f24e51]:
+                - textbox "Введите URL" [ref=f24e55]: https://topextexnikum.uz/
+                - button "Очистить URL" [ref=f24e56] [cursor=pointer]:
+                  - generic [ref=f24e59]: 
+              - generic [ref=f24e60]:
+                - listbox "Выбор агента пользователя" [ref=f24e63] [cursor=pointer]:
+                  - generic [ref=f24e64]:
+                    - option "Google Inspection Tool на смартфоне" [selected] [ref=f24e65]:
+                      - generic [ref=f24e67]:
+                        - generic [ref=f24e68]: 
+                        - generic [ref=f24e69]: Google Inspection Tool на смартфоне
+                    - option "Google Inspection Tool на компьютере":
+                      - generic [ref=f24e71]:
+                        - generic [ref=f24e72]: 
+                        - generic [ref=f24e73]: Google Inspection Tool на компьютере
+                  - generic [ref=f24e74]: 
+                - button "Проверить страницу" [ref=f24e75] [cursor=pointer]:
+                  - generic [ref=f24e79]: Проверить страницу
+      - generic [ref=f24e86]:
+        - generic [ref=f24e87]:
+          - generic [ref=f24e88]: Что такое расширенные результаты?
+          - generic [ref=f24e89]: Расширенные результаты представляют собой результаты поиска с дополнительными функциями. Это могут быть карусели, изображения или иные нетекстовые элементы.
+        - generic [ref=f24e90]:
+          - generic [ref=f24e91]: Для чего нужна эта проверка?
+          - generic [ref=f24e92]: Проверив общедоступную страницу своего сайта, вы можете узнать, какие расширенные результаты могут быть созданы на основе ее структурированных данных.
+          - link "Подробнее..." [ref=f24e93] [cursor=pointer]:
+            - /url: https://support.google.com/webmasters/answer/7445569
+            - generic [ref=f24e97]:
+              - generic [ref=f24e98]: Подробнее...
+              - generic [ref=f24e100]: 
+        - generic [ref=f24e101]:
+          - generic [ref=f24e102]: Виды структурированных данных
+          - generic [ref=f24e103]: Справочная документация по структурированным данным, которые поддерживаются в Google
+          - link "Изучить документацию" [ref=f24e104] [cursor=pointer]:
+            - /url: https://developers.google.com/search/docs/guides/search-gallery
+            - generic [ref=f24e108]:
+              - generic [ref=f24e109]: Изучить документацию
+              - generic [ref=f24e111]: 
+  - iframe [ref=f24e114]:
+    - generic [ref=f25e6]:
+      - text: защита от спама
+      - strong [ref=f25e7]: reCAPTCHA

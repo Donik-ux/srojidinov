@@ -1,0 +1,64 @@
+- generic [ref=f5e1]:
+  - generic [ref=f5e3]:
+    - generic [ref=f5e4]:
+      - generic [ref=f5e6]:
+        - generic [ref=f5e7]: Загрузка...
+        - progressbar [active] [ref=f5e8]
+      - main [ref=f5e93]:
+        - generic [ref=f5e94]:
+          - generic [ref=f5e96]:
+            - generic [ref=f5e97]:
+              - img [ref=f5e99]
+              - generic [ref=f5e104]: Вход через аккаунт Google
+            - img "Vercel" [ref=f5e105]
+          - generic [ref=f5e106]:
+            - heading "Добро пожаловать!" [level=1] [ref=f5e107]
+            - generic [ref=f5e111]:
+              - img [ref=f5e113]
+              - generic [ref=f5e116]: gayraotabek4@gmail.com
+        - generic [ref=f5e119]:
+          - generic [ref=f5e125]:
+            - generic [ref=f5e133]:
+              - textbox "Введите пароль" [ref=f5e134]: yahyotuhumgey
+              - generic: Введите пароль
+            - generic [ref=f5e141]:
+              - generic [ref=f5e144] [cursor=pointer]:
+                - checkbox "Показать пароль" [ref=f5e145]
+                - generic:
+                  - img
+              - generic [ref=f5e148] [cursor=pointer]: Показать пароль
+          - generic [ref=f5e151]:
+            - text: Прежде чем начать работу с приложением "Vercel", вы можете ознакомиться с его
+            - link "политикой конфиденциальности" [ref=f5e152] [cursor=pointer]:
+              - /url: https://vercel.com/legal/privacy-policy
+            - text: и
+            - link "условиями использования" [ref=f5e153] [cursor=pointer]:
+              - /url: https://vercel.com/legal/terms
+            - text: .
+        - generic [ref=f5e155]:
+          - button "Далее" [ref=f5e159]:
+            - generic [ref=f5e162]: Далее
+          - button "Другой способ" [ref=f5e166]:
+            - generic [ref=f5e169]: Другой способ
+    - contentinfo [ref=f5e76]:
+      - combobox "Изменение языковых настроек Русский" [ref=f5e80] [cursor=pointer]:
+        - generic:
+          - generic: Русский
+        - generic:
+          - img
+      - list [ref=f5e82]:
+        - listitem [ref=f5e83]:
+          - link "Открыть Справочный центр Google Аккаунтов (внешняя ссылка, откроется в новом окне)" [ref=f5e84] [cursor=pointer]:
+            - /url: https://support.google.com/accounts?hl=ru&p=account_iph
+            - text: Справка
+        - listitem [ref=f5e85]:
+          - link "Политика конфиденциальности (внешняя ссылка, откроется в новом окне)" [ref=f5e86] [cursor=pointer]:
+            - /url: https://accounts.google.com/TOS?loc=UZ&hl=ru&privacy=true
+            - text: Конфиденциальность
+        - listitem [ref=f5e87]:
+          - link "Условия использования Google (внешняя ссылка, откроется в новом окне)" [ref=f5e88] [cursor=pointer]:
+            - /url: https://accounts.google.com/TOS?loc=UZ&hl=ru
+            - text: Условия
+  - iframe [ref=f5e89]:
+    
+  - generic [ref=f5e173]: Добро пожаловать!

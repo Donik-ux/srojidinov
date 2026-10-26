@@ -1,0 +1,301 @@
+- generic [active] [ref=f12e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=f12e3]:
+    - generic [ref=f12e4]:
+      - generic [ref=f12e5]:
+        - generic [ref=f12e6]:
+          - generic [ref=f12e7]:
+            - generic [ref=f12e10]:
+              - link "gayraotabek4-8557's projects Hobby" [ref=f12e11] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects
+                - img [ref=f12e12]
+                - generic [ref=f12e13]:
+                  - generic [ref=f12e14]: gayraotabek4-8557's projects
+                  - generic [ref=f12e15]: Hobby
+              - button [ref=f12e16] [cursor=pointer]:
+                - img [ref=f12e18]
+            - button "Find… F" [ref=f12e21]:
+              - generic [ref=f12e23]:
+                - img [ref=f12e25]
+                - generic [ref=f12e27]: Find…
+                - generic [ref=f12e29]: F
+          - navigation [ref=f12e31]:
+            - generic [ref=f12e34]:
+              - link "Other Overview" [ref=f12e35] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi
+                - img "Other" [ref=f12e37]:
+                  - img "Other" [ref=f12e38]
+                - generic [ref=f12e40]: Overview
+              - link "Deployments" [ref=f12e41] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/deployments
+                - img [ref=f12e43]
+                - generic [ref=f12e46]: Deployments
+              - link "Logs" [ref=f12e47] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/logs
+                - img [ref=f12e49]
+                - generic [ref=f12e52]: Logs
+              - link "Analytics" [ref=f12e53] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/analytics
+                - img [ref=f12e55]
+                - generic [ref=f12e58]: Analytics
+              - link "Speed Insights" [ref=f12e59] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/speed-insights
+                - img [ref=f12e61]
+                - generic [ref=f12e64]: Speed Insights
+              - link "Observability" [ref=f12e65] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/observability
+                - img [ref=f12e67]
+                - generic [ref=f12e70]: Observability
+                - img [ref=f12e72]
+              - link "Firewall" [ref=f12e74] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/firewall
+                - img [ref=f12e76]
+                - generic [ref=f12e80]: Firewall
+                - img [ref=f12e82]
+              - link "CDN" [ref=f12e84] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/cdn
+                - img [ref=f12e86]
+                - generic [ref=f12e89]: CDN
+                - img [ref=f12e91]
+              - separator [ref=f12e93]
+              - link "Environment Variables" [ref=f12e94] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings/environment-variables
+                - img [ref=f12e96]
+                - generic [ref=f12e99]: Environment Variables
+              - link "Domains" [ref=f12e100] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings/domains
+                - img [ref=f12e102]
+                - generic [ref=f12e105]: Domains
+              - link "Connect Beta" [ref=f12e106] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/connect
+                - img [ref=f12e108]
+                - generic [ref=f12e110]:
+                  - generic [ref=f12e111]: Connect
+                  - generic [ref=f12e112]: Beta
+              - link "Integrations" [ref=f12e113] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings/integrations
+                - img [ref=f12e115]
+                - generic [ref=f12e118]: Integrations
+              - link "Storage" [ref=f12e119] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/stores
+                - img [ref=f12e121]
+                - generic [ref=f12e124]: Storage
+              - link "Flags" [ref=f12e125] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/flags
+                - img [ref=f12e127]
+                - generic [ref=f12e130]: Flags
+                - img [ref=f12e132]
+              - link "Agent" [ref=f12e134] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/agent
+                - img [ref=f12e136]
+                - generic [ref=f12e139]: Agent
+                - img [ref=f12e141]
+              - link "AI Gateway" [ref=f12e143] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/ai-gateway
+                - img [ref=f12e145]
+                - generic [ref=f12e148]: AI Gateway
+                - img [ref=f12e150]
+              - link "Sandboxes" [ref=f12e152] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/sandboxes
+                - img [ref=f12e154]
+                - generic [ref=f12e157]: Sandboxes
+                - img [ref=f12e159]
+              - link "Workflows" [ref=f12e161] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/workflows
+                - img [ref=f12e163]
+                - generic [ref=f12e166]: Workflows
+              - link "Images Beta" [ref=f12e167] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/images
+                - img [ref=f12e169]
+                - generic [ref=f12e171]:
+                  - generic [ref=f12e172]: Images
+                  - generic [ref=f12e173]: Beta
+              - separator [ref=f12e174]
+              - link "Usage" [ref=f12e175] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/usage
+                - img [ref=f12e177]
+                - generic [ref=f12e180]: Usage
+              - link "Support" [ref=f12e181] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/support
+                - img [ref=f12e183]
+                - generic [ref=f12e186]: Support
+              - link "Settings" [ref=f12e187] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings
+                - img [ref=f12e189]
+                - generic [ref=f12e192]: Settings
+                - img [ref=f12e194]
+          - generic [ref=f12e200]:
+            - button "Avatar for gayraotabek4-8557 gayraotabek4-8557" [ref=f12e201] [cursor=pointer]:
+              - img "Avatar for gayraotabek4-8557" [ref=f12e202]:
+                - img "Avatar for gayraotabek4-8557" [ref=f12e203]
+              - generic [ref=f12e205]: gayraotabek4-8557
+              - img [ref=f12e207]
+            - img [ref=f12e211]
+        - button [ref=f12e214] [cursor=pointer]:
+          - img [ref=f12e215]
+      - generic [ref=f12e218]:
+        - generic [ref=f12e219]:
+          - generic [ref=f12e222]:
+            - link "Other topex-texnikumi" [ref=f12e223] [cursor=pointer]:
+              - /url: /gayraotabek4-8557s-projects/topex-texnikumi
+              - img "Other" [ref=f12e224]:
+                - img "Other" [ref=f12e225]
+              - generic [ref=f12e227]: topex-texnikumi
+            - button [ref=f12e228] [cursor=pointer]:
+              - img [ref=f12e230]
+            - link "Back to team view" [ref=f12e234] [cursor=pointer]:
+              - /url: /gayraotabek4-8557s-projects
+              - img [ref=f12e236]
+          - generic [ref=f12e240]: Overview
+        - generic [ref=f12e243]:
+          - generic [ref=f12e247]:
+            - generic [ref=f12e248]:
+              - heading "Production Deployment" [level=3] [ref=f12e250]
+              - generic [ref=f12e261]:
+                - link "Visit Deployment" [ref=f12e264] [cursor=pointer]:
+                  - /url: https://topextexnikum.uz
+                  - img [ref=f12e267]
+                - generic [ref=f12e269]:
+                  - generic [ref=f12e270]:
+                    - generic [ref=f12e272]:
+                      - term [ref=f12e273]: Deployment
+                      - definition [ref=f12e274]:
+                        - link "topex-texnikumi-d3gw0nwvc-gayraotabek4-8557s-projects.vercel.app" [ref=f12e276] [cursor=pointer]:
+                          - /url: /gayraotabek4-8557s-projects/topex-texnikumi/oGyyDog3GMEHhtrc6vAJkWBKfhsD
+                    - link "0" [ref=f12e278] [cursor=pointer]:
+                      - /url: /gayraotabek4-8557s-projects/topex-texnikumi/speed-insights
+                      - progressbar [ref=f12e280]:
+                        - img [ref=f12e281]
+                        - img [ref=f12e286]
+                  - generic [ref=f12e289]:
+                    - term [ref=f12e290]:
+                      - generic [ref=f12e292]:
+                        - text: Domains
+                        - link [ref=f12e293] [cursor=pointer]:
+                          - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings/domains
+                          - img [ref=f12e294]
+                    - definition [ref=f12e296]:
+                      - link "topextexnikum.uz" [ref=f12e300] [cursor=pointer]:
+                        - /url: https://topextexnikum.uz
+                        - generic [ref=f12e301]: topextexnikum.uz
+                        - img [ref=f12e302]
+                  - generic [ref=f12e304]:
+                    - generic [ref=f12e305]:
+                      - term [ref=f12e306]: Status
+                      - definition [ref=f12e307]:
+                        - generic "This deployment is ready." [ref=f12e310]:
+                          - generic [ref=f12e314]: Ready
+                    - generic [ref=f12e316]:
+                      - term [ref=f12e317]: Created
+                      - definition [ref=f12e318]:
+                        - generic [ref=f12e320] [cursor=pointer]:
+                          - paragraph [ref=f12e321]: 2h ago by kreziy7
+                          - img "github/kreziy7" [ref=f12e323]:
+                            - img "github/kreziy7" [ref=f12e324]
+                  - generic [ref=f12e326]:
+                    - term [ref=f12e327]: Source
+                    - definition [ref=f12e328]:
+                      - generic [ref=f12e330]:
+                        - generic [ref=f12e331]:
+                          - img [ref=f12e332]
+                          - link "main" [ref=f12e334] [cursor=pointer]:
+                            - /url: https://github.com/kreziy7/topex-texnikumi/tree/main
+                            - code [ref=f12e335]: main
+                        - generic [ref=f12e336]:
+                          - img [ref=f12e337]
+                          - link "cdd7424 Public pages back to static data, add news coming-soon placeholder" [ref=f12e339] [cursor=pointer]:
+                            - /url: https://github.com/kreziy7/topex-texnikumi/commit/cdd742458a6a5a20c2368eabf06eaf3ac4d1fd20
+                            - code [ref=f12e340]: cdd7424
+                            - generic "Public pages back to static data, add news coming-soon placeholder" [ref=f12e341]
+              - button "Deployment Settings 3 Recommendations" [ref=f12e344] [cursor=pointer]:
+                - generic [ref=f12e345]:
+                  - img [ref=f12e346]
+                  - generic [ref=f12e348]:
+                    - generic [ref=f12e349]: Deployment Settings
+                    - generic [ref=f12e354]: 3 Recommendations
+            - generic [ref=f12e357]:
+              - generic [ref=f12e359]: To update your Production Deployment, push to the main branch.
+              - generic [ref=f12e361]:
+                - link "Deployments" [ref=f12e362] [cursor=pointer]:
+                  - /url: /gayraotabek4-8557s-projects/topex-texnikumi/deployments?environment=production
+                  - img [ref=f12e364]
+                  - generic [ref=f12e366]: Deployments
+                - link "Learn more" [ref=f12e367] [cursor=pointer]:
+                  - /url: /docs/git#production-branch
+                  - img [ref=f12e369]
+          - generic [ref=f12e373]:
+            - generic [ref=f12e374]:
+              - generic [ref=f12e375]:
+                - generic [ref=f12e376]:
+                  - paragraph [ref=f12e377]:
+                    - strong [ref=f12e378]: Production Checklist
+                  - generic [ref=f12e379]: 3/5
+                - button "Go to page" [ref=f12e380] [cursor=pointer]:
+                  - img [ref=f12e382]
+                - button [ref=f12e384] [cursor=pointer]
+              - generic [ref=f12e388]:
+                - button "Connect Git Repository" [ref=f12e389] [cursor=pointer]:
+                  - img [ref=f12e390]
+                  - generic [ref=f12e392]: Connect Git Repository
+                  - img [ref=f12e393]
+                - button "Add Custom Domain" [ref=f12e395] [cursor=pointer]:
+                  - img [ref=f12e396]
+                  - generic [ref=f12e398]: Add Custom Domain
+                  - img [ref=f12e399]
+                - button "Preview Deployment" [ref=f12e401] [cursor=pointer]:
+                  - img [ref=f12e402]
+                  - generic [ref=f12e404]: Preview Deployment
+                  - img [ref=f12e405]
+                - button "Enable Web Analytics" [ref=f12e407] [cursor=pointer]:
+                  - img [ref=f12e408]
+                  - generic [ref=f12e410]: Enable Web Analytics
+                - button "Enable Speed Insights" [ref=f12e411] [cursor=pointer]:
+                  - img [ref=f12e412]
+                  - generic [ref=f12e414]: Enable Speed Insights
+            - generic [ref=f12e415]:
+              - generic [ref=f12e416]:
+                - generic [ref=f12e417]:
+                  - paragraph [ref=f12e418]:
+                    - strong [ref=f12e419]: Observability
+                  - time [ref=f12e420]: 6h
+                - link "Go to page" [ref=f12e421] [cursor=pointer]:
+                  - /url: /gayraotabek4-8557s-projects/topex-texnikumi/observability?period=6h
+                  - img [ref=f12e423]
+                - link [ref=f12e425] [cursor=pointer]:
+                  - /url: /gayraotabek4-8557s-projects/topex-texnikumi/observability?period=6h
+              - generic [ref=f12e427]:
+                - generic [ref=f12e429]: Edge Requests
+                - img [ref=f12e436]
+                - generic [ref=f12e438]: Function Invocations
+                - img [ref=f12e445]
+                - generic [ref=f12e447]: Error Rate
+                - img [ref=f12e454]
+            - generic [ref=f12e455]:
+              - generic [ref=f12e456]:
+                - paragraph [ref=f12e458]:
+                  - strong [ref=f12e459]: Analytics
+                - link "Go to page" [ref=f12e460] [cursor=pointer]:
+                  - /url: /gayraotabek4-8557s-projects/topex-texnikumi/analytics
+                  - img [ref=f12e462]
+                - link [ref=f12e464] [cursor=pointer]:
+                  - /url: /gayraotabek4-8557s-projects/topex-texnikumi/analytics
+              - generic [ref=f12e466]:
+                - img [ref=f12e468]
+                - generic [ref=f12e470]:
+                  - paragraph [ref=f12e471]: Track Visitors and Page Views
+                  - paragraph [ref=f12e472]: See real-time traffic, top pages, and audience trends.
+                - link "Enable Analytics" [ref=f12e473] [cursor=pointer]:
+                  - /url: /gayraotabek4-8557s-projects/topex-texnikumi/analytics?enable=1&source=project-overview-analytics-card
+                  - generic [ref=f12e474]: Enable Analytics
+          - generic [ref=f12e475]:
+            - paragraph [ref=f12e479]: Active Branches
+            - generic [ref=f12e483]:
+              - heading "No Active Branches" [level=3] [ref=f12e484]
+              - paragraph [ref=f12e486]: Commit using our Git connections.
+  - alert [ref=f12e488]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img

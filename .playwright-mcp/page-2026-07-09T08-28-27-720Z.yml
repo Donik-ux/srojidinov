@@ -1,0 +1,143 @@
+- generic [ref=f37e2]:
+  - banner [ref=f37e4]:
+    - generic [ref=f37e5]:
+      - generic [ref=f37e6]:
+        - button "Главное меню" [ref=f37e7] [cursor=pointer]:
+          - img [ref=f37e8]
+        - link "Google Search Console" [ref=f37e12] [cursor=pointer]:
+          - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+          - img [ref=f37e13]
+      - generic [ref=f37e14]:
+        - search [ref=f37e16]:
+          - generic [ref=f37e22]:
+            - textbox [disabled] [ref=f37e23]: Проверка всех URL на ресурсе https://topextexnikum.uz/
+            - combobox "Проверка всех URL на ресурсе https://topextexnikum.uz/" [ref=f37e24]
+          - button "Поиск" [ref=f37e25] [cursor=pointer]:
+            - img [ref=f37e26]
+        - generic [ref=f37e29]:
+          - generic [ref=f37e31]:
+            - button "Справка" [ref=f37e33] [cursor=pointer]:
+              - generic [ref=f37e36]: 
+            - button "Пользовательские настройки" [ref=f37e38] [cursor=pointer]:
+              - img [ref=f37e41]
+          - 'button "Непрочитанных сообщений: 2" [ref=f37e45] [cursor=pointer]':
+            - generic [ref=f37e47]:
+              - generic [ref=f37e48]: 
+              - generic [ref=f37e50]: "2"
+      - generic [ref=f37e52]:
+        - button "Приложения Google" [ref=f37e56] [cursor=pointer]:
+          - img [ref=f37e57]
+        - 'button "Аккаунт Google: Otabek Gayratov (gayraotabek4@gmail.com)" [ref=f37e62] [cursor=pointer]':
+          - img [ref=f37e64]
+  - dialog "navigational drawer" [ref=f37e68]:
+    - navigation "Основной" [ref=f37e71]:
+      - button "Ресурс" [ref=f37e75] [cursor=pointer]:
+        - img "значок сайта" [ref=f37e77]
+        - combobox "https://topextexnikum.uz/" [ref=f37e85]
+        - generic [ref=f37e86]: 
+      - generic [ref=f37e87]:
+        - generic [ref=f37e88]:
+          - generic [ref=f37e89]:
+            - link "Обзор" [ref=f37e91] [cursor=pointer]:
+              - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f37e93]: home
+              - generic [ref=f37e95]: Обзор
+            - link "Статистика" [ref=f37e98] [cursor=pointer]:
+              - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f37e100]: lightbulb_2
+              - generic [ref=f37e102]: Статистика
+            - link "Эффективность" [ref=f37e105] [cursor=pointer]:
+              - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f37e107]: trending_up
+              - generic [ref=f37e109]: Эффективность
+            - button "Проверка URL" [ref=f37e112] [cursor=pointer]:
+              - generic [ref=f37e114]: search
+              - generic [ref=f37e116]: Проверка URL
+          - generic [ref=f37e120]:
+            - generic [ref=f37e122]:
+              - generic [ref=f37e125]: Индексирование
+              - button "Раздел \"Индексирование\" в отчете" [expanded] [ref=f37e127] [cursor=pointer]:
+                - generic [ref=f37e129]: keyboard_arrow_up
+            - generic [ref=f37e133]:
+              - link "Страницы" [ref=f37e135] [cursor=pointer]:
+                - /url: ./search-console/index?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f37e137]: file_copy
+                - generic [ref=f37e139]: Страницы
+              - link "Файлы Sitemap" [ref=f37e142] [cursor=pointer]:
+                - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f37e144]: account_tree
+                - generic [ref=f37e146]: Файлы Sitemap
+              - link "Удаления" [ref=f37e149] [cursor=pointer]:
+                - /url: ./search-console/removals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f37e151]: visibility_off
+                - generic [ref=f37e153]: Удаления
+          - generic [ref=f37e157]:
+            - generic [ref=f37e159]:
+              - generic [ref=f37e162]: Качество
+              - button "Раздел \"Качество\" в отчете" [expanded] [ref=f37e164] [cursor=pointer]:
+                - generic [ref=f37e166]: keyboard_arrow_up
+            - generic [ref=f37e170]:
+              - link "Core Web Vitals" [ref=f37e172] [cursor=pointer]:
+                - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f37e174]: speed
+                - generic [ref=f37e176]: Core Web Vitals
+              - link "HTTPS" [ref=f37e179] [cursor=pointer]:
+                - /url: ./search-console/https?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f37e181]: lock
+                - generic [ref=f37e183]: HTTPS
+          - generic [ref=f37e187]:
+            - generic [ref=f37e189]:
+              - generic [ref=f37e192]: Улучшения
+              - button "Раздел \"Улучшения\" в отчете" [expanded] [ref=f37e194] [cursor=pointer]:
+                - generic [ref=f37e196]: keyboard_arrow_up
+            - link "Структурированные данные, не поддающиеся анализу" [ref=f37e202] [cursor=pointer]:
+              - /url: ./search-console/r/unknown-type?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f37e204]: layers
+              - generic [ref=f37e206]: Структурированные данные, не поддающиеся анализу
+          - generic [ref=f37e210]:
+            - generic [ref=f37e212]:
+              - generic [ref=f37e215]: Проблемы безопасности и меры, принятые вручную
+              - button "Раздел \"Проблемы безопасности и меры, принятые вручную\" в отчете" [expanded] [ref=f37e217] [cursor=pointer]:
+                - generic [ref=f37e219]: keyboard_arrow_up
+            - generic [ref=f37e222]:
+              - link "Меры, принятые вручную" [ref=f37e224] [cursor=pointer]:
+                - /url: ./search-console/manual-actions?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f37e226]: flag
+                - generic [ref=f37e228]: Меры, принятые вручную
+              - link "Проблемы безопасности" [ref=f37e231] [cursor=pointer]:
+                - /url: ./search-console/security-issues?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f37e233]: security
+                - generic [ref=f37e235]: Проблемы безопасности
+          - generic [ref=f37e237]:
+            - link "Отчет о ссылках" [ref=f37e239] [cursor=pointer]:
+              - /url: ./search-console/links?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f37e241]: link_2
+              - generic [ref=f37e243]: Ссылки
+            - link "Достижения" [ref=f37e246] [cursor=pointer]:
+              - /url: ./search-console/achievements?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f37e248]: trophy
+              - generic [ref=f37e250]: Достижения
+            - link "Настройки" [ref=f37e253] [cursor=pointer]:
+              - /url: ./search-console/settings?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+              - generic [ref=f37e255]: settings
+              - generic [ref=f37e257]: Настройки
+        - generic [ref=f37e259]:
+          - generic [ref=f37e261]:
+            - button "Отправить отзыв" [ref=f37e263] [cursor=pointer]:
+              - generic [ref=f37e265]: feedback
+              - generic [ref=f37e267]: Отправить отзыв
+            - button "Общие сведения о Search Console" [ref=f37e270] [cursor=pointer]:
+              - generic [ref=f37e272]: info
+              - generic [ref=f37e274]: Общие сведения о Search Console
+          - generic [ref=f37e278]:
+            - link "Конфиденциальность" [ref=f37e279] [cursor=pointer]:
+              - /url: https://myaccount.google.com/privacypolicy?hl=ru
+            - link "Условия использования" [ref=f37e280] [cursor=pointer]:
+              - /url: https://myaccount.google.com/termsofservice?hl=ru
+  - generic [ref=f37e282]:
+    - navigation "Строки навигации" [ref=f37e287]:
+      - heading "Проблемы безопасности" [level=1] [ref=f37e290]
+    - main [ref=f37e294]:
+      - generic [ref=f37e298]:
+        - generic [ref=f37e299]: check_circle
+        - generic [ref=f37e301]: Проблем нет

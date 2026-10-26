@@ -1,0 +1,71 @@
+- generic [ref=f44e2]:
+  - banner [ref=f44e4]:
+    - generic [ref=f44e5]:
+      - generic [ref=f44e6]:
+        - button "Главное меню" [ref=f44e7] [cursor=pointer]:
+          - img [ref=f44e8]
+        - link "Менеджер профиля компании" [ref=f44e12] [cursor=pointer]:
+          - /url: /?tab=LL
+          - generic [ref=f44e14]: Менеджер профиля компании
+      - generic [ref=f44e16]:
+        - button "Приложения Google" [ref=f44e20] [cursor=pointer]:
+          - img [ref=f44e21]
+        - 'button "Аккаунт Google: Otabek Gayratov (gayraotabek4@gmail.com)" [ref=f44e26] [cursor=pointer]':
+          - img [ref=f44e28]
+  - dialog "navigational drawer" [ref=f44e32]:
+    - navigation [ref=f44e35]:
+      - list [ref=f44e36]:
+        - listitem [ref=f44e37]:
+          - link "Компании" [ref=f44e38] [cursor=pointer]:
+            - /url: ./locations
+            - img [ref=f44e40]
+            - generic [ref=f44e42]: Компании
+        - listitem [ref=f44e43]:
+          - link "Связанные аккаунты" [ref=f44e44] [cursor=pointer]:
+            - /url: ./linkedaccounts
+            - img [ref=f44e46]
+            - generic [ref=f44e49]: Связанные аккаунты
+        - listitem [ref=f44e50]:
+          - generic "Настройки" [ref=f44e51] [cursor=pointer]:
+            - img [ref=f44e53]
+            - generic [ref=f44e56]: Настройки
+        - listitem [ref=f44e57]:
+          - generic "Справка" [ref=f44e58] [cursor=pointer]:
+            - img [ref=f44e60]
+            - generic [ref=f44e62]: Справка
+  - generic [ref=f44e64]:
+    - generic [ref=f44e67]:
+      - generic [ref=f44e68]:
+        - button "Создать группу" [ref=f44e71]:
+          - generic [ref=f44e73]: Создать группу
+          - generic "Создать группу" [ref=f44e74] [cursor=pointer]
+        - generic [ref=f44e78]:
+          - generic [ref=f44e79]: 0 компаний
+          - generic [ref=f44e80]: 0 % проверено
+      - generic [ref=f44e85]:
+        - generic [ref=f44e87]:
+          - heading "Компании" [level=1] [ref=f44e88]
+          - button "Добавить компанию" [ref=f44e91] [cursor=pointer]:
+            - generic [ref=f44e93]:
+              - text: Добавить компанию
+              - generic [ref=f44e94]: 
+        - generic [ref=f44e95]:
+          - table [ref=f44e97]:
+            - rowgroup [ref=f44e98]:
+              - row "Бизнес Статус" [ref=f44e99]:
+                - columnheader "Бизнес" [ref=f44e100]
+                - columnheader "Статус" [ref=f44e101]
+                - columnheader [ref=f44e102]
+          - generic [ref=f44e104]: Вы не добавили компании.
+    - generic [ref=f44e105]:
+      - text: © Google, 2026-
+      - link "Условия" [ref=f44e106] [cursor=pointer]:
+        - /url: //support.google.com/business/bin/answer.py?hl=ru&answer=9292476
+      - text: "-"
+      - link "Политика конфиденциальности" [ref=f44e107] [cursor=pointer]:
+        - /url: https://myaccount.google.com/privacypolicy?hl=ru
+      - text: "-"
+      - link "Правила" [ref=f44e108] [cursor=pointer]:
+        - /url: https://www.google.com/intl/ru/+/policy/content.html
+      - text: "-"
+      - generic [ref=f44e109]: Справка

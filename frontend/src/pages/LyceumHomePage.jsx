@@ -17,10 +17,13 @@ import {
   Microscope,
   Phone,
   Sparkles,
+  TrendingUp,
   Users,
 } from 'lucide-react';
 
 const CAMPUS_IMAGE = 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=2000&q=88';
+const HERO_VIDEO = '/assets/videos/hero.mp4';
+const HERO_POSTER = '/assets/videos/hero-poster.jpg';
 const STUDENT_IMAGE = 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=85';
 const ABOUT_IMAGE = '/assets/images/about-new-1.jpg';
 
@@ -76,7 +79,7 @@ const advantages = [
 const stats = [
   { value: '1970', label: 'tashkil etilgan yil' },
   { value: '55+', label: 'yillik ta’lim an’anasi' },
-  { value: '2', label: 'asosiy ta’lim yo‘nalishi' },
+  { value: '3', label: 'asosiy ta’lim yo‘nalishi' },
   { value: 'O‘zMU', label: 'qoshidagi akademik litsey' },
 ];
 
@@ -95,13 +98,22 @@ const directions = [
     text: 'Tirik organizmlar, moddalar tuzilishi va laboratoriya tadqiqotlariga asoslangan tayyorgarlik.',
     fit: 'Tabiat, tibbiyot va ekologiyaga qiziqqan o‘quvchilar uchun.',
   },
+  {
+    Icon: TrendingUp,
+    title: 'Iqtisod',
+    subjects: ['Matematika', 'Ingliz tili'],
+    text: 'Iqtisodiy tafakkur, moliyaviy savodxonlik va xalqaro muloqot ko‘nikmalarini rivojlantirishga qaratilgan guruhlar.',
+    fit: 'Iqtisodiyot, biznes va xalqaro aloqalarga qiziqqan o‘quvchilar uchun.',
+  },
 ];
 
 const teachers = [
-  { subject: 'Matematika', image: '/assets/Ustozlar/teacher-new-1.webp' },
-  { subject: 'Fizika', image: '/assets/Ustozlar/teacher-new-2.webp' },
-  { subject: 'Kimyo', image: '/assets/Ustozlar/teacher-new-3.webp' },
-  { subject: 'Biologiya', image: '/assets/Ustozlar/teacher-new-4.webp' },
+  { subject: 'Деректор', image: '/assets/Ustozlar/IMG_20261026_175341_878.jpg' },
+  { subject: 'Зам деректор ', image: '/assets/Ustozlar/зам.jpg' },
+  { subject: 'Fizika', image: '/assets/Ustozlar/fizika.jpg' },
+  { subject: 'Matematika', image: '/assets/Ustozlar/matem.jpg' },
+    { subject: 'Ona tili', image: '/assets/Ustozlar/ona.jpg' },
+
 ];
 
 const admissionSteps = [
@@ -171,10 +183,15 @@ const LyceumHomePage = () => (
 
     <div>
       <section id="hero" className="relative isolate min-h-[620px] overflow-hidden bg-[#132d43] text-white sm:min-h-[690px] lg:min-h-[720px]">
-        <img
-          src={CAMPUS_IMAGE}
-          alt="Ta’lim kampusi tasviriy fotosurati"
-          fetchPriority="high"
+        <video
+          src={HERO_VIDEO}
+          poster={HERO_POSTER}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(13,34,52,.94)_0%,rgba(13,34,52,.78)_48%,rgba(13,34,52,.18)_100%)]" />
@@ -213,7 +230,7 @@ const LyceumHomePage = () => (
           </div>
         </div>
         <span className="absolute bottom-5 right-5 bg-black/45 px-3 py-1.5 text-[11px] text-white/80 sm:right-10">
-          Tasviriy foto
+          Video
         </span>
       </section>
 
@@ -375,11 +392,11 @@ const LyceumHomePage = () => (
         <div className="mx-auto max-w-[1440px] px-5 sm:px-10 lg:px-16">
           <SectionHeading
             eyebrow="Ta’lim yo‘nalishlari"
-            title="Tabiiy va aniq fanlar"
+            title="Tabiiy, aniq va iqtisod fanlari"
             text="Ochiq manbalardagi avvalgi qabul e’lonlarida quyidagi fan juftliklari ko‘rsatilgan. Joriy o‘quv yili yo‘nalishlari va kvotalarini litsey bilan aniqlashtiring."
           />
 
-          <div className="mt-9 grid gap-5 md:grid-cols-2">
+          <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {directions.map(({ Icon, title, subjects, text, fit }) => (
               <article key={title} className="group flex flex-col border border-[#dfe3e4] p-7 transition-colors hover:border-[#a27a3b] sm:p-9">
                 <div className="flex items-start justify-between gap-4">

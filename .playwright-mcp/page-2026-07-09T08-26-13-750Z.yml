@@ -1,0 +1,456 @@
+- generic [active] [ref=f28e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=f28e3]:
+    - generic [ref=f28e4]:
+      - generic [ref=f28e5]:
+        - generic [ref=f28e6]:
+          - generic [ref=f28e7]:
+            - generic [ref=f28e10]:
+              - link "gayraotabek4-8557's projects Hobby" [ref=f28e11] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects
+                - img [ref=f28e12]
+                - generic [ref=f28e13]:
+                  - generic [ref=f28e14]: gayraotabek4-8557's projects
+                  - generic [ref=f28e15]: Hobby
+              - button [ref=f28e16] [cursor=pointer]:
+                - img [ref=f28e18]
+            - button "Find… F" [ref=f28e21]:
+              - generic [ref=f28e23]:
+                - img [ref=f28e25]
+                - generic [ref=f28e27]: Find…
+                - generic [ref=f28e29]: F
+          - navigation [ref=f28e31]:
+            - generic [ref=f28e34]:
+              - link "Projects" [ref=f28e448] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects
+                - img [ref=f28e450]
+                - generic [ref=f28e453]: Projects
+              - link "Deployments" [ref=f28e40] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/deployments
+                - img [ref=f28e42]
+                - generic [ref=f28e45]: Deployments
+              - link "Logs" [ref=f28e46] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/logs
+                - img [ref=f28e48]
+                - generic [ref=f28e51]: Logs
+              - link "Analytics" [ref=f28e52] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/analytics
+                - img [ref=f28e54]
+                - generic [ref=f28e57]: Analytics
+              - link "Speed Insights" [ref=f28e58] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/speed-insights
+                - img [ref=f28e60]
+                - generic [ref=f28e63]: Speed Insights
+              - link "Observability" [ref=f28e64] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/observability
+                - img [ref=f28e66]
+                - generic [ref=f28e69]: Observability
+                - img [ref=f28e71]
+              - link "Firewall" [ref=f28e73] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/firewall
+                - img [ref=f28e75]
+                - generic [ref=f28e79]: Firewall
+              - link "CDN" [ref=f28e83] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/cdn
+                - img [ref=f28e85]
+                - generic [ref=f28e88]: CDN
+              - separator [ref=f28e92]
+              - link "Environment Variables 18" [ref=f28e454] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/settings/environment-variables
+                - img [ref=f28e95]
+                - generic [ref=f28e97]:
+                  - generic [ref=f28e98]: Environment Variables
+                  - generic [ref=f28e456]: "18"
+              - link "Domains" [ref=f28e99] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/domains
+                - img [ref=f28e101]
+                - generic [ref=f28e104]: Domains
+              - link "Connect Beta" [ref=f28e105] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/connect
+                - img [ref=f28e107]
+                - generic [ref=f28e109]:
+                  - generic [ref=f28e110]: Connect
+                  - generic [ref=f28e111]: Beta
+              - link "Integrations" [ref=f28e112] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/integrations
+                - img [ref=f28e114]
+                - generic [ref=f28e117]: Integrations
+              - link "Storage" [ref=f28e118] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/stores
+                - img [ref=f28e120]
+                - generic [ref=f28e123]: Storage
+              - link "Flags" [ref=f28e124] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/experimentation/collections
+                - img [ref=f28e126]
+                - generic [ref=f28e129]: Flags
+              - link "Agent" [ref=f28e133] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/agent
+                - img [ref=f28e135]
+                - generic [ref=f28e138]: Agent
+                - img [ref=f28e140]
+              - link "AI Gateway" [ref=f28e142] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/ai-gateway
+                - img [ref=f28e144]
+                - generic [ref=f28e147]: AI Gateway
+                - img [ref=f28e149]
+              - link "Sandboxes" [ref=f28e151] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/sandboxes
+                - img [ref=f28e153]
+                - generic [ref=f28e156]: Sandboxes
+                - img [ref=f28e158]
+              - link "Workflows" [ref=f28e160] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/workflows
+                - img [ref=f28e162]
+                - generic [ref=f28e165]: Workflows
+              - link "Images Beta" [ref=f28e166] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/images
+                - img [ref=f28e168]
+                - generic [ref=f28e170]:
+                  - generic [ref=f28e171]: Images
+                  - generic [ref=f28e172]: Beta
+              - separator [ref=f28e173]
+              - link "Usage" [ref=f28e174] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/usage
+                - img [ref=f28e176]
+                - generic [ref=f28e179]: Usage
+              - link "Support" [ref=f28e180] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/support
+                - img [ref=f28e182]
+                - generic [ref=f28e185]: Support
+              - link "Settings" [ref=f28e186] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/settings
+                - img [ref=f28e188]
+                - generic [ref=f28e191]: Settings
+                - img [ref=f28e193]
+          - generic [ref=f28e199]:
+            - button "Avatar for gayraotabek4-8557 gayraotabek4-8557" [ref=f28e200] [cursor=pointer]:
+              - img "Avatar for gayraotabek4-8557" [ref=f28e201]:
+                - img "Avatar for gayraotabek4-8557" [ref=f28e202]
+              - generic [ref=f28e204]: gayraotabek4-8557
+              - img [ref=f28e206]
+            - button "38 unseen notifications" [ref=f28e352] [cursor=pointer]:
+              - generic [ref=f28e353]:
+                - generic [ref=f28e354]:
+                  - img
+                - img [ref=f28e355]
+        - button [ref=f28e213] [cursor=pointer]:
+          - img [ref=f28e214]
+      - generic [ref=f28e217]:
+        - generic [ref=f28e457]:
+          - button "All projects" [ref=f28e461] [cursor=pointer]:
+            - generic [ref=f28e462]: All projects
+            - img [ref=f28e464]
+          - generic [ref=f28e466]:
+            - generic [ref=f28e467]:
+              - link "Domains" [ref=f28e468] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/~/domains
+              - img [ref=f28e469]
+            - generic [ref=f28e471]:
+              - generic [ref=f28e474]: topextexnikum.uz
+              - button "Copy ID" [ref=f28e476] [cursor=pointer]:
+                - generic [ref=f28e477]:
+                  - img [ref=f28e479]
+                  - img [ref=f28e482]
+        - generic [ref=f28e487]:
+          - generic [ref=f28e493]:
+            - generic [ref=f28e496]:
+              - heading "topextexnikum.uz" [level=1] [ref=f28e499]
+              - button "Domain Actions" [ref=f28e501] [cursor=pointer]:
+                - img [ref=f28e504]
+            - generic [ref=f28e509]:
+              - generic [ref=f28e511]:
+                - term [ref=f28e512]: Expiration Date
+                - definition [ref=f28e513]:
+                  - generic [ref=f28e514]: –
+              - generic [ref=f28e516]:
+                - term [ref=f28e517]: Renewal Price
+                - definition [ref=f28e518]:
+                  - generic [ref=f28e519]: –
+              - generic [ref=f28e521]:
+                - term [ref=f28e522]: Registrar
+                - definition [ref=f28e523]:
+                  - generic [ref=f28e524]: Third Party
+              - generic [ref=f28e526]:
+                - term [ref=f28e527]: Auto Renewal
+                - definition [ref=f28e528]: –
+              - generic [ref=f28e530]:
+                - term [ref=f28e531]: Age
+                - definition [ref=f28e532]:
+                  - generic [ref=f28e534]:
+                    - text: 2d
+                    - img "gayraotabek4-8557 Avatar" [ref=f28e536]:
+                      - img "gayraotabek4-8557 Avatar" [ref=f28e537]
+              - generic [ref=f28e539]:
+                - term [ref=f28e540]: Nameservers
+                - definition [ref=f28e541]:
+                  - generic [ref=f28e542]: Third Party
+              - generic [ref=f28e544]:
+                - term [ref=f28e545]: Vercel CDN
+                - definition [ref=f28e546]:
+                  - generic [ref=f28e547]:
+                    - img [ref=f28e548]
+                    - generic [ref=f28e551]: Active
+          - generic [ref=f28e554]:
+            - generic [ref=f28e555]:
+              - generic [ref=f28e556]:
+                - heading "Connected Projects" [level=2] [ref=f28e557]
+                - generic [ref=f28e558]: Domains that are connected to projects on this team.
+              - button "Connect" [ref=f28e560] [cursor=pointer]:
+                - generic [ref=f28e561]: Connect
+            - generic [ref=f28e564]:
+              - generic [ref=f28e565]:
+                - img [ref=f28e566]
+                - link "topextexnikum.uz" [ref=f28e568] [cursor=pointer]:
+                  - /url: https://topextexnikum.uz
+                  - generic [ref=f28e569]: topextexnikum.uz
+              - link "topex-texnikumi" [ref=f28e570] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings/domains
+                - img [ref=f28e571]
+                - generic [ref=f28e572]: topex-texnikumi
+          - generic [ref=f28e574]:
+            - generic [ref=f28e575]:
+              - generic [ref=f28e576]:
+                - heading "DNS Records" [level=2] [ref=f28e577]
+                - generic [ref=f28e578]: DNS records point to services your domain uses, like forwarding your domain or setting up an email service. You can enable Vercel's nameservers or use a third-party to manage your domain's DNS records.
+              - generic [ref=f28e580]:
+                - button "Add DNS Preset" [ref=f28e581] [cursor=pointer]:
+                  - generic [ref=f28e583]: Add DNS Preset
+                  - img [ref=f28e585]
+                - button "Upload Zone File" [ref=f28e588] [cursor=pointer]:
+                  - generic [ref=f28e589]: Upload Zone File
+            - generic [ref=f28e594]:
+              - generic [ref=f28e595]:
+                - generic [ref=f28e597]:
+                  - generic [ref=f28e599]:
+                    - img [ref=f28e601]
+                    - paragraph [ref=f28e604]:
+                      - text: Update the nameservers in your DNS provider to manage your DNS records on Vercel.
+                      - link "Learn more" [ref=f28e605] [cursor=pointer]:
+                        - /url: /docs/domains/managing-nameservers
+                        - text: Learn more
+                        - img [ref=f28e606]
+                  - generic [ref=f28e609]:
+                    - table [ref=f28e612]:
+                      - rowgroup [ref=f28e613]:
+                        - row "Nameservers" [ref=f28e614]:
+                          - columnheader "Nameservers" [ref=f28e615]
+                      - rowgroup [ref=f28e616]:
+                        - row "ns1.vercel-dns.com Copy ns1.vercel-dns.com" [ref=f28e617]:
+                          - cell "ns1.vercel-dns.com Copy ns1.vercel-dns.com" [ref=f28e618]:
+                            - generic [ref=f28e619]: ns1.vercel-dns.com
+                            - button "Copy ns1.vercel-dns.com" [ref=f28e620] [cursor=pointer]:
+                              - generic [ref=f28e622]:
+                                - img [ref=f28e624]
+                                - img [ref=f28e627]
+                        - row "ns2.vercel-dns.com Copy ns2.vercel-dns.com" [ref=f28e629]:
+                          - cell "ns2.vercel-dns.com Copy ns2.vercel-dns.com" [ref=f28e630]:
+                            - generic [ref=f28e631]: ns2.vercel-dns.com
+                            - button "Copy ns2.vercel-dns.com" [ref=f28e632] [cursor=pointer]:
+                              - generic [ref=f28e634]:
+                                - img [ref=f28e636]
+                                - img [ref=f28e639]
+                    - generic [ref=f28e644]:
+                      - text: It might take some time for the nameservers changes to apply.
+                      - link "Learn More" [ref=f28e645] [cursor=pointer]:
+                        - /url: /kb/guide/why-is-my-vercel-domain-unverified
+                        - text: Learn More
+                        - img [ref=f28e646]
+                - generic [ref=f28e649]:
+                  - generic [ref=f28e650]:
+                    - generic [ref=f28e652]:
+                      - generic [ref=f28e653]: Name
+                      - textbox "Name" [ref=f28e656]:
+                        - /placeholder: subdomain
+                    - generic [ref=f28e659]:
+                      - generic [ref=f28e660]: Type
+                      - generic [ref=f28e663]:
+                        - combobox "Type" [ref=f28e664] [cursor=pointer]:
+                          - option "A" [selected]
+                          - option "AAAA"
+                          - option "ALIAS"
+                          - option "CAA"
+                          - option "CNAME"
+                          - option "HTTPS"
+                          - option "MX"
+                          - option "NS"
+                          - option "SRV"
+                          - option "TXT"
+                        - generic:
+                          - img
+                  - generic [ref=f28e666]:
+                    - generic [ref=f28e668]:
+                      - generic [ref=f28e669]: Value
+                      - textbox "Value" [ref=f28e672]:
+                        - /placeholder: 76.76.21.21
+                    - generic [ref=f28e674]:
+                      - generic [ref=f28e676]:
+                        - generic [ref=f28e677]: TTL
+                        - spinbutton "Time To Live" [ref=f28e680]: "60"
+                      - generic [ref=f28e683]:
+                        - generic [ref=f28e684]: Priority
+                        - spinbutton "Priority" [disabled] [ref=f28e687]
+                - generic [ref=f28e692]:
+                  - generic [ref=f28e693]: Comment
+                  - textbox "Comment" [ref=f28e696]:
+                    - /placeholder: A comment explaining what this DNS record is for
+              - generic [ref=f28e697]:
+                - generic [ref=f28e699]:
+                  - text: Learn more about
+                  - link "DNS Records" [ref=f28e700] [cursor=pointer]:
+                    - /url: /docs/domains/managing-dns-records
+                    - text: DNS Records
+                    - img [ref=f28e701]
+                - button "Add" [ref=f28e705] [cursor=pointer]:
+                  - generic [ref=f28e706]: Add
+          - generic [ref=f28e710]:
+            - table "Current DNS Records" [ref=f28e716]:
+              - caption [ref=f28e717]: Current DNS Records
+              - rowgroup [ref=f28e728]:
+                - row "Toggle All Rows Selected Name Type Value TTL Priority Age Comment Menu" [ref=f28e729]:
+                  - columnheader "Toggle All Rows Selected" [ref=f28e730]:
+                    - generic [ref=f28e734] [cursor=pointer]:
+                      - checkbox "Toggle All Rows Selected" [disabled] [ref=f28e735]
+                      - img [ref=f28e737]
+                  - columnheader "Name" [ref=f28e738]:
+                    - generic [ref=f28e739]: Name
+                  - columnheader "Type" [ref=f28e740]:
+                    - generic [ref=f28e741]: Type
+                  - columnheader "Value" [ref=f28e742]:
+                    - generic [ref=f28e743]: Value
+                  - columnheader "TTL" [ref=f28e744]:
+                    - generic [ref=f28e745]: TTL
+                  - columnheader "Priority" [ref=f28e746]:
+                    - generic [ref=f28e747]: Priority
+                  - columnheader "Age" [ref=f28e748]:
+                    - generic [ref=f28e749]: Age
+                  - columnheader "Comment" [ref=f28e750]:
+                    - generic [ref=f28e751]: Comment
+                  - columnheader "Menu" [ref=f28e752]:
+                    - button "Menu" [ref=f28e755] [cursor=pointer]:
+                      - img [ref=f28e760]
+              - rowgroup [ref=f28e762]:
+                - row "CAA 0 issue \"pki.goog\" 60 2d Menu" [ref=f28e763]:
+                  - cell [ref=f28e764]:
+                    - img [ref=f28e767]
+                  - cell [ref=f28e769]
+                  - cell "CAA" [ref=f28e770]
+                  - cell "0 issue \"pki.goog\"" [ref=f28e771]
+                  - cell "60" [ref=f28e772]
+                  - cell [ref=f28e773]
+                  - cell "2d" [ref=f28e774]
+                  - cell [ref=f28e775]
+                  - cell "Menu" [ref=f28e776]:
+                    - button "Menu" [ref=f28e778] [cursor=pointer]:
+                      - img [ref=f28e783]
+                - row "CAA 0 issue \"sectigo.com\" 60 2d Menu" [ref=f28e785]:
+                  - cell [ref=f28e786]:
+                    - img [ref=f28e789]
+                  - cell [ref=f28e791]
+                  - cell "CAA" [ref=f28e792]
+                  - cell "0 issue \"sectigo.com\"" [ref=f28e793]
+                  - cell "60" [ref=f28e794]
+                  - cell [ref=f28e795]
+                  - cell "2d" [ref=f28e796]
+                  - cell [ref=f28e797]
+                  - cell "Menu" [ref=f28e798]:
+                    - button "Menu" [ref=f28e800] [cursor=pointer]:
+                      - img [ref=f28e805]
+                - row "CAA 0 issue \"letsencrypt.org\" 60 2d Menu" [ref=f28e807]:
+                  - cell [ref=f28e808]:
+                    - img [ref=f28e811]
+                  - cell [ref=f28e813]
+                  - cell "CAA" [ref=f28e814]
+                  - cell "0 issue \"letsencrypt.org\"" [ref=f28e815]
+                  - cell "60" [ref=f28e816]
+                  - cell [ref=f28e817]
+                  - cell "2d" [ref=f28e818]
+                  - cell [ref=f28e819]
+                  - cell "Menu" [ref=f28e820]:
+                    - button "Menu" [ref=f28e822] [cursor=pointer]:
+                      - img [ref=f28e827]
+            - button "Load More" [ref=f28e829] [cursor=pointer]:
+              - generic [ref=f28e830]: Load More
+          - generic [ref=f28e832]:
+            - generic [ref=f28e833]:
+              - generic [ref=f28e834]:
+                - heading "Nameservers" [level=2] [ref=f28e835]
+                - generic [ref=f28e836]: By default, Vercel will propagate Vercel Nameservers for your Vercel domains. You can view them or add custom ones here.
+              - generic [ref=f28e837]:
+                - button "Restore Original Nameservers" [disabled] [ref=f28e839]:
+                  - generic [ref=f28e840]: Restore Original Nameservers
+                - button "Edit" [disabled] [ref=f28e842]:
+                  - generic [ref=f28e843]: Edit
+            - generic [ref=f28e845]:
+              - paragraph [ref=f28e846]: This domain is registered with a third party
+              - paragraph [ref=f28e847]: Nameserver changes must be made with your domain's registrar.
+          - generic [ref=f28e850]:
+            - generic [ref=f28e851]:
+              - heading "SSL Certificates" [level=2] [ref=f28e852]
+              - generic [ref=f28e853]: By default, Vercel will issue and automatically renew SSL Certificates for your domains. You can view them or add custom ones here.
+            - generic [ref=f28e855]:
+              - button "Upload Certificate" [disabled] [ref=f28e857]:
+                - generic [ref=f28e858]: Upload Certificate
+              - button "Delete" [disabled] [ref=f28e861]:
+                - generic [ref=f28e862]: Delete
+          - table [ref=f28e868]:
+            - rowgroup [ref=f28e869]:
+              - row "ID CNs RENEWAL EXPIRATION DATE AGE Menu" [ref=f28e870]:
+                - columnheader [ref=f28e871]:
+                  - generic [ref=f28e874]:
+                    - checkbox [disabled] [ref=f28e875]
+                    - img [ref=f28e877]
+                - columnheader "ID" [ref=f28e878]
+                - columnheader "CNs" [ref=f28e879]:
+                  - generic [ref=f28e880]:
+                    - text: CNs
+                    - img [ref=f28e882]
+                - columnheader "RENEWAL" [ref=f28e884]:
+                  - generic [ref=f28e885]:
+                    - text: RENEWAL
+                    - img [ref=f28e887]
+                - columnheader "EXPIRATION DATE" [ref=f28e889]:
+                  - generic [ref=f28e890]:
+                    - text: EXPIRATION DATE
+                    - img [ref=f28e892]
+                - columnheader "AGE" [ref=f28e894]
+                - columnheader "Menu" [ref=f28e895]:
+                  - button "Menu" [ref=f28e897] [cursor=pointer]:
+                    - img [ref=f28e902]
+            - rowgroup [ref=f28e904]:
+              - row "cert_ulzTYR6kv4wZ9ggmsopuhfR9 www.topextexnikum.uz Auto Oct 05 2026 (in 88d) 2d Menu" [ref=f28e905]:
+                - cell [ref=f28e906]:
+                  - img [ref=f28e909]
+                - cell "cert_ulzTYR6kv4wZ9ggmsopuhfR9" [ref=f28e911]:
+                  - generic [ref=f28e912]: cert_ulzTYR6kv4wZ9ggmsopuhfR9
+                - cell "www.topextexnikum.uz" [ref=f28e913]:
+                  - list [ref=f28e914]:
+                    - listitem [ref=f28e915]: www.topextexnikum.uz
+                - cell "Auto" [ref=f28e916]:
+                  - generic [ref=f28e917]: Auto
+                - cell "Oct 05 2026 (in 88d)" [ref=f28e918]
+                - cell "2d" [ref=f28e919]
+                - cell "Menu" [ref=f28e920]:
+                  - button "Menu" [ref=f28e922] [cursor=pointer]:
+                    - img [ref=f28e927]
+              - row "cert_eK4AV9OT6ebHgkLflshiATo3 topextexnikum.uz Auto Oct 05 2026 (in 88d) 2d Menu" [ref=f28e929]:
+                - cell [ref=f28e930]:
+                  - img [ref=f28e933]
+                - cell "cert_eK4AV9OT6ebHgkLflshiATo3" [ref=f28e935]:
+                  - generic [ref=f28e936]: cert_eK4AV9OT6ebHgkLflshiATo3
+                - cell "topextexnikum.uz" [ref=f28e937]:
+                  - list [ref=f28e938]:
+                    - listitem [ref=f28e939]: topextexnikum.uz
+                - cell "Auto" [ref=f28e940]:
+                  - generic [ref=f28e941]: Auto
+                - cell "Oct 05 2026 (in 88d)" [ref=f28e942]
+                - cell "2d" [ref=f28e943]
+                - cell "Menu" [ref=f28e944]:
+                  - button "Menu" [ref=f28e946] [cursor=pointer]:
+                    - img [ref=f28e951]
+  - alert [ref=f28e347]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img

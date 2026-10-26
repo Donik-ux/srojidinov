@@ -1,0 +1,332 @@
+- generic [ref=f3e2]:
+  - generic [ref=f3e3]:
+    - banner [ref=f3e4]:
+      - generic [ref=f3e7]:
+        - link "Topex" [ref=f3e8] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f3e10]:
+          - button "Address Sirg'ali-3, Yangi Sirg'ali yoli street, 49" [ref=f3e11] [cursor=pointer]:
+            - generic [ref=f3e16]:
+              - generic [ref=f3e17]: Address
+              - generic [ref=f3e18]: Sirg'ali-3, Yangi Sirg'ali yoli street, 49
+          - link "Contact +998 55 588 44 77 +998 78 777 44 77" [ref=f3e20] [cursor=pointer]:
+            - /url: tel:+998555884477
+            - generic [ref=f3e24]:
+              - generic [ref=f3e25]: Contact
+              - generic [ref=f3e26]: +998 55 588 44 77
+              - generic [ref=f3e27]: +998 78 777 44 77
+          - link "E-mail info@topex.uz" [ref=f3e29] [cursor=pointer]:
+            - /url: mailto:info@topex.uz
+            - generic [ref=f3e34]:
+              - generic [ref=f3e35]: E-mail
+              - generic [ref=f3e36]: info@topex.uz
+      - navigation [ref=f3e37]:
+        - generic [ref=f3e39]:
+          - generic [ref=f3e40]:
+            - link "About Us" [ref=f3e41] [cursor=pointer]:
+              - /url: /
+            - link "Directions" [ref=f3e45] [cursor=pointer]:
+              - /url: /courses
+            - link "News" [ref=f3e48] [cursor=pointer]:
+              - /url: /blog
+            - link "Videos" [ref=f3e51] [cursor=pointer]:
+              - /url: /videos
+            - link "Contacts" [ref=f3e54] [cursor=pointer]:
+              - /url: /aloqalar
+          - generic [ref=f3e57]:
+            - button "🇬🇧 EN" [ref=f3e59] [cursor=pointer]:
+              - generic [ref=f3e60]: 🇬🇧
+              - generic [ref=f3e61]: EN
+            - link "Register" [ref=f3e64] [cursor=pointer]:
+              - /url: /register
+            - link "Login" [ref=f3e65] [cursor=pointer]:
+              - /url: /login
+    - main [ref=f3e66]:
+      - generic [ref=f3e67]:
+        - generic [ref=f3e71]:
+          - generic [ref=f3e76]:
+            - heading "MASTER YOUR FUTURE PROFESSION TODAY!" [level=1] [ref=f3e77]:
+              - generic [ref=f3e78]: MASTER YOUR
+              - generic [ref=f3e79]: FUTURE
+              - generic [ref=f3e80]: PROFESSION TODAY!
+            - paragraph [ref=f3e81]: Modern fields, practical experience, and up to 2,000,000 UZS monthly scholarship at Topex Texnikumi.
+            - button "Apply Now" [ref=f3e83] [cursor=pointer]
+            - paragraph [ref=f3e90]: For 9th grade graduates and those who did not complete 11-year education!
+          - img "Topex Texnikumi o'quvchilari - Toshkentdagi zamonaviy xususiy texnikum" [ref=f3e92]
+        - generic [ref=f3e93]:
+          - button "Next 1" [ref=f3e94] [cursor=pointer]
+          - button "Next 2" [ref=f3e98] [cursor=pointer]
+          - button "Next 3" [ref=f3e101] [cursor=pointer]
+      - generic [ref=f3e108]:
+        - generic [ref=f3e109]:
+          - paragraph [ref=f3e115]: 600+
+          - paragraph [ref=f3e116]: Students
+        - generic [ref=f3e117]:
+          - paragraph [ref=f3e121]: 3+
+          - paragraph [ref=f3e122]: Branches
+        - generic [ref=f3e123]:
+          - paragraph [ref=f3e127]: 50+
+          - paragraph [ref=f3e128]: Specialists
+      - generic [ref=f3e131]:
+        - generic [ref=f3e133]:
+          - img "Topex Texnikumi" [ref=f3e135]
+          - img "Topex Texnikumi" [ref=f3e137]
+          - img "Topex Texnikumi" [ref=f3e139]
+        - generic [ref=f3e140]:
+          - generic [ref=f3e141]: Why us
+          - heading "About the College" [level=2] [ref=f3e142]
+          - paragraph [ref=f3e143]: Topex Texnikumi — Quality Education, Real Results!
+          - paragraph [ref=f3e144]: Topex College is a modern private college operating in Chilanzar district of Tashkent since 2022. We provide high-quality education, professional fields, and olympiad preparation for over 600 students in grades 10-11. Experienced teachers, modern classrooms, and an individual approach help unlock every student's potential.
+          - generic [ref=f3e145]:
+            - generic [ref=f3e146]:
+              - generic [ref=f3e147]:
+                - generic [ref=f3e148]: "600"
+                - generic [ref=f3e149]: +
+              - generic [ref=f3e150]: Students
+            - generic [ref=f3e151]:
+              - generic [ref=f3e152]:
+                - generic [ref=f3e153]: "50"
+                - generic [ref=f3e154]: +
+              - generic [ref=f3e155]: Teachers
+          - button "Read more" [ref=f3e156] [cursor=pointer]
+      - generic [ref=f3e158]:
+        - generic [ref=f3e159]:
+          - img "Topex Texnikumi filiali 1" [ref=f3e160]
+          - img "Topex Texnikumi filiali 2" [ref=f3e161]
+          - img "Topex Texnikumi filiali 3" [ref=f3e162]
+          - img "Topex Texnikumi filiali 4" [ref=f3e163]
+        - generic [ref=f3e165]:
+          - generic [ref=f3e166]: At Topex Texnikumi
+          - heading "Directions" [level=2] [ref=f3e167]
+          - list [ref=f3e171]:
+            - listitem [ref=f3e172] [cursor=pointer]:
+              - generic [ref=f3e176]: Laboratory Analyst
+            - listitem [ref=f3e177] [cursor=pointer]:
+              - generic [ref=f3e182]: Medicinal Plants Laborant
+            - listitem [ref=f3e183] [cursor=pointer]:
+              - generic [ref=f3e188]: Marketing & Agribusiness
+            - listitem [ref=f3e189] [cursor=pointer]:
+              - generic [ref=f3e194]: Programming
+            - listitem [ref=f3e195] [cursor=pointer]:
+              - generic [ref=f3e203]: Computer Graphics & Design
+            - listitem [ref=f3e204] [cursor=pointer]:
+              - generic [ref=f3e209]: Banking
+            - listitem [ref=f3e210] [cursor=pointer]:
+              - generic [ref=f3e215]: Hotel Management
+            - listitem [ref=f3e216] [cursor=pointer]:
+              - generic [ref=f3e220]: Digital Data Analyst
+          - generic [ref=f3e221]:
+            - generic [ref=f3e222]: 20% OFF
+            - generic [ref=f3e224]:
+              - generic [ref=f3e225]:
+                - generic [ref=f3e226]: 25 000 000 UZS
+                - generic [ref=f3e227]: 20 000 000 UZS
+                - generic [ref=f3e228]: yearly payment
+              - generic [ref=f3e230]:
+                - generic [ref=f3e231]: 2 000 000 UZS
+                - generic [ref=f3e232]: monthly payment
+            - generic [ref=f3e233]: 20% discount valid until July 10!
+      - generic [ref=f3e236]:
+        - generic [ref=f3e237]:
+          - generic [ref=f3e238]: Our specialists
+          - heading "Meet our team" [level=2] [ref=f3e239]
+          - paragraph [ref=f3e240]: "Topex College employs over 50 professional teachers and practicing specialists. Most of them have years of experience in their fields: IT, marketing, banking, graphics, and other modern directions. Our teachers provide not only theoretical knowledge but also real work experience and career advice."
+          - link "All teachers" [ref=f3e242] [cursor=pointer]:
+            - /url: /courses
+        - generic [ref=f3e243]:
+          - generic [ref=f3e244]:
+            - button "Oldingi" [ref=f3e245] [cursor=pointer]
+            - button "Keyingi" [ref=f3e248] [cursor=pointer]
+          - generic [ref=f3e252]:
+            - generic [ref=f3e254]:
+              - generic [ref=f3e255] [cursor=pointer]:
+                - img "ABDURASULOV KOZIMJON" [ref=f3e256]
+                - generic [ref=f3e257]:
+                  - paragraph [ref=f3e258]: ABDURASULOV KOZIMJON
+                  - paragraph [ref=f3e259]: Chemistry Teacher
+              - generic [ref=f3e260] [cursor=pointer]:
+                - img "SHARIPOVA MA'MURA" [ref=f3e261]
+                - generic [ref=f3e262]:
+                  - paragraph [ref=f3e263]: SHARIPOVA MA'MURA
+                  - paragraph [ref=f3e264]: Native Language & Literature Teacher
+            - generic [ref=f3e266]:
+              - generic [ref=f3e267] [cursor=pointer]:
+                - img "SHOVQIYEVA LAYLO" [ref=f3e268]
+                - generic [ref=f3e269]:
+                  - paragraph [ref=f3e270]: SHOVQIYEVA LAYLO
+                  - paragraph [ref=f3e271]: English Teacher
+              - generic [ref=f3e272] [cursor=pointer]:
+                - img "DONIYOROVA SHAHNOZA" [ref=f3e273]
+                - generic [ref=f3e274]:
+                  - paragraph [ref=f3e275]: DONIYOROVA SHAHNOZA
+                  - paragraph [ref=f3e276]: English Teacher
+            - generic [ref=f3e278]:
+              - generic [ref=f3e279] [cursor=pointer]:
+                - img "IBRAGIMOVA KAMILA" [ref=f3e280]
+                - generic [ref=f3e281]:
+                  - paragraph [ref=f3e282]: IBRAGIMOVA KAMILA
+                  - paragraph [ref=f3e283]: Mathematics Teacher
+              - generic [ref=f3e284] [cursor=pointer]:
+                - img "MUKIMBOEV FIRDAVS" [ref=f3e285]
+                - generic [ref=f3e286]:
+                  - paragraph [ref=f3e287]: MUKIMBOEV FIRDAVS
+                  - paragraph [ref=f3e288]: Mathematics Teacher
+            - generic [ref=f3e290]:
+              - generic [ref=f3e291] [cursor=pointer]:
+                - img "AYTBAYEVA SARBINAZ" [ref=f3e292]
+                - generic [ref=f3e293]:
+                  - paragraph [ref=f3e294]: AYTBAYEVA SARBINAZ
+                  - paragraph [ref=f3e295]: Biology Teacher (RU)
+              - generic [ref=f3e296] [cursor=pointer]:
+                - img "SULTONALIYEV SHOXRUH" [ref=f3e297]
+                - generic [ref=f3e298]:
+                  - paragraph [ref=f3e299]: SULTONALIYEV SHOXRUH
+                  - paragraph [ref=f3e300]: Biology Teacher (UZ)
+            - generic [ref=f3e302]:
+              - generic [ref=f3e303] [cursor=pointer]:
+                - img "VALIYEV JAMSHIDBEK" [ref=f3e304]
+                - generic [ref=f3e305]:
+                  - paragraph [ref=f3e306]: VALIYEV JAMSHIDBEK
+                  - paragraph [ref=f3e307]: English Teacher
+              - generic [ref=f3e308] [cursor=pointer]:
+                - img "BEKOVA OYSARA" [ref=f3e309]
+                - generic [ref=f3e310]:
+                  - paragraph [ref=f3e311]: BEKOVA OYSARA
+                  - paragraph [ref=f3e312]: General Director of Topex Texnikum
+            - generic [ref=f3e314]:
+              - generic [ref=f3e315] [cursor=pointer]:
+                - img "ESHONQULOVA MUNISA" [ref=f3e316]
+                - generic [ref=f3e317]:
+                  - paragraph [ref=f3e318]: ESHONQULOVA MUNISA
+                  - paragraph [ref=f3e319]: Administrator of Topex Texnikum
+              - generic [ref=f3e320] [cursor=pointer]:
+                - img "ABDUJALILOV BUNYODBEK" [ref=f3e321]
+                - generic [ref=f3e322]:
+                  - paragraph [ref=f3e323]: ABDUJALILOV BUNYODBEK
+                  - paragraph [ref=f3e324]: Deputy Director for Finance
+            - generic [ref=f3e327] [cursor=pointer]:
+              - img "KARIMOV ISLOM" [ref=f3e328]
+              - generic [ref=f3e329]:
+                - paragraph [ref=f3e330]: KARIMOV ISLOM
+                - paragraph [ref=f3e331]: Administrator of Topex Texnikum
+      - generic [ref=f3e335]:
+        - generic [ref=f3e336]: Document
+        - heading "State-recognized diploma" [level=2] [ref=f3e337]
+        - paragraph [ref=f3e338]: Topex graduates receive a state-recognized diploma — a document confirming practical skills in digital technologies, programming and other fields. This diploma opens doors to employment at leading IT companies and high-tech industries, giving you a competitive edge in the job market. The Topex program suits participants with any level of prior preparation. Beginners can master a new profession from scratch, while practicing specialists can upgrade their digital skills and change direction.
+        - generic [ref=f3e339]:
+          - generic [ref=f3e340]:
+            - heading "State recognition" [level=3] [ref=f3e345]
+            - paragraph [ref=f3e346]: Official document
+          - generic [ref=f3e347]:
+            - heading "Professional skills" [level=3] [ref=f3e352]
+            - paragraph [ref=f3e353]: Practical validation
+      - generic [ref=f3e357]:
+        - generic [ref=f3e358]: Current videos
+        - heading "Our Students' Creativity" [level=2] [ref=f3e359]
+      - generic [ref=f3e404]:
+        - generic [ref=f3e405]:
+          - generic [ref=f3e406]: Have a question?
+          - heading "Fill in your details" [level=2] [ref=f3e407]
+          - paragraph [ref=f3e408]: Leave your phone number and we will answer all your questions!
+          - generic [ref=f3e409]:
+            - generic [ref=f3e410]:
+              - generic [ref=f3e411]: Your name
+              - textbox "Enter your full name" [ref=f3e412]
+            - generic [ref=f3e413]:
+              - generic [ref=f3e414]: Phone number
+              - generic [ref=f3e415]:
+                - generic: "+998"
+                - textbox "88 131 65 67" [ref=f3e416]
+            - generic [ref=f3e417]:
+              - generic [ref=f3e418]: Direction
+              - combobox [ref=f3e420] [cursor=pointer]:
+                - option "Select direction"
+                - option "After 9th grade (2 years)" [selected]
+                - option "After 11th grade (3 years)"
+            - generic [ref=f3e421] [cursor=pointer]:
+              - checkbox "I agree to the processing of my personal data and the Topex Texnikumi privacy terms." [ref=f3e422]
+              - generic [ref=f3e423]:
+                - text: I agree to the processing of my personal data and the
+                - link "Topex Texnikumi" [ref=f3e424]:
+                  - /url: /
+                - text: privacy terms.
+            - button "Submit application" [ref=f3e426] [cursor=pointer]
+        - img "Topex talabasi" [ref=f3e430]
+    - contentinfo [ref=f3e431]:
+      - generic [ref=f3e432]:
+        - generic [ref=f3e433]:
+          - generic [ref=f3e434]:
+            - link [ref=f3e435] [cursor=pointer]:
+              - /url: /
+              - img "Topex" [ref=f3e436]
+            - generic [ref=f3e437]:
+              - link "Telegram" [ref=f3e438] [cursor=pointer]:
+                - /url: https://t.me/topex_uz
+              - link "Instagram" [ref=f3e441] [cursor=pointer]:
+                - /url: https://www.instagram.com/topex.uz/
+              - link "YouTube" [ref=f3e446] [cursor=pointer]:
+                - /url: https://www.youtube.com/@topex.uz
+              - link "Facebook" [ref=f3e449] [cursor=pointer]:
+                - /url: https://www.facebook.com/topex.uz
+            - generic [ref=f3e452]:
+              - button [ref=f3e453] [cursor=pointer]:
+                - img "College License № 420567" [ref=f3e454]
+              - button [ref=f3e459] [cursor=pointer]:
+                - img "Directions" [ref=f3e460]
+          - generic [ref=f3e465]:
+            - heading "About College" [level=4] [ref=f3e466]
+            - list [ref=f3e467]:
+              - listitem [ref=f3e468]:
+                - link "About us" [ref=f3e469] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=f3e470]:
+                - link "News" [ref=f3e471] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=f3e472]:
+                - link "Directions" [ref=f3e473] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=f3e474]:
+                - link "Vacancies" [ref=f3e475] [cursor=pointer]:
+                  - /url: /vakansiyalar
+              - listitem [ref=f3e476]:
+                - link "\"Topex\" team" [ref=f3e477] [cursor=pointer]:
+                  - /url: /gallery
+              - listitem [ref=f3e478]:
+                - link "News" [ref=f3e479] [cursor=pointer]:
+                  - /url: /blog
+          - generic [ref=f3e480]:
+            - heading "For Applicants" [level=4] [ref=f3e481]
+            - list [ref=f3e482]:
+              - listitem [ref=f3e483]:
+                - link "Directions" [ref=f3e484] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=f3e485]:
+                - link "Entrance exam result" [ref=f3e486] [cursor=pointer]:
+                  - /url: /imtihon-natijalari
+          - generic [ref=f3e487]:
+            - heading "For Students" [level=4] [ref=f3e488]
+            - list [ref=f3e489]:
+              - listitem [ref=f3e490]:
+                - link "Get contract" [ref=f3e491] [cursor=pointer]:
+                  - /url: /profile
+              - listitem [ref=f3e492]:
+                - link "\"Topex\" team" [ref=f3e493] [cursor=pointer]:
+                  - /url: /gallery
+          - generic [ref=f3e494]:
+            - heading "Contacts" [level=4] [ref=f3e495]
+            - list [ref=f3e496]:
+              - listitem [ref=f3e497]:
+                - link "+998 55 588 44 77" [ref=f3e498] [cursor=pointer]:
+                  - /url: tel:+998555884477
+                - link "+998 78 777 44 77" [ref=f3e502] [cursor=pointer]:
+                  - /url: tel:+998787774477
+              - listitem [ref=f3e506]:
+                - link "info@topex.uz" [ref=f3e507] [cursor=pointer]:
+                  - /url: mailto:info@topex.uz
+              - listitem [ref=f3e512]:
+                - generic [ref=f3e516]: Sirg'ali-3, Yangi Sirg'ali yoli street, 49
+        - generic [ref=f3e517]:
+          - paragraph [ref=f3e518]: ©Copyright 2026
+          - link "Public offer" [ref=f3e519] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications Alt+T"

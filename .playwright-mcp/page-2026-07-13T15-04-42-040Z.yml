@@ -1,0 +1,205 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e7]:
+        - link "Topex" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e10]:
+          - button "Адрес Сиргали-3, улица Янги Сиргали йули, 49" [ref=e11] [cursor=pointer]:
+            - generic [ref=e16]:
+              - generic [ref=e17]: Адрес
+              - generic [ref=e18]: Сиргали-3, улица Янги Сиргали йули, 49
+          - link "Контакт +998 55 588 44 77 +998 78 777 44 77" [ref=e20] [cursor=pointer]:
+            - /url: tel:+998555884477
+            - generic [ref=e24]:
+              - generic [ref=e25]: Контакт
+              - generic [ref=e26]: +998 55 588 44 77
+              - generic [ref=e27]: +998 78 777 44 77
+          - link "E-mail info@topex.uz" [ref=e29] [cursor=pointer]:
+            - /url: mailto:info@topex.uz
+            - generic [ref=e34]:
+              - generic [ref=e35]: E-mail
+              - generic [ref=e36]: info@topex.uz
+      - navigation [ref=e37]:
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - link "О нас" [ref=e41] [cursor=pointer]:
+              - /url: /
+            - link "Направления" [ref=e45] [cursor=pointer]:
+              - /url: /courses
+            - link "Новости" [ref=e48] [cursor=pointer]:
+              - /url: /blog
+            - link "Видео" [ref=e51] [cursor=pointer]:
+              - /url: /videos
+            - link "Контакты" [ref=e54] [cursor=pointer]:
+              - /url: /aloqalar
+          - generic [ref=e57]:
+            - button "🇷🇺 RU" [ref=e59] [cursor=pointer]:
+              - generic [ref=e60]: 🇷🇺
+              - generic [ref=e61]: RU
+            - link "Регистрация" [ref=e64] [cursor=pointer]:
+              - /url: /register
+            - link "Войти" [ref=e65] [cursor=pointer]:
+              - /url: /login
+    - main [ref=e66]:
+      - generic [ref=e524]:
+        - generic [ref=e525]: Учебные направления
+        - heading "Направления" [level=1] [ref=e529]
+        - paragraph [ref=e530]: Углубленные образовательные программы по современным профессиям для 10-11 классов.
+        - generic [ref=e531]:
+          - link "Главная" [ref=e532] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e538]: Направления
+      - generic [ref=e540]:
+        - generic [ref=e541]:
+          - generic [ref=e542]: ФАКУЛЬТЕТЫ
+          - heading "Наши факультеты" [level=2] [ref=e543]
+          - paragraph [ref=e544]: Углубленные направления обучения по современным профессиям
+        - generic [ref=e545]:
+          - button [ref=e546] [cursor=pointer]:
+            - img "Программирование" [ref=e548]
+            - generic [ref=e553]:
+              - heading "Программирование" [level=3] [ref=e554]
+              - paragraph [ref=e555]: От написания кода до создания сложных систем.
+          - button [ref=e556] [cursor=pointer]:
+            - img "Маркетинг и агробизнес" [ref=e558]
+            - generic [ref=e563]:
+              - heading "Маркетинг и агробизнес" [level=3] [ref=e564]
+              - paragraph [ref=e565]: Цифровой маркетинг и экономика сельского хозяйства.
+          - button [ref=e566] [cursor=pointer]:
+            - img "Компьютерная графика и дизайн" [ref=e568]
+            - generic [ref=e576]:
+              - heading "Компьютерная графика и дизайн" [level=3] [ref=e577]
+              - paragraph [ref=e578]: 3D моделирование, брендинг и визуальный контент.
+          - button [ref=e579] [cursor=pointer]:
+            - img "Банковское дело" [ref=e581]
+            - generic [ref=e586]:
+              - heading "Банковское дело" [level=3] [ref=e587]
+              - paragraph [ref=e588]: Основы банковской и финансовой системы.
+          - button [ref=e589] [cursor=pointer]:
+            - img "Управление отелем" [ref=e591]
+            - generic [ref=e596]:
+              - heading "Управление отелем" [level=3] [ref=e597]
+              - paragraph [ref=e598]: Менеджмент отеля и туризма.
+          - button [ref=e599] [cursor=pointer]:
+            - img "Аналитик цифровых данных" [ref=e601]
+            - generic [ref=e605]:
+              - heading "Аналитик цифровых данных" [level=3] [ref=e606]
+              - paragraph [ref=e607]: Анализ данных и информационные системы.
+          - button [ref=e608] [cursor=pointer]:
+            - img "Лаборант-аналитик" [ref=e610]
+            - generic [ref=e614]:
+              - heading "Лаборант-аналитик" [level=3] [ref=e615]
+              - paragraph [ref=e616]: Лабораторные анализы и научные исследования.
+          - button [ref=e617] [cursor=pointer]:
+            - img "Лаборант лекарственных растений" [ref=e619]
+            - generic [ref=e624]:
+              - heading "Лаборант лекарственных растений" [level=3] [ref=e625]
+              - paragraph [ref=e626]: Выращивание и переработка лекарственных растений.
+      - generic [ref=e628]:
+        - generic [ref=e629]:
+          - generic [ref=e630]: Учебные направления
+          - heading "Стоимость обучения" [level=2] [ref=e631]
+          - paragraph [ref=e632]: Условия оплаты по всем направлениям
+        - generic [ref=e633]:
+          - generic [ref=e634]: СКИДКА 20%
+          - generic [ref=e636]:
+            - generic [ref=e637]:
+              - generic [ref=e638]: 25 000 000 сум
+              - generic [ref=e639]: без скидки
+              - generic [ref=e640]: 20 000 000 сум
+              - generic [ref=e641]: оплата за год
+            - generic [ref=e642]:
+              - generic [ref=e643]: 2 000 000 сум
+              - generic [ref=e644]: оплата в месяц
+          - generic [ref=e645]: Оплата возможна ежемесячно, ежеквартально или ежегодно
+          - generic [ref=e646]: ⏳ Скидка 20% действует до 10 июля!
+          - generic [ref=e647]: Доступен грантовый фонд в 1 миллиард сумов
+      - generic [ref=e653]:
+        - generic [ref=e654]:
+          - generic [ref=e655]: ПРИЕМ
+          - heading "Запишите ребенка в Topex!" [level=2] [ref=e656]
+          - paragraph [ref=e657]: Оставьте заявку — мы свяжемся с вами
+        - generic [ref=e658]:
+          - link "Позвонить" [ref=e659] [cursor=pointer]:
+            - /url: tel:+998555884477
+          - link "Главная" [ref=e660] [cursor=pointer]:
+            - /url: /
+    - contentinfo [ref=e431]:
+      - generic [ref=e432]:
+        - generic [ref=e433]:
+          - generic [ref=e434]:
+            - link "Topex":
+              - /url: /
+              - img "Topex"
+            - generic [ref=e437]:
+              - link "Telegram" [ref=e438] [cursor=pointer]:
+                - /url: https://t.me/topex_uz
+              - link "Instagram" [ref=e441] [cursor=pointer]:
+                - /url: https://www.instagram.com/topex.uz/
+              - link "YouTube" [ref=e446] [cursor=pointer]:
+                - /url: https://www.youtube.com/@topex.uz
+              - link "Facebook" [ref=e449] [cursor=pointer]:
+                - /url: https://www.facebook.com/topex.uz
+            - generic [ref=e452]:
+              - button [ref=e453] [cursor=pointer]:
+                - img "Лицензия техникума № 420567" [ref=e454]
+              - button [ref=e459] [cursor=pointer]:
+                - img "Направления" [ref=e460]
+          - generic [ref=e465]:
+            - heading "О техникуме" [level=4] [ref=e466]
+            - list [ref=e467]:
+              - listitem [ref=e468]:
+                - link "О нас" [ref=e469] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e470]:
+                - link "Новости" [ref=e471] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e472]:
+                - link "Вакансии" [ref=e473] [cursor=pointer]:
+                  - /url: /vakansiyalar
+              - listitem [ref=e474]:
+                - link "Команда \"Topex\"" [ref=e475] [cursor=pointer]:
+                  - /url: /gallery
+          - generic [ref=e476]:
+            - heading "Абитуриентам" [level=4] [ref=e477]
+            - list [ref=e478]:
+              - listitem [ref=e479]:
+                - link "Направления" [ref=e480] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=e481]:
+                - link "Вакансии" [ref=e482] [cursor=pointer]:
+                  - /url: /vakansiyalar
+              - listitem [ref=e483]:
+                - link "Результат вступительного экзамена" [ref=e484] [cursor=pointer]:
+                  - /url: /imtihon-natijalari
+              - listitem [ref=e485]:
+                - link "Цены" [ref=e486] [cursor=pointer]:
+                  - /url: /narx
+          - generic [ref=e487]:
+            - heading "Студентам" [level=4] [ref=e488]
+            - list [ref=e489]:
+              - listitem [ref=e490]:
+                - link "Получить договор" [ref=e491] [cursor=pointer]:
+                  - /url: /profile
+              - listitem [ref=e492]:
+                - link "Команда \"Topex\"" [ref=e493] [cursor=pointer]:
+                  - /url: /gallery
+          - generic [ref=e494]:
+            - heading "Контакты" [level=4] [ref=e495]
+            - list [ref=e496]:
+              - listitem [ref=e497]:
+                - link "+998 55 588 44 77" [ref=e498] [cursor=pointer]:
+                  - /url: tel:+998555884477
+                - link "+998 78 777 44 77" [ref=e502] [cursor=pointer]:
+                  - /url: tel:+998787774477
+              - listitem [ref=e506]:
+                - link "info@topex.uz" [ref=e507] [cursor=pointer]:
+                  - /url: mailto:info@topex.uz
+              - listitem [ref=e512]:
+                - generic [ref=e516]: Сиргали-3, улица Янги Сиргали йули, 49
+        - generic [ref=e517]:
+          - paragraph [ref=e518]: ©Copyright 2026
+          - link "Публичная оферта" [ref=e519] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications Alt+T"

@@ -1,0 +1,213 @@
+- generic [ref=f31e1]:
+  - generic [ref=f31e2]:
+    - banner [ref=f31e4]:
+      - generic [ref=f31e5]:
+        - generic [ref=f31e6]:
+          - button "Главное меню" [ref=f31e1134] [cursor=pointer]:
+            - img [ref=f31e8]
+          - link "Google Search Console" [ref=f31e1135] [cursor=pointer]:
+            - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+            - img [ref=f31e13]
+        - generic [ref=f31e14]:
+          - search [ref=f31e16]:
+            - generic [ref=f31e22]:
+              - textbox [disabled] [ref=f31e23]: Проверка всех URL на ресурсе https://topextexnikum.uz/
+              - combobox "Проверка всех URL на ресурсе https://topextexnikum.uz/" [ref=f31e1136]
+            - button "Поиск" [ref=f31e1137] [cursor=pointer]:
+              - img [ref=f31e26]
+          - generic [ref=f31e29]:
+            - generic [ref=f31e31]:
+              - button "Справка" [ref=f31e1138] [cursor=pointer]:
+                - generic [ref=f31e36]: 
+              - button "Пользовательские настройки" [ref=f31e1139] [cursor=pointer]:
+                - img [ref=f31e41]
+            - 'button "Непрочитанных сообщений: 2" [ref=f31e1140] [cursor=pointer]':
+              - generic [ref=f31e47]:
+                - generic [ref=f31e48]: 
+                - generic [ref=f31e884]: "2"
+        - generic [ref=f31e52]:
+          - button "Приложения Google" [ref=f31e1141] [cursor=pointer]:
+            - img [ref=f31e57]
+          - 'button "Аккаунт Google: Otabek Gayratov (gayraotabek4@gmail.com)" [ref=f31e1142] [cursor=pointer]':
+            - img [ref=f31e64]
+    - dialog "navigational drawer" [ref=f31e1143]:
+      - navigation "Основной" [ref=f31e1144]:
+        - button "Ресурс" [ref=f31e1145] [cursor=pointer]:
+          - img "значок сайта" [ref=f31e1146]
+          - combobox "https://topextexnikum.uz/" [ref=f31e1147]
+          - generic [ref=f31e86]: 
+        - generic [ref=f31e87]:
+          - generic [ref=f31e88]:
+            - generic [ref=f31e89]:
+              - link "Обзор" [ref=f31e1148] [cursor=pointer]:
+                - /url: ./search-console?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e93]: home
+                - generic [ref=f31e95]: Обзор
+              - link "Статистика" [ref=f31e1149] [cursor=pointer]:
+                - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e100]: lightbulb_2
+                - generic [ref=f31e102]: Статистика
+              - link "Эффективность" [ref=f31e1150] [cursor=pointer]:
+                - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e107]: trending_up
+                - generic [ref=f31e109]: Эффективность
+              - button "Проверка URL" [ref=f31e1151] [cursor=pointer]:
+                - generic [ref=f31e114]: search
+                - generic [ref=f31e116]: Проверка URL
+            - generic [ref=f31e120]:
+              - generic [ref=f31e122]:
+                - generic [ref=f31e125]: Индексирование
+                - button "Раздел \"Индексирование\" в отчете" [expanded] [ref=f31e1152] [cursor=pointer]:
+                  - generic [ref=f31e129]: keyboard_arrow_up
+              - generic [ref=f31e133]:
+                - link "Страницы" [ref=f31e1153] [cursor=pointer]:
+                  - /url: ./search-console/index?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f31e137]: file_copy
+                  - generic [ref=f31e139]: Страницы
+                - link "Файлы Sitemap" [ref=f31e1154] [cursor=pointer]:
+                  - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f31e144]: account_tree
+                  - generic [ref=f31e146]: Файлы Sitemap
+                - link "Удаления" [ref=f31e1155] [cursor=pointer]:
+                  - /url: ./search-console/removals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f31e151]: visibility_off
+                  - generic [ref=f31e153]: Удаления
+            - generic [ref=f31e157]:
+              - generic [ref=f31e159]:
+                - generic [ref=f31e162]: Качество
+                - button "Раздел \"Качество\" в отчете" [expanded] [ref=f31e1156] [cursor=pointer]:
+                  - generic [ref=f31e166]: keyboard_arrow_up
+              - generic [ref=f31e170]:
+                - link "Core Web Vitals" [ref=f31e1157] [cursor=pointer]:
+                  - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f31e174]: speed
+                  - generic [ref=f31e176]: Core Web Vitals
+                - link "HTTPS" [ref=f31e1158] [cursor=pointer]:
+                  - /url: ./search-console/https?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                  - generic [ref=f31e181]: lock
+                  - generic [ref=f31e183]: HTTPS
+            - generic [ref=f31e187]:
+              - generic [ref=f31e189]:
+                - generic [ref=f31e192]: Улучшения
+                - button "Раздел \"Улучшения\" в отчете" [expanded] [ref=f31e1159] [cursor=pointer]:
+                  - generic [ref=f31e196]: keyboard_arrow_up
+              - link "Структурированные данные, не поддающиеся анализу" [ref=f31e1160] [cursor=pointer]:
+                - /url: ./search-console/r/unknown-type?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e204]: layers
+                - generic [ref=f31e206]: Структурированные данные, не поддающиеся анализу
+            - generic [ref=f31e212]:
+              - generic [ref=f31e215]: Проблемы безопасности и меры, принятые вручную
+              - button "Раздел \"Проблемы безопасности и меры, принятые вручную\" в отчете" [ref=f31e1161] [cursor=pointer]:
+                - generic [ref=f31e219]: keyboard_arrow_down
+            - generic [ref=f31e220]:
+              - link "Отчет о ссылках" [ref=f31e1162] [cursor=pointer]:
+                - /url: ./search-console/links?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e224]: link_2
+                - generic [ref=f31e226]: Ссылки
+              - link "Достижения" [ref=f31e1163] [cursor=pointer]:
+                - /url: ./search-console/achievements?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e231]: trophy
+                - generic [ref=f31e233]: Достижения
+              - link "Настройки" [ref=f31e1164] [cursor=pointer]:
+                - /url: ./search-console/settings?resource_id=https%3A%2F%2Ftopextexnikum.uz%2F
+                - generic [ref=f31e238]: settings
+                - generic [ref=f31e240]: Настройки
+          - generic [ref=f31e242]:
+            - generic [ref=f31e244]:
+              - button "Отправить отзыв" [ref=f31e1165] [cursor=pointer]:
+                - generic [ref=f31e248]: feedback
+                - generic [ref=f31e250]: Отправить отзыв
+              - button "Общие сведения о Search Console" [ref=f31e1166] [cursor=pointer]:
+                - generic [ref=f31e255]: info
+                - generic [ref=f31e257]: Общие сведения о Search Console
+            - generic [ref=f31e261]:
+              - link "Конфиденциальность" [ref=f31e1167] [cursor=pointer]:
+                - /url: https://myaccount.google.com/privacypolicy?hl=ru
+              - link "Условия использования" [ref=f31e1168] [cursor=pointer]:
+                - /url: https://myaccount.google.com/termsofservice?hl=ru
+    - generic [ref=f31e914]:
+      - generic [ref=f31e922]: https://topextexnikum.uz/courses
+      - generic [ref=f31e923]:
+        - generic [ref=f31e925]:
+          - navigation "Строки навигации" [ref=f31e1169]:
+            - heading "Проверка URL" [level=1] [ref=f31e1170]
+          - button "Проверить страницу на сайте" [ref=f31e1171] [cursor=pointer]:
+            - generic [ref=f31e938]: Проверить страницу на сайте
+        - main [ref=f31e940]:
+          - generic [ref=f31e941]:
+            - generic [ref=f31e943]:
+              - generic [ref=f31e944]:
+                - generic [ref=f31e945]: info
+                - generic [ref=f31e946]:
+                  - generic [ref=f31e947]: URL нет в индексе Google
+                  - generic [ref=f31e948]:
+                    - text: Эта страница не проиндексирована, и поэтому она не может появляться в результатах поиска Google. Ниже указано, почему нам не удалось проиндексировать ее.
+                    - link "Подробнее" [ref=f31e1172] [cursor=pointer]:
+                      - /url: https://support.google.com/webmasters/answer/9012289#url_not_on_google
+              - generic [ref=f31e952]:
+                - button "Изучить просканированную страницу" [disabled] [ref=f31e1173]:
+                  - generic [ref=f31e961]: Изучить просканированную страницу
+                - generic [ref=f31e962]:
+                  - generic [ref=f31e1174]:
+                    - generic [ref=f31e1175]: 
+                    - generic [ref=f31e1176]: Отправлен запрос на индексирование
+                  - button "Запросить индексированиеЗапросить снова" [active] [ref=f31e1177] [cursor=pointer]:
+                    - generic [ref=f31e1178]: Запросить снова
+            - generic [ref=f31e977]:
+              - 'button "Индексирование страниц Эта страница не проиндексирована: URL неизвестен Google" [expanded] [ref=f31e1179] [cursor=pointer]':
+                - generic [ref=f31e979]:
+                  - generic [ref=f31e981]:
+                    - generic [ref=f31e983]: info
+                    - generic [ref=f31e984]:
+                      - generic [ref=f31e985]: Индексирование страниц
+                      - generic [ref=f31e986]: "Эта страница не проиндексирована: URL неизвестен Google"
+                  - generic [ref=f31e989]: 
+              - generic [ref=f31e993]:
+                - generic [ref=f31e994]:
+                  - generic [ref=f31e995]:
+                    - generic [ref=f31e996]: Как обнаружено
+                    - generic [ref=f31e997]:
+                      - generic [ref=f31e998]: Файлы Sitemap
+                      - generic [ref=f31e1000]: Нет ссылающихся файлов Sitemap
+                    - generic [ref=f31e1001]:
+                      - generic [ref=f31e1002]: Ссылающаяся страница
+                      - generic [ref=f31e1004]: Не найдено
+                    - generic [ref=f31e1006]: URL может быть известен из других источников, которые в настоящее время не раскрываются.
+                  - generic [ref=f31e1007]:
+                    - generic [ref=f31e1008]: Сканирование
+                    - generic [ref=f31e1009]:
+                      - generic [ref=f31e1010]: Последнее сканирование
+                      - generic [ref=f31e1012]: Отсутствует
+                    - generic [ref=f31e1013]:
+                      - generic [ref=f31e1014]: Робот, выполнивший сканирование
+                      - generic [ref=f31e1016]: Отсутствует
+                    - generic [ref=f31e1017]:
+                      - generic [ref=f31e1018]: Сканирование разрешено?
+                      - generic [ref=f31e1020]: Отсутствует
+                    - generic [ref=f31e1021]:
+                      - generic [ref=f31e1022]: Получение страницы
+                      - generic [ref=f31e1024]: Отсутствует
+                    - generic [ref=f31e1025]:
+                      - generic [ref=f31e1026]: Индексирование разрешено?
+                      - generic [ref=f31e1028]: info
+                      - generic [ref=f31e1030]: Отсутствует
+                  - generic [ref=f31e1031]:
+                    - generic [ref=f31e1032]: Индексирование
+                    - generic [ref=f31e1033]:
+                      - generic [ref=f31e1034]: Каноническая страница, выбранная пользователем
+                      - generic [ref=f31e1036]: Отсутствует
+                    - generic [ref=f31e1037]:
+                      - generic [ref=f31e1039]:
+                        - generic [ref=f31e1040]: Каноническая страница, выбранная Google
+                        - button "null" [ref=f31e1180] [cursor=pointer]:
+                          - generic [ref=f31e1044]: 
+                      - generic [ref=f31e1046]: Отсутствует
+                - link "Ознакомиться с подробной документацией" [ref=f31e1181] [cursor=pointer]:
+                  - /url: https://support.google.com/webmasters/answer/9012289#url_unknown
+                  - generic [ref=f31e1055]: Подробнее...
+            - generic [ref=f31e1056]: Улучшения и удобство для пользователей
+            - generic [ref=f31e1060]: Улучшения можно внедрять только по индексированным URL.
+  - iframe [ref=f31e754]:
+    - generic [ref=f35e6]:
+      - text: защита от спама
+      - strong [ref=f35e7]: reCAPTCHA

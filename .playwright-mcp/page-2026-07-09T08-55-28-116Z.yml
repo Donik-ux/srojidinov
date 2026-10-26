@@ -1,0 +1,216 @@
+- generic [active] [ref=f60e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=f60e3]:
+    - generic [ref=f60e4]:
+      - generic [ref=f60e5]:
+        - generic [ref=f60e6]:
+          - generic [ref=f60e7]:
+            - generic [ref=f60e10]:
+              - link "gayraotabek4-8557's projects Hobby" [ref=f60e11] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects
+                - img [ref=f60e12]
+                - generic [ref=f60e13]:
+                  - generic [ref=f60e14]: gayraotabek4-8557's projects
+                  - generic [ref=f60e15]: Hobby
+              - button [ref=f60e16] [cursor=pointer]:
+                - img [ref=f60e18]
+            - button "Find… F" [ref=f60e21]:
+              - generic [ref=f60e23]:
+                - img [ref=f60e25]
+                - generic [ref=f60e27]: Find…
+                - generic [ref=f60e29]: F
+          - navigation [ref=f60e31]:
+            - generic [ref=f60e34]:
+              - link "Other Overview" [ref=f60e268] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi
+                - img "Other" [ref=f60e269]:
+                  - img "Other" [ref=f60e270]
+                - generic [ref=f60e39]: Overview
+              - link "Deployments" [ref=f60e40] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/deployments
+                - img [ref=f60e42]
+                - generic [ref=f60e45]: Deployments
+              - link "Logs" [ref=f60e46] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/logs
+                - img [ref=f60e48]
+                - generic [ref=f60e51]: Logs
+              - link "Analytics" [ref=f60e52] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/analytics
+                - img [ref=f60e54]
+                - generic [ref=f60e57]: Analytics
+              - link "Speed Insights" [ref=f60e58] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/speed-insights
+                - img [ref=f60e60]
+                - generic [ref=f60e63]: Speed Insights
+              - link "Observability" [ref=f60e64] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/observability
+                - img [ref=f60e66]
+                - generic [ref=f60e69]: Observability
+                - img [ref=f60e71]
+              - link "Firewall" [ref=f60e73] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/firewall
+                - img [ref=f60e75]
+                - generic [ref=f60e79]: Firewall
+                - img [ref=f60e81]
+              - link "CDN" [ref=f60e83] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/cdn
+                - img [ref=f60e85]
+                - generic [ref=f60e88]: CDN
+                - img [ref=f60e90]
+              - separator [ref=f60e92]
+              - link "Environment Variables" [ref=f60e93] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings/environment-variables
+                - img [ref=f60e95]
+                - generic [ref=f60e98]: Environment Variables
+              - link "Domains" [ref=f60e99] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings/domains
+                - img [ref=f60e101]
+                - generic [ref=f60e104]: Domains
+              - link "Connect Beta" [ref=f60e105] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/connect
+                - img [ref=f60e107]
+                - generic [ref=f60e109]:
+                  - generic [ref=f60e110]: Connect
+                  - generic [ref=f60e111]: Beta
+              - link "Integrations" [ref=f60e112] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings/integrations
+                - img [ref=f60e114]
+                - generic [ref=f60e117]: Integrations
+              - link "Storage" [ref=f60e118] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/stores
+                - img [ref=f60e120]
+                - generic [ref=f60e123]: Storage
+              - link "Flags" [ref=f60e124] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/flags
+                - img [ref=f60e126]
+                - generic [ref=f60e129]: Flags
+                - img [ref=f60e131]
+              - link "Agent" [ref=f60e133] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/agent
+                - img [ref=f60e135]
+                - generic [ref=f60e138]: Agent
+                - img [ref=f60e140]
+              - link "AI Gateway" [ref=f60e142] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/ai-gateway
+                - img [ref=f60e144]
+                - generic [ref=f60e147]: AI Gateway
+                - img [ref=f60e149]
+              - link "Sandboxes" [ref=f60e151] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/sandboxes
+                - img [ref=f60e153]
+                - generic [ref=f60e156]: Sandboxes
+                - img [ref=f60e158]
+              - link "Workflows" [ref=f60e160] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/workflows
+                - img [ref=f60e162]
+                - generic [ref=f60e165]: Workflows
+              - link "Images Beta" [ref=f60e166] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/images
+                - img [ref=f60e168]
+                - generic [ref=f60e170]:
+                  - generic [ref=f60e171]: Images
+                  - generic [ref=f60e172]: Beta
+              - separator [ref=f60e173]
+              - link "Usage" [ref=f60e174] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/usage
+                - img [ref=f60e176]
+                - generic [ref=f60e179]: Usage
+              - link "Support" [ref=f60e180] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/support
+                - img [ref=f60e182]
+                - generic [ref=f60e185]: Support
+              - link "Settings" [ref=f60e186] [cursor=pointer]:
+                - /url: /gayraotabek4-8557s-projects/topex-texnikumi/settings
+                - img [ref=f60e188]
+                - generic [ref=f60e191]: Settings
+                - img [ref=f60e193]
+          - generic [ref=f60e199]:
+            - button "Avatar for gayraotabek4-8557 gayraotabek4-8557" [ref=f60e200] [cursor=pointer]:
+              - img "Avatar for gayraotabek4-8557" [ref=f60e201]:
+                - img "Avatar for gayraotabek4-8557" [ref=f60e202]
+              - generic [ref=f60e204]: gayraotabek4-8557
+              - img [ref=f60e206]
+            - button "38 unseen notifications" [ref=f60e272] [cursor=pointer]:
+              - generic [ref=f60e273]:
+                - generic [ref=f60e274]:
+                  - img
+                - img [ref=f60e275]
+        - button [ref=f60e213] [cursor=pointer]:
+          - img [ref=f60e214]
+      - generic [ref=f60e217]:
+        - generic [ref=f60e218]:
+          - generic [ref=f60e221]:
+            - link "Other topex-texnikumi" [ref=f60e277] [cursor=pointer]:
+              - /url: /gayraotabek4-8557s-projects/topex-texnikumi
+              - img "Other" [ref=f60e278]:
+                - img "Other" [ref=f60e279]
+              - generic [ref=f60e225]: topex-texnikumi
+            - button [ref=f60e226] [cursor=pointer]:
+              - img [ref=f60e228]
+            - link "Back to team view" [ref=f60e232] [cursor=pointer]:
+              - /url: /gayraotabek4-8557s-projects/~/domains
+              - img [ref=f60e234]
+          - generic [ref=f60e238]: Domains
+        - generic [ref=f60e247]:
+          - generic [ref=f60e248]:
+            - generic [ref=f60e249]:
+              - button "Filter domains" [ref=f60e250] [cursor=pointer]:
+                - img [ref=f60e253]
+              - generic [ref=f60e255]:
+                - searchbox "Search" [ref=f60e256]
+                - img [ref=f60e258]
+            - generic [ref=f60e260]:
+              - button "Add Existing" [ref=f60e261] [cursor=pointer]:
+                - generic [ref=f60e262]: Add Existing
+              - link "Buy" [ref=f60e263] [cursor=pointer]:
+                - /url: /domains?q=&teamSlug=gayraotabek4-8557s-projects
+                - generic [ref=f60e264]: Buy
+          - generic [ref=f60e282]:
+            - generic [ref=f60e383]:
+              - button "topex-texnikumi.vercel.app Valid Configuration Production" [disabled] [ref=f60e384]:
+                - img [ref=f60e385]
+                - generic [ref=f60e388]:
+                  - link "topex-texnikumi.vercel.app" [ref=f60e389] [cursor=pointer]:
+                    - /url: https://topex-texnikumi.vercel.app
+                  - generic [ref=f60e391]: Valid Configuration
+                - generic [ref=f60e393]:
+                  - img [ref=f60e394]
+                  - text: Production
+              - generic [ref=f60e396]:
+                - button "Refresh" [ref=f60e397] [cursor=pointer]:
+                  - generic [ref=f60e398]: Refresh
+                - button "Edit" [ref=f60e399] [cursor=pointer]:
+                  - generic [ref=f60e400]: Edit
+            - generic [ref=f60e405]:
+              - button "topextexnikum.uz DNS Change Recommended Learn more Production" [ref=f60e406] [cursor=pointer]:
+                - img [ref=f60e407]
+                - generic [ref=f60e410]:
+                  - generic [ref=f60e411]: topextexnikum.uz
+                  - generic [ref=f60e412]:
+                    - generic [ref=f60e414]: DNS Change Recommended
+                    - generic [ref=f60e415]:
+                      - text: Learn more
+                      - img [ref=f60e416]
+                - generic [ref=f60e419]:
+                  - img [ref=f60e420]
+                  - text: Production
+              - generic [ref=f60e422]:
+                - button "Refresh" [disabled] [ref=f60e423]:
+                  - status [ref=f60e425]:
+                    - generic [ref=f60e434]: Loading...
+                  - generic [ref=f60e435]: Refresh
+                - button "Edit" [ref=f60e436] [cursor=pointer]:
+                  - generic [ref=f60e437]: Edit
+  - alert [ref=f60e267]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
+  - status [ref=f60e438]:
+    - generic [ref=f60e440]:
+      - generic [ref=f60e441]: "success:"
+      - generic [ref=f60e442]: Domain added
+      - button "Dismiss toast" [ref=f60e444] [cursor=pointer]:
+        - img [ref=f60e446]

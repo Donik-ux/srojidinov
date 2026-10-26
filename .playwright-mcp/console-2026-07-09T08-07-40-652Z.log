@@ -1,0 +1,63 @@
+[     101ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3001/node_modules/.vite/deps/chunk-YZVM2MHU.js?v=8f9741ce:21550
+[     160ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://localhost:3001/node_modules/.vite/deps/react-router-dom.js?v=8f9741ce:4426
+[     160ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://localhost:3001/node_modules/.vite/deps/react-router-dom.js?v=8f9741ce:4426
+[     298ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://topex-texnikumi.onrender.com/api/settings:0
+[    2474ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/health:0
+[    2825ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    2837ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/courses?limit=6:0
+[    2837ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/faq:0
+[    2841ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/testimonials:0
+[    3114ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    5138ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/home-videos:0
+[    5139ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/courses?limit=6:0
+[    5153ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    5430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/faq:0
+[    5430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/testimonials:0
+[    7458ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    7474ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/home-videos:0
+[    7475ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[    9784ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:10000/api/settings:0
+[   57612ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:3001/@vite/client:559
+[   59945ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   63265ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   66589ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   69914ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   73235ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   76558ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   79882ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   83207ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   86527ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   89865ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   93190ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   96514ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[   99835ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  103159ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  106482ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  109805ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  113133ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  116454ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  119773ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  123102ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  126425ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  129747ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  133070ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  136407ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  139738ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  143060ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  146387ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  149711ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  153030ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  156361ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  159684ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  163007ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  166335ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  169656ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  172975ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  176307ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  179646ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  182967ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  186292ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  189618ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  192937ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  196259ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0
+[  199587ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/:0

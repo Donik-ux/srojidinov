@@ -20,6 +20,8 @@ import {
   TrendingUp,
   Users,
 } from 'lucide-react';
+import useSiteContent from '../hooks/useSiteContent';
+import { ICON_MAP } from '../utils/siteFallback';
 
 const CAMPUS_IMAGE = 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=2000&q=88';
 const HERO_VIDEO = '/assets/videos/hero.mp4';
@@ -165,7 +167,33 @@ const SectionHeading = ({ eyebrow, title, text }) => (
   </div>
 );
 
-const LyceumHomePage = () => (
+const LyceumHomePage = () => {
+  const { content } = useSiteContent('uz');
+  const c = content || {};
+  const hero = c.hero || {};
+  const stats = c.stats || ia;
+  const advantages = (c.advantages || ea).map((a) => ({ ...a, Icon: ICON_MAP[a.icon] || Landmark }));
+  const directions = (c.directions || sa).map((d) => ({ ...d, Icon: ICON_MAP[d.icon] || Atom }));
+  const teachers = c.teachers || ta;
+  const admissionSteps = (c.admissionSteps || la).map((s) => ({ ...s, Icon: ICON_MAP[s.icon] || Phone }));
+  const documents = c.documents || ra;
+  const faqs = c.faqs || na;
+  const contacts = c.contacts || {};
+  const ADDRESS = contacts.address || DEFAULT_ADDRESS;
+  const PHONE = contacts.phone || DEFAULT_PHONE;
+  const PHONE_HREF = contacts.phoneHref || DEFAULT_PHONE_HREF;
+  const LAT = contacts.lat || DEFAULT_LAT;
+  const LNG = contacts.lng || DEFAULT_LNG;
+  const MAP_EMBED = `https://www.google.com/maps?q=${LAT},${LNG}&z=17&hl=uz&output=embed`;
+  const MAP_DIR = `https://www.google.com/maps/dir/?api=1&destination=${LAT},${LNG}`;
+  const MAP_YANDEX = `https://yandex.uz/maps/?pt=${LNG},${LAT}&z=17&l=map`;
+  const MAP_OSM = `https://www.openstreetmap.org/?mlat=${LAT}&mlon=${LNG}#map=18/${LAT}/${LNG}`;
+  const INSTAGRAM_URL = contacts.instagram || DEFAULT_INSTAGRAM_URL;
+  const NUU_URL = contacts.nuu || DEFAULT_NUU_URL;
+  const HERO_V = hero.video || HERO_VIDEO;
+  const HERO_P = hero.poster || HERO_POSTER;
+
+  return (
   <>
     <Helmet>
       <title>S.H. Sirojiddinov nomidagi akademik litsey</title>
@@ -184,8 +212,8 @@ const LyceumHomePage = () => (
     <div>
       <section id="hero" className="relative isolate min-h-[620px] overflow-hidden bg-[#132d43] text-white sm:min-h-[690px] lg:min-h-[720px]">
         <video
-          src={HERO_VIDEO}
-          poster={HERO_POSTER}
+          src={HERO_V}
+          poster={HERO_P}
           autoPlay
           muted
           loop
@@ -201,36 +229,45 @@ const LyceumHomePage = () => (
           <div className="max-w-4xl">
             <div className="mb-6 flex items-center gap-3 text-xs font-bold uppercase text-white/80 sm:text-sm">
               <span className="h-px w-10 bg-[#d5ad68]" />
-              O‘zbekiston Milliy universiteti qoshida
+              {hero.eyebrow || 'O‘zbekiston Milliy universiteti qoshida'}
             </div>
             <h1 className="!text-white max-w-4xl font-['Source_Serif_4'] text-4xl font-semibold leading-[1.06] sm:text-6xl lg:text-7xl">
-              S.H. Sirojiddinov nomidagi respublika akademik litseyi
+              {hero.title || 'S.H. Sirojiddinov nomidagi respublika akademik litseyi'}
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-              Tabiiy va aniq fanlarga ixtisoslashgan, ilmiy izlanish va puxta ta’lim an’analariga tayangan maskan.
+              {hero.subtitle || 'Tabiiy va aniq fanlarga ixtisoslashgan, ilmiy izlanish va puxta ta’lim an’analariga tayangan maskan.'}
             </p>
 
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/80">
-              <span className="inline-flex items-center gap-2"><CalendarDays size={16} className="text-[#d5ad68]" /> 1970-yildan beri</span>
-              <span className="inline-flex items-center gap-2"><Atom size={16} className="text-[#d5ad68]" /> Aniq va tabiiy fanlar</span>
-              <span className="inline-flex items-center gap-2"><Landmark size={16} className="text-[#d5ad68]" /> O‘zMU qoshida</span>
+              {(hero.badges || [
+                { icon: 'CalendarDays', text: '1970-yildan beri' },
+                { icon: 'Atom', text: 'Aniq va tabiiy fanlar' },
+                { icon: 'Landmark', text: 'O‘zMU qoshida' },
+              ]).map((b, i) => {
+                const BIcon = ICON_MAP[b.icon] || CalendarDays;
+                return <span key={i} className="inline-flex items-center gap-2"><BIcon size={16} className="text-[#d5ad68]" /> {b.text}</span>;
+              })}
             </div>
 
             <div className="mt-9 flex flex-wrap gap-3">
-              <a href="#directions" className="inline-flex min-h-12 items-center gap-3 bg-[#d5ad68] px-6 py-3 text-sm font-bold text-[#172c3d] transition hover:bg-[#e3c486]">
-                Ta’lim yo‘nalishlari <ArrowRight size={17} />
-              </a>
-              <a href="#admissions" className="inline-flex min-h-12 items-center gap-3 border border-white/55 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-                Qabul jarayoni
-              </a>
-              <a href="#contact" className="inline-flex min-h-12 items-center border border-white/25 px-6 py-3 text-sm font-semibold text-white/85 transition hover:bg-white/10">
-                Bog‘lanish
-              </a>
+              {(hero.buttons || [
+                { text: "Ta’lim yo‘nalishlari", href: '#directions', variant: 'primary' },
+                { text: "Qabul jarayoni", href: '#admissions', variant: 'secondary' },
+                { text: "Bog‘lanish", href: '#contact', variant: 'ghost' },
+              ]).map((btn, i) => {
+                if (btn.variant === 'primary') {
+                  return <a key={i} href={btn.href} className="inline-flex min-h-12 items-center gap-3 bg-[#d5ad68] px-6 py-3 text-sm font-bold text-[#172c3d] transition hover:bg-[#e3c486]">{btn.text} <ArrowRight size={17} /></a>;
+                }
+                if (btn.variant === 'ghost') {
+                  return <a key={i} href={btn.href} className="inline-flex min-h-12 items-center border border-white/25 px-6 py-3 text-sm font-semibold text-white/85 transition hover:bg-white/10">{btn.text}</a>;
+                }
+                return <a key={i} href={btn.href} className="inline-flex min-h-12 items-center gap-3 border border-white/55 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">{btn.text}</a>;
+              })}
             </div>
           </div>
         </div>
         <span className="absolute bottom-5 right-5 bg-black/45 px-3 py-1.5 text-[11px] text-white/80 sm:right-10">
-          Video
+          {hero.overlayLabel || 'Video'}
         </span>
       </section>
 
@@ -699,7 +736,8 @@ const LyceumHomePage = () => (
         </div>
       </section>
     </div>
-  </>
-);
+    </>
+  );
+};
 
 export default LyceumHomePage;

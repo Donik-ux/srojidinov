@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import {
   LayoutDashboard, Users, BookOpen, FileText,
   LogOut, ClipboardList, Menu, X,
-  Image, Star, HelpCircle, Award, Settings, Play, Film, ExternalLink, Globe, UserCog, Briefcase,
+  Image, Star, HelpCircle, Award, Settings, Play, Film, ExternalLink, Globe, UserCog, Briefcase, Languages,
 } from 'lucide-react';
 import { logout, selectUser } from '../features/auth/authSlice';
 import { fetchDashboard } from '../features/admin/adminSlice';
@@ -32,6 +32,8 @@ const AdminLayout = () => {
       { to: '/admin/faq',          label: t('adminLayout.faq'),          icon: HelpCircle },
       { to: '/admin/scholarships', label: t('adminLayout.scholarships'), icon: Award },
       { to: '/admin/home-videos',  label: t('adminLayout.homeVideos'),   icon: Play },
+      { to: '/admin/site-builder', label: 'Конструктор сайта',          icon: LayoutTemplate },
+      { to: '/admin/translations', label: 'Переводы',                   icon: Languages },
       { to: '/admin/videos',       label: t('adminLayout.videos'),       icon: Film },
       { to: '/admin/teachers',     label: t('adminLayout.teachers'),     icon: Users },
       { to: '/admin/vacancies',    label: 'Vakansiyalar',                 icon: Briefcase },

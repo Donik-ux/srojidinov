@@ -20,6 +20,8 @@ const AdminScholarships = lazy(() => import('../pages/admin/AdminScholarships'))
 const AdminSettings     = lazy(() => import('../pages/admin/AdminSettings'));
 const AdminHomeVideos   = lazy(() => import('../pages/admin/AdminHomeVideos'));
 const AdminSiteEditor   = lazy(() => import('../pages/admin/AdminSiteEditor'));
+const AdminSiteBuilder  = lazy(() => import('../pages/admin/AdminSiteBuilder'));
+const AdminTranslations = lazy(() => import('../pages/admin/AdminTranslations'));
 const AdminTeachers     = lazy(() => import('../pages/admin/AdminTeachers'));
 const AdminDirections   = lazy(() => import('../pages/admin/AdminDirections'));
 const AdminVideos       = lazy(() => import('../pages/admin/AdminVideos'));
@@ -61,10 +63,12 @@ const AppRouter = () => (
         <Route path="faq"          element={<AdminFAQ />} />
         <Route path="scholarships" element={<AdminScholarships />} />
         <Route path="settings"     element={<AdminSettings />} />
-        <Route path="home-videos"  element={<AdminHomeVideos />} />
-        <Route path="site-editor"  element={<AdminSiteEditor />} />
-        <Route path="teachers"     element={<AdminTeachers />} />
-        <Route path="directions"   element={<AdminDirections />} />
+          <Route path="home-videos" element={<AdminHomeVideos />} />
+          <Route path="site-editor" element={<AdminSiteEditor />} />
+          <Route path="site-builder" element={<AdminSiteBuilder />} />
+          <Route path="translations" element={<AdminTranslations />} />
+          <Route path="teachers" element={<AdminTeachers />} />
+          <Route path="directions" element={<AdminDirections />} />
         <Route path="videos"       element={<AdminVideos />} />
         <Route path="vacancies"    element={<AdminVacancies />} />
       </Route>

@@ -26,6 +26,9 @@ import {
 } from 'lucide-react';
 import useSiteContent from '../hooks/useSiteContent';
 import { ICON_MAP } from '../utils/siteFallback';
+import ru from '../i18n/ru.json';
+import uz from '../i18n/uz.json';
+import en from '../i18n/en.json';
 
 const CAMPUS_IMAGE = 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=2000&q=88';
 const HERO_VIDEO = '/assets/videos/hero.mp4';
@@ -184,7 +187,8 @@ const LyceumHomePage = () => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language?.startsWith('ru') ? 'ru' : i18n.language?.startsWith('en') ? 'en' : 'uz';
   const isUz = lang === 'uz';
-  const tr = t('lyceum', { returnObjects: true });
+  const localeFallback = lang === 'ru' ? ru.lyceum : lang === 'en' ? en.lyceum : uz.lyceum;
+  const tr = { ...localeFallback, ...(t('lyceum', { returnObjects: true }) || {}) };
   const [activeCertificate, setActiveCertificate] = useState(null);
 
   const { content } = useSiteContent(lang);

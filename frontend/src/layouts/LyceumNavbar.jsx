@@ -1,38 +1,41 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { BookOpen, ChevronDown, Menu, Phone, X } from 'lucide-react';
 import LanguageSwitcher from '../components/common/LanguageSwitcher';
 
-const links = [
-  { href: '/#about', label: 'Litsey haqida' },
-  { href: '/#advantages', label: 'Afzalliklar' },
-  { href: '/#directions', label: 'Yo‘nalishlar' },
-  { href: '/#teachers', label: 'Ustozlar' },
-  { href: '/#admissions', label: 'Qabul' },
-  { href: '/#questions', label: 'Savol-javob' },
-  { href: '/#contact', label: 'Aloqa' },
-];
-
 const LyceumNavbar = () => {
+  const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const links = [
+    { href: '/#about', label: t('lyceum.nav.about') },
+    { href: '/#advantages', label: t('lyceum.nav.advantages') },
+    { href: '/#directions', label: t('lyceum.nav.directions') },
+    { href: '/#teachers', label: t('lyceum.nav.teachers') },
+    { href: '/#achievements', label: t('lyceum.nav.achievements') },
+    { href: '/#admissions', label: t('lyceum.nav.admissions') },
+    { href: '/#questions', label: t('lyceum.nav.questions') },
+    { href: '/#contact', label: t('lyceum.nav.contact') },
+  ];
 
   return (
     <header className="sticky top-0 z-50 shadow-sm">
       <div className="bg-[#142f45] text-white">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-5 px-5 py-4 sm:px-10 lg:px-16">
-          <Link to="/" className="flex min-w-0 items-center gap-3" aria-label="Litsey bosh sahifasi">
+          <Link to="/" className="flex min-w-0 items-center gap-3" aria-label={t('lyceum.nav.homeLabel')}>
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#d5ad68]/70 text-[#e2c37f]">
               <BookOpen size={23} strokeWidth={1.7} />
             </span>
             <span className="min-w-0">
-              <span className="block truncate text-[11px] font-semibold uppercase leading-4 text-white/65 sm:text-xs">O‘zbekiston Milliy universiteti qoshida</span>
-              <span className="mt-1 block font-['Source_Serif_4'] text-base font-semibold leading-tight sm:text-xl">S.H. Sirojiddinov akademik litseyi</span>
+              <span className="block truncate text-[11px] font-semibold uppercase leading-4 text-white/65 sm:text-xs">{t('lyceum.nav.university')}</span>
+              <span className="mt-1 block font-['Source_Serif_4'] text-base font-semibold leading-tight sm:text-xl">{t('lyceum.nav.brand')}</span>
             </span>
           </Link>
 
           <div className="hidden max-w-[330px] items-center gap-3 border-l border-white/20 pl-6 text-sm leading-6 text-white/75 xl:flex">
             <span className="h-8 w-px bg-[#d5ad68]" />
-            <span>Ilm, izlanish va kelajak sari</span>
+            <span>{t('lyceum.nav.motto')}</span>
           </div>
 
           <div className="hidden items-center gap-3 md:flex">
@@ -44,7 +47,7 @@ const LyceumNavbar = () => {
           </div>
           <button
             type="button"
-            aria-label={menuOpen ? 'Menyuni yopish' : 'Menyuni ochish'}
+            aria-label={menuOpen ? t('lyceum.nav.closeMenu') : t('lyceum.nav.openMenu')}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen(open => !open)}
             className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/25 text-white transition hover:bg-white/10 lg:hidden"
@@ -54,7 +57,7 @@ const LyceumNavbar = () => {
         </div>
       </div>
 
-      <nav aria-label="Asosiy navigatsiya" className="border-b border-[#d7cbb7] bg-[#eee6d8]">
+      <nav aria-label={t('lyceum.nav.mainNav')} className="border-b border-[#d7cbb7] bg-[#eee6d8]">
         <div className="mx-auto flex min-h-12 max-w-[1440px] items-center justify-between px-5 sm:px-10 lg:px-16">
           <button
             type="button"
@@ -64,11 +67,11 @@ const LyceumNavbar = () => {
             className="hidden items-center gap-2 py-3 text-xs font-bold uppercase text-[#19354d] hover:text-[#9d7335] lg:flex"
           >
             {menuOpen ? <X size={16} /> : <Menu size={16} />}
-            Menyu
+            {t('lyceum.nav.menu')}
           </button>
           <div className="hidden items-center gap-1 lg:flex">
             {links.map(({ href, label }) => (
-              <a key={href} href={href} className="px-4 py-3 text-sm font-semibold text-[#344c5c] transition hover:text-[#9d7335]">{label}</a>
+              <a key={href} href={href} className="px-3 py-3 text-sm font-semibold text-[#344c5c] transition hover:text-[#9d7335]">{label}</a>
             ))}
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
@@ -76,10 +79,10 @@ const LyceumNavbar = () => {
               <LanguageSwitcher />
             </div>
             <a href="#admissions" className="inline-flex items-center gap-2 py-3 text-xs font-bold uppercase text-[#19354d] transition hover:text-[#9d7335]">
-              Qabul haqida <ChevronDown size={15} />
+              {t('lyceum.nav.admissionsLink')} <ChevronDown size={15} />
             </a>
             <Link to="/register" className="inline-flex min-h-9 items-center bg-[#d5ad68] px-3 text-xs font-bold text-[#172c3d] transition hover:bg-[#e3c486] sm:px-4 sm:text-sm">
-              Ro‘yxatdan o‘tish
+              {t('lyceum.nav.register')}
             </Link>
           </div>
         </div>

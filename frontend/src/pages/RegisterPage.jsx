@@ -98,13 +98,13 @@ const RegisterPage = () => {
 
           <div className="relative z-10 flex flex-col justify-between p-12 text-white xl:p-16">
             <div className="flex items-center justify-between gap-4">
-              <Link to="/" className="flex items-center gap-3" aria-label="Litsey bosh sahifasi">
+              <Link to="/" className="flex items-center gap-3" aria-label={t('lyceum.nav.homeLabel')}>
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#d5ad68]/70 text-[#e2c37f]">
                   <BookOpen size={21} strokeWidth={1.7} />
                 </span>
                 <span className="min-w-0">
-                  <span className="block text-[10px] font-semibold uppercase leading-4 text-white/60">O‘zbekiston Milliy universiteti qoshida</span>
-                  <span className="mt-0.5 block font-['Source_Serif_4'] text-base font-semibold leading-tight">S.H. Sirojiddinov akademik litseyi</span>
+                  <span className="block text-[10px] font-semibold uppercase leading-4 text-white/60">{t('lyceum.nav.university')}</span>
+                  <span className="mt-0.5 block font-['Source_Serif_4'] text-base font-semibold leading-tight">{t('lyceum.nav.brand')}</span>
                 </span>
               </Link>
             </div>
@@ -297,7 +297,7 @@ const RegisterPage = () => {
             </form>
 
             <div className="mt-6 flex flex-wrap items-center justify-between gap-2 border-t border-[#e5e9ea] pt-5 text-xs text-[#7b858a]">
-              <span>Yordam kerakmi?</span>
+              <span>{t('loginPage.needHelp')}</span>
               <a href="tel:+998712784358" className="inline-flex items-center gap-1.5 font-semibold text-[#19354d] transition hover:text-[#9d7335]">
                 <Phone size={13} /> +998 71 278 43 58
               </a>

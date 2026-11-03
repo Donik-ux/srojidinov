@@ -188,24 +188,28 @@ const LyceumHomePage = () => {
   const lang = i18n.language?.startsWith('ru') ? 'ru' : i18n.language?.startsWith('en') ? 'en' : 'uz';
   const isUz = lang === 'uz';
   const localeFallback = lang === 'ru' ? ru.lyceum : lang === 'en' ? en.lyceum : uz.lyceum;
+  const safeArray = (value, fallback = []) => (Array.isArray(value) ? value : fallback);
+  const safeObject = (value, fallback = {}) => (value && typeof value === 'object' ? value : fallback);
   const tr = { ...localeFallback, ...(t('lyceum', { returnObjects: true }) || {}) };
   const [activeCertificate, setActiveCertificate] = useState(null);
 
   const { content } = useSiteContent(lang);
   const c = content || {};
-  const hero = isUz ? (c.hero || {}) : tr.hero;
-  const stats = isUz ? (c.stats || FALLBACK_STATS) : tr.stats;
-  const advantages = (isUz ? (c.advantages || FALLBACK_ADVANTAGES) : tr.advantages.items).map((a) => ({ ...a, Icon: ICON_MAP[a.icon] || Landmark }));
-  const directions = (isUz ? (c.directions || FALLBACK_DIRECTIONS) : tr.directions.items).map((d) => ({ ...d, Icon: ICON_MAP[d.icon] || Atom }));
-  const teachers = isUz ? (c.teachers || FALLBACK_TEACHERS) : tr.teachers.list;
-  const achievements = tr.achievements.list;
-  const admissionSteps = (isUz ? (c.admissionSteps || FALLBACK_ADMISSION_STEPS) : tr.admissions.items).map((s) => ({ ...s, Icon: ICON_MAP[s.icon] || Phone }));
-  const documents = isUz ? (c.documents || FALLBACK_DOCUMENTS) : tr.admissions.documents;
-  const faqs = isUz ? (c.faqs || FALLBACK_FAQS) : tr.questions.items;
+  const hero = isUz ? (c.hero || {}) : safeObject(tr.hero, localeFallback.hero || {});
+  const newsMeta = safeObject(tr.news, localeFallback.news || {});
+  const newsItems = safeArray(tr.news?.items, localeFallback.news?.items || []);
+  const stats = isUz ? (c.stats || FALLBACK_STATS) : safeArray(tr.stats, localeFallback.stats || FALLBACK_STATS);
+  const advantages = (isUz ? (c.advantages || FALLBACK_ADVANTAGES) : safeArray(tr.advantages?.items, localeFallback.advantages?.items || FALLBACK_ADVANTAGES)).map((a) => ({ ...a, Icon: ICON_MAP[a.icon] || Landmark }));
+  const directions = (isUz ? (c.directions || FALLBACK_DIRECTIONS) : safeArray(tr.directions?.items, localeFallback.directions?.items || FALLBACK_DIRECTIONS)).map((d) => ({ ...d, Icon: ICON_MAP[d.icon] || Atom }));
+  const teachers = isUz ? (c.teachers || FALLBACK_TEACHERS) : safeArray(tr.teachers?.list, localeFallback.teachers?.list || FALLBACK_TEACHERS);
+  const achievements = safeArray(tr.achievements?.list, localeFallback.achievements?.list || []);
+  const admissionSteps = (isUz ? (c.admissionSteps || FALLBACK_ADMISSION_STEPS) : safeArray(tr.admissions?.items, localeFallback.admissions?.items || FALLBACK_ADMISSION_STEPS)).map((s) => ({ ...s, Icon: ICON_MAP[s.icon] || Phone }));
+  const documents = isUz ? (c.documents || FALLBACK_DOCUMENTS) : safeArray(tr.admissions?.documents, localeFallback.admissions?.documents || FALLBACK_DOCUMENTS);
+  const faqs = isUz ? (c.faqs || FALLBACK_FAQS) : safeArray(tr.questions?.items, localeFallback.questions?.items || FALLBACK_FAQS);
   const contacts = isUz ? (c.contacts || {}) : {};
-  const factsData = (isUz ? facts : tr.facts).map((f) => ({ ...f, Icon: f.Icon || ICON_MAP[f.icon] || CalendarDays }));
-  const milestonesData = isUz ? milestones : tr.about.milestones;
-  const ADDRESS = contacts.address || tr.contact.defaultAddress;
+  const factsData = (isUz ? facts : safeArray(tr.facts, localeFallback.facts || facts)).map((f) => ({ ...f, Icon: f.Icon || ICON_MAP[f.icon] || CalendarDays }));
+  const milestonesData = isUz ? milestones : safeArray(tr.about?.milestones, localeFallback.about?.milestones || milestones);
+  const ADDRESS = contacts.address || tr.contact?.defaultAddress || localeFallback.contact?.defaultAddress || DEFAULT_ADDRESS;
   const PHONE = contacts.phone || DEFAULT_PHONE;
   const PHONE_HREF = contacts.phoneHref || DEFAULT_PHONE_HREF;
   const LAT = contacts.lat || DEFAULT_LAT;
@@ -322,19 +326,19 @@ const LyceumHomePage = () => {
         <div className="mx-auto max-w-[1440px] px-5 sm:px-10 lg:px-16">
           <div className="mb-9 flex flex-wrap items-end justify-between gap-4 border-b border-[#d9dfe1] pb-5">
             <div>
-              <p className="mb-2 text-xs font-bold uppercase text-[#9d7335]">{tr.news.eyebrow}</p>
-              <h2 className="font-['Source_Serif_4'] text-3xl font-semibold text-[#19354d] sm:text-4xl">{tr.news.title}</h2>
+              <p className="mb-2 text-xs font-bold uppercase text-[#9d7335]">{newsMeta.eyebrow}</p>
+              <h2 className="font-['Source_Serif_4'] text-3xl font-semibold text-[#19354d] sm:text-4xl">{newsMeta.title}</h2>
             </div>
-            <a href={tr.news.items[0].href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-[#19354d] hover:text-[#9d7335]">
-              {tr.news.linkText} <ExternalLink size={15} />
+            <a href={newsItems[0]?.href || NUU_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-[#19354d] hover:text-[#9d7335]">
+              {newsMeta.linkText || 'Batafsil'} <ExternalLink size={15} />
             </a>
           </div>
 
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {tr.news.items.map((item, index) => {
+            {newsItems.map((item, index) => {
               const NIcon = ICON_MAP[item.icon] || CalendarDays;
               return (
-                <article key={`${item.href}-${index}`} className="border border-[#dfe3e4] bg-white p-6 sm:p-8">
+                <article key={`${item.href || item.title}-${index}`} className="border border-[#dfe3e4] bg-white p-6 sm:p-8">
                   <div className="mb-5 flex items-center gap-3 text-xs font-semibold text-[#6d777c]">
                     <NIcon size={16} className="text-[#9d7335]" />
                     {item.badge}
@@ -345,8 +349,8 @@ const LyceumHomePage = () => {
                   <p className="mt-3 max-w-xl text-sm leading-6 text-[#5b666d]">
                     {item.text}
                   </p>
-                  <a href={item.href} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#19354d] hover:text-[#9d7335]">
-                    {item.linkText} <ArrowRight size={16} />
+                  <a href={item.href || NUU_URL} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#19354d] hover:text-[#9d7335]">
+                    {item.linkText || 'Batafsil'} <ArrowRight size={16} />
                   </a>
                 </article>
               );

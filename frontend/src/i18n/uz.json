@@ -204,7 +204,8 @@
     "submit": "Kirish",
     "submitting": "Kiritilmoqda...",
     "errPhone": "Telefon raqamingizni to'liq kiriting",
-    "errLogin": "Login kamida 3 ta belgidan iborat bo'lishi kerak"
+    "errLogin": "Login kamida 3 ta belgidan iborat bo'lishi kerak",
+    "needHelp": "Yordam kerakmi?"
   },
   "consent": {
     "prefix": "Shaxsiy ma'lumotlarim qayta ishlanishiga va",
@@ -1776,5 +1777,564 @@
     "ctaTitle": "Savollaringiz bormi?",
     "ctaSubtitle": "Litsenziya va ta'lim yo'nalishlari haqida batafsil ma'lumot olish uchun biz bilan bog'laning",
     "ctaContact": "Bog'lanish"
+  },
+  "lyceum": {
+    "meta": {
+      "title": "S.H. Sirojiddinov nomidagi akademik litsey",
+      "description": "O‘zbekiston Milliy universiteti qoshidagi tabiiy va aniq fanlarga ixtisoslashtirilgan S.H. Sirojiddinov nomidagi respublika akademik litseyi.",
+      "ogTitle": "S.H. Sirojiddinov nomidagi akademik litsey",
+      "ogDescription": "Tabiiy va aniq fanlarga ixtisoslashtirilgan respublika akademik litseyi."
+    },
+    "nav": {
+      "about": "Litsey haqida",
+      "advantages": "Afzalliklar",
+      "directions": "Yo‘nalishlar",
+      "teachers": "Ustozlar",
+      "admissions": "Qabul",
+      "questions": "Savol-javob",
+      "contact": "Aloqa",
+      "menu": "Menyu",
+      "admissionsLink": "Qabul haqida",
+      "register": "Ro‘yxatdan o‘tish",
+      "motto": "Ilm, izlanish va kelajak sari",
+      "university": "O‘zbekiston Milliy universiteti qoshida",
+      "brand": "S.H. Sirojiddinov akademik litseyi",
+      "homeLabel": "Litsey bosh sahifasi",
+      "openMenu": "Menyuni ochish",
+      "closeMenu": "Menyuni yopish",
+      "mainNav": "Asosiy navigatsiya",
+      "achievements": "Natijalar"
+    },
+    "hero": {
+      "eyebrow": "O‘zbekiston Milliy universiteti qoshida",
+      "title": "S.H. Sirojiddinov nomidagi respublika akademik litseyi",
+      "subtitle": "Tabiiy va aniq fanlarga ixtisoslashgan, ilmiy izlanish va puxta ta’lim an’analariga tayangan maskan.",
+      "badges": [
+        {
+          "icon": "CalendarDays",
+          "text": "1970-yildan beri"
+        },
+        {
+          "icon": "Atom",
+          "text": "Aniq va tabiiy fanlar"
+        },
+        {
+          "icon": "Landmark",
+          "text": "O‘zMU qoshida"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Ta’lim yo‘nalishlari",
+          "href": "#directions",
+          "variant": "primary"
+        },
+        {
+          "text": "Qabul jarayoni",
+          "href": "#admissions",
+          "variant": "secondary"
+        },
+        {
+          "text": "Bog‘lanish",
+          "href": "#contact",
+          "variant": "ghost"
+        }
+      ],
+      "overlayLabel": "Video"
+    },
+    "facts": [
+      {
+        "value": "1970",
+        "label": "tashkil topgan yil",
+        "icon": "CalendarDays"
+      },
+      {
+        "value": "1990",
+        "label": "Sirojiddinov nomi berilgan",
+        "icon": "GraduationCap"
+      },
+      {
+        "value": "1998",
+        "label": "akademik litsey maqomi",
+        "icon": "BookOpen"
+      },
+      {
+        "value": "O‘zMU",
+        "label": "qoshidagi litsey",
+        "icon": "Landmark"
+      }
+    ],
+    "advantages": {
+      "eyebrow": "Afzalliklar",
+      "title": "Nega litseyni tanlashadi",
+      "text": "Litsey o‘quvchilarga puxta bilim, ilmiy qiziqish va universitet muhitiga yaqinlikni birga taqdim etadi.",
+      "items": [
+        {
+          "icon": "Landmark",
+          "title": "O‘zMU bilan uzviy aloqa",
+          "text": "Litsey O‘zbekiston Milliy universiteti qoshida faoliyat yuritadi. O‘quvchilar universitetning ilmiy va ta’lim muhitiga yaqindan tanishadi."
+        },
+        {
+          "icon": "BookOpen",
+          "title": "Chuqur fan tayyorgarligi",
+          "text": "Matematika, fizika, kimyo va biologiya fanlari chuqurlashtirilgan holda o‘qitiladi, amaliy mashg‘ulotlarga alohida e’tibor beriladi."
+        },
+        {
+          "icon": "Users",
+          "title": "Tajribali pedagogalar",
+          "text": "Malakali o‘qituvchilar har bir o‘quvchining qobiliyatiga mos yondashadi va mustaqil fikrlashni rag‘batlantiradi."
+        },
+        {
+          "icon": "FlaskConical",
+          "title": "Ilmiy va amaliy muhit",
+          "text": "Laboratoriya mashg‘ulotlari, fan to‘garaklari va ilmiy loyihalar o‘quvchilarda izlanish ko‘nikmalarini shakllantiradi."
+        }
+      ]
+    },
+    "news": {
+      "eyebrow": "Rasmiy ma’lumotlar",
+      "title": "Litsey hayotidan",
+      "linkText": "O‘zMU xabari",
+      "items": [
+        {
+          "icon": "CalendarDays",
+          "badge": "25-dekabr, 2025",
+          "title": "O‘zMU rektori litsey faoliyati bilan tanishdi",
+          "text": "Rasmiy tashrif davomida jamoa bilan uchrashuv o‘tkazilib, ta’lim muhiti va litsey faoliyatini rivojlantirish masalalari muhokama qilingan.",
+          "linkText": "Batafsil",
+          "href": "https://nuu.uz/ru/rektor-universitet-qoshidagi-talim-muassasalari-faoliyatini-organdi/"
+        },
+        {
+          "icon": "Landmark",
+          "badge": "Litsey tarixi",
+          "title": "Aniq fanlar ta’limiga tayangan an’ana",
+          "text": "Litsey tarixi 1970-yilda tashkil etilgan Respublika maxsus maktab-internatidan boshlanadi. Dastlabki ixtisosligi fizika va matematika bo‘lgan.",
+          "linkText": "O‘zMUdagi tarix sahifasi",
+          "href": "https://nuu.uz/s-h-sirojiddinov-nomidagi-akademik-litseyi/"
+        },
+        {
+          "icon": "CalendarDays",
+          "badge": "30-sentabr, 2026",
+          "title": "Litseyda bayram tadbiri va uch avlod uchrashuvi",
+          "text": "O‘zMU xabarida litseyda bayram tadbiri hamda uch avlod uchrashuvi o‘tkazilgani qayd etilgan.",
+          "linkText": "O‘zMU xabarini ochish",
+          "href": "https://nuu.uz/s-h-sirojiddinov-nomidagi-akademik-litseyda-bayram-tadbiri-hamda-uch-avlod-uchrashuvi-bolib-otdi/"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Biz haqimizda",
+      "title": "Ilmga mehr bilan boshlangan yo‘l",
+      "p1": "S.H. Sirojiddinov nomidagi respublika akademik litseyi O‘zbekiston Milliy universiteti qoshidagi ta’lim muassasasidir. Bugun litsey tabiiy va aniq fanlarga ixtisoslashgan ta’lim maskani sifatida tanilgan.",
+      "p2": "Litsey o‘z tarixi davomida minglab bitiruvchilarga puxta bilim berib, ularning nufuzli oliy ta’lim muassasalarida tahsil olishiga zamin yaratgan. Asosiy maqsad — yoshlarda mustaqil fikrlash, izlanish va fanlarga samimiy qiziqishni shakllantirish.",
+      "linkText": "Rasmiy tarixni o‘qish",
+      "imageAlt": "Litsey bunyosi va ta’lim muhiti",
+      "milestones": [
+        {
+          "year": "1970",
+          "text": "Respublika maxsus maktab-internati sifatida tashkil etildi."
+        },
+        {
+          "year": "1990",
+          "text": "Muassasaga akademik S.H. Sirojiddinov nomi berildi."
+        },
+        {
+          "year": "1998",
+          "text": "Vazirlar Mahkamasi qarori bilan akademik litsey maqomi berildi."
+        },
+        {
+          "year": "Bugun",
+          "text": "O‘zMU qoshidagi tabiiy va aniq fanlarga ixtisoslashgan litsey sifatida faoliyat yuritadi."
+        }
+      ],
+      "todayTitle": "Litseyning bugungi kuni",
+      "todayText": "Zamonaviy o‘quv xonalari, fan laboratoriyalari va kutubxona o‘quvchilarga nazariy bilimlarni amaliyot bilan bog‘lash imkonini beradi."
+    },
+    "stats": [
+      {
+        "value": "1970",
+        "label": "tashkil etilgan yil"
+      },
+      {
+        "value": "55+",
+        "label": "yillik ta’lim an’anasi"
+      },
+      {
+        "value": "3",
+        "label": "asosiy ta’lim yo‘nalishi"
+      },
+      {
+        "value": "O‘zMU",
+        "label": "qoshidagi akademik litsey"
+      }
+    ],
+    "directions": {
+      "eyebrow": "Ta’lim yo‘nalishlari",
+      "title": "Tabiiy, aniq va iqtisod fanlari",
+      "text": "Ochiq manbalardagi avvalgi qabul e’lonlarida quyidagi fan juftliklari ko‘rsatilgan. Joriy o‘quv yili yo‘nalishlari va kvotalarini litsey bilan aniqlashtiring.",
+      "fitLabel": "Kimga mos",
+      "note": "Fanlar ro‘yxati 2023–2024 o‘quv yiliga oid ochiq e’londa uchraydi; yangi qabul ma’lumotlari o‘zgarishi mumkin.",
+      "items": [
+        {
+          "icon": "Atom",
+          "title": "Aniq fanlar",
+          "subjects": [
+            "Matematika",
+            "Fizika"
+          ],
+          "text": "Mantiqiy tafakkur, hisob-kitob va fizik hodisalarni chuqur o‘rganishga yo‘naltirilgan guruhlar.",
+          "fit": "Matematika va fizikaga qiziqqan, aniq hisob-kitob bilan ishlashni yoqtirgan o‘quvchilar uchun."
+        },
+        {
+          "icon": "Microscope",
+          "title": "Tabiiy fanlar",
+          "subjects": [
+            "Kimyo",
+            "Biologiya"
+          ],
+          "text": "Tirik organizmlar, moddalar tuzilishi va laboratoriya tadqiqotlariga asoslangan tayyorgarlik.",
+          "fit": "Tabiat, tibbiyot va ekologiyaga qiziqqan o‘quvchilar uchun."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Iqtisod",
+          "subjects": [
+            "Matematika",
+            "Ingliz tili"
+          ],
+          "text": "Iqtisodiy tafakkur, moliyaviy savodxonlik va xalqaro muloqot ko‘nikmalarini rivojlantirishga qaratilgan guruhlar.",
+          "fit": "Iqtisodiyot, biznes va xalqaro aloqalarga qiziqqan o‘quvchilar uchun."
+        }
+      ]
+    },
+    "teachers": {
+      "eyebrow": "Ustozlar",
+      "title": "Bilim va tajriba ustozlari",
+      "text": "Litseyda o‘z fanini sevadigan, tajribali pedagog-o‘qituvchilar jamoasi faoliyat yuritadi. Ular o‘quvchilarni nafaqat imtihonlarga, balki mustaqil izlanish va ilmiy tafakkurga ham tayyorlaydi.",
+      "stat1Value": "4",
+      "stat1Label": "asosiy fan yo‘nalishi",
+      "stat2Value": "55+",
+      "stat2Label": "yillik pedagogik tajriba",
+      "label": "O‘qituvchi",
+      "alt": "{subject} fani o‘qituvchisi",
+      "list": [
+        {
+          "subject": "Direktor",
+          "image": "/assets/Ustozlar/IMG_20261026_175341_878.jpg"
+        },
+        {
+          "subject": "Zam direktor",
+          "image": "/assets/Ustozlar/зам.jpg"
+        },
+        {
+          "subject": "Fizika",
+          "image": "/assets/Ustozlar/fizika.jpg"
+        },
+        {
+          "subject": "Matematika",
+          "image": "/assets/Ustozlar/matem.jpg"
+        },
+        {
+          "subject": "Ona tili",
+          "image": "/assets/Ustozlar/ona.jpg"
+        },
+        {
+          "name": "Karimova Ziynat",
+          "subject": "Matematika",
+          "image": "/assets/Ustozlar/karimova-ziynat.jpg"
+        },
+        {
+          "name": "Po‘latova Mazluma",
+          "subject": "Matematika",
+          "image": "/assets/Ustozlar/polatova-mazluma.jpg"
+        },
+        {
+          "name": "Yermatov Shermuhammad",
+          "subject": "Jismoniy Tarbiya",
+          "image": "/assets/Ustozlar/yermatov-shermuhammad.jpg"
+        },
+        {
+          "name": "Xatarova Munira",
+          "subject": "Matematika",
+          "image": "/assets/Ustozlar/xatarova-munira.jpg"
+        },
+        {
+          "name": "Saidova Zulfizar",
+          "subject": "Matematika",
+          "image": "/assets/Ustozlar/saidova-zulfizar.jpg"
+        }
+      ]
+    },
+    "admissions": {
+      "eyebrow": "Qabul",
+      "title": "Qabul jarayoni qanday kechadi",
+      "text": "Quyidagi bosqichlar umumiy tartibni ko‘rsatadi. Joriy o‘quv yiliga oid aniq muddat, kvota va imtihon sanalarini litseydan aniqlashtiring.",
+      "documentsTitle": "Hujjatlar ro‘yxati",
+      "documents": [
+        "Ariza (litsey blankasida)",
+        "Tug‘ilganlik haqida guvohnoma nusxasi",
+        "Pasport yoki ID-karta nusxasi",
+        "3x4 o‘lchamdagi foto (2 dona)",
+        "Oldingi o‘quv yurtidan ma’lumotnoma"
+      ],
+      "note": "Hujjatlar ro‘yxati o‘quv yiliga qarab yangilanishi mumkin. Ariza topshirishdan oldin litsey bilan bog‘laning.",
+      "items": [
+        {
+          "icon": "Phone",
+          "title": "Ma’lumot olish",
+          "text": "Joriy qabul shartlari, kvota va imtihon sanalari bilan litsey telefon orqali tanishing."
+        },
+        {
+          "icon": "FileText",
+          "title": "Hujjatlarni tayyorlash",
+          "text": "Ariza, shaxsni tasdiqlovchi hujjat nusxasi, foto va maktab hujjatlarini yig‘ing."
+        },
+        {
+          "icon": "CheckCircle2",
+          "title": "Ariza topshirish",
+          "text": "Belgilangan muddatda hujjatlarni litsey qabul komissiyasiga topshiring."
+        },
+        {
+          "icon": "GraduationCap",
+          "title": "Imtihon va suhbat",
+          "text": "Yo‘nalish fanlaridan imtihon hamda suhbatdan muvaffaqiyatli o‘ting."
+        }
+      ]
+    },
+    "history": {
+      "eyebrow": "Nom sohibi",
+      "title": "Akademik S.H. Sirojiddinov",
+      "text": "S.H. Sirojiddinov — O‘zbekistonning taniqli matematigi, akademik va professor. O‘zMU rasmiy tarix sahifasida uning ilmiy faoliyati ehtimollar nazariyasi va matematik statistika bilan bog‘liqligi qayd etilgan.",
+      "linkText": "Biografik ma’lumot"
+    },
+    "heritage": {
+      "eyebrow": "Ilmiy meros",
+      "title": "Akademik S.H. Sirojiddinov",
+      "text": "O‘zMU tarixiy ma’lumotida S.H. Sirojiddinov matematik, akademik va professor sifatida ta’riflanadi. Uning ilmiy ishlari ehtimollar nazariyasi hamda matematik statistika bilan bog‘liq.",
+      "linkText": "Rasmiy biografik ma’lumot",
+      "items": [
+        {
+          "value": "1920–1988",
+          "label": "S.H. Sirojiddinov hayot yillari"
+        },
+        {
+          "value": "1937",
+          "label": "Fizika-matematika fakultetini tamomlagan yil"
+        },
+        {
+          "value": "1973",
+          "label": "Beruniy nomidagi davlat mukofoti"
+        }
+      ]
+    },
+    "environment": {
+      "eyebrow": "Ta’lim muhiti",
+      "title": "Fanlarga qiziqishdan ilmiy izlanishgacha",
+      "text": "Litseyning tabiiy va aniq fanlarga ixtisoslashuvi matematik tafakkur, kuzatish va tajribaga qiziqishni qo‘llab-quvvatlaydi.",
+      "items": [
+        "Chuqurlashtirilgan fan darslari",
+        "Laboratoriya va amaliy mashg‘ulotlar",
+        "Ilmiy loyihalar va to‘garaklar"
+      ],
+      "caption": "Ta’lim jarayoni — tasviriy foto",
+      "imageAlt": "O‘quvchilar hamkorlikda ta’lim olayotgani tasvirlangan foto"
+    },
+    "questions": {
+      "eyebrow": "Savol-javob",
+      "title": "Ko‘p so‘raladigan savollar",
+      "text": "Qabulning joriy tafsilotlarini telefon orqali aniqlashtiring.",
+      "addressLink": "Manzil va xarita",
+      "items": [
+        [
+          "Litsey qaysi oliygoh qoshida?",
+          "O‘zbekiston Milliy universiteti qoshidagi akademik litsey."
+        ],
+        [
+          "Qachon tashkil etilgan?",
+          "Rasmiy tarix sahifasiga ko‘ra, muassasa 1970-yil 25-sentabrda Respublika maxsus maktab-internati sifatida tashkil etilgan."
+        ],
+        [
+          "Qachon akademik litsey maqomini olgan?",
+          "Vazirlar Mahkamasi 1998-yil 24-fevralda maktab-internatga akademik litsey maqomini berish haqida qaror qabul qilgan."
+        ],
+        [
+          "Qaysi fanlarga ixtisoslashgan?",
+          "Litsey tabiiy va aniq fanlarga ixtisoslashgan. Avvalgi qabul e’lonida aniq fanlar uchun matematika va fizika, tabiiy fanlar uchun kimyo va biologiya ko‘rsatilgan."
+        ],
+        [
+          "Qabul uchun qanday hujjatlar kerak?",
+          "Ariza, tug‘ilganlik guvohnomasi va pasport nusxalari, 3x4 foto hamda oldingi o‘quv yurtidan ma’lumotnoma. Aniq ro‘yxatni litsey bilan aniqlashtiring."
+        ],
+        [
+          "Litseyga qanday yetib borish mumkin?",
+          "Manzil: Chilonzor-9 mavzesi, 33-uy. Jamoat transportida Chilonzor-9 mavzesigacha yetib kelish mumkin."
+        ],
+        [
+          "Joriy qabul kvotasi va imtihon sanalarini qayerdan bilish mumkin?",
+          "Bu ma’lumotlar o‘quv yiliga qarab yangilanadi. Litsey bilan telefon orqali bog‘lanib, joriy e’lonni tasdiqlang."
+        ]
+      ]
+    },
+    "contact": {
+      "eyebrow": "Aloqa",
+      "title": "Litsey manzili",
+      "directionsLink": "Marshrut qurish",
+      "addressTitle": "Manzil",
+      "defaultAddress": "100097, Toshkent shahri, Chilonzor tumani, Chilonzor-9 mavzesi, 33-uy",
+      "phoneTitle": "Telefon",
+      "phoneNote": "Qabul va umumiy savollar bo‘yicha",
+      "hoursTitle": "Ish vaqti",
+      "hours": "Dushanba–shanba",
+      "hoursNote": "Bayram kunlari dam olish kuni",
+      "routeTitle": "Qanday yetib borish mumkin",
+      "routeText": "Chilonzor-9 mavzesi, 33-uy. Jamoat transportida mavzegacha yetib kelib, piyoda davom etish mumkin.",
+      "socialTitle": "Ijtimoiy tarmoq",
+      "instagramText": "Instagram sahifasi",
+      "mapTitle": "S.H. Sirojiddinov akademik litseyi joylashuvi",
+      "openMap": "Xaritada ochish"
+    },
+    "cta": {
+      "eyebrow": "Qabul bo‘yicha",
+      "title": "Joriy qabul shartlarini litseydan aniqlashtiring",
+      "text": "Kvota, imtihon sanalari va hujjatlar ro‘yxati o‘quv yiliga qarab yangilanadi.",
+      "instagram": "Instagram"
+    },
+    "footer": {
+      "description": "Tabiiy va aniq fanlarga ixtisoslashtirilgan respublika akademik litseyi.",
+      "instagramText": "Instagram sahifasi",
+      "address": "100097, Toshkent shahri, Chilonzor tumani, Chilonzor-9 mavzesi, 33-uy",
+      "universityLink": "O‘zMU rasmiy sahifasi"
+    },
+    "achievements": {
+      "eyebrow": "Natijalar",
+      "title": "O‘quvchilarimiz sertifikatlari",
+      "text": "Xalqaro imtihonlarda erishilgan natijalar — bilim, mehnat va ustoz mahoratining samarasi.",
+      "certificateLabel": "Sertifikat",
+      "groupLabel": "Guruh",
+      "teacherLabel": "Ustoz",
+      "viewLabel": "Sertifikatni ko‘rish",
+      "closeLabel": "Yopish",
+      "list": [
+        {
+          "name": "Mehri Tuyg‘unova",
+          "group": "204-guruh",
+          "teacher": "Shahnoza Norova",
+          "summary": "IELTS 7.0 (C1) va SAT 1190 ball — atigi 3 oylik tayyorgarlik natijasi.",
+          "scores": [
+            {
+              "label": "IELTS",
+              "value": "7.0",
+              "note": "C1",
+              "parts": [
+                {
+                  "label": "Tinglash",
+                  "value": "7.5"
+                },
+                {
+                  "label": "O‘qish",
+                  "value": "6.5"
+                },
+                {
+                  "label": "Yozish",
+                  "value": "6.5"
+                },
+                {
+                  "label": "Gapirish",
+                  "value": "7.0"
+                }
+              ]
+            },
+            {
+              "label": "SAT",
+              "value": "1190",
+              "note": "Jami",
+              "parts": [
+                {
+                  "label": "Matematika",
+                  "value": "600"
+                },
+                {
+                  "label": "O‘qish va yozish",
+                  "value": "590"
+                }
+              ]
+            }
+          ],
+          "image": "/assets/Sertifikatlar/mehri-tuygunova.jpg",
+          "alt": "Mehri Tuyg‘unova sertifikati",
+          "duration": "3 oy",
+          "congrats": "Mehri Tuyg‘unova va ustoz Shahnoza Norovani tabriklaymiz. Kelgusi o‘qishlarida yangi zafarlar tilaymiz!"
+        },
+        {
+          "name": "Shehruz Islomov",
+          "group": "205-guruh",
+          "teacher": "Shahnoza Norova",
+          "duration": "3 oy",
+          "summary": "IELTS 7.0 (C1) va SAT 1420 ball — 3 oylik tayyorgarlik natijasi.",
+          "congrats": "Shehruz Islomov va ustoz Shahnoza Norovani tabriklaymiz. Kelgusi o‘qishlarida yangi zafarlar tilaymiz!",
+          "scores": [
+            {
+              "label": "IELTS",
+              "value": "7.0",
+              "note": "C1",
+              "parts": [
+                {
+                  "label": "Tinglash",
+                  "value": "8.0"
+                },
+                {
+                  "label": "O‘qish",
+                  "value": "8.5"
+                },
+                {
+                  "label": "Yozish",
+                  "value": "6.0"
+                },
+                {
+                  "label": "Gapirish",
+                  "value": "5.5"
+                }
+              ]
+            },
+            {
+              "label": "SAT",
+              "value": "1420",
+              "note": "Jami",
+              "parts": [
+                {
+                  "label": "Matematika",
+                  "value": "790"
+                },
+                {
+                  "label": "O‘qish va yozish",
+                  "value": "630"
+                }
+              ]
+            }
+          ],
+          "image": "/assets/Sertifikatlar/shehruz-islomov.jpg",
+          "alt": "Shehruz Islomov SAT sertifikati",
+          "documents": [
+            {
+              "label": "SAT",
+              "image": "/assets/Sertifikatlar/shehruz-islomov.jpg",
+              "alt": "Shehruz Islomov SAT sertifikati"
+            },
+            {
+              "label": "IELTS",
+              "image": "/assets/Sertifikatlar/shehruz-islomov-ielts.jpg",
+              "alt": "Shehruz Islomov IELTS sertifikati"
+            }
+          ]
+        }
+      ],
+      "durationLabel": "Tayyorgarlik",
+      "congrats": "Mehri Tuyg‘unova va ustoz Shahnoza Norovani tabriklaymiz. Kelgusi o‘qishlarida yangi zafarlar tilaymiz!",
+      "documentsLabel": "Sertifikatlar",
+      "moreValue": "50+",
+      "moreTitle": "sertifikat",
+      "moreText": "Barcha o‘quvchi sertifikatlarini Telegram kanalimizda ko‘rishingiz mumkin.",
+      "moreLink": "Telegram kanalga o‘tish"
+    }
   }
 }

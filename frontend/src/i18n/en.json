@@ -204,7 +204,8 @@
     "submit": "Sign in",
     "submitting": "Signing in...",
     "errPhone": "Enter your full phone number",
-    "errLogin": "Login must be at least 3 characters"
+    "errLogin": "Login must be at least 3 characters",
+    "needHelp": "Need help?"
   },
   "consent": {
     "prefix": "I agree to the processing of my personal data and the",
@@ -1776,5 +1777,564 @@
     "ctaTitle": "Have questions?",
     "ctaSubtitle": "Contact us for detailed information about the license and education programs",
     "ctaContact": "Contact us"
+  },
+  "lyceum": {
+    "meta": {
+      "title": "Academic Lyceum named after S.H. Sirojiddinov",
+      "description": "Republican Academic Lyceum named after S.H. Sirojiddinov under the National University of Uzbekistan, specialising in natural and exact sciences.",
+      "ogTitle": "Academic Lyceum named after S.H. Sirojiddinov",
+      "ogDescription": "Republican academic lyceum specialising in natural and exact sciences."
+    },
+    "nav": {
+      "about": "About the lyceum",
+      "advantages": "Advantages",
+      "directions": "Directions",
+      "teachers": "Teachers",
+      "admissions": "Admissions",
+      "questions": "Q&A",
+      "contact": "Contact",
+      "menu": "Menu",
+      "admissionsLink": "About admissions",
+      "register": "Register",
+      "motto": "Towards knowledge, research and the future",
+      "university": "Under the National University of Uzbekistan",
+      "brand": "S.H. Sirojiddinov Academic Lyceum",
+      "homeLabel": "Lyceum home page",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "mainNav": "Main navigation",
+      "achievements": "Results"
+    },
+    "hero": {
+      "eyebrow": "Under the National University of Uzbekistan",
+      "title": "Republican Academic Lyceum named after S.H. Sirojiddinov",
+      "subtitle": "An institution specialising in natural and exact sciences, built on a tradition of scientific research and quality education.",
+      "badges": [
+        {
+          "icon": "CalendarDays",
+          "text": "Since 1970"
+        },
+        {
+          "icon": "Atom",
+          "text": "Exact and natural sciences"
+        },
+        {
+          "icon": "Landmark",
+          "text": "Under NUU"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Study directions",
+          "href": "#directions",
+          "variant": "primary"
+        },
+        {
+          "text": "Admission process",
+          "href": "#admissions",
+          "variant": "secondary"
+        },
+        {
+          "text": "Contact us",
+          "href": "#contact",
+          "variant": "ghost"
+        }
+      ],
+      "overlayLabel": "Video"
+    },
+    "facts": [
+      {
+        "value": "1970",
+        "label": "year founded",
+        "icon": "CalendarDays"
+      },
+      {
+        "value": "1990",
+        "label": "named after Sirojiddinov",
+        "icon": "GraduationCap"
+      },
+      {
+        "value": "1998",
+        "label": "academic lyceum status",
+        "icon": "BookOpen"
+      },
+      {
+        "value": "NUU",
+        "label": "lyceum under the university",
+        "icon": "Landmark"
+      }
+    ],
+    "advantages": {
+      "eyebrow": "Advantages",
+      "title": "Why choose the lyceum",
+      "text": "The lyceum combines solid knowledge, scientific curiosity and proximity to the university environment.",
+      "items": [
+        {
+          "icon": "Landmark",
+          "title": "Close ties with NUU",
+          "text": "The lyceum operates under the National University of Uzbekistan. Students become closely acquainted with the university's academic and research environment."
+        },
+        {
+          "icon": "BookOpen",
+          "title": "In-depth subject training",
+          "text": "Mathematics, physics, chemistry and biology are taught in depth, with special attention to practical classes."
+        },
+        {
+          "icon": "Users",
+          "title": "Experienced teachers",
+          "text": "Qualified teachers adapt to each student's abilities and encourage independent thinking."
+        },
+        {
+          "icon": "FlaskConical",
+          "title": "Scientific and practical environment",
+          "text": "Laboratory classes, subject clubs and research projects build students' inquiry skills."
+        }
+      ]
+    },
+    "news": {
+      "eyebrow": "Official information",
+      "title": "From lyceum life",
+      "linkText": "NUU news",
+      "items": [
+        {
+          "icon": "CalendarDays",
+          "badge": "25 December 2025",
+          "title": "NUU rector reviewed the lyceum's activities",
+          "text": "During the official visit, a meeting with the team was held to discuss the educational environment and the development of the lyceum.",
+          "linkText": "Read more",
+          "href": "https://nuu.uz/ru/rektor-universitet-qoshidagi-talim-muassasalari-faoliyatini-organdi/"
+        },
+        {
+          "icon": "Landmark",
+          "badge": "Lyceum history",
+          "title": "A tradition built on exact-science education",
+          "text": "The lyceum's history begins with the Republican Special Boarding School founded in 1970. Its first specialisation was physics and mathematics.",
+          "linkText": "History page on NUU",
+          "href": "https://nuu.uz/s-h-sirojiddinov-nomidagi-akademik-litseyi/"
+        },
+        {
+          "icon": "CalendarDays",
+          "badge": "30 September 2026",
+          "title": "A festive event and a meeting of three generations at the lyceum",
+          "text": "NUU news reported that a festive event and a meeting of three generations were held at the lyceum.",
+          "linkText": "Open NUU news",
+          "href": "https://nuu.uz/s-h-sirojiddinov-nomidagi-akademik-litseyda-bayram-tadbiri-hamda-uch-avlod-uchrashuvi-bolib-otdi/"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "About us",
+      "title": "A path that began with a love of knowledge",
+      "p1": "The Republican Academic Lyceum named after S.H. Sirojiddinov is an educational institution under the National University of Uzbekistan. Today the lyceum is known as a centre of education specialising in natural and exact sciences.",
+      "p2": "Throughout its history the lyceum has given solid knowledge to thousands of graduates and laid the foundation for their studies at prestigious higher education institutions. Its main goal is to develop independent thinking, a spirit of inquiry and a genuine interest in science among young people.",
+      "linkText": "Read the official history",
+      "imageAlt": "Lyceum building and educational environment",
+      "milestones": [
+        {
+          "year": "1970",
+          "text": "Founded as the Republican Special Boarding School."
+        },
+        {
+          "year": "1990",
+          "text": "The institution was named after academician S.H. Sirojiddinov."
+        },
+        {
+          "year": "1998",
+          "text": "By a Cabinet of Ministers resolution it was granted academic lyceum status."
+        },
+        {
+          "year": "Today",
+          "text": "It operates as a lyceum under NUU specialising in natural and exact sciences."
+        }
+      ],
+      "todayTitle": "The lyceum today",
+      "todayText": "Modern classrooms, subject laboratories and a library allow students to connect theoretical knowledge with practice."
+    },
+    "stats": [
+      {
+        "value": "1970",
+        "label": "year founded"
+      },
+      {
+        "value": "55+",
+        "label": "years of educational tradition"
+      },
+      {
+        "value": "3",
+        "label": "main study directions"
+      },
+      {
+        "value": "NUU",
+        "label": "academic lyceum under the university"
+      }
+    ],
+    "directions": {
+      "eyebrow": "Study directions",
+      "title": "Natural, exact and economic sciences",
+      "text": "The following subject pairs appeared in open announcements for the previous admission. Please confirm the current academic year's directions and quotas with the lyceum.",
+      "fitLabel": "Who it suits",
+      "note": "The subject list comes from an open announcement for the 2023–2024 academic year; new admission information may change.",
+      "items": [
+        {
+          "icon": "Atom",
+          "title": "Exact sciences",
+          "subjects": [
+            "Mathematics",
+            "Physics"
+          ],
+          "text": "Groups focused on logical thinking, calculations and in-depth study of physical phenomena.",
+          "fit": "For students interested in mathematics and physics who enjoy precise calculations."
+        },
+        {
+          "icon": "Microscope",
+          "title": "Natural sciences",
+          "subjects": [
+            "Chemistry",
+            "Biology"
+          ],
+          "text": "Preparation based on living organisms, the structure of substances and laboratory research.",
+          "fit": "For students interested in nature, medicine and ecology."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Economics",
+          "subjects": [
+            "Mathematics",
+            "English"
+          ],
+          "text": "Groups aimed at developing economic thinking, financial literacy and international communication skills.",
+          "fit": "For students interested in economics, business and international relations."
+        }
+      ]
+    },
+    "teachers": {
+      "eyebrow": "Teachers",
+      "title": "Mentors of knowledge and experience",
+      "text": "The lyceum is home to a team of experienced teachers who love their subjects. They prepare students not only for exams but also for independent research and scientific thinking.",
+      "stat1Value": "4",
+      "stat1Label": "main subject areas",
+      "stat2Value": "55+",
+      "stat2Label": "years of teaching experience",
+      "label": "Teacher",
+      "alt": "{subject} teacher",
+      "list": [
+        {
+          "subject": "Director",
+          "image": "/assets/Ustozlar/IMG_20261026_175341_878.jpg"
+        },
+        {
+          "subject": "Deputy director",
+          "image": "/assets/Ustozlar/зам.jpg"
+        },
+        {
+          "subject": "Physics",
+          "image": "/assets/Ustozlar/fizika.jpg"
+        },
+        {
+          "subject": "Mathematics",
+          "image": "/assets/Ustozlar/matem.jpg"
+        },
+        {
+          "subject": "Native language",
+          "image": "/assets/Ustozlar/ona.jpg"
+        },
+        {
+          "name": "Karimova Ziynat",
+          "subject": "Mathematics",
+          "image": "/assets/Ustozlar/karimova-ziynat.jpg"
+        },
+        {
+          "name": "Po‘latova Mazluma",
+          "subject": "Mathematics",
+          "image": "/assets/Ustozlar/polatova-mazluma.jpg"
+        },
+        {
+          "name": "Yermatov Shermuhammad",
+          "subject": "Physical Education",
+          "image": "/assets/Ustozlar/yermatov-shermuhammad.jpg"
+        },
+        {
+          "name": "Xatarova Munira",
+          "subject": "Mathematics",
+          "image": "/assets/Ustozlar/xatarova-munira.jpg"
+        },
+        {
+          "name": "Saidova Zulfizar",
+          "subject": "Mathematics",
+          "image": "/assets/Ustozlar/saidova-zulfizar.jpg"
+        }
+      ]
+    },
+    "admissions": {
+      "eyebrow": "Admissions",
+      "title": "How the admission process works",
+      "text": "The steps below show the general procedure. Please confirm the exact deadlines, quota and exam dates for the current academic year with the lyceum.",
+      "documentsTitle": "List of documents",
+      "documents": [
+        "Application (on the lyceum form)",
+        "Copy of birth certificate",
+        "Copy of passport or ID card",
+        "3x4 photographs (2 copies)",
+        "Certificate from the previous educational institution"
+      ],
+      "note": "The list of documents may be updated depending on the academic year. Contact the lyceum before submitting your application.",
+      "items": [
+        {
+          "icon": "Phone",
+          "title": "Get information",
+          "text": "Learn about current admission requirements, quotas and exam dates by phone."
+        },
+        {
+          "icon": "FileText",
+          "title": "Prepare documents",
+          "text": "Collect your application, a copy of your identity document, photographs and school documents."
+        },
+        {
+          "icon": "CheckCircle2",
+          "title": "Submit the application",
+          "text": "Submit the documents to the lyceum admission committee within the established deadline."
+        },
+        {
+          "icon": "GraduationCap",
+          "title": "Exam and interview",
+          "text": "Successfully pass the exam in your chosen subjects and the interview."
+        }
+      ]
+    },
+    "history": {
+      "eyebrow": "Namesake",
+      "title": "Academician S.H. Sirojiddinov",
+      "text": "S.H. Sirojiddinov was a prominent Uzbek mathematician, academician and professor. The official NUU history page notes that his research was connected with probability theory and mathematical statistics.",
+      "linkText": "Biographical information"
+    },
+    "heritage": {
+      "eyebrow": "Scientific heritage",
+      "title": "Academician S.H. Sirojiddinov",
+      "text": "In NUU historical materials, S.H. Sirojiddinov is described as a mathematician, academician and professor. His scientific work is connected with probability theory and mathematical statistics.",
+      "linkText": "Official biographical information",
+      "items": [
+        {
+          "value": "1920–1988",
+          "label": "S.H. Sirojiddinov's years of life"
+        },
+        {
+          "value": "1937",
+          "label": "year he graduated from the Faculty of Physics and Mathematics"
+        },
+        {
+          "value": "1973",
+          "label": "Beruni State Prize"
+        }
+      ]
+    },
+    "environment": {
+      "eyebrow": "Educational environment",
+      "title": "From an interest in science to scientific research",
+      "text": "The lyceum's focus on natural and exact sciences supports mathematical thinking, observation and an interest in experimentation.",
+      "items": [
+        "Advanced subject classes",
+        "Laboratory and practical classes",
+        "Research projects and clubs"
+      ],
+      "caption": "Educational process — illustrative photo",
+      "imageAlt": "Photo of students learning together"
+    },
+    "questions": {
+      "eyebrow": "Q&A",
+      "title": "Frequently asked questions",
+      "text": "Please confirm the current admission details by phone.",
+      "addressLink": "Address and map",
+      "items": [
+        [
+          "Which university is the lyceum attached to?",
+          "It is an academic lyceum under the National University of Uzbekistan."
+        ],
+        [
+          "When was it founded?",
+          "According to the official history page, the institution was founded on 25 September 1970 as the Republican Special Boarding School."
+        ],
+        [
+          "When did it receive academic lyceum status?",
+          "On 24 February 1998 the Cabinet of Ministers adopted a resolution granting the boarding school academic lyceum status."
+        ],
+        [
+          "Which subjects does it specialise in?",
+          "The lyceum specialises in natural and exact sciences. The previous admission announcement listed mathematics and physics for exact sciences, and chemistry and biology for natural sciences."
+        ],
+        [
+          "What documents are required for admission?",
+          "An application, copies of the birth certificate and passport, 3x4 photographs and a certificate from the previous educational institution. Please confirm the exact list with the lyceum."
+        ],
+        [
+          "How can I get to the lyceum?",
+          "Address: Chilonzar-9 block, house 33. You can reach the Chilonzar-9 block by public transport."
+        ],
+        [
+          "Where can I find the current quota and exam dates?",
+          "This information is updated each academic year. Contact the lyceum by phone to confirm the current announcement."
+        ]
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Lyceum address",
+      "directionsLink": "Get directions",
+      "addressTitle": "Address",
+      "defaultAddress": "100097, Tashkent city, Chilonzar district, Chilonzar-9 block, house 33",
+      "phoneTitle": "Phone",
+      "phoneNote": "For admissions and general questions",
+      "hoursTitle": "Working hours",
+      "hours": "Monday–Saturday",
+      "hoursNote": "Closed on public holidays",
+      "routeTitle": "How to get there",
+      "routeText": "Chilonzar-9 block, house 33. You can take public transport to the block and continue on foot.",
+      "socialTitle": "Social media",
+      "instagramText": "Instagram page",
+      "mapTitle": "Location of the S.H. Sirojiddinov Academic Lyceum",
+      "openMap": "Open on map"
+    },
+    "cta": {
+      "eyebrow": "Admissions",
+      "title": "Confirm the current admission requirements with the lyceum",
+      "text": "The quota, exam dates and list of documents are updated each academic year.",
+      "instagram": "Instagram"
+    },
+    "footer": {
+      "description": "Republican academic lyceum specialising in natural and exact sciences.",
+      "instagramText": "Instagram page",
+      "address": "100097, Tashkent city, Chilonzar district, Chilonzar-9 block, house 33",
+      "universityLink": "Official NUU page"
+    },
+    "achievements": {
+      "eyebrow": "Results",
+      "title": "Our students’ certificates",
+      "text": "International exam results are the fruit of knowledge, hard work and great teaching.",
+      "certificateLabel": "Certificate",
+      "groupLabel": "Group",
+      "teacherLabel": "Teacher",
+      "viewLabel": "View certificate",
+      "closeLabel": "Close",
+      "list": [
+        {
+          "name": "Mehri Tuyg‘unova",
+          "group": "Group 204",
+          "teacher": "Shahnoza Norova",
+          "summary": "IELTS 7.0 (C1) and SAT 1190 — the result of just 3 months of preparation.",
+          "scores": [
+            {
+              "label": "IELTS",
+              "value": "7.0",
+              "note": "C1",
+              "parts": [
+                {
+                  "label": "Listening",
+                  "value": "7.5"
+                },
+                {
+                  "label": "Reading",
+                  "value": "6.5"
+                },
+                {
+                  "label": "Writing",
+                  "value": "6.5"
+                },
+                {
+                  "label": "Speaking",
+                  "value": "7.0"
+                }
+              ]
+            },
+            {
+              "label": "SAT",
+              "value": "1190",
+              "note": "Total",
+              "parts": [
+                {
+                  "label": "Math",
+                  "value": "600"
+                },
+                {
+                  "label": "Reading & Writing",
+                  "value": "590"
+                }
+              ]
+            }
+          ],
+          "image": "/assets/Sertifikatlar/mehri-tuygunova.jpg",
+          "alt": "Mehri Tuyg‘unova certificate",
+          "duration": "3 months",
+          "congrats": "Congratulations to Mehri Tuyg‘unova and her teacher Shahnoza Norova. We wish them continued success!"
+        },
+        {
+          "name": "Shehruz Islomov",
+          "group": "Group 205",
+          "teacher": "Shahnoza Norova",
+          "duration": "3 months",
+          "summary": "IELTS 7.0 (C1) and SAT 1420 — the result of 3 months of preparation.",
+          "congrats": "Congratulations to Shehruz Islomov and his teacher Shahnoza Norova. We wish him continued success!",
+          "scores": [
+            {
+              "label": "IELTS",
+              "value": "7.0",
+              "note": "C1",
+              "parts": [
+                {
+                  "label": "Listening",
+                  "value": "8.0"
+                },
+                {
+                  "label": "Reading",
+                  "value": "8.5"
+                },
+                {
+                  "label": "Writing",
+                  "value": "6.0"
+                },
+                {
+                  "label": "Speaking",
+                  "value": "5.5"
+                }
+              ]
+            },
+            {
+              "label": "SAT",
+              "value": "1420",
+              "note": "Total",
+              "parts": [
+                {
+                  "label": "Math",
+                  "value": "790"
+                },
+                {
+                  "label": "Reading & Writing",
+                  "value": "630"
+                }
+              ]
+            }
+          ],
+          "image": "/assets/Sertifikatlar/shehruz-islomov.jpg",
+          "alt": "Shehruz Islomov SAT certificate",
+          "documents": [
+            {
+              "label": "SAT",
+              "image": "/assets/Sertifikatlar/shehruz-islomov.jpg",
+              "alt": "Shehruz Islomov SAT certificate"
+            },
+            {
+              "label": "IELTS",
+              "image": "/assets/Sertifikatlar/shehruz-islomov-ielts.jpg",
+              "alt": "Shehruz Islomov IELTS certificate"
+            }
+          ]
+        }
+      ],
+      "durationLabel": "Preparation",
+      "congrats": "Congratulations to Mehri Tuyg‘unova and her teacher Shahnoza Norova. We wish them continued success!",
+      "documentsLabel": "Certificates",
+      "moreValue": "50+",
+      "moreTitle": "certificates",
+      "moreText": "See all student certificates on our Telegram channel.",
+      "moreLink": "Open Telegram"
+    }
   }
 }

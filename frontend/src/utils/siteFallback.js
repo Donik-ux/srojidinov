@@ -74,7 +74,7 @@ export const SITE_FALLBACK = {
     ],
     linkText: "Rasmiy tarixni o‘qish",
     linkHref: "https://nuu.uz/s-h-sirojiddinov-nomidagi-akademik-litseyi/",
-    image: "/assets/images/about-new-1.jpg",
+    image: "/assets/images/students-group.jpg",
   },
   milestones: [
     { year: '1970', text: 'Respublika maxsus maktab-internati sifatida tashkil etildi.' },
@@ -110,6 +110,11 @@ export const SITE_FALLBACK = {
     { subject: 'Fizika', image: '/assets/Ustozlar/teacher-new-2.webp' },
     { subject: 'Kimyo', image: '/assets/Ustozlar/teacher-new-3.webp' },
     { subject: 'Biologiya', image: '/assets/Ustozlar/teacher-new-4.webp' },
+    { name: 'Karimova Ziynat', subject: 'Matematika', image: '/assets/Ustozlar/karimova-ziynat.jpg' },
+    { name: 'Po‘latova Mazluma', subject: 'Matematika', image: '/assets/Ustozlar/polatova-mazluma.jpg' },
+    { name: 'Yermatov Shermuhammad', subject: 'Jismoniy Tarbiya', image: '/assets/Ustozlar/yermatov-shermuhammad.jpg' },
+    { name: 'Xatarova Munira', subject: 'Matematika', image: '/assets/Ustozlar/xatarova-munira.jpg' },
+    { name: 'Saidova Zulfizar', subject: 'Matematika', image: '/assets/Ustozlar/saidova-zulfizar.jpg' },
   ],
   admissionSteps: [
     { icon: 'Phone', title: 'Ma’lumot olish', text: 'Joriy qabul shartlari, kvota va imtihon sanalari bilan litsey telefon orqali tanishing.' },

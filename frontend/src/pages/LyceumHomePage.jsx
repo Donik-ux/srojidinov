@@ -19,6 +19,7 @@ import {
   Sparkles,
   TrendingUp,
   Users,
+  
 } from 'lucide-react';
 import useSiteContent from '../hooks/useSiteContent';
 import { ICON_MAP } from '../utils/siteFallback';

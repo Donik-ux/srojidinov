@@ -9,6 +9,11 @@ const ProtectedRoute = ({ children, roles }) => {
   const initialized = useSelector((s) => s.auth.initialized);
   const location = useLocation();
 
+  // Dev bypass - only in dev mode
+  if (import.meta.env.DEV && localStorage.getItem('devAdmin') === 'true') {
+    return children;
+  }
+
   if (!initialized) {
     return (
       <div className="min-h-screen flex items-center justify-center">

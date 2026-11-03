@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import {
   LayoutDashboard, Users, BookOpen, FileText,
   LogOut, ClipboardList, Menu, X,
-  Image, Star, HelpCircle, Award, Settings, Play, Film, ExternalLink, Globe, UserCog, Briefcase, Languages,
+  Image, Star, HelpCircle, Award, Settings, Play, Film, ExternalLink, Globe, UserCog, Briefcase, Languages, LayoutTemplate,
 } from 'lucide-react';
 import { logout, selectUser } from '../features/auth/authSlice';
 import { fetchDashboard } from '../features/admin/adminSlice';

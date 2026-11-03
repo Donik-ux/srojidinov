@@ -70,6 +70,14 @@ const authSlice = createSlice({
       state.initialized = true;
       try { localStorage.removeItem('accessToken'); } catch {}
     },
+    devLogin: (state) => {
+      state.user = { role: 'ADMIN', name: 'Dev Admin', login: 'dev', phone: '+998000000000' };
+      state.accessToken = 'dev-token';
+      state.isAuthenticated = true;
+      state.initialized = true;
+      state.loading = false;
+      try { localStorage.setItem('accessToken', 'dev-token'); } catch {}
+    },
   },
   extraReducers: (builder) => {
     const pending = (state) => { state.loading = true; state.error = null; };
@@ -126,7 +134,7 @@ const authSlice = createSlice({
   },
 });
 
-export const { setCredentials, clearError, markInitialized, clearAuth } = authSlice.actions;
+export const { setCredentials, clearError, markInitialized, clearAuth, devLogin } = authSlice.actions;
 export default authSlice.reducer;
 
 export const selectAuth = (state) => state.auth;

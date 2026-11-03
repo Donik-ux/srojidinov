@@ -15,3 +15,4 @@ export const store = configureStore({
     getDefaultMiddleware({ serializableCheck: { ignoredActions: ['auth/login/fulfilled'] } }),
   devTools: process.env.NODE_ENV !== 'production',
 });
+ 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpen, ChevronDown, Menu, Phone, X } from 'lucide-react';
+import LanguageSwitcher from '../components/common/LanguageSwitcher';
 
 const links = [
   { href: '/#about', label: 'Litsey haqida' },
@@ -34,10 +35,13 @@ const LyceumNavbar = () => {
             <span>Ilm, izlanish va kelajak sari</span>
           </div>
 
-          <a href="tel:+998712784358" className="hidden shrink-0 items-center gap-2 text-sm font-semibold text-white/90 transition hover:text-[#e2c37f] md:flex">
-            <Phone size={16} className="text-[#d5ad68]" />
-            +998 71 278 43 58
-          </a>
+          <div className="hidden items-center gap-3 md:flex">
+            <a href="tel:+998712784358" className="shrink-0 items-center gap-2 text-sm font-semibold text-white/90 transition hover:text-[#e2c37f] flex">
+              <Phone size={16} className="text-[#d5ad68]" />
+              +998 71 278 43 58
+            </a>
+            <LanguageSwitcher dark />
+          </div>
           <button
             type="button"
             aria-label={menuOpen ? 'Menyuni yopish' : 'Menyuni ochish'}
@@ -68,6 +72,9 @@ const LyceumNavbar = () => {
             ))}
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
+            <div className="lg:hidden">
+              <LanguageSwitcher />
+            </div>
             <a href="#admissions" className="inline-flex items-center gap-2 py-3 text-xs font-bold uppercase text-[#19354d] transition hover:text-[#9d7335]">
               Qabul haqida <ChevronDown size={15} />
             </a>

@@ -303,6 +303,11 @@
       "privacy": "maxfiylik siyosati",
       "suffix": "ga roziman."
     },
+    "agreementRequired": "Hisob yaratish uchun rozilik katagiga belgi qo‘ying.",
+    "serviceUnavailable": "Ro‘yxatdan o‘tish vaqtincha ishlamayapti: server javob bermayapti. Keyinroq urinib ko‘ring.",
+    "connectionError": "Serverga ulanib bo‘lmadi. Internetni tekshirib, qayta urinib ko‘ring.",
+    "registrationFailed": "Hisob yaratib bo‘lmadi. Qayta urinib ko‘ring.",
+    "registerSuccess": "Hisob muvaffaqiyatli yaratildi.",
     "submitting": "Yaratilmoqda...",
     "submit": "Hisob yaratish"
   },

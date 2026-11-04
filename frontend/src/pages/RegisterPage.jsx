@@ -279,6 +279,11 @@ const RegisterPage = () => {
                   {t('registerPage.agreement.suffix')}
                 </span>
               </label>
+              {!agreed && (
+                <p className="-mt-3 text-xs text-[#7b858a]" role="status">
+                  {t('registerPage.agreementRequired')}
+                </p>
+              )}
 
               <button
                 type="submit"

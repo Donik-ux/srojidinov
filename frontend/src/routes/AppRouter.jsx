@@ -19,7 +19,6 @@ const AdminFAQ          = lazy(() => import('../pages/admin/AdminFAQ'));
 const AdminScholarships = lazy(() => import('../pages/admin/AdminScholarships'));
 const AdminSettings     = lazy(() => import('../pages/admin/AdminSettings'));
 const AdminHomeVideos   = lazy(() => import('../pages/admin/AdminHomeVideos'));
-const AdminSiteEditor   = lazy(() => import('../pages/admin/AdminSiteEditor'));
 const AdminSiteBuilder  = lazy(() => import('../pages/admin/AdminSiteBuilder'));
 const AdminTranslations = lazy(() => import('../pages/admin/AdminTranslations'));
 const AdminTeachers     = lazy(() => import('../pages/admin/AdminTeachers'));
@@ -66,8 +65,8 @@ const AppRouter = () => (
         <Route path="scholarships" element={<AdminScholarships />} />
         <Route path="settings"     element={<AdminSettings />} />
           <Route path="home-videos" element={<AdminHomeVideos />} />
-          <Route path="site-editor" element={<AdminSiteEditor />} />
-          <Route path="site-builder" element={<AdminSiteBuilder />} />
+          <Route path="site-editor" element={<AdminSiteBuilder />} />
+          <Route path="site-builder" element={<Navigate to="/admin/site-editor" replace />} />
           <Route path="translations" element={<AdminTranslations />} />
           <Route path="teachers" element={<AdminTeachers />} />
           <Route path="directions" element={<AdminDirections />} />

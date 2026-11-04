@@ -50,32 +50,39 @@ const AdminTranslations = () => {
   const load = async () => {
     try {
       setLoading(true);
-      const res = await api.get('/admin/translations').catch(() => null);
-      if (res?.data?.data) {
+      const res = await api.get('/admin/translations');
+      if (res?.data?.data && ['uz', 'ru', 'en'].some((lang) => res.data.data[lang] && typeof res.data.data[lang] === 'object')) {
         const data = res.data.data;
         setTranslations({
           uz: flatten(data.uz || {}),
           ru: flatten(data.ru || {}),
           en: flatten(data.en || {}),
         });
-        return;
+      } else {
+        await loadLocalTranslations();
       }
-    } catch {}
-    // fallback - load from local files
-    try {
-      const uz = await import('../../i18n/uz.json');
-      const ru = await import('../../i18n/ru.json');
-      const en = await import('../../i18n/en.json');
-      setTranslations({
-        uz: flatten(uz.default || uz),
-        ru: flatten(ru.default || ru),
-        en: flatten(en.default || en),
-      });
     } catch {
-      setTranslations({ uz: [], ru: [], en: [] });
+      toast.error('Не удалось загрузить переводы с сервера');
+      try {
+        await loadLocalTranslations();
+      } catch {
+        setTranslations({ uz: [], ru: [], en: [] });
+        toast.error('Не удалось загрузить локальные переводы');
+      }
     } finally {
       setLoading(false);
     }
+  };
+
+  const loadLocalTranslations = async () => {
+    const uz = await import('../../i18n/uz.json');
+    const ru = await import('../../i18n/ru.json');
+    const en = await import('../../i18n/en.json');
+    setTranslations({
+      uz: flatten(uz.default || uz),
+      ru: flatten(ru.default || ru),
+      en: flatten(en.default || en),
+    });
   };
 
   useEffect(() => {

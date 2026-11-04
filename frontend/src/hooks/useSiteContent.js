@@ -1,6 +1,44 @@
 import { useEffect, useState } from 'react';
 import api from '../services/api';
+import i18n from '../i18n';
 import { SITE_FALLBACK } from '../utils/siteFallback';
+
+let englishContentRequest;
+const RESOURCE_CACHE_MS = 15_000;
+const resourceCache = new Map();
+const pendingRequests = new Map();
+
+const getEnglishContent = () => {
+  if (!englishContentRequest) {
+    englishContentRequest = api.get('/site/content', { params: { lang: 'en' } }).catch((error) => {
+      englishContentRequest = null;
+      throw error;
+    });
+  }
+  return englishContentRequest;
+};
+
+const getCachedResource = (key, request) => {
+  const cached = resourceCache.get(key);
+  if (cached && cached.expiresAt > Date.now()) return Promise.resolve(cached.value);
+
+  const pending = pendingRequests.get(key);
+  if (pending) return pending;
+
+  const requestPromise = request()
+    .then((response) => {
+      resourceCache.set(key, { value: response, expiresAt: Date.now() + RESOURCE_CACHE_MS });
+      return response;
+    })
+    .finally(() => pendingRequests.delete(key));
+  pendingRequests.set(key, requestPromise);
+  return requestPromise;
+};
+
+export const invalidateSiteContentCache = () => {
+  resourceCache.clear();
+  englishContentRequest = null;
+};
 
 const mergeDeep = (target, source) => {
   const out = Array.isArray(target) ? [...target] : { ...target };
@@ -17,6 +55,9 @@ const mergeDeep = (target, source) => {
 
 export const useSiteContent = (lang = 'uz') => {
   const [content, setContent] = useState(SITE_FALLBACK);
+  const [overrides, setOverrides] = useState({});
+  const [sharedMediaContent, setSharedMediaContent] = useState({});
+  const [settings, setSettings] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -27,20 +68,43 @@ export const useSiteContent = (lang = 'uz') => {
       try {
         setLoading(true);
         setError(null);
+        setOverrides({});
+        setSharedMediaContent({});
+        setSettings({});
 
         // Пробуем публичный эндпоинт конструктора сайта
-        const res = await api.get('/site/content', { params: { lang } });
+        const [res, translationsRes, englishRes] = await Promise.all([
+          getCachedResource(`site-content:${lang}`, () => api.get('/site/content', { params: { lang } })),
+          getCachedResource('site-translations', () => api.get('/translations')).catch(() => null),
+          lang === 'en'
+            ? Promise.resolve(null)
+            : getCachedResource('site-content:en', getEnglishContent).catch(() => null),
+        ]);
+        const translations = translationsRes?.data?.data?.[lang];
+        if (translations && typeof translations === 'object') {
+          i18n.addResourceBundle(lang, 'translation', translations, true, true);
+        }
         const data = res.data?.data || res.data?.content || res.data;
+        const englishData = lang === 'en'
+          ? data
+          : englishRes?.data?.data || englishRes?.data?.content || englishRes?.data;
 
         if (!cancelled && data && typeof data === 'object') {
+          const home = data?.home || data;
+          const englishHome = englishData?.home || englishData;
+          const nextSettings = data?.settings && typeof data.settings === 'object' ? data.settings : {};
           const merged = mergeDeep(SITE_FALLBACK, data?.home ? data : { home: data });
-          // Если пришёл плоский вид с home блоком
+          setOverrides(home && typeof home === 'object' ? home : {});
+          setSharedMediaContent(englishHome && typeof englishHome === 'object' ? englishHome : {});
+          setSettings(nextSettings);
           setContent(merged.home ? merged.home : merged);
         }
       } catch (e) {
         if (!cancelled) {
           setError(e);
-          // Всегда остаёмся на фоллбэке - сайт не ломается
+          setOverrides({});
+          setSharedMediaContent({});
+          setSettings({});
           setContent(SITE_FALLBACK);
         }
       } finally {
@@ -55,7 +119,7 @@ export const useSiteContent = (lang = 'uz') => {
     };
   }, [lang]);
 
-  return { content, loading, error };
+  return { content, overrides, sharedMediaContent, settings, loading, error };
 };
 
 export default useSiteContent;

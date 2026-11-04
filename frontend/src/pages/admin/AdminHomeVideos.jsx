@@ -11,6 +11,11 @@ import Spinner from '../../components/ui/Spinner';
 import ConfirmModal from '../../components/ui/ConfirmModal';
 
 const API_URL = import.meta.env.VITE_API_URL || '';
+const mediaSrc = (url) => {
+  if (!url) return '';
+  if (url.startsWith('http') || url.startsWith('/assets')) return url;
+  return `${API_URL}${url}`;
+};
 const EMPTY_FORM = { title: '', url: '', photo: '', order: 0, isActive: true };
 
 const STATIC_VIDEOS = [];
@@ -103,11 +108,7 @@ const AdminHomeVideos = () => {
       order: item.order || 0,
       isActive: item.isActive
     });
-    setPreview(item.url
-      ? (item.url.startsWith('http') ? item.url
-        : item.url.startsWith('/uploads') ? `${API_URL}${item.url}`
-        : item.url)
-      : null);
+    setPreview(item.url ? mediaSrc(item.url) : null);
     setFile(null);
     setShowModal(true);
   };
@@ -214,13 +215,13 @@ const AdminHomeVideos = () => {
               <div className="aspect-video bg-[#FFFFFF] relative group">
                 {item.photo ? (
                   <img
-                    src={item.photo}
+                    src={mediaSrc(item.photo)}
                     alt=""
                     className="w-full h-full object-cover"
                   />
                 ) : (
                   <video
-                    src={item.url?.startsWith('/uploads') ? `${API_URL}${item.url}` : item.url}
+                    src={mediaSrc(item.url)}
                     className="w-full h-full object-cover"
                   />
                 )}

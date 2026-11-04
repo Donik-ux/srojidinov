@@ -32,7 +32,6 @@ const AdminLayout = () => {
       { to: '/admin/faq',          label: t('adminLayout.faq'),          icon: HelpCircle },
       { to: '/admin/scholarships', label: t('adminLayout.scholarships'), icon: Award },
       { to: '/admin/home-videos',  label: t('adminLayout.homeVideos'),   icon: Play },
-      { to: '/admin/site-builder', label: 'Конструктор сайта',          icon: LayoutTemplate },
       { to: '/admin/translations', label: 'Переводы',                   icon: Languages },
       { to: '/admin/videos',       label: t('adminLayout.videos'),       icon: Film },
       { to: '/admin/teachers',     label: t('adminLayout.teachers'),     icon: Users },
@@ -40,7 +39,7 @@ const AdminLayout = () => {
       { to: '/admin/directions',   label: t('adminLayout.directions'),   icon: BookOpen },
     ]},
     { section: t('adminLayout.section.settings'), items: [
-      { to: '/admin/site-editor',  label: t('adminLayout.siteEditor'),   icon: Globe },
+      { to: '/admin/site-editor',  label: t('adminLayout.siteEditor'),   icon: LayoutTemplate },
       { to: '/admin/settings',     label: t('adminLayout.settings'),     icon: Settings },
       { to: '/profile',            label: t('adminMisc.profile'),        icon: UserCog },
     ]},

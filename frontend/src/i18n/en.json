@@ -303,6 +303,11 @@
       "privacy": "privacy policy",
       "suffix": "."
     },
+    "agreementRequired": "Check the consent box before creating your account.",
+    "serviceUnavailable": "Registration is temporarily unavailable because the server is not responding. Please try again later.",
+    "connectionError": "Could not connect to the server. Check your connection and try again.",
+    "registrationFailed": "Could not create your account. Please try again.",
+    "registerSuccess": "Your account was created successfully.",
     "submitting": "Creating...",
     "submit": "Create account"
   },

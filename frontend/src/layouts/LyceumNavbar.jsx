@@ -3,10 +3,27 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { BookOpen, ChevronDown, Menu, Phone, X } from 'lucide-react';
 import LanguageSwitcher from '../components/common/LanguageSwitcher';
+import useSiteContent from '../hooks/useSiteContent';
+
+const API_URL = import.meta.env.VITE_API_URL || '';
+const mediaSrc = (url) => {
+  if (!url) return '';
+  if (url.startsWith('http') || url.startsWith('/assets')) return url;
+  return `${API_URL}${url}`;
+};
 
 const LyceumNavbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const lang = i18n.language?.startsWith('ru') ? 'ru' : i18n.language?.startsWith('en') ? 'en' : 'uz';
+  const { overrides, settings } = useSiteContent(lang);
+  const site = overrides?.site || {};
+  const logo = site.logo || settings.logo || '';
+  const brand = site.brand || t('lyceum.nav.brand');
+  const university = site.university || t('lyceum.nav.university');
+  const motto = site.motto || t('lyceum.nav.motto');
+  const phone = site.phone || settings.phone || '+998 71 278 43 58';
+  const phoneHref = site.phoneHref || settings.phoneHref || `tel:${String(phone).replace(/[^+\d]/g, '')}`;
 
   const links = [
     { href: '/#about', label: t('lyceum.nav.about') },
@@ -24,24 +41,28 @@ const LyceumNavbar = () => {
       <div className="bg-[#142f45] text-white">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-5 px-5 py-4 sm:px-10 lg:px-16">
           <Link to="/" className="flex min-w-0 items-center gap-3" aria-label={t('lyceum.nav.homeLabel')}>
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#d5ad68]/70 text-[#e2c37f]">
-              <BookOpen size={23} strokeWidth={1.7} />
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[#d5ad68]/70 text-[#e2c37f]">
+              {logo ? (
+                <img src={mediaSrc(logo)} alt={brand} className="h-full w-full object-contain" />
+              ) : (
+                <BookOpen size={23} strokeWidth={1.7} />
+              )}
             </span>
             <span className="min-w-0">
-              <span className="block truncate text-[11px] font-semibold uppercase leading-4 text-white/65 sm:text-xs">{t('lyceum.nav.university')}</span>
-              <span className="mt-1 block font-['Source_Serif_4'] text-base font-semibold leading-tight sm:text-xl">{t('lyceum.nav.brand')}</span>
+              <span className="block truncate text-[11px] font-semibold uppercase leading-4 text-white/65 sm:text-xs">{university}</span>
+              <span className="mt-1 block font-['Source_Serif_4'] text-base font-semibold leading-tight sm:text-xl">{brand}</span>
             </span>
           </Link>
 
           <div className="hidden max-w-[330px] items-center gap-3 border-l border-white/20 pl-6 text-sm leading-6 text-white/75 xl:flex">
             <span className="h-8 w-px bg-[#d5ad68]" />
-            <span>{t('lyceum.nav.motto')}</span>
+            <span>{motto}</span>
           </div>
 
           <div className="hidden items-center gap-3 md:flex">
-            <a href="tel:+998712784358" className="shrink-0 items-center gap-2 text-sm font-semibold text-white/90 transition hover:text-[#e2c37f] flex">
+            <a href={phoneHref} className="shrink-0 items-center gap-2 text-sm font-semibold text-white/90 transition hover:text-[#e2c37f] flex">
               <Phone size={16} className="text-[#d5ad68]" />
-              +998 71 278 43 58
+              {phone}
             </a>
             <LanguageSwitcher dark />
           </div>

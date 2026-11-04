@@ -11,7 +11,7 @@ const API_URL = import.meta.env.VITE_API_URL || '';
 const resolveUrl = (url) => {
   if (!url) return '';
   if (url.startsWith('http')) return url;
-  if (url.startsWith('/uploads')) return `${API_URL}${url}`;
+  if (url.startsWith('/uploads') || url.startsWith('/api/')) return `${API_URL}${url}`;
   return url;
 };
 
@@ -62,15 +62,19 @@ const MediaPicker = ({ isOpen, onClose, onSelect, accept = 'image/*', title = '�
     try {
       setUploading(true);
       let res;
-      try {
-        res = await api.post('/admin/settings/upload-image', fd);
-      } catch {
+      const endpoints = file.type.startsWith('video')
+        ? ['/admin/media', '/admin/upload', '/upload']
+        : ['/admin/settings/upload-image', '/admin/media', '/admin/upload', '/upload'];
+      let lastError;
+      for (const endpoint of endpoints) {
         try {
-          res = await api.post('/upload', fd);
-        } catch {
-          res = await api.post('/admin/upload', fd);
+          res = await api.post(endpoint, fd);
+          if (res?.data) break;
+        } catch (err) {
+          lastError = err;
         }
       }
+      if (!res?.data) throw lastError || new Error('Upload failed');
       const url = res.data?.data?.url || res.data?.url || res.data?.path;
       if (url) {
         toast.success('Загружено');
@@ -113,7 +117,7 @@ const MediaPicker = ({ isOpen, onClose, onSelect, accept = 'image/*', title = '�
             {items.map((item, idx) => {
               const url = item.url || item.path || item.src;
               const full = resolveUrl(url);
-              const isVideo = (item.type === 'video') || url?.includes('.mp4') || url?.includes('.webm');
+              const isVideo = item.type === 'video' || String(item.contentType || '').startsWith('video/') || /[.](mp4|webm|mov|m4v|ogv)(\?|$)/i.test(url || '');
               return (
                 <button
                   key={idx}

@@ -1,14 +1,23 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import api from '../../services/api';
 import { toast } from 'react-toastify';
+import i18n from '../../i18n';
 
 export const register = createAsyncThunk('auth/register', async (data, { rejectWithValue }) => {
   try {
     const res = await api.post('/auth/register', data);
-    toast.success('Welcome to TOPEX!');
+    if (!res.data?.user || !res.data?.accessToken) {
+      throw new Error('Invalid registration response');
+    }
+    toast.success(i18n.t('registerPage.registerSuccess'));
     return res.data;
   } catch (err) {
-    const msg = err.response?.data?.message || 'Registration failed';
+    const status = err.response?.status;
+    const msg = [502, 503, 504].includes(status)
+      ? i18n.t('registerPage.serviceUnavailable')
+      : !err.response
+        ? i18n.t('registerPage.connectionError')
+        : err.response?.data?.message || i18n.t('registerPage.registrationFailed');
     toast.error(msg);
     return rejectWithValue(msg);
   }

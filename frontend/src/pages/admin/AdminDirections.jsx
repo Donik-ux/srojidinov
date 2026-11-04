@@ -90,11 +90,11 @@ const AdminDirections = () => {
           <Button onClick={async () => {
             try {
               await api.post('/admin/seed-directions', { force: true });
-              toast.success('8 ta yo\'nalish qayta yuklandi');
+              toast.success('Yo‘nalishlar tayyor');
               load();
             } catch (e) { toast.error(e.response?.data?.message || t('admin.error')); }
           }} variant="ghost" size="sm" style={{ borderColor: '#D97706', color: '#D97706' }}>
-            <RefreshCw size={14} className="mr-1" /> 8 ta yo'nalishni tiklash
+            <RefreshCw size={14} className="mr-1" /> Yo‘nalishlarni tiklash
           </Button>
           <Button onClick={async () => {
             try {

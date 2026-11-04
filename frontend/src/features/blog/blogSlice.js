@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import api from '../../services/api';
 import { toast } from 'react-toastify';
-
 export const fetchArticles = createAsyncThunk('blog/fetchAll', async (params = {}, { rejectWithValue }) => {
   try {
     const res = await api.get('/blog', { params });
@@ -10,7 +9,6 @@ export const fetchArticles = createAsyncThunk('blog/fetchAll', async (params = {
     return rejectWithValue(err.response?.data?.message);
   }
 });
-
 export const fetchArticleBySlug = createAsyncThunk('blog/fetchBySlug', async (slug, { rejectWithValue }) => {
   try {
     const res = await api.get(`/blog/${slug}`);
@@ -19,7 +17,6 @@ export const fetchArticleBySlug = createAsyncThunk('blog/fetchBySlug', async (sl
     return rejectWithValue(err.response?.data?.message);
   }
 });
-
 export const createArticle = createAsyncThunk('blog/create', async (formData, { rejectWithValue }) => {
   try {
     const res = await api.post('/blog', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
@@ -30,7 +27,6 @@ export const createArticle = createAsyncThunk('blog/create', async (formData, { 
     return rejectWithValue(err.response?.data?.message);
   }
 });
-
 export const deleteArticle = createAsyncThunk('blog/delete', async (id, { rejectWithValue }) => {
   try {
     await api.delete(`/blog/${id}`);
@@ -40,7 +36,6 @@ export const deleteArticle = createAsyncThunk('blog/delete', async (id, { reject
     return rejectWithValue(err.response?.data?.message);
   }
 });
-
 const blogSlice = createSlice({
   name: 'blog',
   initialState: { list: [], current: null, meta: null, loading: false, error: null },
@@ -65,6 +60,5 @@ const blogSlice = createSlice({
       });
   },
 });
-
 export const { clearCurrentArticle } = blogSlice.actions;
 export default blogSlice.reducer;

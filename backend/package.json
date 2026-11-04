@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "seed:admin": "node src/seed/admin.js"
+    "seed:admin": "node src/seed/admin.js",
+    "db:backup": "node scripts/backupDb.js",
+    "db:restore": "node scripts/restoreDb.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

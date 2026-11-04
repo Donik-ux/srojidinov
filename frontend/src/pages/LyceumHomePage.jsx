@@ -193,23 +193,69 @@ const LyceumHomePage = () => {
   const tr = { ...localeFallback, ...(t('lyceum', { returnObjects: true }) || {}) };
   const [activeCertificate, setActiveCertificate] = useState(null);
 
-  const { content } = useSiteContent(lang);
+  const { content, overrides, sharedMediaContent, settings: siteSettings } = useSiteContent(lang);
   const c = content || {};
-  const hero = isUz ? (c.hero || {}) : safeObject(tr.hero, localeFallback.hero || {});
-  const newsMeta = safeObject(tr.news, localeFallback.news || {});
-  const newsItems = safeArray(tr.news?.items, localeFallback.news?.items || []);
-  const stats = isUz ? (c.stats || FALLBACK_STATS) : safeArray(tr.stats, localeFallback.stats || FALLBACK_STATS);
-  const advantages = (isUz ? (c.advantages || FALLBACK_ADVANTAGES) : safeArray(tr.advantages?.items, localeFallback.advantages?.items || FALLBACK_ADVANTAGES)).map((a) => ({ ...a, Icon: ICON_MAP[a.icon] || Landmark }));
-  const directions = (isUz ? (c.directions || FALLBACK_DIRECTIONS) : safeArray(tr.directions?.items, localeFallback.directions?.items || FALLBACK_DIRECTIONS)).map((d) => ({ ...d, Icon: ICON_MAP[d.icon] || Atom }));
-  const teachers = isUz ? (c.teachers || FALLBACK_TEACHERS) : safeArray(tr.teachers?.list, localeFallback.teachers?.list || FALLBACK_TEACHERS);
-  const achievements = safeArray(tr.achievements?.list, localeFallback.achievements?.list || []);
-  const admissionSteps = (isUz ? (c.admissionSteps || FALLBACK_ADMISSION_STEPS) : safeArray(tr.admissions?.items, localeFallback.admissions?.items || FALLBACK_ADMISSION_STEPS)).map((s) => ({ ...s, Icon: ICON_MAP[s.icon] || Phone }));
-  const documents = isUz ? (c.documents || FALLBACK_DOCUMENTS) : safeArray(tr.admissions?.documents, localeFallback.admissions?.documents || FALLBACK_DOCUMENTS);
-  const faqs = isUz ? (c.faqs || FALLBACK_FAQS) : safeArray(tr.questions?.items, localeFallback.questions?.items || FALLBACK_FAQS);
-  const contacts = isUz ? (c.contacts || {}) : {};
-  const factsData = (isUz ? facts : safeArray(tr.facts, localeFallback.facts || facts)).map((f) => ({ ...f, Icon: f.Icon || ICON_MAP[f.icon] || CalendarDays }));
-  const milestonesData = isUz ? milestones : safeArray(tr.about?.milestones, localeFallback.about?.milestones || milestones);
-  const ADDRESS = contacts.address || tr.contact?.defaultAddress || localeFallback.contact?.defaultAddress || DEFAULT_ADDRESS;
+  const saved = overrides || {};
+  const sharedMedia = sharedMediaContent || {};
+  const savedSections = safeObject(saved.sections, {});
+  const sectionMeta = (key) => ({ ...safeObject(safeObject(tr)[key]), ...safeObject(savedSections[key]) });
+
+  const hero = { ...safeObject(safeObject(tr).hero), ...safeObject(saved.hero) };
+  const newsMeta = { ...safeObject(tr.news), ...safeObject(savedSections.news), ...(Array.isArray(saved.news) ? {} : safeObject(saved.news)) };
+  const newsItems = safeArray(saved.news?.items, safeArray(saved.newsItems, safeArray(tr.news?.items, localeFallback.news?.items || [])));
+  const stats = safeArray(saved.stats, safeArray(tr.stats, FALLBACK_STATS));
+  const advantages = safeArray(saved.advantages, safeArray(tr.advantages?.items, FALLBACK_ADVANTAGES)).map((a) => ({ ...a, Icon: ICON_MAP[a.icon] || Landmark }));
+  const directions = safeArray(saved.directions, safeArray(tr.directions?.items, FALLBACK_DIRECTIONS)).map((d) => ({ ...d, Icon: ICON_MAP[d.icon] || Atom }));
+  const syncImages = (items, sharedItems) => items.map((item, index) => {
+    const sharedItem = item.name
+      ? sharedItems.find((candidate) => candidate.name === item.name) || sharedItems[index]
+      : sharedItems[index];
+    return sharedItem?.image ? { ...item, image: sharedItem.image } : item;
+  });
+  const teachers = syncImages(
+    safeArray(saved.teachers, safeArray(tr.teachers?.list, FALLBACK_TEACHERS)),
+    safeArray(sharedMedia.teachers, en.lyceum.teachers.list),
+  );
+  const sharedAchievements = safeArray(sharedMedia.achievements, en.lyceum.achievements.list);
+  const achievements = syncImages(
+    safeArray(saved.achievements, safeArray(tr.achievements?.list, localeFallback.achievements?.list || [])),
+    sharedAchievements,
+  ).map((item, index) => {
+    const sharedItem = item.name
+      ? sharedAchievements.find((candidate) => candidate.name === item.name) || sharedAchievements[index]
+      : sharedAchievements[index];
+    const sharedDocuments = safeArray(sharedItem?.documents, []);
+    if (!Array.isArray(item.documents) || !sharedDocuments.length) return item;
+    return {
+      ...item,
+      documents: item.documents.map((document, documentIndex) => ({
+        ...document,
+        ...(sharedDocuments[documentIndex]?.image ? { image: sharedDocuments[documentIndex].image } : {}),
+      })),
+    };
+  });
+  const admissionSteps = safeArray(saved.admissionSteps, safeArray(tr.admissions?.items, FALLBACK_ADMISSION_STEPS)).map((step) => ({ ...step, Icon: ICON_MAP[step.icon] || Phone }));
+  const documents = safeArray(saved.documents, safeArray(tr.admissions?.documents, FALLBACK_DOCUMENTS));
+  const faqs = safeArray(saved.faqs, safeArray(tr.questions?.items, FALLBACK_FAQS));
+  const factsData = safeArray(saved.facts, safeArray(tr.facts, facts)).map((f) => ({ ...f, Icon: f.Icon || ICON_MAP[f.icon] || CalendarDays }));
+  const milestonesData = safeArray(saved.about?.milestones, safeArray(saved.milestones, safeArray(tr.about?.milestones, milestones)));
+  const aboutMeta = { ...safeObject(tr.about), ...safeObject(savedSections.about), ...safeObject(saved.about) };
+  const advantagesMeta = sectionMeta('advantages');
+  const directionsMeta = sectionMeta('directions');
+  const teachersMeta = sectionMeta('teachers');
+  const achievementsMeta = sectionMeta('achievements');
+  const admissionsMeta = sectionMeta('admissions');
+  const historyMeta = sectionMeta('history');
+  const heritageMeta = sectionMeta('heritage');
+  const environmentMeta = sectionMeta('environment');
+  const questionsMeta = sectionMeta('questions');
+  const contactMeta = sectionMeta('contact');
+  const ctaMeta = sectionMeta('cta');
+  const meta = { ...safeObject(tr.meta), ...safeObject(savedSections.meta) };
+
+  const site = { ...siteSettings, ...safeObject(saved.site) };
+  const contacts = { ...siteSettings, ...site, ...safeObject(saved.contacts) };
+  const ADDRESS = contacts.address || contactMeta.defaultAddress || tr.contact?.defaultAddress || DEFAULT_ADDRESS;
   const PHONE = contacts.phone || DEFAULT_PHONE;
   const PHONE_HREF = contacts.phoneHref || DEFAULT_PHONE_HREF;
   const LAT = contacts.lat || DEFAULT_LAT;
@@ -222,15 +268,17 @@ const LyceumHomePage = () => {
   const NUU_URL = contacts.nuu || DEFAULT_NUU_URL;
   const HERO_V = hero.video || HERO_VIDEO;
   const HERO_P = hero.poster || HERO_POSTER;
+  const ABOUT_VISUAL = aboutMeta.image || ABOUT_IMAGE;
+  const ENVIRONMENT_VISUAL = environmentMeta.image || STUDENT_IMAGE;
 
   return (
   <>
     <Helmet>
-      <title>{tr.meta.title}</title>
-      <meta name="description" content={tr.meta.description} />
-      <meta property="og:title" content={tr.meta.ogTitle} />
-      <meta property="og:description" content={tr.meta.ogDescription} />
-      <meta property="og:image" content={CAMPUS_IMAGE} />
+      <title>{meta.title}</title>
+      <meta name="description" content={meta.description} />
+      <meta property="og:title" content={meta.ogTitle || meta.title} />
+      <meta property="og:description" content={meta.ogDescription || meta.description} />
+      <meta property="og:image" content={meta.ogImage || CAMPUS_IMAGE} />
     </Helmet>
 
     <div>
@@ -304,9 +352,9 @@ const LyceumHomePage = () => {
       <section id="advantages" className="scroll-mt-32 bg-white py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-10 lg:px-16">
           <SectionHeading
-            eyebrow={tr.advantages.eyebrow}
-            title={tr.advantages.title}
-            text={tr.advantages.text}
+            eyebrow={advantagesMeta.eyebrow}
+            title={advantagesMeta.title}
+            text={advantagesMeta.text}
           />
           <div className="mt-9 grid gap-px border border-[#dfe3e4] bg-[#dfe3e4] sm:grid-cols-2 lg:grid-cols-4">
             {advantages.map(({ Icon, title, text }) => (
@@ -362,22 +410,22 @@ const LyceumHomePage = () => {
       <section id="about" className="scroll-mt-32 bg-white py-16 sm:py-20 lg:py-24">
         <div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:px-16">
           <div>
-            <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{tr.about.eyebrow}</p>
+            <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{aboutMeta.eyebrow}</p>
             <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-[#19354d] sm:text-4xl">
-              {tr.about.title}
+              {aboutMeta.title}
             </h2>
             <p className="mt-5 text-[15px] leading-7 text-[#53616a]">
-              {tr.about.p1}
+              {aboutMeta.p1 || aboutMeta.paragraphs?.[0]}
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[#53616a]">
-              {tr.about.p2}
+              {aboutMeta.p2 || aboutMeta.paragraphs?.[1]}
             </p>
-            <a href={NUU_URL} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#19354d] hover:text-[#9d7335]">
-              {tr.about.linkText} <ExternalLink size={15} />
+            <a href={aboutMeta.linkHref || NUU_URL} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#19354d] hover:text-[#9d7335]">
+              {aboutMeta.linkText} <ExternalLink size={15} />
             </a>
 
             <figure className="mt-8 overflow-hidden border border-[#dfe3e4]">
-              <img src={ABOUT_IMAGE} alt={tr.about.imageAlt} loading="lazy" className="h-56 w-full object-cover sm:h-64" />
+              <img src={ABOUT_VISUAL} alt={aboutMeta.imageAlt} loading="lazy" className="h-56 w-full object-cover sm:h-64" />
             </figure>
           </div>
 
@@ -393,10 +441,10 @@ const LyceumHomePage = () => {
             <div className="mt-10 border border-[#e0e3e3] bg-[#f5f6f4] p-6">
               <div className="flex items-center gap-3 text-[#9d7335]">
                 <Sparkles size={20} strokeWidth={1.7} />
-                <h3 className="font-['Source_Serif_4'] text-xl font-semibold text-[#19354d]">{tr.about.todayTitle}</h3>
+                <h3 className="font-['Source_Serif_4'] text-xl font-semibold text-[#19354d]">{aboutMeta.todayTitle}</h3>
               </div>
               <p className="mt-3 text-sm leading-6 text-[#53616a]">
-                {tr.about.todayText}
+                {aboutMeta.todayText}
               </p>
             </div>
           </div>
@@ -417,9 +465,9 @@ const LyceumHomePage = () => {
       <section id="directions" className="scroll-mt-32 bg-white py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-10 lg:px-16">
           <SectionHeading
-            eyebrow={tr.directions.eyebrow}
-            title={tr.directions.title}
-            text={tr.directions.text}
+            eyebrow={directionsMeta.eyebrow}
+            title={directionsMeta.title}
+            text={directionsMeta.text}
           />
 
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -436,13 +484,13 @@ const LyceumHomePage = () => {
                 <h3 className="mt-5 font-['Source_Serif_4'] text-2xl font-semibold text-[#19354d]">{title}</h3>
                 <p className="mt-2 text-sm leading-6 text-[#5b666d]">{text}</p>
                 <div className="mt-5 border-t border-[#e5e9ea] pt-4">
-                  <p className="text-xs font-bold uppercase text-[#9d7335]">{tr.directions.fitLabel}</p>
+                  <p className="text-xs font-bold uppercase text-[#9d7335]">{directionsMeta.fitLabel}</p>
                   <p className="mt-2 text-sm leading-6 text-[#5b666d]">{fit}</p>
                 </div>
               </article>
             ))}
           </div>
-          <p className="mt-4 text-xs leading-5 text-[#707a7f]">{tr.directions.note}</p>
+          <p className="mt-4 text-xs leading-5 text-[#707a7f]">{directionsMeta.note}</p>
         </div>
       </section>
 
@@ -450,21 +498,21 @@ const LyceumHomePage = () => {
         <div className="mx-auto max-w-[1440px] px-5 sm:px-10 lg:px-16">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <div>
-              <p className="mb-3 text-xs font-bold uppercase text-[#d5ad68]">{tr.teachers.eyebrow}</p>
+              <p className="mb-3 text-xs font-bold uppercase text-[#d5ad68]">{teachersMeta.eyebrow}</p>
               <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-white sm:text-4xl">
-                {tr.teachers.title}
+                {teachersMeta.title}
               </h2>
               <p className="mt-5 text-[15px] leading-7 text-white/80">
-                {tr.teachers.text}
+                {teachersMeta.text}
               </p>
               <div className="mt-7 grid grid-cols-2 gap-4 text-sm">
                 <div className="border border-white/15 bg-white/5 p-4">
-                  <div className="font-['Source_Serif_4'] text-2xl font-semibold text-[#e5c98f]">{tr.teachers.stat1Value}</div>
-                  <div className="mt-1 text-white/70">{tr.teachers.stat1Label}</div>
+                  <div className="font-['Source_Serif_4'] text-2xl font-semibold text-[#e5c98f]">{teachersMeta.stat1Value}</div>
+                  <div className="mt-1 text-white/70">{teachersMeta.stat1Label}</div>
                 </div>
                 <div className="border border-white/15 bg-white/5 p-4">
-                  <div className="font-['Source_Serif_4'] text-2xl font-semibold text-[#e5c98f]">{tr.teachers.stat2Value}</div>
-                  <div className="mt-1 text-white/70">{tr.teachers.stat2Label}</div>
+                  <div className="font-['Source_Serif_4'] text-2xl font-semibold text-[#e5c98f]">{teachersMeta.stat2Value}</div>
+                  <div className="mt-1 text-white/70">{teachersMeta.stat2Label}</div>
                 </div>
               </div>
             </div>
@@ -476,7 +524,7 @@ const LyceumHomePage = () => {
                   <figure key={title} className="group relative overflow-hidden border border-white/15 bg-white/5">
                     <img src={image} alt={name ? `${name} — ${subject}` : t('lyceum.teachers.alt', { subject })} loading="lazy" className="h-52 w-full object-cover object-top transition duration-500 group-hover:scale-105 sm:h-60 lg:h-56" />
                     <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0d2234] via-[#0d2234]/70 to-transparent px-4 pb-4 pt-10">
-                      <span className="block text-xs font-semibold uppercase text-[#e5c98f]">{tr.teachers.label}</span>
+                      <span className="block text-xs font-semibold uppercase text-[#e5c98f]">{teachersMeta.label}</span>
                       <span className="mt-1 block font-['Source_Serif_4'] text-lg font-semibold">{title}</span>
                       {name && <span className="mt-0.5 block text-[11px] font-semibold uppercase tracking-wide text-white/65">{subject}</span>}
                     </figcaption>
@@ -491,9 +539,9 @@ const LyceumHomePage = () => {
       <section id="achievements" className="scroll-mt-32 bg-[#f2eee6] py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-10 lg:px-16">
           <SectionHeading
-            eyebrow={tr.achievements.eyebrow}
-            title={tr.achievements.title}
-            text={tr.achievements.text}
+            eyebrow={achievementsMeta.eyebrow}
+            title={achievementsMeta.title}
+            text={achievementsMeta.text}
           />
 
           <div className="mt-9 space-y-6">
@@ -603,9 +651,9 @@ const LyceumHomePage = () => {
           <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-start lg:gap-16">
             <div>
               <SectionHeading
-                eyebrow={tr.admissions.eyebrow}
-                title={tr.admissions.title}
-                text={tr.admissions.text}
+                eyebrow={admissionsMeta.eyebrow}
+                title={admissionsMeta.title}
+                text={admissionsMeta.text}
               />
               <div className="mt-8 grid gap-5 sm:grid-cols-2">
                 {admissionSteps.map(({ Icon, title, text }, index) => (
@@ -622,7 +670,7 @@ const LyceumHomePage = () => {
             </div>
 
             <aside className="border border-[#d7cbb7] bg-[#eee6d8] p-6 sm:p-8">
-              <h3 className="font-['Source_Serif_4'] text-2xl font-semibold text-[#19354d]">{tr.admissions.documentsTitle}</h3>
+              <h3 className="font-['Source_Serif_4'] text-2xl font-semibold text-[#19354d]">{admissionsMeta.documentsTitle}</h3>
               <ul className="mt-5 space-y-3">
                 {documents.map(document => (
                   <li key={document} className="flex items-start gap-3 text-sm leading-6 text-[#53616a]">
@@ -633,7 +681,7 @@ const LyceumHomePage = () => {
               </ul>
               <div className="mt-7 border-t border-[#cfc3ae] pt-5">
                 <p className="text-xs leading-5 text-[#6d777c]">
-                  {tr.admissions.note}
+                  {admissionsMeta.note}
                 </p>
                 <a href={PHONE_HREF} className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-3 bg-[#17344b] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#244863]">
                   <Phone size={16} /> {PHONE}
@@ -647,15 +695,15 @@ const LyceumHomePage = () => {
       <section id="history" className="scroll-mt-32 bg-[#17344b] py-16 text-white sm:py-20 lg:py-24">
         <div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16 lg:px-16">
           <div>
-            <p className="mb-3 text-xs font-bold uppercase text-[#d5ad68]">{tr.history.eyebrow}</p>
-            <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-white sm:text-4xl">{tr.history.title}</h2>
+            <p className="mb-3 text-xs font-bold uppercase text-[#d5ad68]">{historyMeta.eyebrow}</p>
+            <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-white sm:text-4xl">{historyMeta.title}</h2>
           </div>
           <div className="max-w-3xl">
             <p className="text-[15px] leading-7 text-white/80">
-              {tr.history.text}
+              {historyMeta.text}
             </p>
             <a href={NUU_URL} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#e5c98f] hover:text-white">
-              {tr.history.linkText} <ExternalLink size={15} />
+              {historyMeta.linkText} <ExternalLink size={15} />
             </a>
           </div>
         </div>
@@ -664,20 +712,20 @@ const LyceumHomePage = () => {
       <section id="heritage" className="scroll-mt-32 bg-white py-16 sm:py-20 lg:py-24">
         <div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 lg:px-16">
           <div>
-            <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{tr.heritage.eyebrow}</p>
+            <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{heritageMeta.eyebrow}</p>
             <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-[#19354d] sm:text-4xl">
-              {tr.heritage.title}
+              {heritageMeta.title}
             </h2>
             <p className="mt-5 text-[15px] leading-7 text-[#53616a]">
-              {tr.heritage.text}
+              {heritageMeta.text}
             </p>
-            <a href={NUU_URL} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#19354d] hover:text-[#9d7335]">
-              {tr.heritage.linkText} <ExternalLink size={15} />
+            <a href={heritageMeta.linkHref || NUU_URL} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#19354d] hover:text-[#9d7335]">
+              {heritageMeta.linkText} <ExternalLink size={15} />
             </a>
           </div>
 
           <div className="grid gap-px border border-[#e0e3e3] bg-[#e0e3e3] sm:grid-cols-3">
-            {tr.heritage.items.map(({ value, label }) => (
+            {(heritageMeta.items || []).map(({ value, label }) => (
               <div key={value} className="flex min-h-36 flex-col justify-between bg-[#f5f6f4] p-6 sm:min-h-48 sm:p-7">
                 <span className="font-['Source_Serif_4'] text-2xl font-semibold text-[#9d7335] sm:text-3xl">{value}</span>
                 <p className="mt-6 text-sm leading-5 text-[#53616a]">{label}</p>
@@ -690,13 +738,13 @@ const LyceumHomePage = () => {
       <section className="bg-[#f2eee6] py-14 sm:py-16">
         <div className="mx-auto grid max-w-[1440px] gap-8 px-5 sm:px-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-center lg:gap-14 lg:px-16">
           <div>
-            <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{tr.environment.eyebrow}</p>
-            <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-[#19354d] sm:text-4xl">{tr.environment.title}</h2>
+            <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{environmentMeta.eyebrow}</p>
+            <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-[#19354d] sm:text-4xl">{environmentMeta.title}</h2>
             <p className="mt-4 text-sm leading-6 text-[#53616a]">
-              {tr.environment.text}
+              {environmentMeta.text}
             </p>
             <ul className="mt-5 space-y-3">
-              {tr.environment.items.map(item => (
+              {(environmentMeta.items || []).map(item => (
                 <li key={item} className="flex items-start gap-3 text-sm leading-6 text-[#53616a]">
                   <CheckCircle2 size={17} className="mt-0.5 shrink-0 text-[#9d7335]" />
                   <span>{item}</span>
@@ -705,9 +753,9 @@ const LyceumHomePage = () => {
             </ul>
           </div>
           <figure className="relative min-h-[260px] overflow-hidden bg-[#19354d] sm:min-h-[340px]">
-            <img src={STUDENT_IMAGE} alt={tr.environment.imageAlt} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+            <img src={ENVIRONMENT_VISUAL} alt={environmentMeta.imageAlt} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#142f45]/80 via-transparent to-transparent" />
-            <figcaption className="absolute bottom-4 left-4 text-xs font-medium text-white/90 sm:bottom-6 sm:left-6">{tr.environment.caption}</figcaption>
+            <figcaption className="absolute bottom-4 left-4 text-xs font-medium text-white/90 sm:bottom-6 sm:left-6">{environmentMeta.caption}</figcaption>
           </figure>
         </div>
       </section>
@@ -715,11 +763,11 @@ const LyceumHomePage = () => {
       <section id="questions" className="scroll-mt-32 bg-[#f7f5ef] py-16 sm:py-20 lg:py-24">
         <div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16 lg:px-16">
           <div>
-            <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{tr.questions.eyebrow}</p>
-            <h2 className="font-['Source_Serif_4'] text-3xl font-semibold text-[#19354d] sm:text-4xl">{tr.questions.title}</h2>
-            <p className="mt-4 text-sm leading-6 text-[#5b666d]">{tr.questions.text}</p>
+            <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{questionsMeta.eyebrow}</p>
+            <h2 className="font-['Source_Serif_4'] text-3xl font-semibold text-[#19354d] sm:text-4xl">{questionsMeta.title}</h2>
+            <p className="mt-4 text-sm leading-6 text-[#5b666d]">{questionsMeta.text}</p>
             <a href={PHONE_HREF} className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#19354d] hover:text-[#9d7335]"><Phone size={16} /> {PHONE}</a>
-            <a href="#contact" className="mt-4 flex items-center gap-2 text-sm font-semibold text-[#19354d] hover:text-[#9d7335]"><MapPin size={16} className="text-[#9d7335]" /> {tr.questions.addressLink}</a>
+            <a href="#contact" className="mt-4 flex items-center gap-2 text-sm font-semibold text-[#19354d] hover:text-[#9d7335]"><MapPin size={16} className="text-[#9d7335]" /> {questionsMeta.addressLink}</a>
           </div>
 
           <div className="border-t border-[#d9dfe1]">
@@ -740,11 +788,11 @@ const LyceumHomePage = () => {
         <div className="mx-auto max-w-[1440px] px-5 sm:px-10 lg:px-16">
           <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[#d9dfe1] pb-5">
             <div>
-              <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{tr.contact.eyebrow}</p>
-              <h2 className="font-['Source_Serif_4'] text-3xl font-semibold text-[#19354d] sm:text-4xl">{tr.contact.title}</h2>
+              <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{contactMeta.eyebrow}</p>
+              <h2 className="font-['Source_Serif_4'] text-3xl font-semibold text-[#19354d] sm:text-4xl">{contactMeta.title}</h2>
             </div>
             <a href={MAP_DIR} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-[#19354d] hover:text-[#9d7335]">
-              {tr.contact.directionsLink} <ExternalLink size={15} />
+              {contactMeta.directionsLink} <ExternalLink size={15} />
             </a>
           </div>
 
@@ -753,7 +801,7 @@ const LyceumHomePage = () => {
               <div className="flex items-start gap-4">
                 <MapPin className="mt-1 shrink-0 text-[#9d7335]" size={20} />
                 <div>
-                  <h3 className="font-semibold text-[#19354d]">{tr.contact.addressTitle}</h3>
+                  <h3 className="font-semibold text-[#19354d]">{contactMeta.addressTitle}</h3>
                   <p className="mt-1 text-sm leading-6 text-[#5b666d]">{ADDRESS}</p>
                   <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold text-[#19354d]">
                     <a href={MAP_DIR} target="_blank" rel="noreferrer" className="hover:text-[#9d7335]">Google Maps</a>
@@ -766,41 +814,41 @@ const LyceumHomePage = () => {
               <div className="flex items-start gap-4">
                 <Phone className="mt-1 shrink-0 text-[#9d7335]" size={19} />
                 <div>
-                  <h3 className="font-semibold text-[#19354d]">{tr.contact.phoneTitle}</h3>
+                  <h3 className="font-semibold text-[#19354d]">{contactMeta.phoneTitle}</h3>
                   <a href={PHONE_HREF} className="mt-1 inline-block text-sm text-[#5b666d] hover:text-[#9d7335]">{PHONE}</a>
-                  <p className="mt-1 text-xs text-[#707a7f]">{tr.contact.phoneNote}</p>
+                  <p className="mt-1 text-xs text-[#707a7f]">{contactMeta.phoneNote}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <Clock className="mt-1 shrink-0 text-[#9d7335]" size={19} />
                 <div>
-                  <h3 className="font-semibold text-[#19354d]">{tr.contact.hoursTitle}</h3>
-                  <p className="mt-1 text-sm leading-6 text-[#5b666d]">{tr.contact.hours}</p>
-                  <p className="mt-1 text-xs text-[#707a7f]">{tr.contact.hoursNote}</p>
+                  <h3 className="font-semibold text-[#19354d]">{contactMeta.hoursTitle}</h3>
+                  <p className="mt-1 text-sm leading-6 text-[#5b666d]">{contactMeta.hours || contacts.workingHours}</p>
+                  <p className="mt-1 text-xs text-[#707a7f]">{contactMeta.hoursNote}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <Bus className="mt-1 shrink-0 text-[#9d7335]" size={19} />
                 <div>
-                  <h3 className="font-semibold text-[#19354d]">{tr.contact.routeTitle}</h3>
-                  <p className="mt-1 text-sm leading-6 text-[#5b666d]">{tr.contact.routeText}</p>
+                  <h3 className="font-semibold text-[#19354d]">{contactMeta.routeTitle}</h3>
+                  <p className="mt-1 text-sm leading-6 text-[#5b666d]">{contactMeta.routeText}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <ExternalLink className="mt-1 shrink-0 text-[#9d7335]" size={19} />
                 <div>
-                  <h3 className="font-semibold text-[#19354d]">{tr.contact.socialTitle}</h3>
-                  <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="mt-1 inline-block text-sm text-[#5b666d] hover:text-[#9d7335]">{tr.contact.instagramText}</a>
+                  <h3 className="font-semibold text-[#19354d]">{contactMeta.socialTitle}</h3>
+                  <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="mt-1 inline-block text-sm text-[#5b666d] hover:text-[#9d7335]">{contactMeta.instagramText}</a>
                 </div>
               </div>
             </div>
 
             <div className="overflow-hidden border border-[#dfe3e4] bg-[#f2eee6]">
               <iframe
-                title={tr.contact.mapTitle}
+                title={contactMeta.mapTitle}
                 src={MAP_EMBED}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -812,7 +860,7 @@ const LyceumHomePage = () => {
 
           <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border border-[#e5e9ea] bg-[#f7f5ef] px-5 py-4 text-xs text-[#6d777c]">
             <span className="inline-flex items-center gap-2"><MapPin size={14} className="text-[#9d7335]" /> {LAT}, {LNG}</span>
-            <a href={MAP_DIR} target="_blank" rel="noreferrer" className="font-semibold text-[#19354d] hover:text-[#9d7335]">{tr.contact.openMap}</a>
+            <a href={MAP_DIR} target="_blank" rel="noreferrer" className="font-semibold text-[#19354d] hover:text-[#9d7335]">{contactMeta.openMap}</a>
           </div>
         </div>
       </section>
@@ -820,16 +868,16 @@ const LyceumHomePage = () => {
       <section className="bg-[#eee6d8] py-14 sm:py-16">
         <div className="mx-auto flex max-w-[1440px] flex-col gap-6 px-5 sm:px-10 md:flex-row md:items-center md:justify-between lg:px-16">
           <div className="max-w-3xl">
-            <p className="mb-2 text-xs font-bold uppercase text-[#9d7335]">{tr.cta.eyebrow}</p>
-            <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-[#19354d]">{tr.cta.title}</h2>
-            <p className="mt-3 text-sm leading-6 text-[#53616a]">{tr.cta.text}</p>
+            <p className="mb-2 text-xs font-bold uppercase text-[#9d7335]">{ctaMeta.eyebrow}</p>
+            <h2 className="font-['Source_Serif_4'] text-3xl font-semibold leading-tight text-[#19354d]">{ctaMeta.title}</h2>
+            <p className="mt-3 text-sm leading-6 text-[#53616a]">{ctaMeta.text}</p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-3">
             <a href={PHONE_HREF} className="inline-flex min-h-12 items-center justify-center gap-3 bg-[#17344b] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#244863]">
               <Phone size={17} /> {PHONE}
             </a>
             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center justify-center gap-3 border border-[#19354d]/25 px-6 py-3 text-sm font-bold text-[#19354d] transition hover:bg-white/50">
-              {tr.cta.instagram} <ExternalLink size={15} />
+              {ctaMeta.instagram} <ExternalLink size={15} />
             </a>
           </div>
         </div>
@@ -846,7 +894,7 @@ const LyceumHomePage = () => {
           <button
             type="button"
             onClick={() => setActiveCertificate(null)}
-            aria-label={tr.achievements.closeLabel}
+            aria-label={achievementsMeta.closeLabel}
             className="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center border border-white/25 text-white transition hover:bg-white/10 sm:right-6 sm:top-6"
           >
             <X size={22} />

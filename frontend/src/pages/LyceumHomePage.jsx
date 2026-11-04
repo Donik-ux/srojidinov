@@ -241,6 +241,7 @@ const LyceumHomePage = () => {
   const milestonesData = safeArray(saved.about?.milestones, safeArray(saved.milestones, safeArray(tr.about?.milestones, milestones)));
   const aboutMeta = { ...safeObject(tr.about), ...safeObject(savedSections.about), ...safeObject(saved.about) };
   const advantagesMeta = sectionMeta('advantages');
+  const videoMeta = sectionMeta('video');
   const directionsMeta = sectionMeta('directions');
   const teachersMeta = sectionMeta('teachers');
   const achievementsMeta = sectionMeta('achievements');
@@ -367,6 +368,22 @@ const LyceumHomePage = () => {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="lyceum-video" className="scroll-mt-32 bg-white py-12 sm:py-16">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-10 lg:px-16">
+          <h2 className="mb-6 font-['Source_Serif_4'] text-2xl font-semibold text-[#19354d] sm:text-3xl">
+            {videoMeta.title}
+          </h2>
+          <video
+            src="/assets/videos/lyceum-life.mp4"
+            controls
+            playsInline
+            preload="metadata"
+            aria-label={videoMeta.title}
+            className="mx-auto block max-h-[75vh] w-auto max-w-full rounded-sm bg-black"
+          />
         </div>
       </section>
 

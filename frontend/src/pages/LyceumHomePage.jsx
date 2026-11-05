@@ -113,8 +113,8 @@ const directions = [
 ];
 
 const teachers = [
-  { subject: 'Деректор', image: '/assets/Ustozlar/IMG_20261026_175341_878.jpg' },
-  { subject: 'Зам деректор ', image: '/assets/Ustozlar/зам.jpg' },
+  { subject: 'Деректор', image: '/assets/Ustozlar/photo_2026-11-05_21-32-47.jpg' },
+  { subject: 'Зам деректор ', image: '/assets/Ustozlar/photo_2026-11-05_21-23-41.jpg' },
   { subject: 'Fizika', image: '/assets/Ustozlar/fizika.jpg' },
   { subject: 'Matematika', image: '/assets/Ustozlar/matem.jpg' },
     { subject: 'Ona tili', image: '/assets/Ustozlar/ona.jpg' },

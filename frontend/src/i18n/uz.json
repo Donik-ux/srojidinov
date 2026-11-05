@@ -2026,13 +2026,15 @@
       "label": "O‘qituvchi",
       "alt": "{subject} fani o‘qituvchisi",
       "list": [
+
         {
-          "subject": "Direktor",
-          "image": "/assets/Ustozlar/IMG_20261026_175341_878.jpg"
+          "subject": "Director",
+          "image": "/assets/Ustozlar/photo_2026-11-05_21-32-47.jpg"
+
         },
         {
-          "subject": "Zam direktor",
-          "image": "/assets/Ustozlar/зам.jpg"
+          "subject": "Deputy director",
+          "image": "/assets/Ustozlar/photo_2026-11-05_21-23-41.jpg"
         },
         {
           "subject": "Fizika",

@@ -2022,13 +2022,14 @@
       "label": "Учитель",
       "alt": "Учитель предмета «{subject}»",
       "list": [
-        {
-          "subject": "Директор",
-          "image": "/assets/Ustozlar/IMG_20261026_175341_878.jpg"
+               {
+          "subject": "Деректор",
+          "image": "/assets/Ustozlar/photo_2026-11-05_21-32-47.jpg"
+
         },
         {
-          "subject": "Заместитель директора",
-          "image": "/assets/Ustozlar/зам.jpg"
+          "subject": "Зам деректор",
+          "image": "/assets/Ustozlar/photo_2026-11-05_21-23-41.jpg"
         },
         {
           "subject": "Физика",

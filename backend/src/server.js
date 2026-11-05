@@ -28,9 +28,11 @@ const allowedOrigins = [
   ...(process.env.CORS_ORIGINS || '').split(',').map((origin) => origin.trim()),
 ].filter(Boolean);
 
+const vercelPreviewPattern = /^https:\/\/srojidinov[a-z0-9-]*\.vercel\.app$/i;
+
 app.use(cors({
   origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
+    if (!origin || allowedOrigins.includes(origin) || vercelPreviewPattern.test(origin)) {
       callback(null, true);
       return;
     }

@@ -72,8 +72,8 @@ const getPage = (query) => {
 };
 
 const withSearch = (filter, search, fields) => {
-  if (!search) return filter;
-  const escaped = search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  if (typeof search !== 'string' || !search) return filter;
+  const escaped = search.slice(0, 100).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return {
     $and: [
       filter,
@@ -179,7 +179,7 @@ router.patch('/users/:id/toggle-block', async (req, res, next) => {
     if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).json({ message: 'Invalid user id' });
     const user = await User.findById(req.params.id);
     if (!user) return res.status(404).json({ message: 'User not found' });
-    if (user.role === 'SUPER_ADMIN' && req.user.role !== 'SUPER_ADMIN') {
+    if (user.role !== 'USER' && req.user.role !== 'SUPER_ADMIN') {
       return res.status(403).json({ message: 'Only a super admin can change this account' });
     }
     user.isBlocked = !user.isBlocked;
@@ -197,8 +197,8 @@ router.put('/users/:id', async (req, res, next) => {
     if (!['USER', 'ADMIN', 'SUPER_ADMIN'].includes(role)) {
       return res.status(400).json({ message: 'Invalid role' });
     }
-    if (role === 'SUPER_ADMIN' && req.user.role !== 'SUPER_ADMIN') {
-      return res.status(403).json({ message: 'Only a super admin can assign this role' });
+    if (req.user.role !== 'SUPER_ADMIN') {
+      return res.status(403).json({ message: 'Only a super admin can change roles' });
     }
     const user = await User.findById(req.params.id);
     if (!user) return res.status(404).json({ message: 'User not found' });
@@ -221,7 +221,7 @@ router.delete('/users/:id', async (req, res, next) => {
     }
     const user = await User.findById(req.params.id);
     if (!user) return res.status(404).json({ message: 'User not found' });
-    if (user.role === 'SUPER_ADMIN' && req.user.role !== 'SUPER_ADMIN') {
+    if (user.role !== 'USER' && req.user.role !== 'SUPER_ADMIN') {
       return res.status(403).json({ message: 'Only a super admin can delete this account' });
     }
     await user.deleteOne();

@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import multer from 'multer';
+import rateLimit from 'express-rate-limit';
 import ContentEntry from '../models/ContentEntry.js';
 import Application from '../models/Application.js';
 import { admin, optionalProtect, protect } from '../middlewares/auth.js';
@@ -20,6 +21,13 @@ const publicSections = new Set([
   'scholarships',
   'vacancies',
 ]);
+const applicationLimiter = rateLimit({
+  windowMs: 10 * 60 * 1000,
+  limit: 5,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { message: 'Too many applications, try again later' },
+});
 const upload = multer({
   storage: multer.memoryStorage(),
   limits: { fileSize: 10 * 1024 * 1024, files: 1 },
@@ -45,10 +53,10 @@ const pagination = (query) => {
 const contentQuery = (section, query, isPublic) => {
   const conditions = [{ section }];
   if (isPublic) conditions.push(publicFilter(section));
-  if (query.category) conditions.push({ 'data.category': query.category });
-  if (query.level) conditions.push({ 'data.level': query.level });
-  if (query.search) {
-    const escaped = query.search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  if (typeof query.category === 'string' && query.category) conditions.push({ 'data.category': query.category });
+  if (typeof query.level === 'string' && query.level) conditions.push({ 'data.level': query.level });
+  if (typeof query.search === 'string' && query.search) {
+    const escaped = query.search.slice(0, 100).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     conditions.push({
       $or: [
         { 'data.title': { $regex: escaped, $options: 'i' } },
@@ -112,7 +120,7 @@ router.get('/media/:id', async (req, res, next) => {
   }
 });
 
-router.post('/applications', async (req, res, next) => {
+router.post('/applications', applicationLimiter, async (req, res, next) => {
   const { fullName, name, phone, grade, course } = req.body || {};
   if (typeof (fullName || name) !== 'string' || !(fullName || name).trim() ||
       typeof phone !== 'string' || !phone.trim()) {
@@ -120,8 +128,8 @@ router.post('/applications', async (req, res, next) => {
   }
   try {
     const application = await Application.create({
-      fullName: (fullName || name).trim(),
-      phone: phone.trim(),
+      fullName: (fullName || name).trim().slice(0, 200),
+      phone: phone.trim().slice(0, 40),
       grade: grade ? String(grade) : '',
       course: course || null,
     });

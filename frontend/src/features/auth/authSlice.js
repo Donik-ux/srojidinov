@@ -66,7 +66,6 @@ const authSlice = createSlice({
     setCredentials: (state, { payload }) => {
       if (payload.accessToken) {
         state.accessToken = payload.accessToken;
-        try { localStorage.setItem('accessToken', payload.accessToken); } catch {}
       }
       if (payload.user) state.user = payload.user;
     },
@@ -77,15 +76,6 @@ const authSlice = createSlice({
       state.accessToken = null;
       state.isAuthenticated = false;
       state.initialized = true;
-      try { localStorage.removeItem('accessToken'); } catch {}
-    },
-    devLogin: (state) => {
-      state.user = { role: 'ADMIN', name: 'Dev Admin', login: 'dev', phone: '+998000000000' };
-      state.accessToken = 'dev-token';
-      state.isAuthenticated = true;
-      state.initialized = true;
-      state.loading = false;
-      try { localStorage.setItem('accessToken', 'dev-token'); } catch {}
     },
   },
   extraReducers: (builder) => {
@@ -100,7 +90,6 @@ const authSlice = createSlice({
         state.accessToken = payload.accessToken;
         state.isAuthenticated = true;
         state.initialized = true;
-        try { localStorage.setItem('accessToken', payload.accessToken); } catch {}
       })
       .addCase(register.rejected, (state, { payload }) => { state.loading = false; state.error = payload; state.initialized = true; })
 
@@ -111,7 +100,6 @@ const authSlice = createSlice({
         state.accessToken = payload.accessToken;
         state.isAuthenticated = true;
         state.initialized = true;
-        try { localStorage.setItem('accessToken', payload.accessToken); } catch {}
       })
       .addCase(login.rejected, (state, { payload }) => { state.loading = false; state.error = payload; state.initialized = true; })
 
@@ -119,13 +107,11 @@ const authSlice = createSlice({
         state.user = null;
         state.accessToken = null;
         state.isAuthenticated = false;
-        try { localStorage.removeItem('accessToken'); } catch {}
       })
       .addCase(logout.rejected, (state) => {
         state.user = null;
         state.accessToken = null;
         state.isAuthenticated = false;
-        try { localStorage.removeItem('accessToken'); } catch {}
       })
 
       .addCase(fetchMe.pending, pending)
@@ -143,7 +129,7 @@ const authSlice = createSlice({
   },
 });
 
-export const { setCredentials, clearError, markInitialized, clearAuth, devLogin } = authSlice.actions;
+export const { setCredentials, clearError, markInitialized, clearAuth } = authSlice.actions;
 export default authSlice.reducer;
 
 export const selectAuth = (state) => state.auth;

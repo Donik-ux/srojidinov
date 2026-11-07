@@ -7,7 +7,9 @@ const REFRESH_MAX_AGE = 30 * 24 * 60 * 60 * 1000;
 const cookieOptions = () => ({
   httpOnly: true,
   secure: process.env.NODE_ENV === 'production',
-  sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+  // 'lax' blocks cross-site logout/refresh; set CROSS_SITE_COOKIES=true only if the
+  // frontend is hosted on a different site than the API.
+  sameSite: process.env.CROSS_SITE_COOKIES === 'true' && process.env.NODE_ENV === 'production' ? 'none' : 'lax',
   path: '/api/auth',
   maxAge: REFRESH_MAX_AGE,
 });
@@ -52,9 +54,9 @@ export const register = async (req, res, next) => {
   const normalizedPhone = typeof phone === 'string' ? phone.trim() : '';
 
   if (!normalizedName || (!normalizedPhone && !normalizedLogin) ||
-      typeof password !== 'string' || password.length < 4) {
+      typeof password !== 'string' || password.length < 8) {
     return res.status(400).json({
-      message: 'Name, phone or login, and a password of at least 4 characters are required',
+      message: 'Name, phone or login, and a password of at least 8 characters are required',
     });
   }
 

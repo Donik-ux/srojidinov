@@ -25,7 +25,6 @@ const AdminTeachers     = lazy(() => import('../pages/admin/AdminTeachers'));
 const AdminDirections   = lazy(() => import('../pages/admin/AdminDirections'));
 const AdminVideos       = lazy(() => import('../pages/admin/AdminVideos'));
 const AdminVacancies    = lazy(() => import('../pages/admin/AdminVacancies'));
-const AdminLoginBypass  = lazy(() => import('../pages/admin/AdminLoginBypass'));
 
 const Loader = () => (
   <div className="min-h-screen flex items-center justify-center">
@@ -38,7 +37,6 @@ const AppRouter = () => (
   <Routes>
       {/* Auth pages — без хедера/футера */}
       <Route path="/login" element={<LoginPage />} />
-      <Route path="/admin-bypass" element={<AdminLoginBypass />} />
       <Route path="/register" element={<RegisterPage />} />
 
       <Route element={<MainLayout />}>

@@ -5,6 +5,9 @@ import cookieParser from 'cookie-parser';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import mongoose from 'mongoose';
+import fs from 'fs';
+import helmet from 'helmet';
+import rateLimit from 'express-rate-limit';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import siteRoutes from './routes/siteRoutes.js';
@@ -17,6 +20,12 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 app.set('etag', false);
+app.set('trust proxy', 1);
+app.use(helmet({
+  contentSecurityPolicy: false,
+  crossOriginResourcePolicy: { policy: 'cross-origin' },
+  crossOriginEmbedderPolicy: false,
+}));
 
 const allowedOrigins = [
   'http://localhost:3000',
@@ -52,6 +61,7 @@ app.use('/api', (req, res, next) => {
   res.set('Expires', '0');
   next();
 });
+app.use('/api', rateLimit({ windowMs: 60 * 1000, limit: 300, standardHeaders: true, legacyHeaders: false }));
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 app.get('/api/health', (req, res) => {
@@ -67,6 +77,15 @@ app.use('/api/site', siteRoutes);
 app.use('/api', siteRoutes);
 app.use('/api', contentRoutes);
 app.use('/api/admin', adminRoutes);
+
+const frontendDist = path.resolve(__dirname, '../../frontend/dist');
+if (fs.existsSync(path.join(frontendDist, 'index.html'))) {
+  app.use(express.static(frontendDist, { index: false, maxAge: '7d' }));
+  app.get(/^\/(?!api\/|uploads\/).*/, (req, res) => {
+    res.set('Cache-Control', 'no-cache');
+    res.sendFile(path.join(frontendDist, 'index.html'));
+  });
+}
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });

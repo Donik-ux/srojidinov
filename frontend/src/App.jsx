@@ -6,17 +6,7 @@ import { fetchMe, setCredentials, markInitialized } from './features/auth/authSl
 import { warmupBackend } from './services/api';
 import AppRouter from './routes/AppRouter';
 
-// JWT exp claim'ini lokal dekodlash — server'ga so'rovsiz muddati o'tganligini bilish
-const isTokenExpired = (token) => {
-  try {
-    const payload = JSON.parse(atob(token.split('.')[1]));
-    if (!payload.exp) return false;
-    // 5 sekund zahira — server soati biroz farq qilsa ham xato bermasligi uchun
-    return payload.exp * 1000 < Date.now() + 5000;
-  } catch {
-    return true;
-  }
-};
+let restorePromise = null;
 
 const PLACEHOLDER =
   'data:image/svg+xml,' + encodeURIComponent(
@@ -51,33 +41,24 @@ const App = () => {
       return;
     }
 
-    let saved = null;
-    try {
-      saved = localStorage.getItem('accessToken');
-    } catch {}
-
-    if (saved && !isTokenExpired(saved)) {
-      dispatch(setCredentials({ accessToken: saved }));
-      dispatch(fetchMe());
-    } else if (saved) {
-      // Token expired — пробуем обновить через httpOnly refresh cookie
-      (async () => {
-        try {
-          const BASE = `${import.meta.env.VITE_API_URL || ''}/api`;
-          const { data } = await axios.post(`${BASE}/auth/refresh`, {}, { withCredentials: true });
-          const newToken = data.accessToken || data.data?.accessToken;
-          if (newToken) {
-            dispatch(setCredentials({ accessToken: newToken }));
-            dispatch(fetchMe());
-            return;
-          }
-        } catch {}
-        try { localStorage.removeItem('accessToken'); } catch {}
-        dispatch(markInitialized());
-      })();
-    } else {
-      dispatch(markInitialized());
+    // Access token lives only in memory (not localStorage). The session is restored
+    // from the httpOnly refresh cookie; a single shared request avoids double rotation.
+    if (!restorePromise) {
+      const BASE = `${import.meta.env.VITE_API_URL || ''}/api`;
+      restorePromise = axios
+        .post(`${BASE}/auth/refresh`, {}, { withCredentials: true })
+        .then(({ data }) => data.accessToken || data.data?.accessToken || null)
+        .catch(() => null);
     }
+    restorePromise.then((token) => {
+      restorePromise = null;
+      if (token) {
+        dispatch(setCredentials({ accessToken: token }));
+        dispatch(fetchMe());
+      } else {
+        dispatch(markInitialized());
+      }
+    });
   }, [dispatch, requiresBackend]);
 
   return <AppRouter />;

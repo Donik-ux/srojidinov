@@ -18,3 +18,5 @@ Allow: /assets/
 
 User-agent: GPTBot
 Disallow: /
+
+Sitemap: https://topextexnikum.uz/sitemap.xml

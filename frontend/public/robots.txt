@@ -19,4 +19,4 @@ Allow: /assets/
 User-agent: GPTBot
 Disallow: /
 
-Sitemap: https://topextexnikum.uz/sitemap.xml
+Sitemap: https://uzmu-sirojiddinov.uz/sitemap.xml

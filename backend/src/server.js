@@ -32,6 +32,8 @@ const allowedOrigins = [
   'http://localhost:5173',
   'https://topextexnikum.uz',
   'https://www.topextexnikum.uz',
+  'https://uzmu-sirojiddinov.uz',
+  'https://www.uzmu-sirojiddinov.uz',
   'https://srojidinov.vercel.app',
   process.env.CLIENT_URL,
   ...(process.env.CORS_ORIGINS || '').split(',').map((origin) => origin.trim()),

@@ -175,6 +175,8 @@ const FALLBACK_ADMISSION_STEPS = admissionSteps;
 const FALLBACK_DOCUMENTS = documents;
 const FALLBACK_FAQS = faqs;
 
+const isUploadedImage = (src) => typeof src === 'string' && /(^https?:\/\/|\/api\/media\/|\/uploads\/)/.test(src);
+
 const SectionHeading = ({ eyebrow, title, text }) => (
   <div className="max-w-3xl">
     <p className="mb-3 text-xs font-bold uppercase text-[#9d7335]">{eyebrow}</p>
@@ -210,6 +212,8 @@ const LyceumHomePage = () => {
     const sharedItem = item.name
       ? sharedItems.find((candidate) => candidate.name === item.name) || sharedItems[index]
       : sharedItems[index];
+    // A photo uploaded for this language (media/upload URL) wins over the shared English one.
+    if (isUploadedImage(item.image)) return item;
     return sharedItem?.image ? { ...item, image: sharedItem.image } : item;
   });
   const teachers = syncImages(
@@ -230,7 +234,7 @@ const LyceumHomePage = () => {
       ...item,
       documents: item.documents.map((document, documentIndex) => ({
         ...document,
-        ...(sharedDocuments[documentIndex]?.image ? { image: sharedDocuments[documentIndex].image } : {}),
+        ...(!isUploadedImage(document.image) && sharedDocuments[documentIndex]?.image ? { image: sharedDocuments[documentIndex].image } : {}),
       })),
     };
   });

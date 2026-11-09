@@ -326,13 +326,27 @@ const AdminSiteBuilder = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const setHomeField = (path, value) => setDrafts((current) => ({
-    ...current,
-    [lang]: {
-      ...current[lang],
-      home: setAt(current[lang]?.home || homeDefaults, path, value),
-    },
-  }));
+  // Teacher and certificate photos are shared by all languages on the public site,
+  // so a photo picked in one language tab is applied to every language.
+  const isSharedPhotoPath = (path) => /^(teachers|achievements)\.\d+\.image$/.test(path)
+    || /^achievements\.\d+\.documents\.\d+\.image$/.test(path);
+
+  const setHomeField = (path, value) => setDrafts((current) => {
+    if (isSharedPhotoPath(path)) {
+      return Object.fromEntries(Object.entries(current).map(([id, draft]) => {
+        const draftHome = draft?.home || buildHomeDefaults(id);
+        const canApply = id === lang || getAt(draftHome, path.replace(/\.[^.]+$/, '')) !== undefined;
+        return [id, canApply ? { ...draft, home: setAt(draftHome, path, value) } : draft];
+      }));
+    }
+    return {
+      ...current,
+      [lang]: {
+        ...current[lang],
+        home: setAt(current[lang]?.home || homeDefaults, path, value),
+      },
+    };
+  });
   const setSetting = (key, value) => setDrafts((current) => ({
     ...current,
     ...(

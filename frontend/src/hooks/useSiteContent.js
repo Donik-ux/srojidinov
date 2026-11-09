@@ -35,6 +35,23 @@ const getCachedResource = (key, request) => {
   return requestPromise;
 };
 
+const API_URL = import.meta.env.VITE_API_URL || '';
+
+// The admin panel stores uploaded media as relative paths (/api/media/<id>, /uploads/...).
+// On the public site (a different origin than the API) they must point to the API host,
+// otherwise the browser requests them from the frontend domain and gets index.html.
+export const absolutizeMedia = (value) => {
+  if (!API_URL) return value;
+  if (typeof value === 'string') {
+    return /^\/(api\/media|uploads)\//.test(value) ? `${API_URL}${value}` : value;
+  }
+  if (Array.isArray(value)) return value.map(absolutizeMedia);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, absolutizeMedia(item)]));
+  }
+  return value;
+};
+
 export const invalidateSiteContentCache = () => {
   resourceCache.clear();
   englishContentRequest = null;
@@ -84,10 +101,10 @@ export const useSiteContent = (lang = 'uz') => {
         if (translations && typeof translations === 'object') {
           i18n.addResourceBundle(lang, 'translation', translations, true, true);
         }
-        const data = res.data?.data || res.data?.content || res.data;
+        const data = absolutizeMedia(res.data?.data || res.data?.content || res.data);
         const englishData = lang === 'en'
           ? data
-          : englishRes?.data?.data || englishRes?.data?.content || englishRes?.data;
+          : absolutizeMedia(englishRes?.data?.data || englishRes?.data?.content || englishRes?.data);
 
         if (!cancelled && data && typeof data === 'object') {
           const home = data?.home || data;

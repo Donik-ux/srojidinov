@@ -11,6 +11,12 @@ import App from './App';
 import './i18n';
 import './index.css';
 
+// Wake up the (free-tier) API server as early as possible so it is ready by the
+// time the visitor opens the admin login or any data-driven page.
+if (import.meta.env.VITE_API_URL) {
+  fetch(`${import.meta.env.VITE_API_URL}/api/health`, { mode: 'no-cors', cache: 'no-store' }).catch(() => {});
+}
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
